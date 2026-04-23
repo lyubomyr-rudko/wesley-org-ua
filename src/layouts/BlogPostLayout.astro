@@ -1,0 +1,42 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/github-blog.css';
+
+const { frontmatter } = Astro.props;
+const title = frontmatter?.title ?? 'Untitled Post';
+const description = frontmatter?.description ?? '';
+const pubDate = frontmatter?.pubDate ?? '';
+const tags = frontmatter?.tags ?? [];
+const heroImage = frontmatter?.heroImage ?? '';
+const author = frontmatter?.author ?? 'Unknown author';
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="markdown-body blog-post-card">
+    <header class="post-header">
+      <p class="post-eyebrow">Blog post</p>
+      <h1>{title}</h1>
+
+      <div class="post-meta">
+        <span>{author}</span>
+        {pubDate && <span>• {pubDate}</span>}
+      </div>
+
+      {description && <p class="post-description">{description}</p>}
+
+      {tags.length > 0 && (
+        <div class="tag-list">
+          {tags.map((tag) => <span class="tag">{tag}</span>)}
+        </div>
+      )}
+
+      {heroImage && (
+        <img class="hero-image" src={heroImage} alt={title} />
+      )}
+    </header>
+
+    <div class="post-content">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
