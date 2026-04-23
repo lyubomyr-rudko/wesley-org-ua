@@ -1,6 +1,7 @@
 ---
 import "../styles/github-blog.css";
 const { title = "Джон Веслі українською", description = "" } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -16,7 +17,13 @@ const { title = "Джон Веслі українською", description = "" }
       <div class="container header-inner">
         <a href="/" class="brand">Центр Джона Веслі українською</a>
         <nav class="nav">
-          <a href="/">Головна</a>
+          <a href="/" class={currentPath === "/" ? "is-active" : undefined}>Головна</a>
+          <a
+            href="/propovidi/"
+            class={currentPath.startsWith("/propovidi") ? "is-active" : undefined}
+          >
+            Проповіді
+          </a>
         </nav>
       </div>
     </header>
