@@ -1,5 +1,5 @@
 ---
-const { title = 'My Blog', description = 'Astro blog' } = Astro.props;
+const { title = "My Blog", description = "Astro blog" } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,9 +13,9 @@ const { title = 'My Blog', description = 'Astro blog' } = Astro.props;
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="brand">My Blog</a>
+        <a href={import.meta.env.BASE_URL} class="brand">My Blog</a>
         <nav class="nav">
-          <a href="/">Home</a>
+          <a href={import.meta.env.BASE_URL}>Home</a>
         </nav>
       </div>
     </header>
