@@ -444,4 +444,8 @@ export const allSermons = sermonSections.flatMap((section) =>
   })),
 );
 
+export const allSermonsByNumber = [...allSermons].sort(
+  (left, right) => Number(left.number) - Number(right.number),
+);
+
 export const totalSermons = allSermons.length;

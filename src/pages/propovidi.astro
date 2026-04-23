@@ -1,67 +1,52 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { sermonSections, totalSermons } from "../data/sermons.js";
+import { allSermonsByNumber, totalSermons } from "../data/sermons.js";
 ---
 
 <BaseLayout
-  title="Проповіді Джона Веслі"
-  description="Повний список проповідей Джона Веслі з номерацією, датами Smith's і Outler's у зручному каталозі."
+  title="Проповіді"
+  description="Повний список проповідей Джона Веслі, відсортований за номерами у порядку зростання."
 >
   <div class="resource-shell">
     <section class="resource-hero">
-      <p class="resource-kicker">Бібліотека текстів</p>
-      <h1 class="resource-title">Проповіді Джона Веслі</h1>
+      <p class="resource-kicker">Каталог за номерами</p>
+      <h1 class="resource-title">Проповіді</h1>
       <p class="resource-summary">
-        Повний каталог проповідей Джона Веслі. Для кожної позиції показано номер
-        проповіді, назву і дату.
+        Той самий список проповідей Джона Веслі, але відсортований за номерами у
+        порядку зростання. Для кожної позиції показано номер, назву та дату.
       </p>
     </section>
 
     <section class="resource-panel">
       <div class="resource-panel-header">
-        <p class="archive-eyebrow">Повний каталог</p>
-        <h2>Збірка класичиних проповідей Джона Веслі</h2>
+        <p class="archive-eyebrow">Повний перелік</p>
+        <h2>Проповіді Джона Веслі за номерами</h2>
         <p class="archive-summary">
           У списку зараз: <span class="count">{totalSermons}</span> проповідей
         </p>
       </div>
 
-      {
-        sermonSections.map((section) => (
-          <section class="sermon-era">
-            <div class="sermon-era-header">
-              <h3 class="sermon-era-title">{section.decade}</h3>
-              <p class="sermon-era-count">
-                {section.sermons.length} проповідей
-              </p>
+      <ol class="sermon-list">
+        {allSermonsByNumber.map((sermon) => (
+          <li class="sermon-item">
+            <div class="sermon-meta">
+              <span class="sermon-year">Дата: {sermon.smithDate}</span>
+              {sermon.outlerDate &&
+                sermon.outlerDate !== sermon.smithDate && (
+                  <span class="sermon-original">
+                    Альтернативна дата: {sermon.outlerDate}
+                  </span>
+                )}
             </div>
-
-            <ol class="sermon-list">
-              {section.sermons.map((sermon) => (
-                <li class="sermon-item">
-                  <div class="sermon-meta">
-                    <span class="sermon-year">Дата: {sermon.smithDate}</span>
-                    {sermon.outlerDate &&
-                      sermon.outlerDate !== sermon.smithDate && (
-                        <span class="sermon-original">
-                          Альтернативна дата: {sermon.outlerDate}
-                        </span>
-                      )}
-                  </div>
-                  <h4 class="sermon-title">
-                    <span class="sermon-number">
-                      Проповідь № {sermon.number}
-                    </span>
-                    <a class="sermon-link" href={`/${sermon.contentPath}/`}>
-                      {sermon.title}
-                    </a>
-                  </h4>
-                </li>
-              ))}
-            </ol>
-          </section>
-        ))
-      }
+            <h4 class="sermon-title">
+              <span class="sermon-number">Проповідь № {sermon.number}</span>
+              <a class="sermon-link" href={`/${sermon.contentPath}/`}>
+                {sermon.title}
+              </a>
+            </h4>
+          </li>
+        ))}
+      </ol>
     </section>
   </div>
 </BaseLayout>

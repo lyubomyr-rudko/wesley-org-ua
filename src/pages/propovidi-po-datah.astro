@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { sermonSections, totalSermons } from "../data/sermons.js";
+---
+
+<BaseLayout
+  title="Проповіді у Хронологічному порядку"
+  description="Хронологічний каталог проповідей Джона Веслі з номерацією та датами Smith's і Outler's."
+>
+  <div class="resource-shell">
+    <section class="resource-hero">
+      <p class="resource-kicker">Хронологічний каталог</p>
+      <h1 class="resource-title">Проповіді у Хронологічному порядку</h1>
+      <p class="resource-summary">
+        Зібрання проповідей Джона Веслі, впорядковане за роками. Для кожної
+        позиції показано номер проповіді, назву та дату.
+      </p>
+    </section>
+
+    <section class="resource-panel">
+      <div class="resource-panel-header">
+        <p class="archive-eyebrow">Повний перелік</p>
+        <h2>Проповіді Джона Веслі за роками</h2>
+        <p class="archive-summary">
+          У хронологічному списку зараз:
+          <span class="count"> {totalSermons}</span> проповідей
+        </p>
+      </div>
+
+      {
+        sermonSections.map((section) => (
+          <section class="sermon-era">
+            <div class="sermon-era-header">
+              <h3 class="sermon-era-title">{section.decade}</h3>
+              <p class="sermon-era-count">
+                {section.sermons.length} проповідей
+              </p>
+            </div>
+
+            <ol class="sermon-list">
+              {section.sermons.map((sermon) => (
+                <li class="sermon-item">
+                  <div class="sermon-meta">
+                    <span class="sermon-year">Дата: {sermon.smithDate}</span>
+                    {sermon.outlerDate &&
+                      sermon.outlerDate !== sermon.smithDate && (
+                        <span class="sermon-original">
+                          Альтернативна дата: {sermon.outlerDate}
+                        </span>
+                      )}
+                  </div>
+                  <h4 class="sermon-title">
+                    <span class="sermon-number">
+                      Проповідь № {sermon.number}
+                    </span>
+                    <a class="sermon-link" href={`/${sermon.contentPath}/`}>
+                      {sermon.title}
+                    </a>
+                  </h4>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))
+      }
+    </section>
+  </div>
+</BaseLayout>
