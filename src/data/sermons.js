@@ -30,6 +30,169 @@ const monthRangeMap = {
   "Sept.-Oct.": "вересень-жовтень",
 };
 
+const translationsTitleMap = {
+  "On Mourning For The Dead": "Про Жалобу За Померлими",
+  "On Corrupting The Word Of God": "Про Перекручування Слова Божого",
+  "The Duty Of Constant Communion": "Обов’язок Постійного Причастя",
+  "On Public Diversions": "Про Публічні Розваги",
+  "The Circumcision Of The Heart": "Обрізання Серця",
+  "On Grieving The Holy Spirit": "Про Засмучення Святого Духа",
+  "The Trouble And Rest Of Good Men": "Смуток І Спокій Добрих Людей",
+  "On Love": "Про Любов",
+  "Salvation By Faith": "Спасіння Вірою",
+  "The Spirit Of Bondage And Of Adoption": "Дух Рабства І Усиновлення",
+  "Free Grace": "Вільна Благодать",
+  "Upon Our Lord's Sermon On The Mount: Discourse One":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Перша",
+  "Upon Our Lord's Sermon On The Mount: Discourse Two":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Друга",
+  "Upon Our Lord's Sermon On The Mount: Discourse Three":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Третя",
+  "The Great Privilege Of Those That Are Born Of God":
+    "Великий Привілей Тих, Хто Народжений Від Бога",
+  "Justification By Faith": "Виправдання Вірою",
+  "Christian Perfection": "Християнська Досконалість",
+  "The Means Of Grace": "Засоби Благодаті",
+  "Upon Our Lord's Sermon On The Mount: Discourse Four":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Четверта",
+  "Upon Our Lord's Sermon On The Mount: Discourse Five":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда П’ята",
+  "Upon Our Lord's Sermon On The Mount: Discourse Six":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Шоста",
+  "The Marks Of The New Birth": "Ознаки Нового Народження",
+  "True Christianity": "Справжнє Християнство",
+  "The Law Established Through Faith: Discourse One":
+    "Закон, Стверджений Вірою: Бесіда Перша",
+  "The Almost Christian": "Майже Християнин",
+  "The Righteousness Of Faith": "Праведність Віри",
+  "Awake, Thou That Sleepest": "Пробудися, Ти, Що Спиш",
+  "Upon Our Lord's Sermon On The Mount: Discourse Ten":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Десята",
+  "The Way To The Kingdom": "Шлях До Царства",
+  "Upon Our Lord's Sermon On The Mount: Discourse Twelve":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Дванадцята",
+  "The New Birth": "Нове Народження",
+  "The Use Of Money": "Використання Грошей",
+  "Scriptural Christianity": "Біблійне Християнство",
+  "The First Fruits Of The Spirit": "Перші Плоди Духа",
+  "The Witness Of The Spirit: Discourse One": "Свідчення Духа: Бесіда Перша",
+  "The Witness Of Our Own Spirit": "Свідчення Нашого Власного Духа",
+  "Upon Our Lord's Sermon On The Mount: Discourse Seven":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Сьома",
+  "Upon Our Lord's Sermon On The Mount: Discourse Eight":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Восьма",
+  "Upon Our Lord's Sermon On The Mount: Discourse Nine":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Дев’ята",
+  "Catholic Spirit": "Вселенський Дух",
+  "Upon Our Lord's Sermon On The Mount: Discourse Eleven":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Одинадцята",
+  "Upon Our Lord's Sermon On The Mount: Discourse Thirteen":
+    "Про Нагірну Проповідь Господа Нашого: Бесіда Тринадцята",
+  "The Law Established Through Faith: Discourse Two":
+    "Закон, Стверджений Вірою: Бесіда Друга",
+  "The Original, Nature, Property, And Use Of The Law":
+    "Походження, Природа, Властивості Та Застосування Закону",
+  "The Nature Of Enthusiasm": "Природа Ентузіазму",
+  "A Caution Against Bigotry": "Засторога Проти Фанатизму",
+  "Satan's Devices": "Підступи Сатани",
+  "The Cause And Cure Of Earthquakes": "Причина Та Засіб Від Землетрусів",
+  "The Wilderness State": "Стан Пустелі",
+  "The Cure Of Evil-speaking": "Ліки Від Лихослів’я",
+  "Heaviness Through Manifold Temptations": "Смуток Через Різноманітні Спокуси",
+  "Original Sin": "Первородний Гріх",
+  "Self-denial": "Самозречення",
+  "The Great Assize": "Великий Суд",
+  "The Good Steward": "Добрий Управитель",
+  "The Scripture Way Of Salvation": "Біблійний Шлях Спасіння",
+  "The Repentance Of Believers": "Покаяння Віруючих",
+  "On Zeal": "Про Ревність",
+  "The Lord Our Righteousness": "Господь Наша Праведність",
+  "The End Of Christ's Coming": "Мета Пришестя Христа",
+  "Wandering Thoughts": "Блукаючі Думки",
+  "On Perfection": "Про Досконалість",
+  "On Patience": "Про Терпіння",
+  "On Discoveries Of Faith": "Про Відкриття Віри",
+  "On A Single Eye": "Про Просте Око",
+  "The Reformation Of Manners": "Реформа Звичаїв",
+  "On Sin In Believers": "Про Гріх У Віруючих",
+  "On The Death Of The Rev. Mr. George Whitefield":
+    "Про Смерть Преподобного Містера Джорджа Вайтфілда",
+  "On The Trinity": "Про Трійцю",
+  "On Predestination": "Про Передвизначення",
+  "The Important Question": "Важливе Питання",
+  "National Sins And Miseries": "Національні Гріхи Та Лиха",
+  "On Laying The Foundation Of The New Chapel, Near The City-road, London.":
+    "Про Закладення Підвалин Нової Каплиці Біля Сіті-Роуд У Лондоні",
+  "The Reward Of The Righteous": "Нагорода Праведних",
+  "A Call To Backsliders": "Заклик До Відступників",
+  "The Late Work Of God In North America":
+    "Остання Божа Праця В Північній Америці",
+  "On God's Vineyard": "Про Божий Виноградник",
+  "The Case Of Reason Impartially Considered":
+    "Випадок Неупередженого Розгляду Розуму",
+  "The General Deliverance": "Загальне Визволення",
+  "On Redeeming The Time": "Про Викуплення Часу",
+  "On The Fall Of Man": "Про Падіння Людини",
+  "God's Approbation Of His Works": "Схвалення Богом Своїх Діл",
+  "God's Love To Fallen Man": "Божа Любов До Падшої Людини",
+  "Of Good Angels": "Про Добрих Ангелів",
+  "Of Hell": "Про Пекло",
+  "Of Evil Angels": "Про Злих Ангелів",
+  "The General Spread Of The Gospel": "Загальне Поширення Євангелії",
+  "On Family Religion": "Про Сімейну Релігію",
+  "The Mystery Of Iniquity": "Таємниця Беззаконня",
+  "On The Education Of Children": "Про Виховання Дітей",
+  "On Dissipation": "Про Марнотратство",
+  "The Imperfection Of Human Knowledge": "Недосконалість Людського Знання",
+  "The Wisdom Of God's Counsel's": "Мудрість Божих Намірів",
+  "On Obedience To Parents": "Про Послух Батькам",
+  "In What Sense We Are To Leave The World":
+    "У Якому Розумінні Ми Маємо Залишити Світ",
+  "On Charity": "Про Милосердя",
+  "On Obedience To Pastors": "Про Послух Пасторам",
+  "An Israelite Indeed": "Справжній Ізраїльтянин",
+  "On Working Out Our Own Salvation": "Про Звершення Нашого Власного Спасіння",
+  "The New Creation": "Нове Створіння",
+  "Of The Church": "Про Церкву",
+  "On The Death Of Rev. Mr. John Fletcher":
+    "Про Смерть Преподобного Містера Джона Флетчера",
+  "On Divine Providence": "Про Боже Провидіння",
+  "On Schism": "Про Розкол",
+  "On Friendship With The World": "Про Дружбу Зі Світом",
+  "On Visiting The Sick": "Про Відвідування Хворих",
+  "On Eternity": "Про Вічність",
+  "On Temptation": "Про Спокусу",
+  "On Dress": "Про Одяг",
+  "The More Excellent Way": "Досконаліший Шлях",
+  "On Pleasing All Men": "Про Догоджання Всім Людям",
+  "Of Former Times": "Про Колишні Часи",
+  "What Is Man?": "Що Таке Людина?",
+  "The Duty Of Reproving Our Neighbour": "Обов’язок Докоряти Ближньому",
+  "The Signs Of The Times": "Ознаки Часів",
+  "On Attending The Church Service": "Про Відвідування Церковного Служіння",
+  "The Rich Man And Lazarus": "Багатий І Лазар",
+  "On Conscience": "Про Совість",
+  "On Faith": "Про Віру",
+  "On Riches": "Про Багатство",
+  "On The Omnipresence Of God": "Про Всеприсутність Бога",
+  "The Difference Between Walking By Sight, And Walking By Faith":
+    "Різниця Між Ходінням За Видимим І Ходінням За Вірою",
+  "The Unity Of The Divine Being": "Єдність Божої Істоти",
+  "The Ministerial Office": "Служіння Священнослужителя",
+  "Causes Of The Inefficacy Of Christianity": "Причини Безсилля Християнства",
+  "On Knowing Christ After The Flesh": "Про Знання Христа За Тілом",
+  "Human Life A Dream": "Людське Життя Як Сон",
+  "On Worldly Folly": "Про Світське Безумство",
+  "On The Wedding Garment": "Про Весільну Одежу",
+  "The Deceitfulness Of The Human Heart": "Оманливість Людського Серця",
+  "The Heavenly Treasure In Earthen Vessels":
+    "Небесний Скарб У Глиняних Посудинах",
+  "On Living Without God": "Про Життя Без Бога",
+  "On The Danger Of Increasing Riches": "Про Небезпеку Зростання Багатства",
+};
+
+const translateTitle = (value) => translationsTitleMap[value] ?? value;
+
 const translateDate = (value) => {
   if (!value) return value;
 
@@ -86,7 +249,8 @@ const parseSermons = (rows) =>
       const slug = `${number.padStart(3, "0")}-${slugify(title)}`;
       return {
         number,
-        title,
+        title: translateTitle(title),
+        originalTitle: title,
         smithDate: translateDate(smithDate),
         outlerDate: translateDate(outlerDate),
         slug,
