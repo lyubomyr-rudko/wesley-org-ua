@@ -1,7 +1,7 @@
 ---
 title: "Sermon 71 - Of Good Angels"
 description: "Плейсхолдер для проповіді Джона Веслі \"Of Good Angels\"."
-pubDate: "Aug. 29, 1782"
+pubDate: "29 серпня 1782"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 71 - Of Good Angels
 
-- Smith's date: Aug. 29, 1782
-- Outler's date: Jan.-Feb. 1783
+- Smith's date: 29 серпня 1782
+- Outler's date: січень-лютий 1783
 
 - Source slug: 071-of-good-angels
 

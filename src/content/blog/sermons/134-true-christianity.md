@@ -1,7 +1,7 @@
 ---
 title: "Sermon 134 - True Christianity"
 description: "Плейсхолдер для проповіді Джона Веслі \"True Christianity\"."
-pubDate: "June 24, 1741"
+pubDate: "24 червня 1741"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 134 - True Christianity
 
-- Smith's date: June 24, 1741
+- Smith's date: 24 червня 1741
 
 - Source slug: 134-true-christianity
 

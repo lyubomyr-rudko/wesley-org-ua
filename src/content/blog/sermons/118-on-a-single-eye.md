@@ -1,7 +1,7 @@
 ---
 title: "Sermon 118 - On A Single Eye"
 description: "Плейсхолдер для проповіді Джона Веслі \"On A Single Eye\"."
-pubDate: "Nov. 29, 1761"
+pubDate: "29 листопада 1761"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 118 - On A Single Eye
 
-- Smith's date: Nov. 29, 1761
+- Smith's date: 29 листопада 1761
 - Outler's date: 1789
 
 - Source slug: 118-on-a-single-eye

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 95 - On The Education Of Children"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Education Of Children\"."
-pubDate: "July 12, 1783"
+pubDate: "12 липня 1783"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 95 - On The Education Of Children
 
-- Smith's date: July 12, 1783
+- Smith's date: 12 липня 1783
 - Outler's date: 1783
 
 - Source slug: 095-on-the-education-of-children

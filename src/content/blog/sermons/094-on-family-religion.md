@@ -1,7 +1,7 @@
 ---
 title: "Sermon 94 - On Family Religion"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Family Religion\"."
-pubDate: "May 26, 1783"
+pubDate: "26 травня 1783"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 94 - On Family Religion
 
-- Smith's date: May 26, 1783
+- Smith's date: 26 травня 1783
 - Outler's date: 1783
 
 - Source slug: 094-on-family-religion

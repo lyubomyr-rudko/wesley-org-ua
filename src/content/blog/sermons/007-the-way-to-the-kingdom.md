@@ -1,7 +1,7 @@
 ---
 title: "Sermon 7 - The Way To The Kingdom"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Way To The Kingdom\"."
-pubDate: "June 6, 1742"
+pubDate: "6 червня 1742"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 7 - The Way To The Kingdom
 
-- Smith's date: June 6, 1742
+- Smith's date: 6 червня 1742
 - Outler's date: 1746
 
 - Source slug: 007-the-way-to-the-kingdom

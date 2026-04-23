@@ -1,7 +1,7 @@
 ---
 title: "Sermon 130 - National Sins And Miseries"
 description: "Плейсхолдер для проповіді Джона Веслі \"National Sins And Miseries\"."
-pubDate: "Nov. 7, 1775"
+pubDate: "7 листопада 1775"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 130 - National Sins And Miseries
 
-- Smith's date: Nov. 7, 1775
+- Smith's date: 7 листопада 1775
 
 - Source slug: 130-national-sins-and-miseries
 

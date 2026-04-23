@@ -1,7 +1,7 @@
 ---
 title: "Sermon 17 - The Circumcision Of The Heart"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Circumcision Of The Heart\"."
-pubDate: "Jan. 1, 1733"
+pubDate: "1 січня 1733"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 17 - The Circumcision Of The Heart
 
-- Smith's date: Jan. 1, 1733
+- Smith's date: 1 січня 1733
 - Outler's date: 1733
 
 - Source slug: 017-the-circumcision-of-the-heart

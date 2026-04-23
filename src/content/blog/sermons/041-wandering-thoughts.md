@@ -1,7 +1,7 @@
 ---
 title: "Sermon 41 - Wandering Thoughts"
 description: "Плейсхолдер для проповіді Джона Веслі \"Wandering Thoughts\"."
-pubDate: "Nov. 30, 1760"
+pubDate: "30 листопада 1760"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 41 - Wandering Thoughts
 
-- Smith's date: Nov. 30, 1760
+- Smith's date: 30 листопада 1760
 - Outler's date: 1762
 
 - Source slug: 041-wandering-thoughts

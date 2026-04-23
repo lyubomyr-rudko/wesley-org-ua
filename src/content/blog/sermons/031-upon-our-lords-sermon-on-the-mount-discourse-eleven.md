@@ -1,7 +1,7 @@
 ---
 title: "Sermon 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven"
 description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Eleven\"."
-pubDate: "Nov. 1-7, 1749"
+pubDate: "1-7 листопада 1749"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven
 
-- Smith's date: Nov. 1-7, 1749
+- Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 
 - Source slug: 031-upon-our-lords-sermon-on-the-mount-discourse-eleven

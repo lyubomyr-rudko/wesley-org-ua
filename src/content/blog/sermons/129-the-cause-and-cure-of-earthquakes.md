@@ -1,7 +1,7 @@
 ---
 title: "Sermon 129 - The Cause And Cure Of Earthquakes"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Cause And Cure Of Earthquakes\"."
-pubDate: "Mar. 9, 1750"
+pubDate: "9 березня 1750"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 129 - The Cause And Cure Of Earthquakes
 
-- Smith's date: Mar. 9, 1750
+- Smith's date: 9 березня 1750
 
 - Source slug: 129-the-cause-and-cure-of-earthquakes
 

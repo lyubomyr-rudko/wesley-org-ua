@@ -1,7 +1,7 @@
 ---
 title: "Sermon 139 - On Love"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Love\"."
-pubDate: "Feb. 20, 1737"
+pubDate: "20 лютого 1737"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 139 - On Love
 
-- Smith's date: Feb. 20, 1737
+- Smith's date: 20 лютого 1737
 
 - Source slug: 139-on-love
 

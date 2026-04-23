@@ -1,7 +1,7 @@
 ---
 title: "Sermon 49 - The Cure Of Evil-speaking"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Cure Of Evil-speaking\"."
-pubDate: "Feb. 5, 1752"
+pubDate: "5 лютого 1752"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 49 - The Cure Of Evil-speaking
 
-- Smith's date: Feb. 5, 1752
+- Smith's date: 5 лютого 1752
 - Outler's date: 1760
 
 - Source slug: 049-the-cure-of-evil-speaking

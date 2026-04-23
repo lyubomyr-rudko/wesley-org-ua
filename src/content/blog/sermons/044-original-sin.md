@@ -1,7 +1,7 @@
 ---
 title: "Sermon 44 - Original Sin"
 description: "Плейсхолдер для проповіді Джона Веслі \"Original Sin\"."
-pubDate: "May 15, 1754"
+pubDate: "15 травня 1754"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 44 - Original Sin
 
-- Smith's date: May 15, 1754
+- Smith's date: 15 травня 1754
 - Outler's date: 1759
 
 - Source slug: 044-original-sin

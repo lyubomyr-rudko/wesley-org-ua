@@ -1,7 +1,7 @@
 ---
 title: "Sermon 107 - On God's Vineyard"
 description: "Плейсхолдер для проповіді Джона Веслі \"On God's Vineyard\"."
-pubDate: "Dec. 5, 1779"
+pubDate: "5 грудня 1779"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 107 - On God's Vineyard
 
-- Smith's date: Dec. 5, 1779
-- Outler's date: Oct. 17, 1787
+- Smith's date: 5 грудня 1779
+- Outler's date: 17 жовтня 1787
 
 - Source slug: 107-on-gods-vineyard
 

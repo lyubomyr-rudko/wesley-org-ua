@@ -1,7 +1,7 @@
 ---
 title: "Sermon 47 - Heaviness Through Manifold Temptations"
 description: "Плейсхолдер для проповіді Джона Веслі \"Heaviness Through Manifold Temptations\"."
-pubDate: "May 5, 1754"
+pubDate: "5 травня 1754"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 47 - Heaviness Through Manifold Temptations
 
-- Smith's date: May 5, 1754
+- Smith's date: 5 травня 1754
 - Outler's date: 1760
 
 - Source slug: 047-heaviness-through-manifold-temptations

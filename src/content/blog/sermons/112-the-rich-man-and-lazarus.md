@@ -1,7 +1,7 @@
 ---
 title: "Sermon 112 - The Rich Man And Lazarus"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Rich Man And Lazarus\"."
-pubDate: "Mar. 25, 1788"
+pubDate: "25 березня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 112 - The Rich Man And Lazarus
 
-- Smith's date: Mar. 25, 1788
+- Smith's date: 25 березня 1788
 
 - Source slug: 112-the-rich-man-and-lazarus
 

@@ -11,7 +11,7 @@ tags:
 # Sermon 90 - An Israelite Indeed
 
 - Smith's date: 1785
-- Outler's date: July-Aug. 1785
+- Outler's date: липень-серпень 1785
 
 - Source slug: 090-an-israelite-indeed
 

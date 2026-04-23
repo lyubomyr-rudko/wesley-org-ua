@@ -1,7 +1,7 @@
 ---
 title: "Sermon 106 - On Faith"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Faith\"."
-pubDate: "Apr. 9, 1788"
+pubDate: "9 квітня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 106 - On Faith
 
-- Smith's date: Apr. 9, 1788
+- Smith's date: 9 квітня 1788
 
 - Source slug: 106-on-faith
 

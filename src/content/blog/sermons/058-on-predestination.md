@@ -1,7 +1,7 @@
 ---
 title: "Sermon 58 - On Predestination"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Predestination\"."
-pubDate: "May 7, 1775"
+pubDate: "7 травня 1775"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 58 - On Predestination
 
-- Smith's date: May 7, 1775
+- Smith's date: 7 травня 1775
 
 - Source slug: 058-on-predestination
 

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 15 - The Great Assize"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Great Assize\"."
-pubDate: "Mar. 10, 1758"
+pubDate: "10 березня 1758"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 15 - The Great Assize
 
-- Smith's date: Mar. 10, 1758
+- Smith's date: 10 березня 1758
 
 - Source slug: 015-the-great-assize
 

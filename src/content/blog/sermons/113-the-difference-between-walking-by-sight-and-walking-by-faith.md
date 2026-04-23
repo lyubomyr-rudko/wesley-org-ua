@@ -1,7 +1,7 @@
 ---
 title: "Sermon 113 - The Difference Between Walking By Sight, And Walking By Faith"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Difference Between Walking By Sight, And Walking By Faith\"."
-pubDate: "Dec. 30, 1788"
+pubDate: "30 грудня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 113 - The Difference Between Walking By Sight, And Walking By Faith
 
-- Smith's date: Dec. 30, 1788
+- Smith's date: 30 грудня 1788
 
 - Source slug: 113-the-difference-between-walking-by-sight-and-walking-by-faith
 

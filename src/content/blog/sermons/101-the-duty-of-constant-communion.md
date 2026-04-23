@@ -1,7 +1,7 @@
 ---
 title: "Sermon 101 - The Duty Of Constant Communion"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Duty Of Constant Communion\"."
-pubDate: "Feb. 19, 1732"
+pubDate: "19 лютого 1732"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 101 - The Duty Of Constant Communion
 
-- Smith's date: Feb. 19, 1732
+- Smith's date: 19 лютого 1732
 - Outler's date: 1787
 
 - Source slug: 101-the-duty-of-constant-communion

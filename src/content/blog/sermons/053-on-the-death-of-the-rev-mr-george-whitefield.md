@@ -1,7 +1,7 @@
 ---
 title: "Sermon 53 - On The Death Of The Rev. Mr. George Whitefield"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Death Of The Rev. Mr. George Whitefield\"."
-pubDate: "Nov. 11, 1770"
+pubDate: "11 листопада 1770"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 53 - On The Death Of The Rev. Mr. George Whitefield
 
-- Smith's date: Nov. 11, 1770
+- Smith's date: 11 листопада 1770
 
 - Source slug: 053-on-the-death-of-the-rev-mr-george-whitefield
 

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 127 - The Trouble And Rest Of Good Men"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Trouble And Rest Of Good Men\"."
-pubDate: "Sept. 21, 1735"
+pubDate: "21 вересня 1735"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 127 - The Trouble And Rest Of Good Men
 
-- Smith's date: Sept. 21, 1735
+- Smith's date: 21 вересня 1735
 
 - Source slug: 127-the-trouble-and-rest-of-good-men
 

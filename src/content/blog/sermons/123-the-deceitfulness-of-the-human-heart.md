@@ -1,7 +1,7 @@
 ---
 title: "Sermon 123 - The Deceitfulness Of The Human Heart"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Deceitfulness Of The Human Heart\"."
-pubDate: "Apr. 21, 1790"
+pubDate: "21 квітня 1790"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 123 - The Deceitfulness Of The Human Heart
 
-- Smith's date: Apr. 21, 1790
+- Smith's date: 21 квітня 1790
 
 - Source slug: 123-the-deceitfulness-of-the-human-heart
 

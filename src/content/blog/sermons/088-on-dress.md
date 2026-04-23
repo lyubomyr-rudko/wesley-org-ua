@@ -1,7 +1,7 @@
 ---
 title: "Sermon 88 - On Dress"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Dress\"."
-pubDate: "Dec. 30, 1786"
+pubDate: "30 грудня 1786"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 88 - On Dress
 
-- Smith's date: Dec. 30, 1786
+- Smith's date: 30 грудня 1786
 
 - Source slug: 088-on-dress
 

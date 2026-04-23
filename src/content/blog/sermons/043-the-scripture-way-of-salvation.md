@@ -1,7 +1,7 @@
 ---
 title: "Sermon 43 - The Scripture Way Of Salvation"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Scripture Way Of Salvation\"."
-pubDate: "May 22, 1758"
+pubDate: "22 травня 1758"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 43 - The Scripture Way Of Salvation
 
-- Smith's date: May 22, 1758
+- Smith's date: 22 травня 1758
 - Outler's date: 1765
 
 - Source slug: 043-the-scripture-way-of-salvation

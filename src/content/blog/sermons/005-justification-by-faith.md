@@ -1,7 +1,7 @@
 ---
 title: "Sermon 5 - Justification By Faith"
 description: "Плейсхолдер для проповіді Джона Веслі \"Justification By Faith\"."
-pubDate: "Oct. 6, 1739"
+pubDate: "6 жовтня 1739"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 5 - Justification By Faith
 
-- Smith's date: Oct. 6, 1739
+- Smith's date: 6 жовтня 1739
 - Outler's date: 1746
 
 - Source slug: 005-justification-by-faith

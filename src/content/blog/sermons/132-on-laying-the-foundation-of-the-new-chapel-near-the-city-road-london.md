@@ -1,7 +1,7 @@
 ---
 title: "Sermon 132 - On Laying The Foundation Of The New Chapel, Near The City-road, London."
 description: "Плейсхолдер для проповіді Джона Веслі \"On Laying The Foundation Of The New Chapel, Near The City-road, London.\"."
-pubDate: "Apr. 21, 1777"
+pubDate: "21 квітня 1777"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 132 - On Laying The Foundation Of The New Chapel, Near The City-road, London.
 
-- Smith's date: Apr. 21, 1777
+- Smith's date: 21 квітня 1777
 
 - Source slug: 132-on-laying-the-foundation-of-the-new-chapel-near-the-city-road-london
 

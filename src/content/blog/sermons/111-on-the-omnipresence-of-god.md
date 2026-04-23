@@ -1,7 +1,7 @@
 ---
 title: "Sermon 111 - On The Omnipresence Of God"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Omnipresence Of God\"."
-pubDate: "Aug. 12, 1788"
+pubDate: "12 серпня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 111 - On The Omnipresence Of God
 
-- Smith's date: Aug. 12, 1788
+- Smith's date: 12 серпня 1788
 
 - Source slug: 111-on-the-omnipresence-of-god
 

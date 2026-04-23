@@ -41,15 +41,18 @@ import { sermonSections, totalSermons } from "../data/sermons.js";
               {section.sermons.map((sermon) => (
                 <li class="sermon-item">
                   <div class="sermon-meta">
-                    <span class="sermon-year">Smith: {sermon.smithDate}</span>
-                    {sermon.outlerDate && (
-                      <span class="sermon-original">
-                        Outler: {sermon.outlerDate}
-                      </span>
-                    )}
+                    <span class="sermon-year">Дата: {sermon.smithDate}</span>
+                    {sermon.outlerDate &&
+                      sermon.outlerDate !== sermon.smithDate && (
+                        <span class="sermon-original">
+                          Альтернативна дата: {sermon.outlerDate}
+                        </span>
+                      )}
                   </div>
                   <h4 class="sermon-title">
-                    <span class="sermon-number">Sermon {sermon.number}</span>
+                    <span class="sermon-number">
+                      Проповідь № {sermon.number}
+                    </span>
                     <a class="sermon-link" href={`/${sermon.contentPath}/`}>
                       {sermon.title}
                     </a>

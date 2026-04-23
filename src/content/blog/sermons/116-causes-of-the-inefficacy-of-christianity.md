@@ -1,7 +1,7 @@
 ---
 title: "Sermon 116 - Causes Of The Inefficacy Of Christianity"
 description: "Плейсхолдер для проповіді Джона Веслі \"Causes Of The Inefficacy Of Christianity\"."
-pubDate: "July 2, 1789"
+pubDate: "2 липня 1789"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 116 - Causes Of The Inefficacy Of Christianity
 
-- Smith's date: July 2, 1789
+- Smith's date: 2 липня 1789
 
 - Source slug: 116-causes-of-the-inefficacy-of-christianity
 

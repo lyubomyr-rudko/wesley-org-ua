@@ -1,7 +1,7 @@
 ---
 title: "Sermon 40 - Christian Perfection"
 description: "Плейсхолдер для проповіді Джона Веслі \"Christian Perfection\"."
-pubDate: "Nov. 11, 1739"
+pubDate: "11 листопада 1739"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 40 - Christian Perfection
 
-- Smith's date: Nov. 11, 1739
+- Smith's date: 11 листопада 1739
 - Outler's date: 1741
 
 - Source slug: 040-christian-perfection

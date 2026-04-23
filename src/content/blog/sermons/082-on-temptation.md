@@ -1,7 +1,7 @@
 ---
 title: "Sermon 82 - On Temptation"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Temptation\"."
-pubDate: "Oct. 7, 1786"
+pubDate: "7 жовтня 1786"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 82 - On Temptation
 
-- Smith's date: Oct. 7, 1786
+- Smith's date: 7 жовтня 1786
 
 - Source slug: 082-on-temptation
 

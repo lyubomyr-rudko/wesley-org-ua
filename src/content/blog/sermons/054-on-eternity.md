@@ -1,7 +1,7 @@
 ---
 title: "Sermon 54 - On Eternity"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Eternity\"."
-pubDate: "June 28, 1786"
+pubDate: "28 червня 1786"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 54 - On Eternity
 
-- Smith's date: June 28, 1786
+- Smith's date: 28 червня 1786
 
 - Source slug: 054-on-eternity
 

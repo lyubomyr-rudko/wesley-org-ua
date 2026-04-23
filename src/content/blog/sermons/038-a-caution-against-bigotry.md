@@ -1,7 +1,7 @@
 ---
 title: "Sermon 38 - A Caution Against Bigotry"
 description: "Плейсхолдер для проповіді Джона Веслі \"A Caution Against Bigotry\"."
-pubDate: "Nov. 1-7, 1749"
+pubDate: "1-7 листопада 1749"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 38 - A Caution Against Bigotry
 
-- Smith's date: Nov. 1-7, 1749
+- Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 
 - Source slug: 038-a-caution-against-bigotry

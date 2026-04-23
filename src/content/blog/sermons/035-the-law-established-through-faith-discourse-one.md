@@ -1,7 +1,7 @@
 ---
 title: "Sermon 35 - The Law Established Through Faith: Discourse One"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Law Established Through Faith: Discourse One\"."
-pubDate: "June 27, 1741"
+pubDate: "27 червня 1741"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 35 - The Law Established Through Faith: Discourse One
 
-- Smith's date: June 27, 1741
+- Smith's date: 27 червня 1741
 - Outler's date: 1750
 
 - Source slug: 035-the-law-established-through-faith-discourse-one

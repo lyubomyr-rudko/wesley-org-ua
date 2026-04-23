@@ -1,7 +1,7 @@
 ---
 title: "Sermon 69 - The Imperfection Of Human Knowledge"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Imperfection Of Human Knowledge\"."
-pubDate: "Mar. 5, 1784"
+pubDate: "5 березня 1784"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 69 - The Imperfection Of Human Knowledge
 
-- Smith's date: Mar. 5, 1784
+- Smith's date: 5 березня 1784
 
 - Source slug: 069-the-imperfection-of-human-knowledge
 

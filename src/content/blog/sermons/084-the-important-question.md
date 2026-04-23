@@ -1,7 +1,7 @@
 ---
 title: "Sermon 84 - The Important Question"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Important Question\"."
-pubDate: "Sept. 11, 1775"
+pubDate: "11 вересня 1775"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 84 - The Important Question
 
-- Smith's date: Sept. 11, 1775
+- Smith's date: 11 вересня 1775
 
 - Source slug: 084-the-important-question
 

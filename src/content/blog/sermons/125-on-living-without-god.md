@@ -1,7 +1,7 @@
 ---
 title: "Sermon 125 - On Living Without God"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Living Without God\"."
-pubDate: "July 6, 1790"
+pubDate: "6 липня 1790"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 125 - On Living Without God
 
-- Smith's date: July 6, 1790
+- Smith's date: 6 липня 1790
 
 - Source slug: 125-on-living-without-god
 

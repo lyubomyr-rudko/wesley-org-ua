@@ -1,7 +1,7 @@
 ---
 title: "Sermon 76 - On Perfection"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Perfection\"."
-pubDate: "Mar. 29, 1761"
+pubDate: "29 березня 1761"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 76 - On Perfection
 
-- Smith's date: Mar. 29, 1761
-- Outler's date: Dec. 6, 1784
+- Smith's date: 29 березня 1761
+- Outler's date: 6 грудня 1784
 
 - Source slug: 076-on-perfection
 

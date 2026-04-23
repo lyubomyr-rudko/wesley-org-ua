@@ -1,7 +1,7 @@
 ---
 title: "Sermon 80 - On Friendship With The World"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Friendship With The World\"."
-pubDate: "May 1, 1786"
+pubDate: "1 травня 1786"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 80 - On Friendship With The World
 
-- Smith's date: May 1, 1786
+- Smith's date: 1 травня 1786
 
 - Source slug: 080-on-friendship-with-the-world
 

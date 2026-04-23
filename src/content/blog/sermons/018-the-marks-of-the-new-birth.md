@@ -1,7 +1,7 @@
 ---
 title: "Sermon 18 - The Marks Of The New Birth"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Marks Of The New Birth\"."
-pubDate: "Apr. 3, 1741"
+pubDate: "3 квітня 1741"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 18 - The Marks Of The New Birth
 
-- Smith's date: Apr. 3, 1741
+- Smith's date: 3 квітня 1741
 - Outler's date: 1748
 
 - Source slug: 018-the-marks-of-the-new-birth

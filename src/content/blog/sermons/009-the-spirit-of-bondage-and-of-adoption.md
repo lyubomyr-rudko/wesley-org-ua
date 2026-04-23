@@ -1,7 +1,7 @@
 ---
 title: "Sermon 9 - The Spirit Of Bondage And Of Adoption"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Spirit Of Bondage And Of Adoption\"."
-pubDate: "Apr. 25, 1739"
+pubDate: "25 квітня 1739"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 9 - The Spirit Of Bondage And Of Adoption
 
-- Smith's date: Apr. 25, 1739
+- Smith's date: 25 квітня 1739
 - Outler's date: 1746
 
 - Source slug: 009-the-spirit-of-bondage-and-of-adoption

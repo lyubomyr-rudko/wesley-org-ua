@@ -1,7 +1,7 @@
 ---
 title: "Sermon 110 - On Discoveries Of Faith"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Discoveries Of Faith\"."
-pubDate: "Oct. 27, 1761"
+pubDate: "27 жовтня 1761"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 110 - On Discoveries Of Faith
 
-- Smith's date: Oct. 27, 1761
-- Outler's date: June 11, 1788
+- Smith's date: 27 жовтня 1761
+- Outler's date: 11 червня 1788
 
 - Source slug: 110-on-discoveries-of-faith
 

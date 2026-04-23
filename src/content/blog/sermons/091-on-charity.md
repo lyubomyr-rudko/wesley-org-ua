@@ -1,7 +1,7 @@
 ---
 title: "Sermon 91 - On Charity"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Charity\"."
-pubDate: "Oct. 15, 1784"
+pubDate: "15 жовтня 1784"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 91 - On Charity
 
-- Smith's date: Oct. 15, 1784
+- Smith's date: 15 жовтня 1784
 
 - Source slug: 091-on-charity
 

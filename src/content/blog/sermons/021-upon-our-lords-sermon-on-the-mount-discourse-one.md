@@ -1,7 +1,7 @@
 ---
 title: "Sermon 21 - Upon Our Lord's Sermon On The Mount: Discourse One"
 description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse One\"."
-pubDate: "July 21, 1739"
+pubDate: "21 липня 1739"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 21 - Upon Our Lord's Sermon On The Mount: Discourse One
 
-- Smith's date: July 21, 1739
+- Smith's date: 21 липня 1739
 - Outler's date: 1748
 
 - Source slug: 021-upon-our-lords-sermon-on-the-mount-discourse-one

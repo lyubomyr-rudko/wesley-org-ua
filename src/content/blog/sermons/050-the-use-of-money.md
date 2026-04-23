@@ -1,7 +1,7 @@
 ---
 title: "Sermon 50 - The Use Of Money"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Use Of Money\"."
-pubDate: "Feb. 17, 1744"
+pubDate: "17 лютого 1744"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 50 - The Use Of Money
 
-- Smith's date: Feb. 17, 1744
+- Smith's date: 17 лютого 1744
 - Outler's date: 1760
 
 - Source slug: 050-the-use-of-money

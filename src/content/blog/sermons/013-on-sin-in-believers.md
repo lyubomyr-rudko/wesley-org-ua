@@ -1,7 +1,7 @@
 ---
 title: "Sermon 13 - On Sin In Believers"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Sin In Believers\"."
-pubDate: "Mar. 28, 1763"
+pubDate: "28 березня 1763"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 13 - On Sin In Believers
 
-- Smith's date: Mar. 28, 1763
+- Smith's date: 28 березня 1763
 
 - Source slug: 013-on-sin-in-believers
 

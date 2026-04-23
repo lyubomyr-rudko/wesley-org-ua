@@ -1,7 +1,7 @@
 ---
 title: "Sermon 122 - On Faith"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Faith\"."
-pubDate: "Jan. 17, 1791"
+pubDate: "17 січня 1791"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 122 - On Faith
 
-- Smith's date: Jan. 17, 1791
+- Smith's date: 17 січня 1791
 
 - Source slug: 122-on-faith
 

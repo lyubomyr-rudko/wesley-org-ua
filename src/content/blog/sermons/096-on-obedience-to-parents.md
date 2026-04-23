@@ -11,7 +11,7 @@ tags:
 # Sermon 96 - On Obedience To Parents
 
 - Smith's date: 1784
-- Outler's date: Oct.-Nov. 1784
+- Outler's date: жовтень-листопад 1784
 
 - Source slug: 096-on-obedience-to-parents
 

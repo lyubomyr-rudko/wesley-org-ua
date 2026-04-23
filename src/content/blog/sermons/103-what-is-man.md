@@ -1,7 +1,7 @@
 ---
 title: "Sermon 103 - What Is Man?"
 description: "Плейсхолдер для проповіді Джона Веслі \"What Is Man?\"."
-pubDate: "July 23, 1787"
+pubDate: "23 липня 1787"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 103 - What Is Man?
 
-- Smith's date: July 23, 1787
+- Smith's date: 23 липня 1787
 
 - Source slug: 103-what-is-man
 

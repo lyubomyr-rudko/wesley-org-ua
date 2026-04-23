@@ -1,7 +1,7 @@
 ---
 title: "Sermon 120 - On The Wedding Garment"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Wedding Garment\"."
-pubDate: "Mar. 26, 1790"
+pubDate: "26 березня 1790"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 120 - On The Wedding Garment
 
-- Smith's date: Mar. 26, 1790
+- Smith's date: 26 березня 1790
 
 - Source slug: 120-on-the-wedding-garment
 

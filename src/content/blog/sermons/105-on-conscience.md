@@ -1,7 +1,7 @@
 ---
 title: "Sermon 105 - On Conscience"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Conscience\"."
-pubDate: "Apr. 8, 1788"
+pubDate: "8 квітня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 105 - On Conscience
 
-- Smith's date: Apr. 8, 1788
+- Smith's date: 8 квітня 1788
 
 - Source slug: 105-on-conscience
 

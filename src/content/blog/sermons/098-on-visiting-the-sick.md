@@ -1,7 +1,7 @@
 ---
 title: "Sermon 98 - On Visiting The Sick"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Visiting The Sick\"."
-pubDate: "May 23, 1786"
+pubDate: "23 травня 1786"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 98 - On Visiting The Sick
 
-- Smith's date: May 23, 1786
+- Smith's date: 23 травня 1786
 
 - Source slug: 098-on-visiting-the-sick
 

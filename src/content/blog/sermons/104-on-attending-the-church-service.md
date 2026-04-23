@@ -1,7 +1,7 @@
 ---
 title: "Sermon 104 - On Attending The Church Service"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Attending The Church Service\"."
-pubDate: "Oct. 7, 1787"
+pubDate: "7 жовтня 1787"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 104 - On Attending The Church Service
 
-- Smith's date: Oct. 7, 1787
+- Smith's date: 7 жовтня 1787
 
 - Source slug: 104-on-attending-the-church-service
 

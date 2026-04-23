@@ -1,7 +1,7 @@
 ---
 title: "Sermon 55 - On The Trinity"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Trinity\"."
-pubDate: "June 5, 1773"
+pubDate: "5 червня 1773"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 55 - On The Trinity
 
-- Smith's date: June 5, 1773
-- Outler's date: May 7, 1775
+- Smith's date: 5 червня 1773
+- Outler's date: 7 травня 1775
 
 - Source slug: 055-on-the-trinity
 

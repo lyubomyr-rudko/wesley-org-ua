@@ -1,7 +1,7 @@
 ---
 title: "Sermon 92 - On Zeal"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Zeal\"."
-pubDate: "Oct. 1, 1758"
+pubDate: "1 жовтня 1758"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 92 - On Zeal
 
-- Smith's date: Oct. 1, 1758
-- Outler's date: May 6, 1781
+- Smith's date: 1 жовтня 1758
+- Outler's date: 6 травня 1781
 
 - Source slug: 092-on-zeal
 

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 86 - A Call To Backsliders"
 description: "Плейсхолдер для проповіді Джона Веслі \"A Call To Backsliders\"."
-pubDate: "May 20, 1778"
+pubDate: "20 травня 1778"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 86 - A Call To Backsliders
 
-- Smith's date: May 20, 1778
+- Smith's date: 20 травня 1778
 - Outler's date: 1778
 
 - Source slug: 086-a-call-to-backsliders

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 14 - The Repentance Of Believers"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Repentance Of Believers\"."
-pubDate: "May 26, 1758"
+pubDate: "26 травня 1758"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 14 - The Repentance Of Believers
 
-- Smith's date: May 26, 1758
-- Outler's date: Apr. 24, 1767
+- Smith's date: 26 травня 1758
+- Outler's date: 24 квітня 1767
 
 - Source slug: 014-the-repentance-of-believers
 

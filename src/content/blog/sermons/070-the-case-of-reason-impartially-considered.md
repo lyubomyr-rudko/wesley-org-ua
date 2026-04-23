@@ -1,7 +1,7 @@
 ---
 title: "Sermon 70 - The Case Of Reason Impartially Considered"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Case Of Reason Impartially Considered\"."
-pubDate: "July 6, 1781"
+pubDate: "6 липня 1781"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 70 - The Case Of Reason Impartially Considered
 
-- Smith's date: July 6, 1781
+- Smith's date: 6 липня 1781
 
 - Source slug: 070-the-case-of-reason-impartially-considered
 

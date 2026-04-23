@@ -1,7 +1,7 @@
 ---
 title: "Sermon 20 - The Lord Our Righteousness"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Lord Our Righteousness\"."
-pubDate: "Oct. 22, 1758"
+pubDate: "22 жовтня 1758"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 20 - The Lord Our Righteousness
 
-- Smith's date: Oct. 22, 1758
-- Outler's date: Nov. 24, 1765
+- Smith's date: 22 жовтня 1758
+- Outler's date: 24 листопада 1765
 
 - Source slug: 020-the-lord-our-righteousness
 

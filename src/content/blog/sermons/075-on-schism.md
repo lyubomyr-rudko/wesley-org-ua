@@ -1,7 +1,7 @@
 ---
 title: "Sermon 75 - On Schism"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Schism\"."
-pubDate: "Mar. 30, 1786"
+pubDate: "30 березня 1786"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 75 - On Schism
 
-- Smith's date: Mar. 30, 1786
+- Smith's date: 30 березня 1786
 
 - Source slug: 075-on-schism
 

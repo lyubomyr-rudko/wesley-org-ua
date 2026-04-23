@@ -1,7 +1,7 @@
 ---
 title: "Sermon 60 - The General Deliverance"
 description: "Плейсхолдер для проповіді Джона Веслі \"The General Deliverance\"."
-pubDate: "Nov. 30, 1781"
+pubDate: "30 листопада 1781"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 60 - The General Deliverance
 
-- Smith's date: Nov. 30, 1781
+- Smith's date: 30 листопада 1781
 
 - Source slug: 060-the-general-deliverance
 

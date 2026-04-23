@@ -1,7 +1,7 @@
 ---
 title: "Sermon 140 - On Public Diversions"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Public Diversions\"."
-pubDate: "Sept. 3, 1732"
+pubDate: "3 вересня 1732"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 140 - On Public Diversions
 
-- Smith's date: Sept. 3, 1732
+- Smith's date: 3 вересня 1732
 
 - Source slug: 140-on-public-diversions
 

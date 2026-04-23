@@ -1,7 +1,7 @@
 ---
 title: "Sermon 117 - On Knowing Christ After The Flesh"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Knowing Christ After The Flesh\"."
-pubDate: "Aug. 15, 1789"
+pubDate: "15 серпня 1789"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 117 - On Knowing Christ After The Flesh
 
-- Smith's date: Aug. 15, 1789
+- Smith's date: 15 серпня 1789
 
 - Source slug: 117-on-knowing-christ-after-the-flesh
 

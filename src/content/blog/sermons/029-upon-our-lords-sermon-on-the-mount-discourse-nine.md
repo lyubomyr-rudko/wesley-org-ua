@@ -1,7 +1,7 @@
 ---
 title: "Sermon 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine"
 description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Nine\"."
-pubDate: "Nov. 1-16, 1747"
+pubDate: "1-16 листопада 1747"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine
 
-- Smith's date: Nov. 1-16, 1747
+- Smith's date: 1-16 листопада 1747
 - Outler's date: 1748
 
 - Source slug: 029-upon-our-lords-sermon-on-the-mount-discourse-nine

@@ -6,31 +6,104 @@ const slugify = (value) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
+const monthMap = {
+  "Jan.": "січня",
+  "Feb.": "лютого",
+  "Mar.": "березня",
+  "Apr.": "квітня",
+  May: "травня",
+  June: "червня",
+  July: "липня",
+  "Aug.": "серпня",
+  "Sept.": "вересня",
+  "Oct.": "жовтня",
+  "Nov.": "листопада",
+  "Dec.": "грудня",
+};
+
+const monthRangeMap = {
+  "Jan.-Feb.": "січень-лютий",
+  "May-June": "травень-червень",
+  "Oct.-Nov.": "жовтень-листопад",
+  "Nov.-Dec.": "листопад-грудень",
+  "July-Aug.": "липень-серпень",
+  "Sept.-Oct.": "вересень-жовтень",
+};
+
+const translateDate = (value) => {
+  if (!value) return value;
+
+  const trimmed = value.trim();
+
+  if (/^\d{4}$/.test(trimmed)) {
+    return trimmed;
+  }
+
+  const rangeMatch = trimmed.match(
+    /^(Jan\.-Feb\.|July-Aug\.|May-June|Nov\.-Dec\.|Oct\.-Nov\.|Sept\.-Oct\.)\s+(\d{4})$/,
+  );
+  if (rangeMatch) {
+    return `${monthRangeMap[rangeMatch[1]]} ${rangeMatch[2]}`;
+  }
+
+  const dayMatch = trimmed.match(
+    /^(Jan\.|Feb\.|Mar\.|Apr\.|May|June|July|Aug\.|Sept\.|Oct\.|Nov\.|Dec\.)\s+(\d+(?:-\d+)?),\s+(\d{4})$/,
+  );
+  if (dayMatch) {
+    return `${dayMatch[2]} ${monthMap[dayMatch[1]]} ${dayMatch[3]}`;
+  }
+
+  const monthYearMatch = trimmed.match(
+    /^(Jan\.|Feb\.|Mar\.|Apr\.|May|June|July|Aug\.|Sept\.|Oct\.|Nov\.|Dec\.)\s+(\d{4})$/,
+  );
+  if (monthYearMatch) {
+    const nominativeMonthMap = {
+      "Jan.": "січень",
+      "Feb.": "лютий",
+      "Mar.": "березень",
+      "Apr.": "квітень",
+      May: "травень",
+      June: "червень",
+      July: "липень",
+      "Aug.": "серпень",
+      "Sept.": "вересень",
+      "Oct.": "жовтень",
+      "Nov.": "листопад",
+      "Dec.": "грудень",
+    };
+    return `${nominativeMonthMap[monthYearMatch[1]]} ${monthYearMatch[2]}`;
+  }
+
+  return trimmed;
+};
+
 const parseSermons = (rows) =>
   rows
     .trim()
     .split("\n")
     .map((row) => {
       const [number, title, smithDate, outlerDate = ""] = row.split("|");
+      const slug = `${number.padStart(3, "0")}-${slugify(title)}`;
       return {
         number,
         title,
-        smithDate,
-        outlerDate,
-        slug: `${number.padStart(3, "0")}-${slugify(title)}`,
+        smithDate: translateDate(smithDate),
+        outlerDate: translateDate(outlerDate),
+        slug,
+        contentPath: `sermons/${slug}`,
       };
     });
 
 export const sermonSections = [
   {
-    decade: "1720s",
+    decade: "1720",
     sermons: parseSermons(`
 135|On Mourning For The Dead|Jan. 11, 1727|Oct. 6, 1727
 136|On Corrupting The Word Of God|Oct. 6, 1727|
     `),
   },
   {
-    decade: "1730s",
+    decade: "1730",
     sermons: parseSermons(`
 101|The Duty Of Constant Communion|Feb. 19, 1732|1787
 140|On Public Diversions|Sept. 3, 1732|
@@ -51,7 +124,7 @@ export const sermonSections = [
     `),
   },
   {
-    decade: "1740s",
+    decade: "1740",
     sermons: parseSermons(`
 24|Upon Our Lord's Sermon On The Mount: Discourse Four|Oct. 22-26, 1740|1748
 25|Upon Our Lord's Sermon On The Mount: Discourse Five|Oct. 22-26, 1740|1748
@@ -85,7 +158,7 @@ export const sermonSections = [
     `),
   },
   {
-    decade: "1750s",
+    decade: "1750",
     sermons: parseSermons(`
 129|The Cause And Cure Of Earthquakes|Mar. 9, 1750|
 46|The Wilderness State|Mar. 1, 1751|1760
@@ -103,7 +176,7 @@ export const sermonSections = [
     `),
   },
   {
-    decade: "1760s",
+    decade: "1760",
     sermons: parseSermons(`
 41|Wandering Thoughts|Nov. 30, 1760|1762
 76|On Perfection|Mar. 29, 1761|Dec. 6, 1784
@@ -116,7 +189,7 @@ export const sermonSections = [
     `),
   },
   {
-    decade: "1770s",
+    decade: "1770",
     sermons: parseSermons(`
 53|On The Death Of The Rev. Mr. George Whitefield|Nov. 11, 1770|
 55|On The Trinity|June 5, 1773|May 7, 1775
@@ -131,7 +204,7 @@ export const sermonSections = [
     `),
   },
   {
-    decade: "1780s",
+    decade: "1780",
     sermons: parseSermons(`
 70|The Case Of Reason Impartially Considered|July 6, 1781|
 60|The General Deliverance|Nov. 30, 1781|
@@ -186,7 +259,7 @@ export const sermonSections = [
     `),
   },
   {
-    decade: "1790s",
+    decade: "1790",
     sermons: parseSermons(`
 121|Human Life A Dream|1790|Aug. 1789
 119|On Worldly Folly|Feb. 19, 1790|
@@ -204,7 +277,6 @@ export const allSermons = sermonSections.flatMap((section) =>
   section.sermons.map((sermon) => ({
     ...sermon,
     decade: section.decade,
-    contentPath: `sermons/${sermon.slug}`,
   })),
 );
 

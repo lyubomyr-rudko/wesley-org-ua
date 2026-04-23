@@ -1,7 +1,7 @@
 ---
 title: "Sermon 74 - Of The Church"
 description: "Плейсхолдер для проповіді Джона Веслі \"Of The Church\"."
-pubDate: "Sept. 28, 1785"
+pubDate: "28 вересня 1785"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 74 - Of The Church
 
-- Smith's date: Sept. 28, 1785
+- Smith's date: 28 вересня 1785
 
 - Source slug: 074-of-the-church
 

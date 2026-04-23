@@ -1,7 +1,7 @@
 ---
 title: "Sermon 39 - Catholic Spirit"
 description: "Плейсхолдер для проповіді Джона Веслі \"Catholic Spirit\"."
-pubDate: "Sept. 8, 1749"
+pubDate: "8 вересня 1749"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 39 - Catholic Spirit
 
-- Smith's date: Sept. 8, 1749
+- Smith's date: 8 вересня 1749
 - Outler's date: 1750
 
 - Source slug: 039-catholic-spirit

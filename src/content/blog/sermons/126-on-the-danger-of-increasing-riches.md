@@ -1,7 +1,7 @@
 ---
 title: "Sermon 126 - On The Danger Of Increasing Riches"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Danger Of Increasing Riches\"."
-pubDate: "Sept. 21, 1790"
+pubDate: "21 вересня 1790"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 126 - On The Danger Of Increasing Riches
 
-- Smith's date: Sept. 21, 1790
+- Smith's date: 21 вересня 1790
 
 - Source slug: 126-on-the-danger-of-increasing-riches
 

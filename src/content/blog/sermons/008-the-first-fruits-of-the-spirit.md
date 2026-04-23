@@ -1,7 +1,7 @@
 ---
 title: "Sermon 8 - The First Fruits Of The Spirit"
 description: "Плейсхолдер для проповіді Джона Веслі \"The First Fruits Of The Spirit\"."
-pubDate: "June 25, 1745"
+pubDate: "25 червня 1745"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 8 - The First Fruits Of The Spirit
 
-- Smith's date: June 25, 1745
+- Smith's date: 25 червня 1745
 - Outler's date: 1746
 
 - Source slug: 008-the-first-fruits-of-the-spirit

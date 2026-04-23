@@ -1,7 +1,7 @@
 ---
 title: "Sermon 51 - The Good Steward"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Good Steward\"."
-pubDate: "May 14, 1758"
+pubDate: "14 травня 1758"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 51 - The Good Steward
 
-- Smith's date: May 14, 1758
-- Outler's date: May 14, 1768
+- Smith's date: 14 травня 1758
+- Outler's date: 14 травня 1768
 
 - Source slug: 051-the-good-steward
 

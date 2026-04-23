@@ -1,7 +1,7 @@
 ---
 title: "Sermon 83 - On Patience"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Patience\"."
-pubDate: "July 13, 1761"
+pubDate: "13 липня 1761"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 83 - On Patience
 
-- Smith's date: July 13, 1761
+- Smith's date: 13 липня 1761
 - Outler's date: 1784
 
 - Source slug: 083-on-patience

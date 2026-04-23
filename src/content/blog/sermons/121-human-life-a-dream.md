@@ -11,7 +11,7 @@ tags:
 # Sermon 121 - Human Life A Dream
 
 - Smith's date: 1790
-- Outler's date: Aug. 1789
+- Outler's date: серпень 1789
 
 - Source slug: 121-human-life-a-dream
 

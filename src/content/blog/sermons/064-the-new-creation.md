@@ -11,7 +11,7 @@ tags:
 # Sermon 64 - The New Creation
 
 - Smith's date: 1785
-- Outler's date: Nov.-Dec. 1785
+- Outler's date: листопад-грудень 1785
 
 - Source slug: 064-the-new-creation
 

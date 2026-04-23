@@ -1,7 +1,7 @@
 ---
 title: "Sermon 57 - On The Fall Of Man"
 description: "Плейсхолдер для проповіді Джона Веслі \"On The Fall Of Man\"."
-pubDate: "Mar. 13, 1782"
+pubDate: "13 березня 1782"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 57 - On The Fall Of Man
 
-- Smith's date: Mar. 13, 1782
+- Smith's date: 13 березня 1782
 
 - Source slug: 057-on-the-fall-of-man
 

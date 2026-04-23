@@ -1,7 +1,7 @@
 ---
 title: "Sermon 119 - On Worldly Folly"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Worldly Folly\"."
-pubDate: "Feb. 19, 1790"
+pubDate: "19 лютого 1790"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 119 - On Worldly Folly
 
-- Smith's date: Feb. 19, 1790
+- Smith's date: 19 лютого 1790
 
 - Source slug: 119-on-worldly-folly
 

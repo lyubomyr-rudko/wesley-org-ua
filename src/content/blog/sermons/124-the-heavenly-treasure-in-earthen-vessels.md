@@ -1,7 +1,7 @@
 ---
 title: "Sermon 124 - The Heavenly Treasure In Earthen Vessels"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Heavenly Treasure In Earthen Vessels\"."
-pubDate: "June 17, 1790"
+pubDate: "17 червня 1790"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 124 - The Heavenly Treasure In Earthen Vessels
 
-- Smith's date: June 17, 1790
+- Smith's date: 17 червня 1790
 
 - Source slug: 124-the-heavenly-treasure-in-earthen-vessels
 

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 68 - The Wisdom Of God's Counsel's"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Wisdom Of God's Counsel's\"."
-pubDate: "Apr. 28, 1784"
+pubDate: "28 квітня 1784"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 68 - The Wisdom Of God's Counsel's
 
-- Smith's date: Apr. 28, 1784
+- Smith's date: 28 квітня 1784
 - Outler's date: 1784
 
 - Source slug: 068-the-wisdom-of-gods-counsels

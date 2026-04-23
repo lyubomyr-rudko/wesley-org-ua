@@ -1,7 +1,7 @@
 ---
 title: "Sermon 109 - What Is Man?"
 description: "Плейсхолдер для проповіді Джона Веслі \"What Is Man?\"."
-pubDate: "May 2, 1788"
+pubDate: "2 травня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 109 - What Is Man?
 
-- Smith's date: May 2, 1788
+- Smith's date: 2 травня 1788
 
 - Source slug: 109-what-is-man
 

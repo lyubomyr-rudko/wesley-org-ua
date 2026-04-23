@@ -1,7 +1,7 @@
 ---
 title: "Sermon 108 - On Riches"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Riches\"."
-pubDate: "Apr. 22, 1788"
+pubDate: "22 квітня 1788"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 108 - On Riches
 
-- Smith's date: Apr. 22, 1788
+- Smith's date: 22 квітня 1788
 
 - Source slug: 108-on-riches
 

@@ -1,7 +1,7 @@
 ---
 title: "Sermon 34 - The Original, Nature, Property, And Use Of The Law"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Original, Nature, Property, And Use Of The Law\"."
-pubDate: "Nov. 1-7, 1749"
+pubDate: "1-7 листопада 1749"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 34 - The Original, Nature, Property, And Use Of The Law
 
-- Smith's date: Nov. 1-7, 1749
+- Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 
 - Source slug: 034-the-original-nature-property-and-use-of-the-law

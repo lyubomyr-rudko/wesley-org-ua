@@ -1,7 +1,7 @@
 ---
 title: "Sermon 46 - The Wilderness State"
 description: "Плейсхолдер для проповіді Джона Веслі \"The Wilderness State\"."
-pubDate: "Mar. 1, 1751"
+pubDate: "1 березня 1751"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 46 - The Wilderness State
 
-- Smith's date: Mar. 1, 1751
+- Smith's date: 1 березня 1751
 - Outler's date: 1760
 
 - Source slug: 046-the-wilderness-state

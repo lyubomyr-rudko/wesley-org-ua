@@ -1,7 +1,7 @@
 ---
 title: "Sermon 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten"
 description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Ten\"."
-pubDate: "June 2, 1742"
+pubDate: "2 червня 1742"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten
 
-- Smith's date: June 2, 1742
+- Smith's date: 2 червня 1742
 - Outler's date: 1750
 
 - Source slug: 030-upon-our-lords-sermon-on-the-mount-discourse-ten

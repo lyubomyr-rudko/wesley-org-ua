@@ -1,7 +1,7 @@
 ---
 title: "Sermon 100 - On Pleasing All Men"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Pleasing All Men\"."
-pubDate: "May 22, 1787"
+pubDate: "22 травня 1787"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 100 - On Pleasing All Men
 
-- Smith's date: May 22, 1787
+- Smith's date: 22 травня 1787
 
 - Source slug: 100-on-pleasing-all-men
 

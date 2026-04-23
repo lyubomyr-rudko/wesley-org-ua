@@ -1,7 +1,7 @@
 ---
 title: "Sermon 45 - The New Birth"
 description: "Плейсхолдер для проповіді Джона Веслі \"The New Birth\"."
-pubDate: "May 29, 1743"
+pubDate: "29 травня 1743"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 45 - The New Birth
 
-- Smith's date: May 29, 1743
+- Smith's date: 29 травня 1743
 - Outler's date: 1760
 
 - Source slug: 045-the-new-birth

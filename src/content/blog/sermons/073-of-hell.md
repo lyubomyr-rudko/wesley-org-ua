@@ -1,7 +1,7 @@
 ---
 title: "Sermon 73 - Of Hell"
 description: "Плейсхолдер для проповіді Джона Веслі \"Of Hell\"."
-pubDate: "Oct. 10, 1782"
+pubDate: "10 жовтня 1782"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,7 +10,7 @@ tags:
 
 # Sermon 73 - Of Hell
 
-- Smith's date: Oct. 10, 1782
+- Smith's date: 10 жовтня 1782
 
 - Source slug: 073-of-hell
 

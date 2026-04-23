@@ -1,7 +1,7 @@
 ---
 title: "Sermon 135 - On Mourning For The Dead"
 description: "Плейсхолдер для проповіді Джона Веслі \"On Mourning For The Dead\"."
-pubDate: "Jan. 11, 1727"
+pubDate: "11 січня 1727"
 author: "John Wesley"
 tags:
   - "sermon"
@@ -10,8 +10,8 @@ tags:
 
 # Sermon 135 - On Mourning For The Dead
 
-- Smith's date: Jan. 11, 1727
-- Outler's date: Oct. 6, 1727
+- Smith's date: 11 січня 1727
+- Outler's date: 6 жовтня 1727
 
 - Source slug: 135-on-mourning-for-the-dead
 
