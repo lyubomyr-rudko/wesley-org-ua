@@ -1,7 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import '../styles/github-blog.css';
-
+import astroLogo from '../assets/astro.svg';
 const { frontmatter } = Astro.props;
 const title = frontmatter?.title ?? 'Untitled Post';
 const description = frontmatter?.description ?? '';
@@ -28,10 +28,6 @@ const author = frontmatter?.author ?? 'Unknown author';
         <div class="tag-list">
           {tags.map((tag) => <span class="tag">{tag}</span>)}
         </div>
-      )}
-
-      {heroImage && (
-        <img class="hero-image" src={heroImage} alt={title} />
       )}
     </header>
 
