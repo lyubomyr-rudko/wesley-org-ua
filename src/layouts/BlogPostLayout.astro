@@ -1,23 +1,20 @@
 ---
-import BaseLayout from './BaseLayout.astro';
-import '../styles/github-blog.css';
-import astroLogo from '../assets/astro.svg';
+import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
-const title = frontmatter?.title ?? 'Untitled Post';
-const description = frontmatter?.description ?? '';
-const pubDate = frontmatter?.pubDate ?? '';
+const title = frontmatter?.title ?? "Untitled Post";
+const description = frontmatter?.description ?? "";
+const pubDate = frontmatter?.pubDate ?? "";
 const tags = frontmatter?.tags ?? [];
-const heroImage = frontmatter?.heroImage ?? '';
-const author = frontmatter?.author ?? 'Unknown author';
+const author = frontmatter?.author ?? "Unknown author";
 ---
 
 <BaseLayout title={title} description={description}>
-  <article class="markdown-body blog-post-card">
-    <div class="post-content">
-      <slot />
-    </div>
-
+  <article class="blog-post-card">
     <header class="post-header">
+      <p class="post-eyebrow">Матеріал центру</p>
+      <h1>{title}</h1>
+      {description && <p class="post-description">{description}</p>}
+
       <div class="post-meta">
         <span>{author}</span>
         {pubDate && <span>• {pubDate}</span>}
@@ -29,5 +26,9 @@ const author = frontmatter?.author ?? 'Unknown author';
         </div>
       )}
     </header>
+
+    <div class="markdown-body post-content">
+      <slot />
+    </div>
   </article>
 </BaseLayout>

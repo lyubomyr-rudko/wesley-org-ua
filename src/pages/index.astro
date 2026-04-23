@@ -1,207 +1,72 @@
 ---
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-import "../styles/github-blog.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const posts = await getCollection("blog");
+const posts = (await getCollection("blog")).sort((a, b) =>
+  (b.data.pubDate ?? "").localeCompare(a.data.pubDate ?? ""),
+);
 type BlogPostEntry = CollectionEntry<"blog">;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-  </head>
-  <body>
-    <main class="home-page">
-      <section class="hero">
-        <h1 class="hero-title">Центр Джона Веслі українською</h1>
-        <p class="hero-description">
-          Джон Веслі 
+<BaseLayout
+  title="Центр Джона Веслі українською"
+  description="Переклади, дослідження та матеріали про життя, проповідь і духовну спадщину Джона Веслі."
+>
+  <div class="home-shell">
+    <section class="home-hero">
+      <p class="home-kicker">We love as Christ loved</p>
+      <h1 class="home-title">Центр Джона Веслі українською</h1>
+      <p class="home-summary">
+        Переклади, дослідження та добірка матеріалів про життя, проповідь,
+        богослов'я і духовну спадщину Джона Веслі для українського читача.
+      </p>
+
+      <div class="home-actions">
+        <a class="button-primary" href="#materials">Читати матеріали</a>
+        {posts[0] && (
+          <a class="button-secondary" href={`/${posts[0].id}/`}>
+            Відкрити останню публікацію
+          </a>
+        )}
+      </div>
+    </section>
+
+    <section class="mission-card">
+      <p class="mission-label">Спадщина Веслі</p>
+      <h2 class="mission-title">Святість серця і життя</h2>
+      <p class="mission-text">
+        Сайт збирає тексти, що показують, як проповідь благодаті, дисципліна
+        духовного життя і служіння ближньому формували методистський рух.
+      </p>
+    </section>
+
+    <section class="archive-card" id="materials">
+      <div class="archive-header">
+        <p class="archive-eyebrow">Матеріали центру</p>
+        <h2>Читайте тексти про Джона Веслі та методизм</h2>
+        <p class="archive-summary">
+          Загалом на сайті: <span class="count">{posts.length}</span> сторінок
         </p>
-      </section>
+      </div>
 
-      <section class="archive-card">
-        <div class="archive-header">
-          <p>
-            Загалом на сайті: <span class="count">{posts.length}</span> сторінок
-          </p>
-        </div>
-
-        <ul class="post-list">
-          {
-            posts.map((post: BlogPostEntry) => (
-              <li class="post-item">
-                <a
-                  class="post-link"
-                  href={`/${post.id}/`}
-                >
-                  <span class="post-title">{post.data.title}</span>
-                  {post.data.pubDate && (
-                    <span class="post-date">{post.data.pubDate}</span>
-                  )}
-                </a>
-
+      <ul class="post-list">
+        {
+          posts.map((post: BlogPostEntry) => (
+            <li class="post-item">
+              <a class="post-link" href={`/${post.id}/`}>
+                {post.data.pubDate && (
+                  <span class="post-date">{post.data.pubDate}</span>
+                )}
+                <span class="post-title">{post.data.title}</span>
                 {post.data.description && (
                   <p class="post-description">{post.data.description}</p>
                 )}
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-  </body>
-</html>
-
-<style>
-  :global(:root) {
-    --bgColor-default: #ffffff;
-    --bgColor-muted: #f6f8fa;
-    --fgColor-default: #1f2328;
-    --fgColor-muted: #59636e;
-    --borderColor-default: #d0d7de;
-    --borderColor-muted: #d8dee4;
-    --accent-fg: #0969da;
-    --shadow-small: 0 1px 3px rgba(31, 35, 40, 0.08);
-  }
-
-  :global(body) {
-    margin: 0;
-    background: var(--bgColor-muted);
-    color: var(--fgColor-default);
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  }
-
-  .home-page {
-    width: min(100%, 980px);
-    margin: 0 auto;
-    padding: 2rem 1rem 3rem;
-  }
-
-  .hero {
-    margin-bottom: 1.5rem;
-    padding: 2rem;
-    background: var(--bgColor-default);
-    border: 1px solid var(--borderColor-default);
-    border-radius: 12px;
-    box-shadow: var(--shadow-small);
-  }
-
-  .hero-eyebrow {
-    margin: 0 0 0.75rem;
-    color: var(--fgColor-muted);
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-
-  .hero-title {
-    margin: 0;
-    font-size: clamp(2rem, 5vw, 2.75rem);
-    line-height: 1.15;
-  }
-
-  .hero-description {
-    margin: 1rem 0 0;
-    font-size: 1.05rem;
-    color: var(--fgColor-muted);
-    max-width: 720px;
-  }
-
-  .archive-card {
-    background: var(--bgColor-default);
-    border: 1px solid var(--borderColor-default);
-    border-radius: 12px;
-    box-shadow: var(--shadow-small);
-    overflow: hidden;
-  }
-
-  .archive-header {
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid var(--borderColor-muted);
-  }
-
-  .archive-header h2 {
-    margin: 0 0 0.5rem;
-    font-size: 1.4rem;
-  }
-
-  .archive-header p {
-    margin: 0;
-    color: var(--fgColor-muted);
-  }
-
-  .count {
-    color: var(--fgColor-default);
-    font-weight: 600;
-  }
-
-  .post-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .post-item {
-    padding: 1.25rem 2rem;
-    border-top: 1px solid var(--borderColor-muted);
-  }
-
-  .post-item:first-child {
-    border-top: 0;
-  }
-
-  .post-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .post-link:hover .post-title {
-    color: var(--accent-fg);
-    text-decoration: underline;
-  }
-
-  .post-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-  }
-
-  .post-date {
-    white-space: nowrap;
-    color: var(--fgColor-muted);
-    font-size: 0.95rem;
-  }
-
-  .post-description {
-    margin: 0.65rem 0 0;
-    color: var(--fgColor-muted);
-    line-height: 1.6;
-  }
-
-  @media (max-width: 720px) {
-    .home-page {
-      padding: 1rem 0.75rem 2rem;
-    }
-
-    .hero,
-    .archive-header,
-    .post-item {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    .post-link {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.35rem;
-    }
-  }
-</style>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
