@@ -1,5 +1,6 @@
 ---
-const { title = "My Blog", description = "Astro blog" } = Astro.props;
+const { title = "Джон Веслі українською", description = "" } = Astro.props;
+const homeHref = Astro.url.pathname.startsWith("/posts/") ? "../" : "./";
 ---
 
 <!doctype html>
@@ -13,9 +14,9 @@ const { title = "My Blog", description = "Astro blog" } = Astro.props;
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href={import.meta.env.BASE_URL} class="brand">My Blog</a>
+        <a href={homeHref} class="brand">Центр Джона Веслі українською</a>
         <nav class="nav">
-          <a href={import.meta.env.BASE_URL}>Home</a>
+          <a href={homeHref}>Home</a>
         </nav>
       </div>
     </header>

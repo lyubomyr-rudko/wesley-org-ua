@@ -13,16 +13,15 @@ const author = frontmatter?.author ?? 'Unknown author';
 
 <BaseLayout title={title} description={description}>
   <article class="markdown-body blog-post-card">
-    <header class="post-header">
-      <p class="post-eyebrow">Blog post</p>
-      <h1>{title}</h1>
+    <div class="post-content">
+      <slot />
+    </div>
 
+    <header class="post-header">
       <div class="post-meta">
         <span>{author}</span>
         {pubDate && <span>• {pubDate}</span>}
       </div>
-
-      {description && <p class="post-description">{description}</p>}
 
       {tags.length > 0 && (
         <div class="tag-list">
@@ -30,9 +29,5 @@ const author = frontmatter?.author ?? 'Unknown author';
         </div>
       )}
     </header>
-
-    <div class="post-content">
-      <slot />
-    </div>
   </article>
 </BaseLayout>
