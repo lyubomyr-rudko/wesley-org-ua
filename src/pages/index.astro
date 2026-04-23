@@ -16,18 +16,16 @@ type BlogPostEntry = CollectionEntry<"blog">;
   <body>
     <main class="home-page">
       <section class="hero">
-        <p class="hero-eyebrow">Astro Blog</p>
-        <h1 class="hero-title">My Blog</h1>
+        <h1 class="hero-title">Центр Джона Веслі українською</h1>
         <p class="hero-description">
-          Notes, tutorials, and experiments while learning Astro.
+          Джон Веслі 
         </p>
       </section>
 
       <section class="archive-card">
         <div class="archive-header">
-          <h2>Post Archive</h2>
           <p>
-            There are currently <span class="count">{posts.length}</span> posts
+            Загалом на сайті: <span class="count">{posts.length}</span> сторінок
           </p>
         </div>
 
@@ -37,7 +35,7 @@ type BlogPostEntry = CollectionEntry<"blog">;
               <li class="post-item">
                 <a
                   class="post-link"
-                  href={`posts/${post.id}/`}
+                  href={`/${post.id}/`}
                 >
                   <span class="post-title">{post.data.title}</span>
                   {post.data.pubDate && (

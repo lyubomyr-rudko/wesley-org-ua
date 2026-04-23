@@ -1,6 +1,5 @@
 ---
 const { title = "Джон Веслі українською", description = "" } = Astro.props;
-const homeHref = Astro.url.pathname.startsWith("/posts/") ? "../" : "./";
 ---
 
 <!doctype html>
@@ -14,9 +13,9 @@ const homeHref = Astro.url.pathname.startsWith("/posts/") ? "../" : "./";
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href={homeHref} class="brand">Центр Джона Веслі українською</a>
+        <a href="/" class="brand">Центр Джона Веслі українською</a>
         <nav class="nav">
-          <a href={homeHref}>Home</a>
+          <a href="/">Головна Сторінка</a>
         </nav>
       </div>
     </header>
@@ -27,7 +26,14 @@ const homeHref = Astro.url.pathname.startsWith("/posts/") ? "../" : "./";
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>Built with Astro</p>
+        <div class="footer-copy">
+          <p class="footer-title">Центр Джона Веслі українською</p>
+          <p class="footer-text">
+            Тексти, переклади та матеріали про проповідь, богослов'я і духовну
+            спадщину Джона Веслі.
+          </p>
+        </div>
+        <p class="footer-note">Жива віра, святість серця і служіння ближньому.</p>
       </div>
     </footer>
   </body>
