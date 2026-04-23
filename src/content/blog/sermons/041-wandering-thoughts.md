@@ -1,8 +1,8 @@
 ---
-title: "Sermon 41 - Wandering Thoughts"
-description: "Плейсхолдер для проповіді Джона Веслі \"Wandering Thoughts\"."
+title: "Проповідь 41 - Wandering Thoughts"
+description: 'Переклад проповіді "Wandering Thoughts".'
 pubDate: "30 листопада 1760"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

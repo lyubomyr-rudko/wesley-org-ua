@@ -1,8 +1,8 @@
 ---
-title: "Sermon 110 - On Discoveries Of Faith"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Discoveries Of Faith\"."
+title: "Проповідь 110 - On Discoveries Of Faith"
+description: 'Переклад проповіді "On Discoveries Of Faith".'
 pubDate: "27 жовтня 1761"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

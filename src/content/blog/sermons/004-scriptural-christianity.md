@@ -1,8 +1,8 @@
 ---
-title: "Sermon 4 - Scriptural Christianity"
-description: "Плейсхолдер для проповіді Джона Веслі \"Scriptural Christianity\"."
+title: "Проповідь 4 - Scriptural Christianity"
+description: 'Переклад проповіді "Scriptural Christianity".'
 pubDate: "24 серпня 1744"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

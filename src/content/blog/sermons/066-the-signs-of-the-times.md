@@ -1,8 +1,8 @@
 ---
-title: "Sermon 66 - The Signs Of The Times"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Signs Of The Times\"."
+title: "Проповідь 66 - The Signs Of The Times"
+description: 'Переклад проповіді "The Signs Of The Times".'
 pubDate: "27 серпня 1777"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 114 - The Unity Of The Divine Being"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Unity Of The Divine Being\"."
+title: "Проповідь 114 - The Unity Of The Divine Being"
+description: 'Переклад проповіді "The Unity Of The Divine Being".'
 pubDate: "9 квітня 1789"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

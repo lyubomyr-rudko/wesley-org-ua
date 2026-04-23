@@ -1,8 +1,8 @@
 ---
-title: "Sermon 16 - The Means Of Grace"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Means Of Grace\"."
+title: "Проповідь 16 - The Means Of Grace"
+description: 'Переклад проповіді "The Means Of Grace".'
 pubDate: "15 листопада 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

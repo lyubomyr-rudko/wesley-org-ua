@@ -1,8 +1,8 @@
 ---
-title: "Sermon 128 - Free Grace"
-description: "Плейсхолдер для проповіді Джона Веслі \"Free Grace\"."
+title: "Проповідь 128 - Free Grace"
+description: 'Переклад проповіді "Free Grace".'
 pubDate: "29 квітня 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

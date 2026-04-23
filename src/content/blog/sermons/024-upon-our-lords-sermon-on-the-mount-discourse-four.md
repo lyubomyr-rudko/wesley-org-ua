@@ -1,8 +1,8 @@
 ---
-title: "Sermon 24 - Upon Our Lord's Sermon On The Mount: Discourse Four"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Four\"."
+title: "Проповідь 24 - Upon Our Lord's Sermon On The Mount: Discourse Four"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Four".'
 pubDate: "22-26 жовтня 1740"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

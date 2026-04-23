@@ -1,8 +1,8 @@
 ---
-title: "Sermon 140 - On Public Diversions"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Public Diversions\"."
+title: "Проповідь 140 - On Public Diversions"
+description: 'Переклад проповіді "On Public Diversions".'
 pubDate: "3 вересня 1732"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

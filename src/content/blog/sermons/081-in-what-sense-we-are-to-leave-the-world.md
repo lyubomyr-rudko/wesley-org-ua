@@ -1,8 +1,8 @@
 ---
-title: "Sermon 81 - In What Sense We Are To Leave The World"
-description: "Плейсхолдер для проповіді Джона Веслі \"In What Sense We Are To Leave The World\"."
+title: "Проповідь 81 - In What Sense We Are To Leave The World"
+description: 'Переклад проповіді "In What Sense We Are To Leave The World".'
 pubDate: "17 липня 1784"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

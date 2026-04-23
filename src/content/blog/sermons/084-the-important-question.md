@@ -1,8 +1,8 @@
 ---
-title: "Sermon 84 - The Important Question"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Important Question\"."
+title: "Проповідь 84 - The Important Question"
+description: 'Переклад проповіді "The Important Question".'
 pubDate: "11 вересня 1775"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

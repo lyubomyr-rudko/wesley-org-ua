@@ -1,8 +1,8 @@
 ---
-title: "Sermon 11 - The Witness Of The Spirit: Discourse Two"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Witness Of The Spirit: Discourse Two\"."
+title: "Проповідь 11 - The Witness Of The Spirit: Discourse Two"
+description: 'Переклад проповіді "The Witness Of The Spirit: Discourse Two".'
 pubDate: "4 квітня 1767"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

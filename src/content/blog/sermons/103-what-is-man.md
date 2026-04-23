@@ -1,8 +1,8 @@
 ---
-title: "Sermon 103 - What Is Man?"
-description: "Плейсхолдер для проповіді Джона Веслі \"What Is Man?\"."
+title: "Проповідь 103 - What Is Man?"
+description: 'Переклад проповіді "What Is Man?".'
 pubDate: "23 липня 1787"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

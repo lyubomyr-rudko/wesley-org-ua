@@ -1,8 +1,8 @@
 ---
-title: "Sermon 9 - The Spirit Of Bondage And Of Adoption"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Spirit Of Bondage And Of Adoption\"."
+title: "Проповідь 9 - The Spirit Of Bondage And Of Adoption"
+description: 'Переклад проповіді "The Spirit Of Bondage And Of Adoption".'
 pubDate: "25 квітня 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

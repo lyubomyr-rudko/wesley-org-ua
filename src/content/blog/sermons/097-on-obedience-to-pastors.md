@@ -1,8 +1,8 @@
 ---
-title: "Sermon 97 - On Obedience To Pastors"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Obedience To Pastors\"."
+title: "Проповідь 97 - On Obedience To Pastors"
+description: 'Переклад проповіді "On Obedience To Pastors".'
 pubDate: "18 березня 1785"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

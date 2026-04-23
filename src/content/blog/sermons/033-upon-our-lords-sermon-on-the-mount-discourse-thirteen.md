@@ -1,8 +1,8 @@
 ---
-title: "Sermon 33 - Upon Our Lord's Sermon On The Mount: Discourse Thirteen"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Thirteen\"."
+title: "Проповідь 33 - Upon Our Lord's Sermon On The Mount: Discourse Thirteen"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Thirteen".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 105 - On Conscience"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Conscience\"."
+title: "Проповідь 105 - On Conscience"
+description: 'Переклад проповіді "On Conscience".'
 pubDate: "8 квітня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

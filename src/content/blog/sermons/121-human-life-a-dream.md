@@ -1,8 +1,8 @@
 ---
-title: "Sermon 121 - Human Life A Dream"
-description: "Плейсхолдер для проповіді Джона Веслі \"Human Life A Dream\"."
+title: "Проповідь 121 - Human Life A Dream"
+description: 'Переклад проповіді "Human Life A Dream".'
 pubDate: "1790"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

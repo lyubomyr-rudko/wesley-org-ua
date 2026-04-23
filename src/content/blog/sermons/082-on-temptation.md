@@ -1,8 +1,8 @@
 ---
-title: "Sermon 82 - On Temptation"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Temptation\"."
+title: "Проповідь 82 - On Temptation"
+description: 'Переклад проповіді "On Temptation".'
 pubDate: "7 жовтня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 61 - The Mystery Of Iniquity"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Mystery Of Iniquity\"."
+title: "Проповідь 61 - The Mystery Of Iniquity"
+description: 'Переклад проповіді "The Mystery Of Iniquity".'
 pubDate: "1783"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

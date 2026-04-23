@@ -1,8 +1,8 @@
 ---
-title: "Sermon 23 - Upon Our Lord's Sermon On The Mount: Discourse Three"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Three\"."
+title: "Проповідь 23 - Upon Our Lord's Sermon On The Mount: Discourse Three"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Three".'
 pubDate: "21 липня 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 49 - The Cure Of Evil-speaking"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Cure Of Evil-speaking\"."
+title: "Проповідь 49 - The Cure Of Evil-speaking"
+description: 'Переклад проповіді "The Cure Of Evil-speaking".'
 pubDate: "5 лютого 1752"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

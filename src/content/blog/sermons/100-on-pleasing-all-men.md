@@ -1,8 +1,8 @@
 ---
-title: "Sermon 100 - On Pleasing All Men"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Pleasing All Men\"."
+title: "Проповідь 100 - On Pleasing All Men"
+description: 'Переклад проповіді "On Pleasing All Men".'
 pubDate: "22 травня 1787"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 37 - The Nature Of Enthusiasm"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Nature Of Enthusiasm\"."
+title: "Проповідь 37 - The Nature Of Enthusiasm"
+description: 'Переклад проповіді "The Nature Of Enthusiasm".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

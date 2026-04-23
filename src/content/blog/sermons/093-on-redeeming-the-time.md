@@ -1,8 +1,8 @@
 ---
-title: "Sermon 93 - On Redeeming The Time"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Redeeming The Time\"."
+title: "Проповідь 93 - On Redeeming The Time"
+description: 'Переклад проповіді "On Redeeming The Time".'
 pubDate: "20 січня 1782"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

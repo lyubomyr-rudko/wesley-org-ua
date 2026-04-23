@@ -1,8 +1,8 @@
 ---
-title: "Sermon 99 - The Reward Of The Righteous"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Reward Of The Righteous\"."
+title: "Проповідь 99 - The Reward Of The Righteous"
+description: 'Переклад проповіді "The Reward Of The Righteous".'
 pubDate: "21 листопада 1777"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

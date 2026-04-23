@@ -1,8 +1,8 @@
 ---
-title: "Sermon 17 - The Circumcision Of The Heart"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Circumcision Of The Heart\"."
+title: "Проповідь 17 - The Circumcision Of The Heart"
+description: 'Переклад проповіді "The Circumcision Of The Heart".'
 pubDate: "1 січня 1733"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

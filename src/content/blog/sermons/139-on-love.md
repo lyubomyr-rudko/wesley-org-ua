@@ -1,8 +1,8 @@
 ---
-title: "Sermon 139 - On Love"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Love\"."
+title: "Проповідь 139 - On Love"
+description: 'Переклад проповіді "On Love".'
 pubDate: "20 лютого 1737"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

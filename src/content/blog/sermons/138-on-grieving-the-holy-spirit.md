@@ -1,8 +1,8 @@
 ---
-title: "Sermon 138 - On Grieving The Holy Spirit"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Grieving The Holy Spirit\"."
+title: "Проповідь 138 - On Grieving The Holy Spirit"
+description: 'Переклад проповіді "On Grieving The Holy Spirit".'
 pubDate: "1733"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

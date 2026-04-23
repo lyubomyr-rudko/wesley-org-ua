@@ -1,8 +1,8 @@
 ---
-title: "Sermon 58 - On Predestination"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Predestination\"."
+title: "Проповідь 58 - On Predestination"
+description: 'Переклад проповіді "On Predestination".'
 pubDate: "7 травня 1775"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

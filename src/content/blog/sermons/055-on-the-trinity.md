@@ -1,8 +1,8 @@
 ---
-title: "Sermon 55 - On The Trinity"
-description: "Плейсхолдер для проповіді Джона Веслі \"On The Trinity\"."
+title: "Проповідь 55 - On The Trinity"
+description: 'Переклад проповіді "On The Trinity".'
 pubDate: "5 червня 1773"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

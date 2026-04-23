@@ -1,8 +1,8 @@
 ---
-title: "Sermon 118 - On A Single Eye"
-description: "Плейсхолдер для проповіді Джона Веслі \"On A Single Eye\"."
+title: "Проповідь 118 - On A Single Eye"
+description: 'Переклад проповіді "On A Single Eye".'
 pubDate: "29 листопада 1761"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Ten\"."
+title: "Проповідь 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Ten".'
 pubDate: "2 червня 1742"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

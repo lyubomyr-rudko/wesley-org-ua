@@ -1,8 +1,8 @@
 ---
-title: "Sermon 18 - The Marks Of The New Birth"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Marks Of The New Birth\"."
+title: "Проповідь 18 - The Marks Of The New Birth"
+description: 'Переклад проповіді "The Marks Of The New Birth".'
 pubDate: "3 квітня 1741"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

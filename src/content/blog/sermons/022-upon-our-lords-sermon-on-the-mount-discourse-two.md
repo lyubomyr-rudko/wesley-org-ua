@@ -1,8 +1,8 @@
 ---
-title: "Sermon 22 - Upon Our Lord's Sermon On The Mount: Discourse Two"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Two\"."
+title: "Проповідь 22 - Upon Our Lord's Sermon On The Mount: Discourse Two"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Two".'
 pubDate: "21 липня 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 63 - The General Spread Of The Gospel"
-description: "Плейсхолдер для проповіді Джона Веслі \"The General Spread Of The Gospel\"."
+title: "Проповідь 63 - The General Spread Of The Gospel"
+description: 'Переклад проповіді "The General Spread Of The Gospel".'
 pubDate: "22 квітня 1783"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

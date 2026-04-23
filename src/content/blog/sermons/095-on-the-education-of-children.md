@@ -1,8 +1,8 @@
 ---
-title: "Sermon 95 - On The Education Of Children"
-description: "Плейсхолдер для проповіді Джона Веслі \"On The Education Of Children\"."
+title: "Проповідь 95 - On The Education Of Children"
+description: 'Переклад проповіді "On The Education Of Children".'
 pubDate: "12 липня 1783"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

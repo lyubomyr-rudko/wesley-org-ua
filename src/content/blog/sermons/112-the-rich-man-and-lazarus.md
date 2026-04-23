@@ -1,8 +1,8 @@
 ---
-title: "Sermon 112 - The Rich Man And Lazarus"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Rich Man And Lazarus\"."
+title: "Проповідь 112 - The Rich Man And Lazarus"
+description: 'Переклад проповіді "The Rich Man And Lazarus".'
 pubDate: "25 березня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

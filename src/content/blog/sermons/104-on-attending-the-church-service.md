@@ -1,8 +1,8 @@
 ---
-title: "Sermon 104 - On Attending The Church Service"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Attending The Church Service\"."
+title: "Проповідь 104 - On Attending The Church Service"
+description: 'Переклад проповіді "On Attending The Church Service".'
 pubDate: "7 жовтня 1787"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

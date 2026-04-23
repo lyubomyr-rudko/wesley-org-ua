@@ -1,8 +1,8 @@
 ---
-title: "Sermon 101 - The Duty Of Constant Communion"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Duty Of Constant Communion\"."
+title: "Проповідь 101 - The Duty Of Constant Communion"
+description: 'Переклад проповіді "The Duty Of Constant Communion".'
 pubDate: "19 лютого 1732"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

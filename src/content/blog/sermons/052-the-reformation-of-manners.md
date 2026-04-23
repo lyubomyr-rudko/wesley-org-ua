@@ -1,8 +1,8 @@
 ---
-title: "Sermon 52 - The Reformation Of Manners"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Reformation Of Manners\"."
+title: "Проповідь 52 - The Reformation Of Manners"
+description: 'Переклад проповіді "The Reformation Of Manners".'
 pubDate: "30 січня 1763"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 67 - On Divine Providence"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Divine Providence\"."
+title: "Проповідь 67 - On Divine Providence"
+description: 'Переклад проповіді "On Divine Providence".'
 pubDate: "3 березня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

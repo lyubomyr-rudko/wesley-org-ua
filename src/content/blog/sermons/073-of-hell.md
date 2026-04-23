@@ -1,8 +1,8 @@
 ---
-title: "Sermon 73 - Of Hell"
-description: "Плейсхолдер для проповіді Джона Веслі \"Of Hell\"."
+title: "Проповідь 73 - Of Hell"
+description: 'Переклад проповіді "Of Hell".'
 pubDate: "10 жовтня 1782"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

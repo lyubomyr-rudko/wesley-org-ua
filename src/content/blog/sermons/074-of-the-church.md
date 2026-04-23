@@ -1,8 +1,8 @@
 ---
-title: "Sermon 74 - Of The Church"
-description: "Плейсхолдер для проповіді Джона Веслі \"Of The Church\"."
+title: "Проповідь 74 - Of The Church"
+description: 'Переклад проповіді "Of The Church".'
 pubDate: "28 вересня 1785"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

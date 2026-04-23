@@ -1,8 +1,8 @@
 ---
-title: "Sermon 5 - Justification By Faith"
-description: "Плейсхолдер для проповіді Джона Веслі \"Justification By Faith\"."
+title: "Проповідь 5 - Justification By Faith"
+description: 'Переклад проповіді "Justification By Faith".'
 pubDate: "6 жовтня 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

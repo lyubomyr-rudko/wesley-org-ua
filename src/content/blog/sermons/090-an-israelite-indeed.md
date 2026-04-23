@@ -1,8 +1,8 @@
 ---
-title: "Sermon 90 - An Israelite Indeed"
-description: "Плейсхолдер для проповіді Джона Веслі \"An Israelite Indeed\"."
+title: "Проповідь 90 - An Israelite Indeed"
+description: 'Переклад проповіді "An Israelite Indeed".'
 pubDate: "1785"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

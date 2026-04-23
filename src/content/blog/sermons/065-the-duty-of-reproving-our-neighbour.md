@@ -1,8 +1,8 @@
 ---
-title: "Sermon 65 - The Duty Of Reproving Our Neighbour"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Duty Of Reproving Our Neighbour\"."
+title: "Проповідь 65 - The Duty Of Reproving Our Neighbour"
+description: 'Переклад проповіді "The Duty Of Reproving Our Neighbour".'
 pubDate: "28 липня 1787"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

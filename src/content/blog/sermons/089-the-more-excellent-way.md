@@ -1,8 +1,8 @@
 ---
-title: "Sermon 89 - The More Excellent Way"
-description: "Плейсхолдер для проповіді Джона Веслі \"The More Excellent Way\"."
+title: "Проповідь 89 - The More Excellent Way"
+description: 'Переклад проповіді "The More Excellent Way".'
 pubDate: "1787"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

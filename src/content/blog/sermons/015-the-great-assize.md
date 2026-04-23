@@ -1,8 +1,8 @@
 ---
-title: "Sermon 15 - The Great Assize"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Great Assize\"."
+title: "Проповідь 15 - The Great Assize"
+description: 'Переклад проповіді "The Great Assize".'
 pubDate: "10 березня 1758"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

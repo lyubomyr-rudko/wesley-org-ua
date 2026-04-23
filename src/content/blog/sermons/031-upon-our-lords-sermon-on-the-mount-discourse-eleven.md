@@ -1,8 +1,8 @@
 ---
-title: "Sermon 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Eleven\"."
+title: "Проповідь 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Eleven".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

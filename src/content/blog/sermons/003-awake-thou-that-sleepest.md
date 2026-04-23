@@ -1,8 +1,8 @@
 ---
-title: "Sermon 3 - Awake, Thou That Sleepest"
-description: "Плейсхолдер для проповіді Джона Веслі \"Awake, Thou That Sleepest\"."
+title: "Проповідь 3 - Awake, Thou That Sleepest"
+description: 'Переклад проповіді "Awake, Thou That Sleepest".'
 pubDate: "4 квітня 1742"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 12 - The Witness Of Our Own Spirit"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Witness Of Our Own Spirit\"."
+title: "Проповідь 12 - The Witness Of Our Own Spirit"
+description: 'Переклад проповіді "The Witness Of Our Own Spirit".'
 pubDate: "травень-червень 1746"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 42 - Satan's Devices"
-description: "Плейсхолдер для проповіді Джона Веслі \"Satan's Devices\"."
+title: "Проповідь 42 - Satan's Devices"
+description: 'Переклад проповіді "Satan''s Devices".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

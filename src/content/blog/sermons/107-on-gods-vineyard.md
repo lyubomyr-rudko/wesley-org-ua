@@ -1,8 +1,8 @@
 ---
-title: "Sermon 107 - On God's Vineyard"
-description: "Плейсхолдер для проповіді Джона Веслі \"On God's Vineyard\"."
+title: "Проповідь 107 - On God's Vineyard"
+description: 'Переклад проповіді "On God''s Vineyard".'
 pubDate: "5 грудня 1779"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

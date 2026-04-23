@@ -1,8 +1,8 @@
 ---
-title: "Sermon 124 - The Heavenly Treasure In Earthen Vessels"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Heavenly Treasure In Earthen Vessels\"."
+title: "Проповідь 124 - The Heavenly Treasure In Earthen Vessels"
+description: 'Переклад проповіді "The Heavenly Treasure In Earthen Vessels".'
 pubDate: "17 червня 1790"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

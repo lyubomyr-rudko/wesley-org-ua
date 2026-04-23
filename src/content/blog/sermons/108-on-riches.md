@@ -1,8 +1,8 @@
 ---
-title: "Sermon 108 - On Riches"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Riches\"."
+title: "Проповідь 108 - On Riches"
+description: 'Переклад проповіді "On Riches".'
 pubDate: "22 квітня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 48 - Self-denial"
-description: "Плейсхолдер для проповіді Джона Веслі \"Self-denial\"."
+title: "Проповідь 48 - Self-denial"
+description: 'Переклад проповіді "Self-denial".'
 pubDate: "17 лютого 1755"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

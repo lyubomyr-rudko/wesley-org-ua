@@ -1,8 +1,8 @@
 ---
-title: "Sermon 69 - The Imperfection Of Human Knowledge"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Imperfection Of Human Knowledge\"."
+title: "Проповідь 69 - The Imperfection Of Human Knowledge"
+description: 'Переклад проповіді "The Imperfection Of Human Knowledge".'
 pubDate: "5 березня 1784"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

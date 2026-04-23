@@ -1,8 +1,8 @@
 ---
-title: "Sermon 51 - The Good Steward"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Good Steward\"."
+title: "Проповідь 51 - The Good Steward"
+description: 'Переклад проповіді "The Good Steward".'
 pubDate: "14 травня 1758"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

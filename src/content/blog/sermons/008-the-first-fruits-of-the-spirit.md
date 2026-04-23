@@ -1,8 +1,8 @@
 ---
-title: "Sermon 8 - The First Fruits Of The Spirit"
-description: "Плейсхолдер для проповіді Джона Веслі \"The First Fruits Of The Spirit\"."
+title: "Проповідь 8 - The First Fruits Of The Spirit"
+description: 'Переклад проповіді "The First Fruits Of The Spirit".'
 pubDate: "25 червня 1745"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

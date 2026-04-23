@@ -1,8 +1,8 @@
 ---
-title: "Sermon 57 - On The Fall Of Man"
-description: "Плейсхолдер для проповіді Джона Веслі \"On The Fall Of Man\"."
+title: "Проповідь 57 - On The Fall Of Man"
+description: 'Переклад проповіді "On The Fall Of Man".'
 pubDate: "13 березня 1782"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

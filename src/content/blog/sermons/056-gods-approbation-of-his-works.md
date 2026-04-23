@@ -1,8 +1,8 @@
 ---
-title: "Sermon 56 - God's Approbation Of His Works"
-description: "Плейсхолдер для проповіді Джона Веслі \"God's Approbation Of His Works\"."
+title: "Проповідь 56 - God's Approbation Of His Works"
+description: 'Переклад проповіді "God''s Approbation Of His Works".'
 pubDate: "1782"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

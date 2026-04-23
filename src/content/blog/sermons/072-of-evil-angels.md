@@ -1,8 +1,8 @@
 ---
-title: "Sermon 72 - Of Evil Angels"
-description: "Плейсхолдер для проповіді Джона Веслі \"Of Evil Angels\"."
+title: "Проповідь 72 - Of Evil Angels"
+description: 'Переклад проповіді "Of Evil Angels".'
 pubDate: "7 січня 1783"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 136 - On Corrupting The Word Of God"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Corrupting The Word Of God\"."
+title: "Проповідь 136 - On Corrupting The Word Of God"
+description: 'Переклад проповіді "On Corrupting The Word Of God".'
 pubDate: "6 жовтня 1727"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

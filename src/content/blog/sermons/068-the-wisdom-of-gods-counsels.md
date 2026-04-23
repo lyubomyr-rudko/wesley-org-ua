@@ -1,8 +1,8 @@
 ---
-title: "Sermon 68 - The Wisdom Of God's Counsel's"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Wisdom Of God's Counsel's\"."
+title: "Проповідь 68 - The Wisdom Of God's Counsel's"
+description: 'Переклад проповіді "The Wisdom Of God''s Counsel''s".'
 pubDate: "28 квітня 1784"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

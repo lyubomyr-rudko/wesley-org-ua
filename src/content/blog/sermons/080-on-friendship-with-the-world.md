@@ -1,8 +1,8 @@
 ---
-title: "Sermon 80 - On Friendship With The World"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Friendship With The World\"."
+title: "Проповідь 80 - On Friendship With The World"
+description: 'Переклад проповіді "On Friendship With The World".'
 pubDate: "1 травня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 44 - Original Sin"
-description: "Плейсхолдер для проповіді Джона Веслі \"Original Sin\"."
+title: "Проповідь 44 - Original Sin"
+description: 'Переклад проповіді "Original Sin".'
 pubDate: "15 травня 1754"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

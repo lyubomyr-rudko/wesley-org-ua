@@ -1,8 +1,8 @@
 ---
-title: "Sermon 71 - Of Good Angels"
-description: "Плейсхолдер для проповіді Джона Веслі \"Of Good Angels\"."
+title: "Проповідь 71 - Of Good Angels"
+description: 'Переклад проповіді "Of Good Angels".'
 pubDate: "29 серпня 1782"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

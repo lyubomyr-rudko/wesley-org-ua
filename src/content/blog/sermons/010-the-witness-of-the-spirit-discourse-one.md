@@ -1,8 +1,8 @@
 ---
-title: "Sermon 10 - The Witness Of The Spirit: Discourse One"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Witness Of The Spirit: Discourse One\"."
+title: "Проповідь 10 - The Witness Of The Spirit: Discourse One"
+description: 'Переклад проповіді "The Witness Of The Spirit: Discourse One".'
 pubDate: "травень-червень 1746"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

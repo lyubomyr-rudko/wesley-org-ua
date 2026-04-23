@@ -1,8 +1,8 @@
 ---
-title: "Sermon 111 - On The Omnipresence Of God"
-description: "Плейсхолдер для проповіді Джона Веслі \"On The Omnipresence Of God\"."
+title: "Проповідь 111 - On The Omnipresence Of God"
+description: 'Переклад проповіді "On The Omnipresence Of God".'
 pubDate: "12 серпня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

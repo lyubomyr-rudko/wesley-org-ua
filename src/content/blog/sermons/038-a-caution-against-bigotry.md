@@ -1,8 +1,8 @@
 ---
-title: "Sermon 38 - A Caution Against Bigotry"
-description: "Плейсхолдер для проповіді Джона Веслі \"A Caution Against Bigotry\"."
+title: "Проповідь 38 - A Caution Against Bigotry"
+description: 'Переклад проповіді "A Caution Against Bigotry".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

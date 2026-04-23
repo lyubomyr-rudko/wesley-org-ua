@@ -1,8 +1,8 @@
 ---
-title: "Sermon 26 - Upon Our Lord's Sermon On The Mount: Discourse Six"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Six\"."
+title: "Проповідь 26 - Upon Our Lord's Sermon On The Mount: Discourse Six"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Six".'
 pubDate: "22-26 жовтня 1740"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

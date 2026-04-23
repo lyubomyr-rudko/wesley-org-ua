@@ -1,8 +1,8 @@
 ---
-title: "Sermon 54 - On Eternity"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Eternity\"."
+title: "Проповідь 54 - On Eternity"
+description: 'Переклад проповіді "On Eternity".'
 pubDate: "28 червня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

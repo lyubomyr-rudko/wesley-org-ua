@@ -1,8 +1,8 @@
 ---
-title: "Sermon 25 - Upon Our Lord's Sermon On The Mount: Discourse Five"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Five\"."
+title: "Проповідь 25 - Upon Our Lord's Sermon On The Mount: Discourse Five"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Five".'
 pubDate: "22-26 жовтня 1740"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

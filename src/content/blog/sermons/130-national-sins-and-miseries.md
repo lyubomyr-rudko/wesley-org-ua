@@ -1,8 +1,8 @@
 ---
-title: "Sermon 130 - National Sins And Miseries"
-description: "Плейсхолдер для проповіді Джона Веслі \"National Sins And Miseries\"."
+title: "Проповідь 130 - National Sins And Miseries"
+description: 'Переклад проповіді "National Sins And Miseries".'
 pubDate: "7 листопада 1775"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 36 - The Law Established Through Faith: Discourse Two"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Law Established Through Faith: Discourse Two\"."
+title: "Проповідь 36 - The Law Established Through Faith: Discourse Two"
+description: 'Переклад проповіді "The Law Established Through Faith: Discourse Two".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

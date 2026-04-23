@@ -1,8 +1,8 @@
 ---
-title: "Sermon 75 - On Schism"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Schism\"."
+title: "Проповідь 75 - On Schism"
+description: 'Переклад проповіді "On Schism".'
 pubDate: "30 березня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

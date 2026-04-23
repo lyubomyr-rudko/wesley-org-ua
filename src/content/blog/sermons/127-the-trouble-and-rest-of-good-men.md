@@ -1,8 +1,8 @@
 ---
-title: "Sermon 127 - The Trouble And Rest Of Good Men"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Trouble And Rest Of Good Men\"."
+title: "Проповідь 127 - The Trouble And Rest Of Good Men"
+description: 'Переклад проповіді "The Trouble And Rest Of Good Men".'
 pubDate: "21 вересня 1735"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

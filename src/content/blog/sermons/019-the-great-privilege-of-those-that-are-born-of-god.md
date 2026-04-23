@@ -1,8 +1,8 @@
 ---
-title: "Sermon 19 - The Great Privilege Of Those That Are Born Of God"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Great Privilege Of Those That Are Born Of God\"."
+title: "Проповідь 19 - The Great Privilege Of Those That Are Born Of God"
+description: 'Переклад проповіді "The Great Privilege Of Those That Are Born Of God".'
 pubDate: "23 вересня 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

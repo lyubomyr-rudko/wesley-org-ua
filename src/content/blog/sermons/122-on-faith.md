@@ -1,8 +1,8 @@
 ---
-title: "Sermon 122 - On Faith"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Faith\"."
+title: "Проповідь 122 - On Faith"
+description: 'Переклад проповіді "On Faith".'
 pubDate: "17 січня 1791"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

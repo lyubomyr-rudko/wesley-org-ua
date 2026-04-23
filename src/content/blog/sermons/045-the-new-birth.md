@@ -1,8 +1,8 @@
 ---
-title: "Sermon 45 - The New Birth"
-description: "Плейсхолдер для проповіді Джона Веслі \"The New Birth\"."
+title: "Проповідь 45 - The New Birth"
+description: 'Переклад проповіді "The New Birth".'
 pubDate: "29 травня 1743"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

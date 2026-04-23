@@ -1,8 +1,8 @@
 ---
-title: "Sermon 35 - The Law Established Through Faith: Discourse One"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Law Established Through Faith: Discourse One\"."
+title: "Проповідь 35 - The Law Established Through Faith: Discourse One"
+description: 'Переклад проповіді "The Law Established Through Faith: Discourse One".'
 pubDate: "27 червня 1741"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 83 - On Patience"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Patience\"."
+title: "Проповідь 83 - On Patience"
+description: 'Переклад проповіді "On Patience".'
 pubDate: "13 липня 1761"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

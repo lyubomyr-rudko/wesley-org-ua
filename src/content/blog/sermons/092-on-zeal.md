@@ -1,8 +1,8 @@
 ---
-title: "Sermon 92 - On Zeal"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Zeal\"."
+title: "Проповідь 92 - On Zeal"
+description: 'Переклад проповіді "On Zeal".'
 pubDate: "1 жовтня 1758"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

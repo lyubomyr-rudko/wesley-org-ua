@@ -1,8 +1,8 @@
 ---
-title: "Sermon 40 - Christian Perfection"
-description: "Плейсхолдер для проповіді Джона Веслі \"Christian Perfection\"."
+title: "Проповідь 40 - Christian Perfection"
+description: 'Переклад проповіді "Christian Perfection".'
 pubDate: "11 листопада 1739"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

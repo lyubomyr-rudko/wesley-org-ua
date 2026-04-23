@@ -1,8 +1,8 @@
 ---
-title: "Sermon 120 - On The Wedding Garment"
-description: "Плейсхолдер для проповіді Джона Веслі \"On The Wedding Garment\"."
+title: "Проповідь 120 - On The Wedding Garment"
+description: 'Переклад проповіді "On The Wedding Garment".'
 pubDate: "26 березня 1790"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

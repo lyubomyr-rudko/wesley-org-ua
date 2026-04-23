@@ -1,8 +1,8 @@
 ---
-title: "Sermon 131 - The Late Work Of God In North America"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Late Work Of God In North America\"."
+title: "Проповідь 131 - The Late Work Of God In North America"
+description: 'Переклад проповіді "The Late Work Of God In North America".'
 pubDate: "1778"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

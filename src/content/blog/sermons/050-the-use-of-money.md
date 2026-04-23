@@ -1,8 +1,8 @@
 ---
-title: "Sermon 50 - The Use Of Money"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Use Of Money\"."
+title: "Проповідь 50 - The Use Of Money"
+description: 'Переклад проповіді "The Use Of Money".'
 pubDate: "17 лютого 1744"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

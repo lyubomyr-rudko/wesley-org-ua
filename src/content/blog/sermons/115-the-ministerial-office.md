@@ -1,8 +1,8 @@
 ---
-title: "Sermon 115 - The Ministerial Office"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Ministerial Office\"."
+title: "Проповідь 115 - The Ministerial Office"
+description: 'Переклад проповіді "The Ministerial Office".'
 pubDate: "4 травня 1789"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

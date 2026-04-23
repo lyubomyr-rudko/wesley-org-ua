@@ -1,8 +1,8 @@
 ---
-title: "Sermon 94 - On Family Religion"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Family Religion\"."
+title: "Проповідь 94 - On Family Religion"
+description: 'Переклад проповіді "On Family Religion".'
 pubDate: "26 травня 1783"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

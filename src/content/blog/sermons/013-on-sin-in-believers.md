@@ -1,8 +1,8 @@
 ---
-title: "Sermon 13 - On Sin In Believers"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Sin In Believers\"."
+title: "Проповідь 13 - On Sin In Believers"
+description: 'Переклад проповіді "On Sin In Believers".'
 pubDate: "28 березня 1763"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 113 - The Difference Between Walking By Sight, And Walking By Faith"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Difference Between Walking By Sight, And Walking By Faith\"."
+title: "Проповідь 113 - The Difference Between Walking By Sight, And Walking By Faith"
+description: 'Переклад проповіді "The Difference Between Walking By Sight, And Walking By Faith".'
 pubDate: "30 грудня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

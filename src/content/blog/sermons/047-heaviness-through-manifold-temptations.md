@@ -1,8 +1,8 @@
 ---
-title: "Sermon 47 - Heaviness Through Manifold Temptations"
-description: "Плейсхолдер для проповіді Джона Веслі \"Heaviness Through Manifold Temptations\"."
+title: "Проповідь 47 - Heaviness Through Manifold Temptations"
+description: 'Переклад проповіді "Heaviness Through Manifold Temptations".'
 pubDate: "5 травня 1754"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 46 - The Wilderness State"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Wilderness State\"."
+title: "Проповідь 46 - The Wilderness State"
+description: 'Переклад проповіді "The Wilderness State".'
 pubDate: "1 березня 1751"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

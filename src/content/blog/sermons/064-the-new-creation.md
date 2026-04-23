@@ -1,8 +1,8 @@
 ---
-title: "Sermon 64 - The New Creation"
-description: "Плейсхолдер для проповіді Джона Веслі \"The New Creation\"."
+title: "Проповідь 64 - The New Creation"
+description: 'Переклад проповіді "The New Creation".'
 pubDate: "1785"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

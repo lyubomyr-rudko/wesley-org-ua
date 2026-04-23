@@ -1,8 +1,8 @@
 ---
-title: "Sermon 20 - The Lord Our Righteousness"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Lord Our Righteousness\"."
+title: "Проповідь 20 - The Lord Our Righteousness"
+description: 'Переклад проповіді "The Lord Our Righteousness".'
 pubDate: "22 жовтня 1758"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

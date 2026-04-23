@@ -1,8 +1,8 @@
 ---
-title: "Sermon 62 - The End Of Christ's Coming"
-description: "Плейсхолдер для проповіді Джона Веслі \"The End Of Christ's Coming\"."
+title: "Проповідь 62 - The End Of Christ's Coming"
+description: 'Переклад проповіді "The End Of Christ''s Coming".'
 pubDate: "9 грудня 1758"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

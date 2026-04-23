@@ -1,8 +1,8 @@
 ---
-title: "Sermon 106 - On Faith"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Faith\"."
+title: "Проповідь 106 - On Faith"
+description: 'Переклад проповіді "On Faith".'
 pubDate: "9 квітня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

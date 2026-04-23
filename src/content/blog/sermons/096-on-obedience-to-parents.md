@@ -1,8 +1,8 @@
 ---
-title: "Sermon 96 - On Obedience To Parents"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Obedience To Parents\"."
+title: "Проповідь 96 - On Obedience To Parents"
+description: 'Переклад проповіді "On Obedience To Parents".'
 pubDate: "1784"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Nine\"."
+title: "Проповідь 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Nine".'
 pubDate: "1-16 листопада 1747"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

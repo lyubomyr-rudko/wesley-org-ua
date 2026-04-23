@@ -1,8 +1,8 @@
 ---
-title: "Sermon 39 - Catholic Spirit"
-description: "Плейсхолдер для проповіді Джона Веслі \"Catholic Spirit\"."
+title: "Проповідь 39 - Catholic Spirit"
+description: 'Переклад проповіді "Catholic Spirit".'
 pubDate: "8 вересня 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

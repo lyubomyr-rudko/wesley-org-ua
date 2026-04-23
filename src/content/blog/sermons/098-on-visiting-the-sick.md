@@ -1,8 +1,8 @@
 ---
-title: "Sermon 98 - On Visiting The Sick"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Visiting The Sick\"."
+title: "Проповідь 98 - On Visiting The Sick"
+description: 'Переклад проповіді "On Visiting The Sick".'
 pubDate: "23 травня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

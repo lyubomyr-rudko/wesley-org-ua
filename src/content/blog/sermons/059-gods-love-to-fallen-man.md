@@ -1,8 +1,8 @@
 ---
-title: "Sermon 59 - God's Love To Fallen Man"
-description: "Плейсхолдер для проповіді Джона Веслі \"God's Love To Fallen Man\"."
+title: "Проповідь 59 - God's Love To Fallen Man"
+description: 'Переклад проповіді "God''s Love To Fallen Man".'
 pubDate: "9 липня 1782"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

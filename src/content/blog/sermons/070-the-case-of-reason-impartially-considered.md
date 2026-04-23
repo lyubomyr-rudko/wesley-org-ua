@@ -1,8 +1,8 @@
 ---
-title: "Sermon 70 - The Case Of Reason Impartially Considered"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Case Of Reason Impartially Considered\"."
+title: "Проповідь 70 - The Case Of Reason Impartially Considered"
+description: 'Переклад проповіді "The Case Of Reason Impartially Considered".'
 pubDate: "6 липня 1781"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

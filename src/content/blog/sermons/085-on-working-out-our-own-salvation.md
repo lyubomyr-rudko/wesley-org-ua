@@ -1,8 +1,8 @@
 ---
-title: "Sermon 85 - On Working Out Our Own Salvation"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Working Out Our Own Salvation\"."
+title: "Проповідь 85 - On Working Out Our Own Salvation"
+description: 'Переклад проповіді "On Working Out Our Own Salvation".'
 pubDate: "1785"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

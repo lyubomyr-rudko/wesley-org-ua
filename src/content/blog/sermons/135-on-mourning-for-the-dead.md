@@ -1,8 +1,8 @@
 ---
-title: "Sermon 135 - On Mourning For The Dead"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Mourning For The Dead\"."
+title: "Проповідь 135 - On Mourning For The Dead"
+description: 'Переклад проповіді "On Mourning For The Dead".'
 pubDate: "11 січня 1727"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

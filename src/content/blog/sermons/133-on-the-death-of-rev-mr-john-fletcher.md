@@ -1,8 +1,8 @@
 ---
-title: "Sermon 133 - On The Death Of Rev. Mr. John Fletcher"
-description: "Плейсхолдер для проповіді Джона Веслі \"On The Death Of Rev. Mr. John Fletcher\"."
+title: "Проповідь 133 - On The Death Of Rev. Mr. John Fletcher"
+description: 'Переклад проповіді "On The Death Of Rev. Mr. John Fletcher".'
 pubDate: "24 жовтня 1785"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 6 - The Righteousness Of Faith"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Righteousness Of Faith\"."
+title: "Проповідь 6 - The Righteousness Of Faith"
+description: 'Переклад проповіді "The Righteousness Of Faith".'
 pubDate: "18 жовтня 1741"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

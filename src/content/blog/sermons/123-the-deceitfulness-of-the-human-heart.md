@@ -1,8 +1,8 @@
 ---
-title: "Sermon 123 - The Deceitfulness Of The Human Heart"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Deceitfulness Of The Human Heart\"."
+title: "Проповідь 123 - The Deceitfulness Of The Human Heart"
+description: 'Переклад проповіді "The Deceitfulness Of The Human Heart".'
 pubDate: "21 квітня 1790"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

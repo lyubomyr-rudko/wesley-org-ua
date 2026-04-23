@@ -1,8 +1,8 @@
 ---
-title: "Sermon 34 - The Original, Nature, Property, And Use Of The Law"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Original, Nature, Property, And Use Of The Law\"."
+title: "Проповідь 34 - The Original, Nature, Property, And Use Of The Law"
+description: 'Переклад проповіді "The Original, Nature, Property, And Use Of The Law".'
 pubDate: "1-7 листопада 1749"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

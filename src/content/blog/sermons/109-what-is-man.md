@@ -1,8 +1,8 @@
 ---
-title: "Sermon 109 - What Is Man?"
-description: "Плейсхолдер для проповіді Джона Веслі \"What Is Man?\"."
+title: "Проповідь 109 - What Is Man?"
+description: 'Переклад проповіді "What Is Man?".'
 pubDate: "2 травня 1788"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

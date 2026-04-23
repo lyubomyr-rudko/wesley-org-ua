@@ -1,8 +1,8 @@
 ---
-title: "Sermon 125 - On Living Without God"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Living Without God\"."
+title: "Проповідь 125 - On Living Without God"
+description: 'Переклад проповіді "On Living Without God".'
 pubDate: "6 липня 1790"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

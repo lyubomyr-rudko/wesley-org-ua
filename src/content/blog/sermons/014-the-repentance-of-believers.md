@@ -1,8 +1,8 @@
 ---
-title: "Sermon 14 - The Repentance Of Believers"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Repentance Of Believers\"."
+title: "Проповідь 14 - The Repentance Of Believers"
+description: 'Переклад проповіді "The Repentance Of Believers".'
 pubDate: "26 травня 1758"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

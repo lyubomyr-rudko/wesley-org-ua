@@ -1,8 +1,8 @@
 ---
-title: "Sermon 2 - The Almost Christian"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Almost Christian\"."
+title: "Проповідь 2 - The Almost Christian"
+description: 'Переклад проповіді "The Almost Christian".'
 pubDate: "25 липня 1741"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

@@ -1,8 +1,8 @@
 ---
-title: "Sermon 91 - On Charity"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Charity\"."
+title: "Проповідь 91 - On Charity"
+description: 'Переклад проповіді "On Charity".'
 pubDate: "15 жовтня 1784"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

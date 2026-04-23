@@ -1,8 +1,8 @@
 ---
-title: "Sermon 32 - Upon Our Lord's Sermon On The Mount: Discourse Twelve"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Twelve\"."
+title: "Проповідь 32 - Upon Our Lord's Sermon On The Mount: Discourse Twelve"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Twelve".'
 pubDate: "30 січня 1743"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

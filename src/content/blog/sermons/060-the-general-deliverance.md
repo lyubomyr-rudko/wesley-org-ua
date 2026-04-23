@@ -1,8 +1,8 @@
 ---
-title: "Sermon 60 - The General Deliverance"
-description: "Плейсхолдер для проповіді Джона Веслі \"The General Deliverance\"."
+title: "Проповідь 60 - The General Deliverance"
+description: 'Переклад проповіді "The General Deliverance".'
 pubDate: "30 листопада 1781"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

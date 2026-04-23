@@ -1,8 +1,8 @@
 ---
-title: "Sermon 102 - Of Former Times"
-description: "Плейсхолдер для проповіді Джона Веслі \"Of Former Times\"."
+title: "Проповідь 102 - Of Former Times"
+description: 'Переклад проповіді "Of Former Times".'
 pubDate: "27 червня 1787"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

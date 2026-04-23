@@ -1,8 +1,8 @@
 ---
-title: "Sermon 134 - True Christianity"
-description: "Плейсхолдер для проповіді Джона Веслі \"True Christianity\"."
+title: "Проповідь 134 - True Christianity"
+description: 'Переклад проповіді "True Christianity".'
 pubDate: "24 червня 1741"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

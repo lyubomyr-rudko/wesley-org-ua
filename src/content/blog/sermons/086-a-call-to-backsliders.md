@@ -1,8 +1,8 @@
 ---
-title: "Sermon 86 - A Call To Backsliders"
-description: "Плейсхолдер для проповіді Джона Веслі \"A Call To Backsliders\"."
+title: "Проповідь 86 - A Call To Backsliders"
+description: 'Переклад проповіді "A Call To Backsliders".'
 pubDate: "20 травня 1778"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

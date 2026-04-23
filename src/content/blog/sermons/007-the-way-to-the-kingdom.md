@@ -1,8 +1,8 @@
 ---
-title: "Sermon 7 - The Way To The Kingdom"
-description: "Плейсхолдер для проповіді Джона Веслі \"The Way To The Kingdom\"."
+title: "Проповідь 7 - The Way To The Kingdom"
+description: 'Переклад проповіді "The Way To The Kingdom".'
 pubDate: "6 червня 1742"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

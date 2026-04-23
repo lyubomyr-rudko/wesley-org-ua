@@ -1,8 +1,8 @@
 ---
-title: "Sermon 27 - Upon Our Lord's Sermon On The Mount: Discourse Seven"
-description: "Плейсхолдер для проповіді Джона Веслі \"Upon Our Lord's Sermon On The Mount: Discourse Seven\"."
+title: "Проповідь 27 - Upon Our Lord's Sermon On The Mount: Discourse Seven"
+description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Seven".'
 pubDate: "1-16 листопада 1747"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

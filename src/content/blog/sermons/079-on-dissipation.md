@@ -1,8 +1,8 @@
 ---
-title: "Sermon 79 - On Dissipation"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Dissipation\"."
+title: "Проповідь 79 - On Dissipation"
+description: 'Переклад проповіді "On Dissipation".'
 pubDate: "1783"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

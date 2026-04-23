@@ -1,8 +1,8 @@
 ---
-title: "Sermon 88 - On Dress"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Dress\"."
+title: "Проповідь 88 - On Dress"
+description: 'Переклад проповіді "On Dress".'
 pubDate: "30 грудня 1786"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

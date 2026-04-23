@@ -1,8 +1,8 @@
 ---
-title: "Sermon 76 - On Perfection"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Perfection\"."
+title: "Проповідь 76 - On Perfection"
+description: 'Переклад проповіді "On Perfection".'
 pubDate: "29 березня 1761"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"

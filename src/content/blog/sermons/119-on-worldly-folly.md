@@ -1,8 +1,8 @@
 ---
-title: "Sermon 119 - On Worldly Folly"
-description: "Плейсхолдер для проповіді Джона Веслі \"On Worldly Folly\"."
+title: "Проповідь 119 - On Worldly Folly"
+description: 'Переклад проповіді "On Worldly Folly".'
 pubDate: "19 лютого 1790"
-author: "John Wesley"
+author: "Джон Веслі"
 tags:
   - "sermon"
   - "john wesley"
