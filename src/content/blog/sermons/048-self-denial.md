@@ -10,6 +10,14 @@ tags:
 
 # Sermon 48 - Self-denial
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 48 - Self-denial"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 17 лютого 1755
 - Outler's date: 1760
 

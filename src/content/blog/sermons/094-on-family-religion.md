@@ -10,6 +10,14 @@ tags:
 
 # Sermon 94 - On Family Religion
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 94 - On Family Religion"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 26 травня 1783
 - Outler's date: 1783
 

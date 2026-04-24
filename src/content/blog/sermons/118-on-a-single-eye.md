@@ -10,6 +10,14 @@ tags:
 
 # Sermon 118 - On A Single Eye
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 118 - On A Single Eye"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 29 листопада 1761
 - Outler's date: 1789
 

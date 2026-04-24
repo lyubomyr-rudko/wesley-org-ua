@@ -10,6 +10,14 @@ tags:
 
 # Sermon 102 - Of Former Times
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 102 - Of Former Times"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 27 червня 1787
 
 - Source slug: 102-of-former-times

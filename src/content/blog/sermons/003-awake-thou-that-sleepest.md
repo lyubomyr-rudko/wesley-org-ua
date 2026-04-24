@@ -10,6 +10,14 @@ tags:
 
 # Sermon 3 - Awake, Thou That Sleepest
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 3 - Awake, Thou That Sleepest"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 4 квітня 1742
 
 - Source slug: 003-awake-thou-that-sleepest

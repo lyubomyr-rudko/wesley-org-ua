@@ -10,6 +10,14 @@ tags:
 
 # Sermon 116 - Causes Of The Inefficacy Of Christianity
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 116 - Causes Of The Inefficacy Of Christianity"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 2 липня 1789
 
 - Source slug: 116-causes-of-the-inefficacy-of-christianity

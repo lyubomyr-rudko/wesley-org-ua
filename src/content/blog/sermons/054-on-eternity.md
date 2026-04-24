@@ -10,6 +10,14 @@ tags:
 
 # Sermon 54 - On Eternity
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 54 - On Eternity"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 28 червня 1786
 
 - Source slug: 054-on-eternity

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 114 - The Unity Of The Divine Being
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 114 - The Unity Of The Divine Being"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 9 квітня 1789
 
 - Source slug: 114-the-unity-of-the-divine-being

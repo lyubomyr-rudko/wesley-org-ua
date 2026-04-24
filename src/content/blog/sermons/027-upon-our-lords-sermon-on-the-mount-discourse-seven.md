@@ -10,6 +10,14 @@ tags:
 
 # Sermon 27 - Upon Our Lord's Sermon On The Mount: Discourse Seven
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 27 - Upon Our Lord's Sermon On The Mount: Discourse Seven"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-16 листопада 1747
 - Outler's date: 1748
 

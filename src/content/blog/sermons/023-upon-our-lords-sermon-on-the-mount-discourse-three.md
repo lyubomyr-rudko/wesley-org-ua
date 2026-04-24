@@ -10,6 +10,14 @@ tags:
 
 # Sermon 23 - Upon Our Lord's Sermon On The Mount: Discourse Three
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 23 - Upon Our Lord's Sermon On The Mount: Discourse Three"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 липня 1739
 - Outler's date: 1748
 

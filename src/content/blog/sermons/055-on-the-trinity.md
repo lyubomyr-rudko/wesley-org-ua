@@ -10,6 +10,14 @@ tags:
 
 # Sermon 55 - On The Trinity
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 55 - On The Trinity"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 5 червня 1773
 - Outler's date: 7 травня 1775
 

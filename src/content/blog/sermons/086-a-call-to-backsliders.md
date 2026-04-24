@@ -10,6 +10,14 @@ tags:
 
 # Sermon 86 - A Call To Backsliders
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 86 - A Call To Backsliders"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 20 травня 1778
 - Outler's date: 1778
 

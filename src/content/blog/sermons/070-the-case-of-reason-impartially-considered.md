@@ -10,6 +10,14 @@ tags:
 
 # Sermon 70 - The Case Of Reason Impartially Considered
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 70 - The Case Of Reason Impartially Considered"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 6 липня 1781
 
 - Source slug: 070-the-case-of-reason-impartially-considered

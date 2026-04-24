@@ -10,6 +10,14 @@ tags:
 
 # Sermon 62 - The End Of Christ's Coming
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 62 - The End Of Christ's Coming"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 9 грудня 1758
 
 - Source slug: 062-the-end-of-christs-coming

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 39 - Catholic Spirit
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 39 - Catholic Spirit"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 8 вересня 1749
 - Outler's date: 1750
 

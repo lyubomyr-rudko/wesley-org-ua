@@ -10,6 +10,14 @@ tags:
 
 # Sermon 136 - On Corrupting The Word Of God
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 136 - On Corrupting The Word Of God"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 6 жовтня 1727
 
 - Source slug: 136-on-corrupting-the-word-of-god

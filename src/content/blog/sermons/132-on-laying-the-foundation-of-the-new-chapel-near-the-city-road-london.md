@@ -10,6 +10,14 @@ tags:
 
 # Sermon 132 - On Laying The Foundation Of The New Chapel, Near The City-road, London.
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 132 - On Laying The Foundation Of The New Chapel, Near The City-road, London."
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 квітня 1777
 
 - Source slug: 132-on-laying-the-foundation-of-the-new-chapel-near-the-city-road-london

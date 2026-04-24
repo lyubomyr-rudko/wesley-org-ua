@@ -10,6 +10,14 @@ tags:
 
 # Sermon 46 - The Wilderness State
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 46 - The Wilderness State"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1 березня 1751
 - Outler's date: 1760
 

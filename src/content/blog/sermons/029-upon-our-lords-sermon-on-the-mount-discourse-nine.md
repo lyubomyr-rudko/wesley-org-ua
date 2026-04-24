@@ -10,6 +10,14 @@ tags:
 
 # Sermon 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-16 листопада 1747
 - Outler's date: 1748
 

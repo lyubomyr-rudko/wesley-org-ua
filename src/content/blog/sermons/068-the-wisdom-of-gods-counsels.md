@@ -10,6 +10,14 @@ tags:
 
 # Sermon 68 - The Wisdom Of God's Counsel's
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 68 - The Wisdom Of God's Counsel's"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 28 квітня 1784
 - Outler's date: 1784
 

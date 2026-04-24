@@ -10,6 +10,14 @@ tags:
 
 # Sermon 75 - On Schism
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 75 - On Schism"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 30 березня 1786
 
 - Source slug: 075-on-schism

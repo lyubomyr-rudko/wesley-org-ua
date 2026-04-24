@@ -10,6 +10,14 @@ tags:
 
 # Sermon 8 - The First Fruits Of The Spirit
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 8 - The First Fruits Of The Spirit"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 25 червня 1745
 - Outler's date: 1746
 

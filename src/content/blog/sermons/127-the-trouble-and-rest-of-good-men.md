@@ -10,6 +10,14 @@ tags:
 
 # Sermon 127 - The Trouble And Rest Of Good Men
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 127 - The Trouble And Rest Of Good Men"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 вересня 1735
 
 - Source slug: 127-the-trouble-and-rest-of-good-men

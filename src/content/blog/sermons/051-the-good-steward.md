@@ -10,6 +10,14 @@ tags:
 
 # Sermon 51 - The Good Steward
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 51 - The Good Steward"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 14 травня 1758
 - Outler's date: 14 травня 1768
 

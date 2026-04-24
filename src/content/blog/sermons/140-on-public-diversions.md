@@ -10,6 +10,14 @@ tags:
 
 # Sermon 140 - On Public Diversions
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 140 - On Public Diversions"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 3 вересня 1732
 
 - Source slug: 140-on-public-diversions

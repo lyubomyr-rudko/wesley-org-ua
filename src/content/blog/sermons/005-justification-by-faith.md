@@ -10,6 +10,14 @@ tags:
 
 # Sermon 5 - Justification By Faith
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 5 - Justification By Faith"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 6 жовтня 1739
 - Outler's date: 1746
 

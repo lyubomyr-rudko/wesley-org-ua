@@ -10,6 +10,14 @@ tags:
 
 # Sermon 113 - The Difference Between Walking By Sight, And Walking By Faith
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 113 - The Difference Between Walking By Sight, And Walking By Faith"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 30 грудня 1788
 
 - Source slug: 113-the-difference-between-walking-by-sight-and-walking-by-faith

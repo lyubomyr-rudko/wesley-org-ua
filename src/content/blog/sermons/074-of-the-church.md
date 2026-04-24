@@ -10,6 +10,14 @@ tags:
 
 # Sermon 74 - Of The Church
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 74 - Of The Church"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 28 вересня 1785
 
 - Source slug: 074-of-the-church

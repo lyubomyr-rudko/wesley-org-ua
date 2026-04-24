@@ -10,6 +10,14 @@ tags:
 
 # Sermon 135 - On Mourning For The Dead
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 135 - On Mourning For The Dead"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 11 січня 1727
 - Outler's date: 6 жовтня 1727
 

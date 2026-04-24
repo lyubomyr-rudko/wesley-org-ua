@@ -10,6 +10,14 @@ tags:
 
 # Sermon 120 - On The Wedding Garment
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 120 - On The Wedding Garment"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 26 березня 1790
 
 - Source slug: 120-on-the-wedding-garment

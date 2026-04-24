@@ -10,6 +10,14 @@ tags:
 
 # Sermon 117 - On Knowing Christ After The Flesh
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 117 - On Knowing Christ After The Flesh"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 15 серпня 1789
 
 - Source slug: 117-on-knowing-christ-after-the-flesh

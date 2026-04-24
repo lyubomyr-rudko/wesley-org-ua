@@ -10,6 +10,14 @@ tags:
 
 # Sermon 76 - On Perfection
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 76 - On Perfection"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 29 березня 1761
 - Outler's date: 6 грудня 1784
 

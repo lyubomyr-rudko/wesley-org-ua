@@ -10,6 +10,14 @@ tags:
 
 # Sermon 43 - The Scripture Way Of Salvation
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 43 - The Scripture Way Of Salvation"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22 травня 1758
 - Outler's date: 1765
 

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 106 - On Faith
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 106 - On Faith"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 9 квітня 1788
 
 - Source slug: 106-on-faith

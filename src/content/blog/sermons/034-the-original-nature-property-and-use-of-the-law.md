@@ -10,6 +10,14 @@ tags:
 
 # Sermon 34 - The Original, Nature, Property, And Use Of The Law
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 34 - The Original, Nature, Property, And Use Of The Law"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 84 - The Important Question
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 84 - The Important Question"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 11 вересня 1775
 
 - Source slug: 084-the-important-question

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 91 - On Charity
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 91 - On Charity"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 15 жовтня 1784
 
 - Source slug: 091-on-charity

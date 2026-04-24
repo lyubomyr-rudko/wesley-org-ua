@@ -10,6 +10,14 @@ tags:
 
 # Sermon 12 - The Witness Of Our Own Spirit
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 12 - The Witness Of Our Own Spirit"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: травень-червень 1746
 - Outler's date: 1746
 

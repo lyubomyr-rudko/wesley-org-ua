@@ -10,6 +10,14 @@ tags:
 
 # Sermon 2 - The Almost Christian
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 2 - The Almost Christian"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 25 липня 1741
 
 - Source slug: 002-the-almost-christian

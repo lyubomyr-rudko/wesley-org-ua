@@ -10,6 +10,14 @@ tags:
 
 # Sermon 57 - On The Fall Of Man
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 57 - On The Fall Of Man"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 13 березня 1782
 
 - Source slug: 057-on-the-fall-of-man

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 45 - The New Birth
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 45 - The New Birth"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 29 травня 1743
 - Outler's date: 1760
 

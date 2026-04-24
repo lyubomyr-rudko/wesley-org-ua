@@ -10,6 +10,14 @@ tags:
 
 # Sermon 125 - On Living Without God
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 125 - On Living Without God"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 6 липня 1790
 
 - Source slug: 125-on-living-without-god

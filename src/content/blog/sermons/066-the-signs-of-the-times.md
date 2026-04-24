@@ -10,6 +10,14 @@ tags:
 
 # Sermon 66 - The Signs Of The Times
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 66 - The Signs Of The Times"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 27 серпня 1777
 
 - Source slug: 066-the-signs-of-the-times

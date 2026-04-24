@@ -10,6 +10,14 @@ tags:
 
 # Sermon 79 - On Dissipation
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 79 - On Dissipation"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1783
 
 - Source slug: 079-on-dissipation

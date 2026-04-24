@@ -10,6 +10,14 @@ tags:
 
 # Sermon 139 - On Love
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 139 - On Love"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 20 лютого 1737
 
 - Source slug: 139-on-love

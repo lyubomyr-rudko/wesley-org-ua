@@ -10,6 +10,14 @@ tags:
 
 # Sermon 10 - The Witness Of The Spirit: Discourse One
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 10 - The Witness Of The Spirit: Discourse One"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: травень-червень 1746
 - Outler's date: 1746
 

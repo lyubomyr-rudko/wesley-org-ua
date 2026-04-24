@@ -10,6 +10,14 @@ tags:
 
 # Sermon 63 - The General Spread Of The Gospel
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 63 - The General Spread Of The Gospel"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22 квітня 1783
 
 - Source slug: 063-the-general-spread-of-the-gospel

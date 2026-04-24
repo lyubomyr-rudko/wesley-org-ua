@@ -10,6 +10,14 @@ tags:
 
 # Sermon 26 - Upon Our Lord's Sermon On The Mount: Discourse Six
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 26 - Upon Our Lord's Sermon On The Mount: Discourse Six"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22-26 жовтня 1740
 - Outler's date: 1748
 

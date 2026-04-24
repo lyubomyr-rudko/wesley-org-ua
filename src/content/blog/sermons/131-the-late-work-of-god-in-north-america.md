@@ -10,6 +10,14 @@ tags:
 
 # Sermon 131 - The Late Work Of God In North America
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 131 - The Late Work Of God In North America"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1778
 
 - Source slug: 131-the-late-work-of-god-in-north-america

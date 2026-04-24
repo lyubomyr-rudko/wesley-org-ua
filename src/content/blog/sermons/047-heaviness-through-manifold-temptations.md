@@ -10,6 +10,14 @@ tags:
 
 # Sermon 47 - Heaviness Through Manifold Temptations
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 47 - Heaviness Through Manifold Temptations"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 5 травня 1754
 - Outler's date: 1760
 

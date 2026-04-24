@@ -10,6 +10,14 @@ tags:
 
 # Sermon 56 - God's Approbation Of His Works
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 56 - God's Approbation Of His Works"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1782
 
 - Source slug: 056-gods-approbation-of-his-works

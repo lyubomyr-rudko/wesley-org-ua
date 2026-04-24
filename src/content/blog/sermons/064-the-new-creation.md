@@ -10,6 +10,14 @@ tags:
 
 # Sermon 64 - The New Creation
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 64 - The New Creation"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1785
 - Outler's date: листопад-грудень 1785
 

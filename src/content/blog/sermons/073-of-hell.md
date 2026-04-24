@@ -10,6 +10,14 @@ tags:
 
 # Sermon 73 - Of Hell
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 73 - Of Hell"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 10 жовтня 1782
 
 - Source slug: 073-of-hell

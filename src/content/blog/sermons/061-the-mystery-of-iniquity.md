@@ -10,6 +10,14 @@ tags:
 
 # Sermon 61 - The Mystery Of Iniquity
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 61 - The Mystery Of Iniquity"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1783
 - Outler's date: травень-червень 1783
 

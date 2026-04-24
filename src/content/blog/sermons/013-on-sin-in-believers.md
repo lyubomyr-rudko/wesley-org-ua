@@ -10,6 +10,14 @@ tags:
 
 # Sermon 13 - On Sin In Believers
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 13 - On Sin In Believers"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 28 березня 1763
 
 - Source slug: 013-on-sin-in-believers

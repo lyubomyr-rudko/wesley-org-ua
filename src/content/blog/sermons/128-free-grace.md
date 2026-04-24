@@ -10,6 +10,14 @@ tags:
 
 # Sermon 128 - Free Grace
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 128 - Free Grace"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 29 квітня 1739
 
 - Source slug: 128-free-grace

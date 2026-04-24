@@ -10,6 +10,14 @@ tags:
 
 # Sermon 122 - On Faith
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 122 - On Faith"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 17 січня 1791
 
 - Source slug: 122-on-faith

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 90 - An Israelite Indeed
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 90 - An Israelite Indeed"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1785
 - Outler's date: липень-серпень 1785
 

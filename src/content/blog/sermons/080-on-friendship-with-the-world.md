@@ -10,6 +10,14 @@ tags:
 
 # Sermon 80 - On Friendship With The World
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 80 - On Friendship With The World"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1 травня 1786
 
 - Source slug: 080-on-friendship-with-the-world

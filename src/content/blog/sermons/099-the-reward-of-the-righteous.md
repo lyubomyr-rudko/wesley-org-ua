@@ -10,6 +10,14 @@ tags:
 
 # Sermon 99 - The Reward Of The Righteous
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 99 - The Reward Of The Righteous"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 листопада 1777
 - Outler's date: 23 листопада 1777
 

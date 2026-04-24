@@ -10,6 +10,14 @@ tags:
 
 # Sermon 7 - The Way To The Kingdom
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 7 - The Way To The Kingdom"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 6 червня 1742
 - Outler's date: 1746
 

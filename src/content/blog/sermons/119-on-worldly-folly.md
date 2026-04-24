@@ -10,6 +10,14 @@ tags:
 
 # Sermon 119 - On Worldly Folly
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 119 - On Worldly Folly"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 19 лютого 1790
 
 - Source slug: 119-on-worldly-folly

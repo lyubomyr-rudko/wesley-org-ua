@@ -10,6 +10,14 @@ tags:
 
 # Sermon 105 - On Conscience
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 105 - On Conscience"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 8 квітня 1788
 
 - Source slug: 105-on-conscience

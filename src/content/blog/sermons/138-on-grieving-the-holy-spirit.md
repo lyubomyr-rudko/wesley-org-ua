@@ -10,6 +10,14 @@ tags:
 
 # Sermon 138 - On Grieving The Holy Spirit
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 138 - On Grieving The Holy Spirit"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1733
 
 - Source slug: 138-on-grieving-the-holy-spirit

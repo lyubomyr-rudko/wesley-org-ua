@@ -10,6 +10,14 @@ tags:
 
 # Sermon 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 

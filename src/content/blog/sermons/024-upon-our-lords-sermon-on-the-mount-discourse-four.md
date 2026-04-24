@@ -10,6 +10,14 @@ tags:
 
 # Sermon 24 - Upon Our Lord's Sermon On The Mount: Discourse Four
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 24 - Upon Our Lord's Sermon On The Mount: Discourse Four"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22-26 жовтня 1740
 - Outler's date: 1748
 

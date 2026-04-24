@@ -10,6 +10,14 @@ tags:
 
 # Sermon 72 - Of Evil Angels
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 72 - Of Evil Angels"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 7 січня 1783
 
 - Source slug: 072-of-evil-angels

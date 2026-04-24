@@ -10,6 +10,14 @@ tags:
 
 # Sermon 59 - God's Love To Fallen Man
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 59 - God's Love To Fallen Man"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 9 липня 1782
 
 - Source slug: 059-gods-love-to-fallen-man

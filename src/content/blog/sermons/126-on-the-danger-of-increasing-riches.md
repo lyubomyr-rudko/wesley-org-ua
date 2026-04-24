@@ -10,6 +10,14 @@ tags:
 
 # Sermon 126 - On The Danger Of Increasing Riches
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 126 - On The Danger Of Increasing Riches"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 вересня 1790
 
 - Source slug: 126-on-the-danger-of-increasing-riches

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 121 - Human Life A Dream
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 121 - Human Life A Dream"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1790
 - Outler's date: серпень 1789
 

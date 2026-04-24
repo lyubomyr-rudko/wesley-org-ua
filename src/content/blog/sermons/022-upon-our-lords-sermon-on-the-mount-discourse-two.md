@@ -10,6 +10,14 @@ tags:
 
 # Sermon 22 - Upon Our Lord's Sermon On The Mount: Discourse Two
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 22 - Upon Our Lord's Sermon On The Mount: Discourse Two"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 липня 1739
 - Outler's date: 1748
 

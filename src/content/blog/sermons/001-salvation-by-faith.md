@@ -11,6 +11,14 @@ tags:
 
 # Проповідь 1 - Спасіння вірою
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Проповідь 1 - Спасіння вірою"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 ##### Salvation By Faith
 
 Проголошено в церкві Св. Марії, Оксфорд, перед університетом, 18 червня 1738 року.

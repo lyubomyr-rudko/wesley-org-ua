@@ -10,6 +10,14 @@ tags:
 
 # Sermon 81 - In What Sense We Are To Leave The World
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 81 - In What Sense We Are To Leave The World"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 17 липня 1784
 
 - Source slug: 081-in-what-sense-we-are-to-leave-the-world

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 95 - On The Education Of Children
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 95 - On The Education Of Children"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 12 липня 1783
 - Outler's date: 1783
 

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 100 - On Pleasing All Men
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 100 - On Pleasing All Men"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22 травня 1787
 
 - Source slug: 100-on-pleasing-all-men

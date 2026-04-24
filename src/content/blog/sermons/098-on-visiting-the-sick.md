@@ -10,6 +10,14 @@ tags:
 
 # Sermon 98 - On Visiting The Sick
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 98 - On Visiting The Sick"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 23 травня 1786
 
 - Source slug: 098-on-visiting-the-sick

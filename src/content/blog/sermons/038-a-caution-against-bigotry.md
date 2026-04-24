@@ -10,6 +10,14 @@ tags:
 
 # Sermon 38 - A Caution Against Bigotry
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 38 - A Caution Against Bigotry"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 

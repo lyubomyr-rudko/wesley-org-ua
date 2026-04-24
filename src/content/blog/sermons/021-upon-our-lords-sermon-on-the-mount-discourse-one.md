@@ -10,6 +10,14 @@ tags:
 
 # Sermon 21 - Upon Our Lord's Sermon On The Mount: Discourse One
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 21 - Upon Our Lord's Sermon On The Mount: Discourse One"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 липня 1739
 - Outler's date: 1748
 

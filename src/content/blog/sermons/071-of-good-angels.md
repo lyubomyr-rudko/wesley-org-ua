@@ -10,6 +10,14 @@ tags:
 
 # Sermon 71 - Of Good Angels
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 71 - Of Good Angels"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 29 серпня 1782
 - Outler's date: січень-лютий 1783
 

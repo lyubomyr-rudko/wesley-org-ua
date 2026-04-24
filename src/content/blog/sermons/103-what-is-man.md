@@ -10,6 +10,14 @@ tags:
 
 # Sermon 103 - What Is Man?
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 103 - What Is Man?"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 23 липня 1787
 
 - Source slug: 103-what-is-man

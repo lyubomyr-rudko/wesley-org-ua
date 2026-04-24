@@ -10,6 +10,14 @@ tags:
 
 # Sermon 69 - The Imperfection Of Human Knowledge
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 69 - The Imperfection Of Human Knowledge"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 5 березня 1784
 
 - Source slug: 069-the-imperfection-of-human-knowledge

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 41 - Wandering Thoughts
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 41 - Wandering Thoughts"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 30 листопада 1760
 - Outler's date: 1762
 

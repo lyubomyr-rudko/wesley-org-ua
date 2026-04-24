@@ -10,6 +10,14 @@ tags:
 
 # Sermon 96 - On Obedience To Parents
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 96 - On Obedience To Parents"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1784
 - Outler's date: жовтень-листопад 1784
 

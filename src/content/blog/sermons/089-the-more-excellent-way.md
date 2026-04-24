@@ -10,6 +10,14 @@ tags:
 
 # Sermon 89 - The More Excellent Way
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 89 - The More Excellent Way"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1787
 
 - Source slug: 089-the-more-excellent-way

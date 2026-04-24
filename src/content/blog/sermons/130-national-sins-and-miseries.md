@@ -10,6 +10,14 @@ tags:
 
 # Sermon 130 - National Sins And Miseries
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 130 - National Sins And Miseries"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 7 листопада 1775
 
 - Source slug: 130-national-sins-and-miseries

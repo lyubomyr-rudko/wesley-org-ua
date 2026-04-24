@@ -10,6 +10,14 @@ tags:
 
 # Sermon 60 - The General Deliverance
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 60 - The General Deliverance"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 30 листопада 1781
 
 - Source slug: 060-the-general-deliverance

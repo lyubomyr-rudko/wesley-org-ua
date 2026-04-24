@@ -10,6 +10,14 @@ tags:
 
 # Sermon 109 - What Is Man?
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 109 - What Is Man?"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 2 травня 1788
 
 - Source slug: 109-what-is-man

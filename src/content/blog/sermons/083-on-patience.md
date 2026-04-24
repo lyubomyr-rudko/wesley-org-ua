@@ -10,6 +10,14 @@ tags:
 
 # Sermon 83 - On Patience
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 83 - On Patience"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 13 липня 1761
 - Outler's date: 1784
 

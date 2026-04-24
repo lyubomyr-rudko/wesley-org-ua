@@ -10,6 +10,14 @@ tags:
 
 # Sermon 18 - The Marks Of The New Birth
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 18 - The Marks Of The New Birth"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 3 квітня 1741
 - Outler's date: 1748
 

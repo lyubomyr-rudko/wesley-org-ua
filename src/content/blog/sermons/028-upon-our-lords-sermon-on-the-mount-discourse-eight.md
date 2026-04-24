@@ -10,6 +10,14 @@ tags:
 
 # Sermon 28 - Upon Our Lord's Sermon On The Mount: Discourse Eight
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 28 - Upon Our Lord's Sermon On The Mount: Discourse Eight"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-16 листопада 1747
 - Outler's date: 1748
 

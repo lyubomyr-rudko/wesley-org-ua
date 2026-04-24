@@ -10,6 +10,14 @@ tags:
 
 # Sermon 44 - Original Sin
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 44 - Original Sin"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 15 травня 1754
 - Outler's date: 1759
 

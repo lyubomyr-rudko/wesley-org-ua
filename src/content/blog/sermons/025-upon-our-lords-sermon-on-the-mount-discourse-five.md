@@ -10,6 +10,14 @@ tags:
 
 # Sermon 25 - Upon Our Lord's Sermon On The Mount: Discourse Five
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 25 - Upon Our Lord's Sermon On The Mount: Discourse Five"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22-26 жовтня 1740
 - Outler's date: 1748
 

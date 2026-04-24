@@ -10,6 +10,14 @@ tags:
 
 # Sermon 15 - The Great Assize
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 15 - The Great Assize"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 10 березня 1758
 
 - Source slug: 015-the-great-assize

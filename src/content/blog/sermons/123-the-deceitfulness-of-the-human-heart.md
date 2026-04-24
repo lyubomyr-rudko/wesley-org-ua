@@ -10,6 +10,14 @@ tags:
 
 # Sermon 123 - The Deceitfulness Of The Human Heart
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 123 - The Deceitfulness Of The Human Heart"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 21 квітня 1790
 
 - Source slug: 123-the-deceitfulness-of-the-human-heart

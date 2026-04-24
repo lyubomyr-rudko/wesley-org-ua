@@ -10,6 +10,14 @@ tags:
 
 # Sermon 4 - Scriptural Christianity
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 4 - Scriptural Christianity"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 24 серпня 1744
 
 - Source slug: 004-scriptural-christianity

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 107 - On God's Vineyard
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 107 - On God's Vineyard"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 5 грудня 1779
 - Outler's date: 17 жовтня 1787
 

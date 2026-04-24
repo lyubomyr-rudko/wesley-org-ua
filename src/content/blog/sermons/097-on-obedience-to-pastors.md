@@ -10,6 +10,14 @@ tags:
 
 # Sermon 97 - On Obedience To Pastors
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 97 - On Obedience To Pastors"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 18 березня 1785
 - Outler's date: 1785
 

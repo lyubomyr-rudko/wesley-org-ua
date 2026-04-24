@@ -10,6 +10,14 @@ tags:
 
 # Sermon 6 - The Righteousness Of Faith
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 6 - The Righteousness Of Faith"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 18 жовтня 1741
 - Outler's date: 1746
 

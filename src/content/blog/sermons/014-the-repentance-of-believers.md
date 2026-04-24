@@ -10,6 +10,14 @@ tags:
 
 # Sermon 14 - The Repentance Of Believers
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 14 - The Repentance Of Believers"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 26 травня 1758
 - Outler's date: 24 квітня 1767
 

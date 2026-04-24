@@ -10,6 +10,14 @@ tags:
 
 # Sermon 85 - On Working Out Our Own Salvation
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 85 - On Working Out Our Own Salvation"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1785
 - Outler's date: вересень-жовтень 1785
 

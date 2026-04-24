@@ -10,6 +10,14 @@ tags:
 
 # Sermon 108 - On Riches
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 108 - On Riches"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22 квітня 1788
 
 - Source slug: 108-on-riches

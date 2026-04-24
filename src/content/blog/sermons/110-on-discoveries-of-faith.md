@@ -10,6 +10,14 @@ tags:
 
 # Sermon 110 - On Discoveries Of Faith
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 110 - On Discoveries Of Faith"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 27 жовтня 1761
 - Outler's date: 11 червня 1788
 

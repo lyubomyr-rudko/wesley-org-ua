@@ -10,6 +10,14 @@ tags:
 
 # Sermon 37 - The Nature Of Enthusiasm
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 37 - The Nature Of Enthusiasm"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 

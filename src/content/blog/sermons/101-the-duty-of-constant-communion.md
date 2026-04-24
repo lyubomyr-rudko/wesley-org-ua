@@ -10,6 +10,14 @@ tags:
 
 # Sermon 101 - The Duty Of Constant Communion
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 101 - The Duty Of Constant Communion"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 19 лютого 1732
 - Outler's date: 1787
 

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 9 - The Spirit Of Bondage And Of Adoption
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 9 - The Spirit Of Bondage And Of Adoption"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 25 квітня 1739
 - Outler's date: 1746
 

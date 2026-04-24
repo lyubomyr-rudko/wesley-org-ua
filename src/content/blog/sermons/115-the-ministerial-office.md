@@ -10,6 +10,14 @@ tags:
 
 # Sermon 115 - The Ministerial Office
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 115 - The Ministerial Office"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 4 травня 1789
 
 - Source slug: 115-the-ministerial-office

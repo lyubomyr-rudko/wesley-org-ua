@@ -10,6 +10,14 @@ tags:
 
 # Sermon 58 - On Predestination
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 58 - On Predestination"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 7 травня 1775
 
 - Source slug: 058-on-predestination

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 20 - The Lord Our Righteousness
 
+<img
+  src="../../images/wesley-at-holy-club.png"
+  alt="Ілюстрація до Sermon 20 - The Lord Our Righteousness"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 22 жовтня 1758
 - Outler's date: 24 листопада 1765
 

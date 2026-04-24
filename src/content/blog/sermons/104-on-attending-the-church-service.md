@@ -10,6 +10,14 @@ tags:
 
 # Sermon 104 - On Attending The Church Service
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 104 - On Attending The Church Service"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 7 жовтня 1787
 
 - Source slug: 104-on-attending-the-church-service

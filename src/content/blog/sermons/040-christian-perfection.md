@@ -10,6 +10,14 @@ tags:
 
 # Sermon 40 - Christian Perfection
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 40 - Christian Perfection"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 11 листопада 1739
 - Outler's date: 1741
 

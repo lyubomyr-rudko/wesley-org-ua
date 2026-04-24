@@ -10,6 +10,14 @@ tags:
 
 # Sermon 32 - Upon Our Lord's Sermon On The Mount: Discourse Twelve
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 32 - Upon Our Lord's Sermon On The Mount: Discourse Twelve"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 30 січня 1743
 - Outler's date: 1750
 

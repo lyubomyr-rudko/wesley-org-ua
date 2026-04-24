@@ -10,6 +10,14 @@ tags:
 
 # Sermon 16 - The Means Of Grace
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 16 - The Means Of Grace"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 15 листопада 1739
 - Outler's date: 1746
 

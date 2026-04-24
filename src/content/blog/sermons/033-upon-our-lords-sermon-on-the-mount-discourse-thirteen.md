@@ -10,6 +10,14 @@ tags:
 
 # Sermon 33 - Upon Our Lord's Sermon On The Mount: Discourse Thirteen
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 33 - Upon Our Lord's Sermon On The Mount: Discourse Thirteen"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 

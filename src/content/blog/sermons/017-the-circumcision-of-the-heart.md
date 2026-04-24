@@ -10,6 +10,14 @@ tags:
 
 # Sermon 17 - The Circumcision Of The Heart
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 17 - The Circumcision Of The Heart"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1 січня 1733
 - Outler's date: 1733
 

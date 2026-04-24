@@ -10,6 +10,14 @@ tags:
 
 # Sermon 19 - The Great Privilege Of Those That Are Born Of God
 
+<img
+  src="../../images/wesley-podcasting.png"
+  alt="Ілюстрація до Sermon 19 - The Great Privilege Of Those That Are Born Of God"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 23 вересня 1739
 - Outler's date: 1748
 

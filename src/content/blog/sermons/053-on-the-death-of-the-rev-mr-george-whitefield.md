@@ -10,6 +10,14 @@ tags:
 
 # Sermon 53 - On The Death Of The Rev. Mr. George Whitefield
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 53 - On The Death Of The Rev. Mr. George Whitefield"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 11 листопада 1770
 
 - Source slug: 053-on-the-death-of-the-rev-mr-george-whitefield

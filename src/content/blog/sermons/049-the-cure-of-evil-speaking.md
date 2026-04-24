@@ -10,6 +10,14 @@ tags:
 
 # Sermon 49 - The Cure Of Evil-speaking
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 49 - The Cure Of Evil-speaking"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 5 лютого 1752
 - Outler's date: 1760
 

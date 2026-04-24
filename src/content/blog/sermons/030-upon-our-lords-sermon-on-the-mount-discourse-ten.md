@@ -10,6 +10,14 @@ tags:
 
 # Sermon 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 2 червня 1742
 - Outler's date: 1750
 

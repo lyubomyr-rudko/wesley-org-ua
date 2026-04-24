@@ -10,6 +10,14 @@ tags:
 
 # Sermon 65 - The Duty Of Reproving Our Neighbour
 
+<img
+  src="../../images/wesley-writing.png"
+  alt="Ілюстрація до Sermon 65 - The Duty Of Reproving Our Neighbour"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 28 липня 1787
 
 - Source slug: 065-the-duty-of-reproving-our-neighbour

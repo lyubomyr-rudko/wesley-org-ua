@@ -10,6 +10,14 @@ tags:
 
 # Sermon 112 - The Rich Man And Lazarus
 
+<img
+  src="../../images/wesley-preaching.png"
+  alt="Ілюстрація до Sermon 112 - The Rich Man And Lazarus"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 25 березня 1788
 
 - Source slug: 112-the-rich-man-and-lazarus

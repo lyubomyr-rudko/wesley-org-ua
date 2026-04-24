@@ -10,6 +10,14 @@ tags:
 
 # Sermon 50 - The Use Of Money
 
+<img
+  src="../../images/wesley-praing.png"
+  alt="Ілюстрація до Sermon 50 - The Use Of Money"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 17 лютого 1744
 - Outler's date: 1760
 

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 82 - On Temptation
 
+<img
+  src="../../images/wesley-on-a-boat.png"
+  alt="Ілюстрація до Sermon 82 - On Temptation"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 7 жовтня 1786
 
 - Source slug: 082-on-temptation

@@ -10,6 +10,14 @@ tags:
 
 # Sermon 35 - The Law Established Through Faith: Discourse One
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 35 - The Law Established Through Faith: Discourse One"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 27 червня 1741
 - Outler's date: 1750
 

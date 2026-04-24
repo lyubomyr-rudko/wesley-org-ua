@@ -10,6 +10,14 @@ tags:
 
 # Sermon 42 - Satan's Devices
 
+<img
+  src="../../images/wesley-riding.png"
+  alt="Ілюстрація до Sermon 42 - Satan's Devices"
+  loading="eager"
+  class="post-lead-portrait"
+/>
+
+
 - Smith's date: 1-7 листопада 1749
 - Outler's date: 1750
 
