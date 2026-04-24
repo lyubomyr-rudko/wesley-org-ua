@@ -18,7 +18,7 @@ class="post-lead-portrait"
 />
 
 > 18 жовтня 1741
-- Outler's date: 1746
+
 
 
 

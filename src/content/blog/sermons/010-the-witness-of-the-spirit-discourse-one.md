@@ -18,7 +18,7 @@ class="post-lead-portrait"
 />
 
 > травень-червень 1746
-- Outler's date: 1746
+
 
 
 

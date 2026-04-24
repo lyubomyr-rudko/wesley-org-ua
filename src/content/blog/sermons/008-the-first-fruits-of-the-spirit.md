@@ -18,7 +18,7 @@ class="post-lead-portrait"
 />
 
 > 25 червня 1745
-- Outler's date: 1746
+
 
 
 
