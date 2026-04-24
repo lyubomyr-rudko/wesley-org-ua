@@ -17,10 +17,10 @@ loading="eager"
 class="post-lead-portrait"
 />
 
-- Smith's date: 18 жовтня 1741
-- Outler's date: 1746
+> 18 жовтня 1741
 
-- Source slug: 006-the-righteousness-of-faith
+
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-6-the-righteousness-of-faith/
 

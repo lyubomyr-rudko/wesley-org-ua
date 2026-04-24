@@ -17,10 +17,10 @@ loading="eager"
 class="post-lead-portrait"
 />
 
-- Smith's date: 6 жовтня 1739
-- Outler's date: 1746
+> 6 жовтня 1739
 
-- Source slug: 005-justification-by-faith
+
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-5-justification-by-faith/
 

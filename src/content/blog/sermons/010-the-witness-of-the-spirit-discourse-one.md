@@ -17,10 +17,10 @@ loading="eager"
 class="post-lead-portrait"
 />
 
-- Smith's date: травень-червень 1746
-- Outler's date: 1746
+> травень-червень 1746
 
-- Source slug: 010-the-witness-of-the-spirit-discourse-one
+
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-10-the-witness-of-the-spirit-discourse-one/
 

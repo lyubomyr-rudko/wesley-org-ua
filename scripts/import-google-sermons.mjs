@@ -334,7 +334,7 @@ function stripDuplicateTitle(content) {
 }
 
 function replaceSermonBody(currentContent, importedBody) {
-  const marker = /^- Source slug: .+$/m;
+  const marker = /^
   const match = currentContent.match(marker);
 
   if (match?.index == null) {
