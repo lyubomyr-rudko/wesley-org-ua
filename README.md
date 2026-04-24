@@ -1,5 +1,7 @@
 # Wesley.org.ua
 
+# Test qa deployment
+
 Astro site for Wesley content in Ukrainian.
 
 ## Local development

@@ -20,20 +20,31 @@ type BlogPostEntry = CollectionEntry<"blog">;
 >
   <div class="home-shell">
     <section class="home-hero">
-      <p class="home-kicker">We love as Christ loved</p>
-      <h1 class="home-title">Центр Джона Веслі українською</h1>
-      <p class="home-summary">
-        Переклади, дослідження та добірка матеріалів про життя, проповідь,
-        богослов'я і духовну спадщину Джона Веслі для українського читача.
-      </p>
+      <div class="home-hero-copy">
+        <p class="home-kicker">We love as Christ loved</p>
+        <h1 class="home-title">Центр Джона Веслі українською</h1>
+        <p class="home-summary">
+          Переклади, дослідження та добірка матеріалів про життя, проповідь,
+          богослов'я і духовну спадщину Джона Веслі для українського читача.
+        </p>
 
-      <div class="home-actions">
-        <a class="button-primary" href="#materials">Читати матеріали</a>
-        {posts[0] && (
-          <a class="button-secondary" href={withBase(`/${posts[0].id}/`)}>
-            Відкрити останню публікацію
-          </a>
-        )}
+        <div class="home-actions">
+          <a class="button-primary" href="#materials">Читати матеріали</a>
+          {posts[0] && (
+            <a class="button-secondary" href={withBase(`/${posts[0].id}/`)}>
+              Відкрити останню публікацію
+            </a>
+          )}
+        </div>
+      </div>
+
+      <div class="home-hero-visual">
+        <img
+          class="home-hero-image"
+          src={withBase("/images/wesley-preaching.png")}
+          alt="Джон Веслі проповідує просто неба перед зібранням слухачів"
+          loading="eager"
+        />
       </div>
     </section>
 
