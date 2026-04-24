@@ -1,6 +1,6 @@
 # Wesley.org.ua
 
-# Test dev deployment
+# Test qa deployment
 
 Astro site for Wesley content in Ukrainian.
 
