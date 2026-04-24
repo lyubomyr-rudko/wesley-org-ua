@@ -4,6 +4,6 @@ import react from "@astrojs/react";
 import partytown from "@astrojs/partytown";
 
 export default defineConfig({
-  site: "https://lyubomyr-rudko.github.io",
+  site: process.env.SITE_URL ?? "https://wesley.org.ua",
   integrations: [react(), partytown()],
 });

@@ -189,6 +189,7 @@ const translationsTitleMap = {
     "Небесний Скарб У Глиняних Посудинах",
   "On Living Without God": "Про Життя Без Бога",
   "On The Danger Of Increasing Riches": "Про Небезпеку Зростання Багатства",
+  "The Witness Of The Spirit: Discourse Two": "Свідчення Духа: Бесіда друга",
 };
 
 const translateTitle = (value) => translationsTitleMap[value] ?? value;
