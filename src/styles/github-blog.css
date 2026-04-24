@@ -713,6 +713,33 @@ img {
   border-radius: 16px;
 }
 
+.post-content .post-lead-portrait {
+  display: block;
+  width: clamp(180px, 28vw, 280px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0 auto 1.75rem;
+  border-radius: 999px;
+  border: 6px solid rgba(255, 251, 245, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(188, 169, 146, 0.68),
+    0 24px 46px rgba(71, 44, 24, 0.16);
+  background: rgba(255, 251, 245, 0.9);
+}
+
+.post-content img:not(.post-lead-portrait) {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 1.5rem auto 1.75rem;
+  border-radius: 16px;
+  border: 4px solid rgba(255, 251, 245, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(188, 169, 146, 0.68),
+    0 18px 36px rgba(71, 44, 24, 0.14);
+  background: rgba(255, 251, 245, 0.9);
+}
+
 .hero-image {
   margin-top: 1.5rem;
   border: 1px solid rgba(188, 169, 146, 0.72);

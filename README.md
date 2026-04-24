@@ -46,3 +46,35 @@ The target QA repository should:
 ```sh
 npm run build
 ```
+
+## Import translated sermons
+
+If you download translated sermons from Google Drive, you can import them into `src/content/blog/sermons` with:
+
+```sh
+npm run import:sermons -- --input-dir /path/to/downloaded-files --dry-run
+```
+
+Then run the real import:
+
+```sh
+npm run import:sermons -- --input-dir /path/to/downloaded-files
+```
+
+What the script does:
+
+- supports `.doc`, `.docx`, `.odt`, `.rtf`, `.html`, `.htm`, `.txt`, `.md`
+- matches files to sermon markdown files by leading sermon number or by slugified filename
+- preserves frontmatter, title, lead portrait, and metadata block in the target sermon file
+- replaces only the sermon body after the `- Source slug:` line
+
+Useful flags:
+
+- `--dry-run`: show what would be updated without writing files
+- `--create-missing`: create a new sermon markdown file if a target file does not already exist
+
+Recommended input naming:
+
+- `001 Salvation By Faith.docx`
+- `010 The Witness Of The Spirit Discourse One.html`
+- `050-the-use-of-money.txt`

@@ -20,6 +20,11 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         Той самий список проповідей Джона Веслі, але відсортований за номерами у
         порядку зростання. Для кожної позиції показано номер, назву та дату.
       </p>
+      <div class="home-actions">
+        <a class="button-secondary" href={withBase("/propovidi-po-datah/")}>
+          Проповіді у Хронологічному порядку
+        </a>
+      </div>
     </section>
 
     <section class="resource-panel">
