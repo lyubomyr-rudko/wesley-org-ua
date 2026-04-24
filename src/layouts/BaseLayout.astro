@@ -1,9 +1,18 @@
 ---
 import "../styles/github-blog.css";
 const { title = "Джон Веслі українською", description = "" } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 const currentPath = Astro.url.pathname;
+const normalizedBasePath = baseUrl.replace(/\/$/, "");
+const currentRoute = currentPath.startsWith(normalizedBasePath)
+  ? currentPath.slice(normalizedBasePath.length) || "/"
+  : currentPath;
+const withBase = (path = "/") =>
+  path === "/" ? baseUrl : `${baseUrl}${path.replace(/^\/+/, "")}`;
 const isActivePath = (path) =>
-  currentPath === path || currentPath === path.replace(/\/$/, "");
+  currentRoute === path || currentRoute === path.replace(/\/$/, "");
 ---
 
 <!doctype html>
@@ -17,17 +26,17 @@ const isActivePath = (path) =>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="brand">Центр Джона Веслі українською</a>
+        <a href={withBase("/")} class="brand">Центр Джона Веслі українською</a>
         <nav class="nav">
-          <a href="/" class={currentPath === "/" ? "is-active" : undefined}>Головна</a>
+          <a href={withBase("/")} class={currentRoute === "/" ? "is-active" : undefined}>Головна</a>
           <a
-            href="/propovidi/"
+            href={withBase("/propovidi/")}
             class={isActivePath("/propovidi/") ? "is-active" : undefined}
           >
             Проповіді
           </a>
           <a
-            href="/propovidi-po-datah/"
+            href={withBase("/propovidi-po-datah/")}
             class={isActivePath("/propovidi-po-datah/") ? "is-active" : undefined}
           >
             Проповіді у Хронологічному порядку

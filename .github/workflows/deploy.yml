@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-      - qa
+      - dev
   workflow_dispatch:
 
 concurrency:
@@ -23,6 +23,7 @@ jobs:
       contents: read
     env:
       SITE_URL: https://wesley.org.ua
+      SITE_BASE: /
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -60,12 +61,13 @@ jobs:
         uses: actions/deploy-pages@v5
 
   build-qa:
-    if: github.ref_name == 'qa'
+    if: github.ref_name == 'dev'
     runs-on: ubuntu-latest
     permissions:
       contents: read
     env:
-      SITE_URL: https://qa.wesley.org.ua
+      SITE_URL: https://lyubomyr-rudko.github.io
+      SITE_BASE: /wesley-qa-env
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -89,12 +91,12 @@ jobs:
           path: ./dist
 
   deploy-qa:
-    if: github.ref_name == 'qa'
+    if: github.ref_name == 'dev'
     needs: build-qa
     runs-on: ubuntu-latest
     environment:
       name: qa
-      url: https://qa.wesley.org.ua
+      url: https://lyubomyr-rudko.github.io/wesley-qa-env/
     steps:
       - name: Download QA artifact
         uses: actions/download-artifact@v4
@@ -109,5 +111,3 @@ jobs:
           external_repository: ${{ vars.QA_PAGES_REPOSITORY }}
           publish_branch: gh-pages
           publish_dir: ./dist
-          cname: qa.wesley.org.ua
-

@@ -3,6 +3,11 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+
 const posts = (await getCollection("blog"))
   .filter((post) => !post.id.startsWith("sermons/"))
   .sort((a, b) => (b.data.pubDate ?? "").localeCompare(a.data.pubDate ?? ""));
@@ -25,7 +30,7 @@ type BlogPostEntry = CollectionEntry<"blog">;
       <div class="home-actions">
         <a class="button-primary" href="#materials">Читати матеріали</a>
         {posts[0] && (
-          <a class="button-secondary" href={`/${posts[0].id}/`}>
+          <a class="button-secondary" href={withBase(`/${posts[0].id}/`)}>
             Відкрити останню публікацію
           </a>
         )}
@@ -54,7 +59,7 @@ type BlogPostEntry = CollectionEntry<"blog">;
         {
           posts.map((post: BlogPostEntry) => (
             <li class="post-item">
-              <a class="post-link" href={`/${post.id}/`}>
+              <a class="post-link" href={withBase(`/${post.id}/`)}>
                 {post.data.pubDate && (
                   <span class="post-date">{post.data.pubDate}</span>
                 )}
