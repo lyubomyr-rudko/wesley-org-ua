@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 35 - The Law Established Through Faith: Discourse One"
+title: "Проповідь 35 - Закон, утверджений вірою: Перше повчання"
 description: 'Переклад проповіді "The Law Established Through Faith: Discourse One".'
 pubDate: "27 червня 1741"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 35 - The Law Established Through Faith: Discourse One
+# Проповідь 35 - Закон, утверджений вірою: Перше повчання
 
 <img
   src="../../images/wesley-riding.png"

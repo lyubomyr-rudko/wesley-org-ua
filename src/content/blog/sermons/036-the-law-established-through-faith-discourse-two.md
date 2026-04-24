@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 36 - The Law Established Through Faith: Discourse Two"
+title: "Проповідь 36 - Закон, утверджений вірою: Друге повчання"
 description: 'Переклад проповіді "The Law Established Through Faith: Discourse Two".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 36 - The Law Established Through Faith: Discourse Two
+# Проповідь 36 - Закон, утверджений вірою: Друге повчання
 
 <img
   src="../../images/wesley-praing.png"

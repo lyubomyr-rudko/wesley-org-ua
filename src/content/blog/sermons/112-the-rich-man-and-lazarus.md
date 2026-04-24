@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 112 - The Rich Man And Lazarus"
+title: "Проповідь 112 - Багач і Лазар"
 description: 'Переклад проповіді "The Rich Man And Lazarus".'
 pubDate: "25 березня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 112 - The Rich Man And Lazarus
+# Проповідь 112 - Багач і Лазар
 
 <img
   src="../../images/wesley-preaching.png"

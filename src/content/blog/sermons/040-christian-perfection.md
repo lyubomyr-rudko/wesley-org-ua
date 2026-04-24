@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 40 - Christian Perfection"
+title: "Проповідь 40 - Християнська Досконалість"
 description: 'Переклад проповіді "Christian Perfection".'
 pubDate: "11 листопада 1739"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 40 - Christian Perfection
+# Проповідь 40 - Християнська Досконалість
 
 <img
   src="../../images/wesley-podcasting.png"

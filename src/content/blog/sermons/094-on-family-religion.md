@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 94 - On Family Religion"
+title: "Проповідь 94 - Про сімейну релігію"
 description: 'Переклад проповіді "On Family Religion".'
 pubDate: "26 травня 1783"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 94 - On Family Religion
+# Проповідь 94 - Про сімейну релігію
 
 <img
   src="../../images/wesley-riding.png"

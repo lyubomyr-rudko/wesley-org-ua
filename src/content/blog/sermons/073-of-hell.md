@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 73 - Of Hell"
+title: "Проповідь 73 - Про пекло"
 description: 'Переклад проповіді "Of Hell".'
 pubDate: "10 жовтня 1782"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 73 - Of Hell
+# Проповідь 73 - Про пекло
 
 <img
   src="../../images/wesley-on-a-boat.png"

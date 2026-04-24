@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 11 - The Witness Of The Spirit: Discourse Two"
+title: "Проповідь 11 - Свідчення Духа: Промова Друга"
 description: 'Переклад проповіді "The Witness Of The Spirit: Discourse Two".'
 pubDate: "4 квітня 1767"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 11 - The Witness Of The Spirit: Discourse Two
+# Проповідь 11 - Свідчення Духа: Промова Друга
 
 <img
   src="../../images/wesley-preaching.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 125 - On Living Without God"
+title: "Проповідь 125 - Про життя без Бога"
 description: 'Переклад проповіді "On Living Without God".'
 pubDate: "6 липня 1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 125 - On Living Without God
+# Проповідь 125 - Про життя без Бога
 
 <img
   src="../../images/wesley-on-a-boat.png"

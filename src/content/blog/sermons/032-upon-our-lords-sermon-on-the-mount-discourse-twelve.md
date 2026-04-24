@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 32 - Upon Our Lord's Sermon On The Mount: Discourse Twelve"
+title: "Проповідь 32 - Нагірна Проповідь Господа нашого: Дванадцята бесіда"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Twelve".'
 pubDate: "30 січня 1743"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 32 - Upon Our Lord's Sermon On The Mount: Discourse Twelve
+# Проповідь 32 - Нагірна Проповідь Господа нашого: Дванадцята бесіда
 
 <img
   src="../../images/wesley-preaching.png"

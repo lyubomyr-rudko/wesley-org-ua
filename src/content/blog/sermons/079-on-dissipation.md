@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 79 - On Dissipation"
+title: "Проповідь 79 - Про розсіяння"
 description: 'Переклад проповіді "On Dissipation".'
 pubDate: "1783"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 79 - On Dissipation
+# Проповідь 79 - Про розсіяння
 
 <img
   src="../../images/wesley-riding.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 41 - Wandering Thoughts"
+title: "Проповідь 41 - Блукаючі думки"
 description: 'Переклад проповіді "Wandering Thoughts".'
 pubDate: "30 листопада 1760"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 41 - Wandering Thoughts
+# Проповідь 41 - Блукаючі думки
 
 <img
   src="../../images/wesley-at-holy-club.png"

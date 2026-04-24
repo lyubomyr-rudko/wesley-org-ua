@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 17 - The Circumcision Of The Heart"
+title: "Проповідь 17 - Обрізання серця"
 description: 'Переклад проповіді "The Circumcision Of The Heart".'
 pubDate: "1 січня 1733"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 17 - The Circumcision Of The Heart
+# Проповідь 17 - Обрізання серця
 
 <img
   src="../../images/wesley-on-a-boat.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 111 - On The Omnipresence Of God"
+title: "Проповідь 111 - Про всюдисущість Бога."
 description: 'Переклад проповіді "On The Omnipresence Of God".'
 pubDate: "12 серпня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 111 - On The Omnipresence Of God
+# Проповідь 111 - Про всюдисущість Бога.
 
 <img
   src="../../images/wesley-on-a-boat.png"

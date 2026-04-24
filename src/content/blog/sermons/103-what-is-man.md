@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 103 - What Is Man?"
+title: "Проповідь 103 - Що є людина?"
 description: 'Переклад проповіді "What Is Man?".'
 pubDate: "23 липня 1787"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 103 - What Is Man?
+# Проповідь 103 - Що є людина?
 
 <img
   src="../../images/wesley-writing.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 131 - The Late Work Of God In North America"
+title: "Проповідь 131 - Пізня Божа праця у Північній Америці"
 description: 'Переклад проповіді "The Late Work Of God In North America".'
 pubDate: "1778"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 131 - The Late Work Of God In North America
+# Проповідь 131 - Пізня Божа праця у Північній Америці
 
 <img
   src="../../images/wesley-writing.png"

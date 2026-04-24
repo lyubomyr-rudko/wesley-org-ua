@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 66 - The Signs Of The Times"
+title: "Проповідь 66 - Ознаки часів"
 description: 'Переклад проповіді "The Signs Of The Times".'
 pubDate: "27 серпня 1777"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 66 - The Signs Of The Times
+# Проповідь 66 - Ознаки часів
 
 <img
   src="../../images/wesley-on-a-boat.png"

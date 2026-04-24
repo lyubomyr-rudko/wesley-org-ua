@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 60 - The General Deliverance"
+title: "Проповідь 60 - Загальне Визволення"
 description: 'Переклад проповіді "The General Deliverance".'
 pubDate: "30 листопада 1781"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 60 - The General Deliverance
+# Проповідь 60 - Загальне Визволення
 
 <img
   src="../../images/wesley-preaching.png"

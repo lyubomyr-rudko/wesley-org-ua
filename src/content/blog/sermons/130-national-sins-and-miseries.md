@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 130 - National Sins And Miseries"
+title: "Проповідь 130 - Національні гріхи та нещастя"
 description: 'Переклад проповіді "National Sins And Miseries".'
 pubDate: "7 листопада 1775"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 130 - National Sins And Miseries
+# Проповідь 130 - Національні гріхи та нещастя
 
 <img
   src="../../images/wesley-praing.png"

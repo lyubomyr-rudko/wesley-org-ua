@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 43 - The Scripture Way Of Salvation"
+title: "Проповідь 43 - Біблійний шлях спасіння"
 description: 'Переклад проповіді "The Scripture Way Of Salvation".'
 pubDate: "22 травня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 43 - The Scripture Way Of Salvation
+# Проповідь 43 - Біблійний шлях спасіння
 
 <img
   src="../../images/wesley-praing.png"

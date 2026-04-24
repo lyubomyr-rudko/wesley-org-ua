@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 117 - On Knowing Christ After The Flesh"
+title: "Проповідь 117 - Про пізнання Христа за тілом"
 description: 'Переклад проповіді "On Knowing Christ After The Flesh".'
 pubDate: "15 серпня 1789"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 117 - On Knowing Christ After The Flesh
+# Проповідь 117 - Про пізнання Христа за тілом
 
 <img
   src="../../images/wesley-writing.png"

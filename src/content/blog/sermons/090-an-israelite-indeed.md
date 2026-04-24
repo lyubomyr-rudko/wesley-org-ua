@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 90 - An Israelite Indeed"
+title: "Проповідь 90 - Справжній ізраїльтянин"
 description: 'Переклад проповіді "An Israelite Indeed".'
 pubDate: "1785"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 90 - An Israelite Indeed
+# Проповідь 90 - Справжній ізраїльтянин
 
 <img
   src="../../images/wesley-on-a-boat.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 115 - The Ministerial Office"
+title: "Проповідь 115 - Покликання до служіння"
 description: 'Переклад проповіді "The Ministerial Office".'
 pubDate: "4 травня 1789"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 115 - The Ministerial Office
+# Проповідь 115 - Покликання до служіння
 
 <img
   src="../../images/wesley-riding.png"

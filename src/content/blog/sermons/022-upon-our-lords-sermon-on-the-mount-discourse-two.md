@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 22 - Upon Our Lord's Sermon On The Mount: Discourse Two"
+title: "Проповідь 22 - Про Нагірну проповідь нашого Господа: Друге повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Two".'
 pubDate: "21 липня 1739"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 22 - Upon Our Lord's Sermon On The Mount: Discourse Two
+# Проповідь 22 - Про Нагірну проповідь нашого Господа: Друге повчання
 
 <img
   src="../../images/wesley-praing.png"

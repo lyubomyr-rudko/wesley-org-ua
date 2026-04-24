@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 42 - Satan's Devices"
+title: "Проповідь 42 - Задуми сатани"
 description: 'Переклад проповіді "Satan''s Devices".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 42 - Satan's Devices
+# Проповідь 42 - Задуми сатани
 
 <img
   src="../../images/wesley-riding.png"

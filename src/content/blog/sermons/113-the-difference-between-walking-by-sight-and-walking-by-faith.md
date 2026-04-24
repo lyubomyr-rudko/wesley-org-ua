@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 113 - The Difference Between Walking By Sight, And Walking By Faith"
+title: "Проповідь 113 - Різниця між життям вірою і життя тим, що бачимо"
 description: 'Переклад проповіді "The Difference Between Walking By Sight, And Walking By Faith".'
 pubDate: "30 грудня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 113 - The Difference Between Walking By Sight, And Walking By Faith
+# Проповідь 113 - Різниця між життям вірою і життя тим, що бачимо
 
 <img
   src="../../images/wesley-podcasting.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 96 - On Obedience To Parents"
+title: "Проповідь 96 - Про Послух Батькам"
 description: 'Переклад проповіді "On Obedience To Parents".'
 pubDate: "1784"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 96 - On Obedience To Parents
+# Проповідь 96 - Про Послух Батькам
 
 <img
   src="../../images/wesley-writing.png"

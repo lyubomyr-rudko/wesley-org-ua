@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 88 - On Dress"
+title: "Проповідь 88 - Про одяг"
 description: 'Переклад проповіді "On Dress".'
 pubDate: "30 грудня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 88 - On Dress
+# Проповідь 88 - Про одяг
 
 <img
   src="../../images/wesley-praing.png"

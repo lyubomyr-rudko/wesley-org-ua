@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 14 - The Repentance Of Believers"
+title: "Проповідь 14 - Покаяння віруючих"
 description: 'Переклад проповіді "The Repentance Of Believers".'
 pubDate: "26 травня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 14 - The Repentance Of Believers
+# Проповідь 14 - Покаяння віруючих
 
 <img
   src="../../images/wesley-riding.png"

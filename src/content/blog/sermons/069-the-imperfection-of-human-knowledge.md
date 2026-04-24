@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 69 - The Imperfection Of Human Knowledge"
+title: "Проповідь 69 - Недосконалість людського знання"
 description: 'Переклад проповіді "The Imperfection Of Human Knowledge".'
 pubDate: "5 березня 1784"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 69 - The Imperfection Of Human Knowledge
+# Проповідь 69 - Недосконалість людського знання
 
 <img
   src="../../images/wesley-at-holy-club.png"

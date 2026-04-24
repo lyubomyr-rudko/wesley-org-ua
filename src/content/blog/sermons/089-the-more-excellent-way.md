@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 89 - The More Excellent Way"
+title: "Проповідь 89 - Путь іще краща"
 description: 'Переклад проповіді "The More Excellent Way".'
 pubDate: "1787"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 89 - The More Excellent Way
+# Проповідь 89 - Путь іще краща
 
 <img
   src="../../images/wesley-writing.png"

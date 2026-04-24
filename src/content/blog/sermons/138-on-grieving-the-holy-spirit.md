@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 138 - On Grieving The Holy Spirit"
+title: "Проповідь 138 - Про скорботу Святого Духа"
 description: 'Переклад проповіді "On Grieving The Holy Spirit".'
 pubDate: "1733"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 138 - On Grieving The Holy Spirit
+# Проповідь 138 - Про скорботу Святого Духа
 
 <img
   src="../../images/wesley-praing.png"

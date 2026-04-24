@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 44 - Original Sin"
+title: "Проповідь 44 - Первородний гріх"
 description: 'Переклад проповіді "Original Sin".'
 pubDate: "15 травня 1754"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 44 - Original Sin
+# Проповідь 44 - Первородний гріх
 
 <img
   src="../../images/wesley-writing.png"

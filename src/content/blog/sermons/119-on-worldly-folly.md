@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 119 - On Worldly Folly"
+title: "Проповідь 119 - Про світську глупоту"
 description: 'Переклад проповіді "On Worldly Folly".'
 pubDate: "19 лютого 1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 119 - On Worldly Folly
+# Проповідь 119 - Про світську глупоту
 
 <img
   src="../../images/wesley-preaching.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 120 - On The Wedding Garment"
+title: "Проповідь 120 - Про весільну одежу"
 description: 'Переклад проповіді "On The Wedding Garment".'
 pubDate: "26 березня 1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 120 - On The Wedding Garment
+# Проповідь 120 - Про весільну одежу
 
 <img
   src="../../images/wesley-podcasting.png"

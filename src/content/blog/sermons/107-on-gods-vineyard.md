@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 107 - On God's Vineyard"
+title: "Проповідь 107 - Про Божий виноградник"
 description: 'Переклад проповіді "On God''s Vineyard".'
 pubDate: "5 грудня 1779"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 107 - On God's Vineyard
+# Проповідь 107 - Про Божий виноградник
 
 <img
   src="../../images/wesley-at-holy-club.png"

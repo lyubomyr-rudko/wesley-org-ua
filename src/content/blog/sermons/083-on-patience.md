@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 83 - On Patience"
+title: "Проповідь 83 - Про терпеливість"
 description: 'Переклад проповіді "On Patience".'
 pubDate: "13 липня 1761"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 83 - On Patience
+# Проповідь 83 - Про терпеливість
 
 <img
   src="../../images/wesley-preaching.png"

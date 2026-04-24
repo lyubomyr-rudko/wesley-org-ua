@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 13 - On Sin In Believers"
+title: "Проповідь 13 - Про гріх у віруючих"
 description: 'Переклад проповіді "On Sin In Believers".'
 pubDate: "28 березня 1763"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 13 - On Sin In Believers
+# Проповідь 13 - Про гріх у віруючих
 
 <img
   src="../../images/wesley-at-holy-club.png"

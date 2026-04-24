@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 110 - On Discoveries Of Faith"
+title: "Проповідь 110 - Про відкриття віри."
 description: 'Переклад проповіді "On Discoveries Of Faith".'
 pubDate: "27 жовтня 1761"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 110 - On Discoveries Of Faith
+# Проповідь 110 - Про відкриття віри.
 
 <img
   src="../../images/wesley-writing.png"

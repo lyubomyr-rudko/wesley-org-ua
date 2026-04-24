@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 45 - The New Birth"
+title: "Проповідь 45 - Нове Народження"
 description: 'Переклад проповіді "The New Birth".'
 pubDate: "29 травня 1743"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 45 - The New Birth
+# Проповідь 45 - Нове Народження
 
 <img
   src="../../images/wesley-on-a-boat.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 67 - On Divine Providence"
+title: "Проповідь 67 - Про Боже Провидіння"
 description: 'Переклад проповіді "On Divine Providence".'
 pubDate: "3 березня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 67 - On Divine Providence
+# Проповідь 67 - Про Боже Провидіння
 
 <img
   src="../../images/wesley-preaching.png"

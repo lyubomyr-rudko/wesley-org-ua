@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 48 - Self-denial"
+title: "Проповідь 48 - Самозречення"
 description: 'Переклад проповіді "Self-denial".'
 pubDate: "17 лютого 1755"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 48 - Self-denial
+# Проповідь 48 - Самозречення
 
 <img
   src="../../images/wesley-at-holy-club.png"

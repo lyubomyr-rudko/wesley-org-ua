@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 68 - The Wisdom Of God's Counsel's"
+title: "Проповідь 68 - Мудрість Божих Намірів"
 description: 'Переклад проповіді "The Wisdom Of God''s Counsel''s".'
 pubDate: "28 квітня 1784"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 68 - The Wisdom Of God's Counsel's
+# Проповідь 68 - Мудрість Божих Намірів
 
 <img
   src="../../images/wesley-podcasting.png"

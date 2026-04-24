@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 98 - On Visiting The Sick"
+title: "Проповідь 98 - Про відвідування хворих"
 description: 'Переклад проповіді "On Visiting The Sick".'
 pubDate: "23 травня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 98 - On Visiting The Sick
+# Проповідь 98 - Про відвідування хворих
 
 <img
   src="../../images/wesley-preaching.png"

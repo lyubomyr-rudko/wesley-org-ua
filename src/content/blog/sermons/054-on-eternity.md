@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 54 - On Eternity"
+title: "Проповідь 54 - Про вічність"
 description: 'Переклад проповіді "On Eternity".'
 pubDate: "28 червня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 54 - On Eternity
+# Проповідь 54 - Про вічність
 
 <img
   src="../../images/wesley-podcasting.png"

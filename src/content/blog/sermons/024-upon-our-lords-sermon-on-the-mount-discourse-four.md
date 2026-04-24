@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 24 - Upon Our Lord's Sermon On The Mount: Discourse Four"
+title: "Проповідь 24 - Про Нагірну проповідь нашого Господа: Четверте повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Four".'
 pubDate: "22-26 жовтня 1740"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 24 - Upon Our Lord's Sermon On The Mount: Discourse Four
+# Проповідь 24 - Про Нагірну проповідь нашого Господа: Четверте повчання
 
 <img
   src="../../images/wesley-on-a-boat.png"

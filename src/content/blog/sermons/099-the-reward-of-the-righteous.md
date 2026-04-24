@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 99 - The Reward Of The Righteous"
+title: "Проповідь 99 - Винагорода праведних"
 description: 'Переклад проповіді "The Reward Of The Righteous".'
 pubDate: "21 листопада 1777"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 99 - The Reward Of The Righteous
+# Проповідь 99 - Винагорода праведних
 
 <img
   src="../../images/wesley-podcasting.png"

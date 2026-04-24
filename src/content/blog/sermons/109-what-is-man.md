@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 109 - What Is Man?"
+title: "Проповідь 109 - Що таке людина"
 description: 'Переклад проповіді "What Is Man?".'
 pubDate: "2 травня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 109 - What Is Man?
+# Проповідь 109 - Що таке людина
 
 <img
   src="../../images/wesley-praing.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 128 - Free Grace"
+title: "Проповідь 128 - Безкоштовна благодать"
 description: 'Переклад проповіді "Free Grace".'
 pubDate: "29 квітня 1739"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 128 - Free Grace
+# Проповідь 128 - Безкоштовна благодать
 
 <img
   src="../../images/wesley-at-holy-club.png"

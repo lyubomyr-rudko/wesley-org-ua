@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 95 - On The Education Of Children"
+title: "Проповідь 95 - Про виховання дітей"
 description: 'Переклад проповіді "On The Education Of Children".'
 pubDate: "12 липня 1783"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 95 - On The Education Of Children
+# Проповідь 95 - Про виховання дітей
 
 <img
   src="../../images/wesley-praing.png"

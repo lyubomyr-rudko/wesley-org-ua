@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 127 - The Trouble And Rest Of Good Men"
+title: "Проповідь 127 - Скорбота і спочинок добрих людей"
 description: 'Переклад проповіді "The Trouble And Rest Of Good Men".'
 pubDate: "21 вересня 1735"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 127 - The Trouble And Rest Of Good Men
+# Проповідь 127 - Скорбота і спочинок добрих людей
 
 <img
   src="../../images/wesley-podcasting.png"

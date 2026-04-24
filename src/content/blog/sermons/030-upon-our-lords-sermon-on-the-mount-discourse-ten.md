@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten"
+title: "Проповідь 30 - Нагірна Проповідь Господа Нашого: Десяте повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Ten".'
 pubDate: "2 червня 1742"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 30 - Upon Our Lord's Sermon On The Mount: Discourse Ten
+# Проповідь 30 - Нагірна Проповідь Господа Нашого: Десяте повчання
 
 <img
   src="../../images/wesley-writing.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 140 - On Public Diversions"
+title: "Проповідь 140 - Про громадські розваги"
 description: 'Переклад проповіді "On Public Diversions".'
 pubDate: "3 вересня 1732"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 140 - On Public Diversions
+# Проповідь 140 - Про громадські розваги
 
 <img
   src="../../images/wesley-on-a-boat.png"

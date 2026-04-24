@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 58 - On Predestination"
+title: "Проповідь 58 - Про Передвизначення"
 description: 'Переклад проповіді "On Predestination".'
 pubDate: "7 травня 1775"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 58 - On Predestination
+# Проповідь 58 - Про Передвизначення
 
 <img
   src="../../images/wesley-writing.png"

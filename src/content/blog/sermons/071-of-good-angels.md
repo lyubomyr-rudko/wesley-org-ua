@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 71 - Of Good Angels"
+title: "Проповідь 71 - Про Добрих Ангелів"
 description: 'Переклад проповіді "Of Good Angels".'
 pubDate: "29 серпня 1782"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 71 - Of Good Angels
+# Проповідь 71 - Про Добрих Ангелів
 
 <img
   src="../../images/wesley-praing.png"

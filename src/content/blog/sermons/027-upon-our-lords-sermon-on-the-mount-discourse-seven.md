@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 27 - Upon Our Lord's Sermon On The Mount: Discourse Seven"
+title: "Проповідь 27 - Нагірна проповідь Господа нашого: Сьоме повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Seven".'
 pubDate: "1-16 листопада 1747"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 27 - Upon Our Lord's Sermon On The Mount: Discourse Seven
+# Проповідь 27 - Нагірна проповідь Господа нашого: Сьоме повчання
 
 <img
   src="../../images/wesley-at-holy-club.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 132 - On Laying The Foundation Of The New Chapel, Near The City-road, London."
+title: "Проповідь 132 - Про закладання підвалин нової каплиці поблизу Сіті-Роуд, Лондон"
 description: 'Переклад проповіді "On Laying The Foundation Of The New Chapel, Near The City-road, London.".'
 pubDate: "21 квітня 1777"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 132 - On Laying The Foundation Of The New Chapel, Near The City-road, London.
+# Проповідь 132 - Про закладання підвалин нової каплиці поблизу Сіті-Роуд, Лондон
 
 <img
   src="../../images/wesley-on-a-boat.png"

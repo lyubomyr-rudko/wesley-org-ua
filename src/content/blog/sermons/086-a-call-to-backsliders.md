@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 86 - A Call To Backsliders"
+title: "Проповідь 86 - Заклик до відступників"
 description: 'Переклад проповіді "A Call To Backsliders".'
 pubDate: "20 травня 1778"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 86 - A Call To Backsliders
+# Проповідь 86 - Заклик до відступників
 
 <img
   src="../../images/wesley-riding.png"

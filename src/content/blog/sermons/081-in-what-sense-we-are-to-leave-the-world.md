@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 81 - In What Sense We Are To Leave The World"
+title: "Проповідь 81 - Що означає покинути світ"
 description: 'Переклад проповіді "In What Sense We Are To Leave The World".'
 pubDate: "17 липня 1784"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 81 - In What Sense We Are To Leave The World
+# Проповідь 81 - Що означає покинути світ
 
 <img
   src="../../images/wesley-writing.png"

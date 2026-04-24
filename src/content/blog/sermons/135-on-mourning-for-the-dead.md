@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 135 - On Mourning For The Dead"
+title: "Проповідь 135 - Про скорботу за померлими"
 description: 'Переклад проповіді "On Mourning For The Dead".'
 pubDate: "11 січня 1727"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 135 - On Mourning For The Dead
+# Проповідь 135 - Про скорботу за померлими
 
 <img
   src="../../images/wesley-at-holy-club.png"

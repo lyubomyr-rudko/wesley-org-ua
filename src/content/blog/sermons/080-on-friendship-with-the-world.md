@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 80 - On Friendship With The World"
+title: "Проповідь 80 - Про дружбу зі світом"
 description: 'Переклад проповіді "On Friendship With The World".'
 pubDate: "1 травня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 80 - On Friendship With The World
+# Проповідь 80 - Про дружбу зі світом
 
 <img
   src="../../images/wesley-praing.png"

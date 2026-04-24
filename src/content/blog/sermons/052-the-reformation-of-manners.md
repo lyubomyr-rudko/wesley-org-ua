@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 52 - The Reformation Of Manners"
+title: "Проповідь 52 - Реформація манер"
 description: 'Переклад проповіді "The Reformation Of Manners".'
 pubDate: "30 січня 1763"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 52 - The Reformation Of Manners
+# Проповідь 52 - Реформація манер
 
 <img
   src="../../images/wesley-on-a-boat.png"

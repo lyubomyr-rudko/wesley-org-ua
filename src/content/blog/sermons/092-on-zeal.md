@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 92 - On Zeal"
+title: "Проповідь 92 - Про ревність"
 description: 'Переклад проповіді "On Zeal".'
 pubDate: "1 жовтня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 92 - On Zeal
+# Проповідь 92 - Про ревність
 
 <img
   src="../../images/wesley-podcasting.png"

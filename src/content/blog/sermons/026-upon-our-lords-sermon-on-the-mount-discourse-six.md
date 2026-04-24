@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 26 - Upon Our Lord's Sermon On The Mount: Discourse Six"
+title: "Проповідь 26 - Нагірна проповідь нашого Господа: Шосте повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Six".'
 pubDate: "22-26 жовтня 1740"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 26 - Upon Our Lord's Sermon On The Mount: Discourse Six
+# Проповідь 26 - Нагірна проповідь нашого Господа: Шосте повчання
 
 <img
   src="../../images/wesley-podcasting.png"

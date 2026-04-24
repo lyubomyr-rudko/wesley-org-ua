@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 49 - The Cure Of Evil-speaking"
+title: "Проповідь 49 - Зцілення від лихослів’я"
 description: 'Переклад проповіді "The Cure Of Evil-speaking".'
 pubDate: "5 лютого 1752"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 49 - The Cure Of Evil-speaking
+# Проповідь 49 - Зцілення від лихослів’я
 
 <img
   src="../../images/wesley-riding.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 75 - On Schism"
+title: "Проповідь 75 - Про поділення"
 description: 'Переклад проповіді "On Schism".'
 pubDate: "30 березня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 75 - On Schism
+# Проповідь 75 - Про поділення
 
 <img
   src="../../images/wesley-podcasting.png"

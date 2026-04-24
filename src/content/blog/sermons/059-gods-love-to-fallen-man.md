@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 59 - God's Love To Fallen Man"
+title: "Проповідь 59 - Божа любов до падшої людини"
 description: 'Переклад проповіді "God''s Love To Fallen Man".'
 pubDate: "9 липня 1782"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 59 - God's Love To Fallen Man
+# Проповідь 59 - Божа любов до падшої людини
 
 <img
   src="../../images/wesley-on-a-boat.png"

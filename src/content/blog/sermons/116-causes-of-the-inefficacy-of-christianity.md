@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 116 - Causes Of The Inefficacy Of Christianity"
+title: "Проповідь 116 - Причини неефективності християнства"
 description: 'Переклад проповіді "Causes Of The Inefficacy Of Christianity".'
 pubDate: "2 липня 1789"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 116 - Causes Of The Inefficacy Of Christianity
+# Проповідь 116 - Причини неефективності християнства
 
 <img
   src="../../images/wesley-praing.png"

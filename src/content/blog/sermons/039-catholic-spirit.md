@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 39 - Catholic Spirit"
+title: "Проповідь 39 - Католицький дух"
 description: 'Переклад проповіді "Catholic Spirit".'
 pubDate: "8 вересня 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 39 - Catholic Spirit
+# Проповідь 39 - Католицький дух
 
 <img
   src="../../images/wesley-preaching.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 33 - Upon Our Lord's Sermon On The Mount: Discourse Thirteen"
+title: "Проповідь 33 - Нагірна Проповідь Господа Нашого: Тринадцяте Повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Thirteen".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 33 - Upon Our Lord's Sermon On The Mount: Discourse Thirteen
+# Проповідь 33 - Нагірна Проповідь Господа Нашого: Тринадцяте Повчання
 
 <img
   src="../../images/wesley-podcasting.png"

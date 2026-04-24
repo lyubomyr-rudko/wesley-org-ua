@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 56 - God's Approbation Of His Works"
+title: "Проповідь 56 - Боже визнання Своїх діл"
 description: 'Переклад проповіді "God''s Approbation Of His Works".'
 pubDate: "1782"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 56 - God's Approbation Of His Works
+# Проповідь 56 - Боже визнання Своїх діл
 
 <img
   src="../../images/wesley-riding.png"

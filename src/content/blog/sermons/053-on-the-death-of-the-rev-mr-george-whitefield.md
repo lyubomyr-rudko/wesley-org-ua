@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 53 - On The Death Of The Rev. Mr. George Whitefield"
+title: "Проповідь 53 - Про смерть преподобного пана Джорджа Вайтфілда"
 description: 'Переклад проповіді "On The Death Of The Rev. Mr. George Whitefield".'
 pubDate: "11 листопада 1770"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 53 - On The Death Of The Rev. Mr. George Whitefield
+# Проповідь 53 - Про смерть преподобного пана Джорджа Вайтфілда
 
 <img
   src="../../images/wesley-preaching.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 25 - Upon Our Lord's Sermon On The Mount: Discourse Five"
+title: "Проповідь 25 - Про Нагірну проповідь нашого Господа: П'яте повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Five".'
 pubDate: "22-26 жовтня 1740"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 25 - Upon Our Lord's Sermon On The Mount: Discourse Five
+# Проповідь 25 - Про Нагірну проповідь нашого Господа: П'яте повчання
 
 <img
   src="../../images/wesley-preaching.png"

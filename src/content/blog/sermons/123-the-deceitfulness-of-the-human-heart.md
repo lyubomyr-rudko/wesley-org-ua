@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 123 - The Deceitfulness Of The Human Heart"
+title: "Проповідь 123 - Підступність людського серця"
 description: 'Переклад проповіді "The Deceitfulness Of The Human Heart".'
 pubDate: "21 квітня 1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 123 - The Deceitfulness Of The Human Heart
+# Проповідь 123 - Підступність людського серця
 
 <img
   src="../../images/wesley-praing.png"

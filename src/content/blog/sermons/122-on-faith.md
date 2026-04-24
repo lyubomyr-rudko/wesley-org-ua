@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 122 - On Faith"
+title: "Проповідь 122 - Про віру"
 description: 'Переклад проповіді "On Faith".'
 pubDate: "17 січня 1791"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 122 - On Faith
+# Проповідь 122 - Про віру
 
 <img
   src="../../images/wesley-riding.png"

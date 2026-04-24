@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 64 - The New Creation"
+title: "Проповідь 64 - Нове Творіння"
 description: 'Переклад проповіді "The New Creation".'
 pubDate: "1785"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 64 - The New Creation
+# Проповідь 64 - Нове Творіння
 
 <img
   src="../../images/wesley-praing.png"

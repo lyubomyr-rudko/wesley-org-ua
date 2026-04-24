@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 104 - On Attending The Church Service"
+title: "Проповідь 104 - Про Відвідування Богослужіння"
 description: 'Переклад проповіді "On Attending The Church Service".'
 pubDate: "7 жовтня 1787"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 104 - On Attending The Church Service
+# Проповідь 104 - Про Відвідування Богослужіння
 
 <img
   src="../../images/wesley-on-a-boat.png"

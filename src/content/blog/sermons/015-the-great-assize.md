@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 15 - The Great Assize"
+title: "Проповідь 15 - Великий Суд"
 description: 'Переклад проповіді "The Great Assize".'
 pubDate: "10 березня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 15 - The Great Assize
+# Проповідь 15 - Великий Суд
 
 <img
   src="../../images/wesley-praing.png"

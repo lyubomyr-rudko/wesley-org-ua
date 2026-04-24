@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 93 - On Redeeming The Time"
+title: "Проповідь 93 - Про відкуплення часу"
 description: 'Переклад проповіді "On Redeeming The Time".'
 pubDate: "20 січня 1782"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 93 - On Redeeming The Time
+# Проповідь 93 - Про відкуплення часу
 
 <img
   src="../../images/wesley-at-holy-club.png"

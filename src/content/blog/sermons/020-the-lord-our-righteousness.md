@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 20 - The Lord Our Righteousness"
+title: "Проповідь 20 - Господь - наша праведність"
 description: 'Переклад проповіді "The Lord Our Righteousness".'
 pubDate: "22 жовтня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 20 - The Lord Our Righteousness
+# Проповідь 20 - Господь - наша праведність
 
 <img
   src="../../images/wesley-at-holy-club.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 57 - On The Fall Of Man"
+title: "Проповідь 57 - Про Падіння Людини"
 description: 'Переклад проповіді "On The Fall Of Man".'
 pubDate: "13 березня 1782"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 57 - On The Fall Of Man
+# Проповідь 57 - Про Падіння Людини
 
 <img
   src="../../images/wesley-praing.png"

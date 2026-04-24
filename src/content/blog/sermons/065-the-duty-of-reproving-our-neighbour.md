@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 65 - The Duty Of Reproving Our Neighbour"
+title: "Проповідь 65 - Обов’язок докоряти ближньому"
 description: 'Переклад проповіді "The Duty Of Reproving Our Neighbour".'
 pubDate: "28 липня 1787"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 65 - The Duty Of Reproving Our Neighbour
+# Проповідь 65 - Обов’язок докоряти ближньому
 
 <img
   src="../../images/wesley-writing.png"

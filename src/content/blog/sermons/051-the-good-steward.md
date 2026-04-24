@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 51 - The Good Steward"
+title: "Проповідь 51 - Добрий управитель"
 description: 'Переклад проповіді "The Good Steward".'
 pubDate: "14 травня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 51 - The Good Steward
+# Проповідь 51 - Добрий управитель
 
 <img
   src="../../images/wesley-writing.png"

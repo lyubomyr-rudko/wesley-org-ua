@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 101 - The Duty Of Constant Communion"
+title: "Проповідь 101 - Обов’язок постійного причастя"
 description: 'Переклад проповіді "The Duty Of Constant Communion".'
 pubDate: "19 лютого 1732"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 101 - The Duty Of Constant Communion
+# Проповідь 101 - Обов’язок постійного причастя
 
 <img
   src="../../images/wesley-riding.png"

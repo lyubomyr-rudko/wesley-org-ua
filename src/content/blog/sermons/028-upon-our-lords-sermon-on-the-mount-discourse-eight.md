@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 28 - Upon Our Lord's Sermon On The Mount: Discourse Eight"
+title: "Проповідь 28 - Нагірна Проповідь Господа Нашого: Восьме повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Eight".'
 pubDate: "1-16 листопада 1747"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 28 - Upon Our Lord's Sermon On The Mount: Discourse Eight
+# Проповідь 28 - Нагірна Проповідь Господа Нашого: Восьме повчання
 
 <img
   src="../../images/wesley-riding.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 62 - The End Of Christ's Coming"
+title: "Проповідь 62 - Мета Пришестя Христа"
 description: 'Переклад проповіді "The End Of Christ''s Coming".'
 pubDate: "9 грудня 1758"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 62 - The End Of Christ's Coming
+# Проповідь 62 - Мета Пришестя Христа
 
 <img
   src="../../images/wesley-at-holy-club.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 63 - The General Spread Of The Gospel"
+title: "Проповідь 63 - Загальне Поширення Євангелії"
 description: 'Переклад проповіді "The General Spread Of The Gospel".'
 pubDate: "22 квітня 1783"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 63 - The General Spread Of The Gospel
+# Проповідь 63 - Загальне Поширення Євангелії
 
 <img
   src="../../images/wesley-riding.png"

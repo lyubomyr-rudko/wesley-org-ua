@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 16 - The Means Of Grace"
+title: "Проповідь 16 - Засоби благодаті"
 description: 'Переклад проповіді "The Means Of Grace".'
 pubDate: "15 листопада 1739"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 16 - The Means Of Grace
+# Проповідь 16 - Засоби благодаті
 
 <img
   src="../../images/wesley-writing.png"

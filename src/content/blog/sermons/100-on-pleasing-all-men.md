@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 100 - On Pleasing All Men"
+title: "Проповідь 100 - Про догоджання всім людям"
 description: 'Переклад проповіді "On Pleasing All Men".'
 pubDate: "22 травня 1787"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 100 - On Pleasing All Men
+# Проповідь 100 - Про догоджання всім людям
 
 <img
   src="../../images/wesley-at-holy-club.png"

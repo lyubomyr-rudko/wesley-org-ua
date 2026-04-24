@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 121 - Human Life A Dream"
+title: "Проповідь 121 - Людське життя — це сон"
 description: 'Переклад проповіді "Human Life A Dream".'
 pubDate: "1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 121 - Human Life A Dream
+# Проповідь 121 - Людське життя — це сон
 
 <img
   src="../../images/wesley-at-holy-club.png"

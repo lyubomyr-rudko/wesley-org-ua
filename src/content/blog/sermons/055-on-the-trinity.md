@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 55 - On The Trinity"
+title: "Проповідь 55 - Про Трійцю"
 description: 'Переклад проповіді "On The Trinity".'
 pubDate: "5 червня 1773"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 55 - On The Trinity
+# Проповідь 55 - Про Трійцю
 
 <img
   src="../../images/wesley-at-holy-club.png"

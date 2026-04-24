@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 72 - Of Evil Angels"
+title: "Проповідь 72 - Про Злих Ангелів"
 description: 'Переклад проповіді "Of Evil Angels".'
 pubDate: "7 січня 1783"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 72 - Of Evil Angels
+# Проповідь 72 - Про Злих Ангелів
 
 <img
   src="../../images/wesley-writing.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 129 - The Cause And Cure Of Earthquakes"
+title: "Проповідь 129 - Причини та способи запобігання землетрусам"
 description: 'Переклад проповіді "The Cause And Cure Of Earthquakes".'
 pubDate: "9 березня 1750"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 129 - The Cause And Cure Of Earthquakes
+# Проповідь 129 - Причини та способи запобігання землетрусам
 
 <img
   src="../../images/wesley-riding.png"

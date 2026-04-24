@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 38 - A Caution Against Bigotry"
+title: "Проповідь 38 - Засторога проти фанатизму"
 description: 'Переклад проповіді "A Caution Against Bigotry".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 38 - A Caution Against Bigotry
+# Проповідь 38 - Засторога проти фанатизму
 
 <img
   src="../../images/wesley-on-a-boat.png"

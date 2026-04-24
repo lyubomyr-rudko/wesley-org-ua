@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 50 - The Use Of Money"
+title: "Проповідь 50 - Використання грошей"
 description: 'Переклад проповіді "The Use Of Money".'
 pubDate: "17 лютого 1744"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 50 - The Use Of Money
+# Проповідь 50 - Використання грошей
 
 <img
   src="../../images/wesley-praing.png"

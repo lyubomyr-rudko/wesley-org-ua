@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 97 - On Obedience To Pastors"
+title: "Проповідь 97 - Про послух пастирям"
 description: 'Переклад проповіді "On Obedience To Pastors".'
 pubDate: "18 березня 1785"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 97 - On Obedience To Pastors
+# Проповідь 97 - Про послух пастирям
 
 <img
   src="../../images/wesley-on-a-boat.png"

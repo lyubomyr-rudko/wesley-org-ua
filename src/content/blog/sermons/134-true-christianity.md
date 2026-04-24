@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 134 - True Christianity"
+title: "Проповідь 134 - Справжнє християнство"
 description: 'Переклад проповіді "True Christianity".'
 pubDate: "24 червня 1741"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 134 - True Christianity
+# Проповідь 134 - Справжнє християнство
 
 <img
   src="../../images/wesley-podcasting.png"

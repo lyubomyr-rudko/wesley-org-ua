@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 136 - On Corrupting The Word Of God"
+title: "Проповідь 136 - Про спотворення Слова Божого"
 description: 'Переклад проповіді "On Corrupting The Word Of God".'
 pubDate: "6 жовтня 1727"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 136 - On Corrupting The Word Of God
+# Проповідь 136 - Про спотворення Слова Божого
 
 <img
   src="../../images/wesley-riding.png"

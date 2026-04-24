@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 23 - Upon Our Lord's Sermon On The Mount: Discourse Three"
+title: "Проповідь 23 - Про Нагірну проповідь нашого Господа: Третє повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Three".'
 pubDate: "21 липня 1739"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 23 - Upon Our Lord's Sermon On The Mount: Discourse Three
+# Проповідь 23 - Про Нагірну проповідь нашого Господа: Третє повчання
 
 <img
   src="../../images/wesley-writing.png"

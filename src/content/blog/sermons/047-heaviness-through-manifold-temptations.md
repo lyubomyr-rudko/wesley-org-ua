@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 47 - Heaviness Through Manifold Temptations"
+title: "Проповідь 47 - Туга через численні спокуси"
 description: 'Переклад проповіді "Heaviness Through Manifold Temptations".'
 pubDate: "5 травня 1754"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 47 - Heaviness Through Manifold Temptations
+# Проповідь 47 - Туга через численні спокуси
 
 <img
   src="../../images/wesley-podcasting.png"

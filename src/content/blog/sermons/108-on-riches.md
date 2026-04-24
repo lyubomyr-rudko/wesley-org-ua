@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 108 - On Riches"
+title: "Проповідь 108 - Про багатство"
 description: 'Переклад проповіді "On Riches".'
 pubDate: "22 квітня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 108 - On Riches
+# Проповідь 108 - Про багатство
 
 <img
   src="../../images/wesley-riding.png"

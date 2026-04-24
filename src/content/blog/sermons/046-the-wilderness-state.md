@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 46 - The Wilderness State"
+title: "Проповідь 46 - Пустельний стан"
 description: 'Переклад проповіді "The Wilderness State".'
 pubDate: "1 березня 1751"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 46 - The Wilderness State
+# Проповідь 46 - Пустельний стан
 
 <img
   src="../../images/wesley-preaching.png"

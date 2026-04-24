@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 139 - On Love"
+title: "Проповідь 139 - Про любов"
 description: 'Переклад проповіді "On Love".'
 pubDate: "20 лютого 1737"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 139 - On Love
+# Проповідь 139 - Про любов
 
 <img
   src="../../images/wesley-writing.png"

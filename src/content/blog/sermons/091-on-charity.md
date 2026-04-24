@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 91 - On Charity"
+title: "Проповідь 91 - Про любов"
 description: 'Переклад проповіді "On Charity".'
 pubDate: "15 жовтня 1784"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 91 - On Charity
+# Проповідь 91 - Про любов
 
 <img
   src="../../images/wesley-preaching.png"

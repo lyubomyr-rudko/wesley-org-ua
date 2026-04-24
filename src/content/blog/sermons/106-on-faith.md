@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 106 - On Faith"
+title: "Проповідь 106 - Про Віру"
 description: 'Переклад проповіді "On Faith".'
 pubDate: "9 квітня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 106 - On Faith
+# Проповідь 106 - Про Віру
 
 <img
   src="../../images/wesley-podcasting.png"

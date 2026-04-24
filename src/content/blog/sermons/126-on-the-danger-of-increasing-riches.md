@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 126 - On The Danger Of Increasing Riches"
+title: "Проповідь 126 - Про небезпеку зростання багатства"
 description: 'Переклад проповіді "On The Danger Of Increasing Riches".'
 pubDate: "21 вересня 1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 126 - On The Danger Of Increasing Riches
+# Проповідь 126 - Про небезпеку зростання багатства
 
 <img
   src="../../images/wesley-preaching.png"

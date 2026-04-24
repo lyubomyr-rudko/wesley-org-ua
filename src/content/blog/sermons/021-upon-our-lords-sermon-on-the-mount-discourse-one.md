@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 21 - Upon Our Lord's Sermon On The Mount: Discourse One"
+title: "Проповідь 21 - Про Нагірну Проповідь нашого Господа: Перше повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse One".'
 pubDate: "21 липня 1739"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 21 - Upon Our Lord's Sermon On The Mount: Discourse One
+# Проповідь 21 - Про Нагірну Проповідь нашого Господа: Перше повчання
 
 <img
   src="../../images/wesley-riding.png"

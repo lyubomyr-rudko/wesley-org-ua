@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 74 - Of The Church"
+title: "Проповідь 74 - Про Церкву"
 description: 'Переклад проповіді "Of The Church".'
 pubDate: "28 вересня 1785"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 74 - Of The Church
+# Проповідь 74 - Про Церкву
 
 <img
   src="../../images/wesley-preaching.png"

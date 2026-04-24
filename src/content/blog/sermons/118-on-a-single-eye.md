@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 118 - On A Single Eye"
+title: "Проповідь 118 - Про Здорове Око"
 description: 'Переклад проповіді "On A Single Eye".'
 pubDate: "29 листопада 1761"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 118 - On A Single Eye
+# Проповідь 118 - Про Здорове Око
 
 <img
   src="../../images/wesley-on-a-boat.png"

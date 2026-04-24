@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 105 - On Conscience"
+title: "Проповідь 105 - Про совість"
 description: 'Переклад проповіді "On Conscience".'
 pubDate: "8 квітня 1788"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 105 - On Conscience
+# Проповідь 105 - Про совість
 
 <img
   src="../../images/wesley-preaching.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine"
+title: "Проповідь 29 - Нагірна Проповідь Господа Нашого: Дев’яте повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Nine".'
 pubDate: "1-16 листопада 1747"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 29 - Upon Our Lord's Sermon On The Mount: Discourse Nine
+# Проповідь 29 - Нагірна Проповідь Господа Нашого: Дев’яте повчання
 
 <img
   src="../../images/wesley-praing.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 70 - The Case Of Reason Impartially Considered"
+title: "Проповідь 70 - Розум: неупереджений розгляд"
 description: 'Переклад проповіді "The Case Of Reason Impartially Considered".'
 pubDate: "6 липня 1781"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 70 - The Case Of Reason Impartially Considered
+# Проповідь 70 - Розум: неупереджений розгляд
 
 <img
   src="../../images/wesley-riding.png"

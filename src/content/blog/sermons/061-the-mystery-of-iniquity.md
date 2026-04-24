@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 61 - The Mystery Of Iniquity"
+title: "Проповідь 61 - Таємниця беззаконня"
 description: 'Переклад проповіді "The Mystery Of Iniquity".'
 pubDate: "1783"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 61 - The Mystery Of Iniquity
+# Проповідь 61 - Таємниця беззаконня
 
 <img
   src="../../images/wesley-podcasting.png"

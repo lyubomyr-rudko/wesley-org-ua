@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 82 - On Temptation"
+title: "Проповідь 82 - Про спокусу"
 description: 'Переклад проповіді "On Temptation".'
 pubDate: "7 жовтня 1786"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 82 - On Temptation
+# Проповідь 82 - Про спокусу
 
 <img
   src="../../images/wesley-on-a-boat.png"

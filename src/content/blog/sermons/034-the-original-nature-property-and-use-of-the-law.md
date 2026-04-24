@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 34 - The Original, Nature, Property, And Use Of The Law"
+title: "Проповідь 34 - Походження, природа, властивості та застосування Закону"
 description: 'Переклад проповіді "The Original, Nature, Property, And Use Of The Law".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 34 - The Original, Nature, Property, And Use Of The Law
+# Проповідь 34 - Походження, природа, властивості та застосування Закону
 
 <img
   src="../../images/wesley-at-holy-club.png"

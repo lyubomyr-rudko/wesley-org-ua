@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 102 - Of Former Times"
+title: "Проповідь 102 - Про давні часи"
 description: 'Переклад проповіді "Of Former Times".'
 pubDate: "27 червня 1787"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 102 - Of Former Times
+# Проповідь 102 - Про давні часи
 
 <img
   src="../../images/wesley-praing.png"

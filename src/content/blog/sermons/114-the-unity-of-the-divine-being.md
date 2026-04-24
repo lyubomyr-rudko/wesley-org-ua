@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 114 - The Unity Of The Divine Being"
+title: "Проповідь 114 - Єдність Божої Природи"
 description: 'Переклад проповіді "The Unity Of The Divine Being".'
 pubDate: "9 квітня 1789"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 114 - The Unity Of The Divine Being
+# Проповідь 114 - Єдність Божої Природи
 
 <img
   src="../../images/wesley-at-holy-club.png"

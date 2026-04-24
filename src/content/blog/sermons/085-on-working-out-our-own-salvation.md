@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 85 - On Working Out Our Own Salvation"
+title: "Проповідь 85 - Про звершення нашого власного спасіння"
 description: 'Переклад проповіді "On Working Out Our Own Salvation".'
 pubDate: "1785"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 85 - On Working Out Our Own Salvation
+# Проповідь 85 - Про звершення нашого власного спасіння
 
 <img
   src="../../images/wesley-at-holy-club.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 37 - The Nature Of Enthusiasm"
+title: "Проповідь 37 - Природа ентузіазму"
 description: 'Переклад проповіді "The Nature Of Enthusiasm".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 37 - The Nature Of Enthusiasm
+# Проповідь 37 - Природа ентузіазму
 
 <img
   src="../../images/wesley-writing.png"

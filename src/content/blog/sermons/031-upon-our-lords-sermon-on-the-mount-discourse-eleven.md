@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven"
+title: "Проповідь 31 - Нагірна Проповідь Господа нашого: Одинадцяте повчання"
 description: 'Переклад проповіді "Upon Our Lord''s Sermon On The Mount: Discourse Eleven".'
 pubDate: "1-7 листопада 1749"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 31 - Upon Our Lord's Sermon On The Mount: Discourse Eleven
+# Проповідь 31 - Нагірна Проповідь Господа нашого: Одинадцяте повчання
 
 <img
   src="../../images/wesley-on-a-boat.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 12 - The Witness Of Our Own Spirit"
+title: "Проповідь 12 - Свідчення нашого власного духу"
 description: 'Переклад проповіді "The Witness Of Our Own Spirit".'
 pubDate: "травень-червень 1746"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 12 - The Witness Of Our Own Spirit
+# Проповідь 12 - Свідчення нашого власного духу
 
 <img
   src="../../images/wesley-podcasting.png"

@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 76 - On Perfection"
+title: "Проповідь 76 - Про Досконалість"
 description: 'Переклад проповіді "On Perfection".'
 pubDate: "29 березня 1761"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 76 - On Perfection
+# Проповідь 76 - Про Досконалість
 
 <img
   src="../../images/wesley-at-holy-club.png"

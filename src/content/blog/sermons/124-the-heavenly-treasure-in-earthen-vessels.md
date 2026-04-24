@@ -1,5 +1,5 @@
 ---
-title: "Проповідь 124 - The Heavenly Treasure In Earthen Vessels"
+title: "Проповідь 124 - Небесний скарб у посудинах глиняних"
 description: 'Переклад проповіді "The Heavenly Treasure In Earthen Vessels".'
 pubDate: "17 червня 1790"
 author: "Джон Веслі"
@@ -8,7 +8,7 @@ tags:
   - "john wesley"
 ---
 
-# Sermon 124 - The Heavenly Treasure In Earthen Vessels
+# Проповідь 124 - Небесний скарб у посудинах глиняних
 
 <img
   src="../../images/wesley-writing.png"
