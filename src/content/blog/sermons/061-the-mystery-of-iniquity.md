@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1783
+> 1783
 - Outler's date: травень-червень 1783
 
-- Source slug: 061-the-mystery-of-iniquity
+
 
 Проповіді Джона Веслі – Проповідь 61
 

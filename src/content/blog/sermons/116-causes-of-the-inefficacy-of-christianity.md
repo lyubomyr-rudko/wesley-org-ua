@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 2 липня 1789
+> 2 липня 1789
 
-- Source slug: 116-causes-of-the-inefficacy-of-christianity
+
 
 Причини неефективності християнства
 

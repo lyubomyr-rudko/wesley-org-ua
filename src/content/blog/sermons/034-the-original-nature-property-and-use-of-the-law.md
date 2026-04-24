@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1-7 листопада 1749
+> 1-7 листопада 1749
 - Outler's date: 1750
 
-- Source slug: 034-the-original-nature-property-and-use-of-the-law
+
 
 Проповіді Джона Веслі – Проповідь 34
 

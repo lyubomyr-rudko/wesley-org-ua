@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 24 червня 1741
+> 24 червня 1741
 
-- Source slug: 134-true-christianity
+
 
 Справжнє християнство
 

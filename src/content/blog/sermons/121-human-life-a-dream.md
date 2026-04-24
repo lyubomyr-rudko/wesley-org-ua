@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1790
+> 1790
 - Outler's date: серпень 1789
 
-- Source slug: 121-human-life-a-dream
+
 
 Людське життя — це сон
 

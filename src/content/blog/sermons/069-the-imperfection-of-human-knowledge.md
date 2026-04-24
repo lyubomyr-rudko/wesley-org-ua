@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 5 березня 1784
+> 5 березня 1784
 
-- Source slug: 069-the-imperfection-of-human-knowledge
+
 
 Проповіді Джона Веслі – Проповідь 69
 

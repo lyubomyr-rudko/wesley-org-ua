@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 27 червня 1787
+> 27 червня 1787
 
-- Source slug: 102-of-former-times
+
 
 Про давні часи
 

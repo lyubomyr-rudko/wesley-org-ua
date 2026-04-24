@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 2 травня 1788
+> 2 травня 1788
 
-- Source slug: 109-what-is-man
+
 
 Що таке людина
 

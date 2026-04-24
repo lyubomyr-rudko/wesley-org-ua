@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 5 червня 1773
+> 5 червня 1773
 - Outler's date: 7 травня 1775
 
-- Source slug: 055-on-the-trinity
+
 
 Проповіді Джона Веслі – Проповідь 55
 

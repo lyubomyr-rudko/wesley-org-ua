@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 15 серпня 1789
+> 15 серпня 1789
 
-- Source slug: 117-on-knowing-christ-after-the-flesh
+
 
 Про пізнання Христа за тілом
 

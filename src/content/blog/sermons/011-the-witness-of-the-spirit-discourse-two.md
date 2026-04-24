@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 4 квітня 1767
+> 4 квітня 1767
 
-- Source slug: 011-the-witness-of-the-spirit-discourse-two
+
 
 Проповіді Джона Веслі – Проповідь 11
 

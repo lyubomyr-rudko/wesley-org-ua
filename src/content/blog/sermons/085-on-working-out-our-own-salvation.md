@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1785
+> 1785
 - Outler's date: вересень-жовтень 1785
 
-- Source slug: 085-on-working-out-our-own-salvation
+
 
 Проповіді Джона Веслі – Проповідь 85
 

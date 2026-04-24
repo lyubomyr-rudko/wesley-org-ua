@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1-16 листопада 1747
+> 1-16 листопада 1747
 - Outler's date: 1748
 
-- Source slug: 028-upon-our-lords-sermon-on-the-mount-discourse-eight
+
 
 Проповіді Джона Веслі – Проповідь 28
 

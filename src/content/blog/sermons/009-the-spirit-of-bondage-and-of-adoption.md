@@ -17,10 +17,10 @@ tags:
   class="post-lead-portrait"
 />
 
-- Smith's date: 25 квітня 1739
+> 25 квітня 1739
 - Outler's date: 1746
 
-- Source slug: 009-the-spirit-of-bondage-and-of-adoption
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-9-the-spirit-of-bondage-and-of-adoption/
 

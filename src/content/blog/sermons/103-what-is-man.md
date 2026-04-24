@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 23 липня 1787
+> 23 липня 1787
 
-- Source slug: 103-what-is-man
+
 
 Що є людина?
 

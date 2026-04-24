@@ -17,10 +17,10 @@ loading="eager"
 class="post-lead-portrait"
 />
 
-- Smith's date: 25 червня 1745
+> 25 червня 1745
 - Outler's date: 1746
 
-- Source slug: 008-the-first-fruits-of-the-spirit
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-8-the-first-fruits-of-the-spirit/
 

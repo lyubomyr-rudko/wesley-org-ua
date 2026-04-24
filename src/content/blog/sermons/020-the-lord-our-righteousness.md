@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 22 жовтня 1758
+> 22 жовтня 1758
 - Outler's date: 24 листопада 1765
 
-- Source slug: 020-the-lord-our-righteousness
+
 
 Проповіді Джона Веслі – Проповідь 20
 

@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 11 листопада 1770
+> 11 листопада 1770
 
-- Source slug: 053-on-the-death-of-the-rev-mr-george-whitefield
+
 
 Проповіді Джона Веслі – Проповідь 53
 

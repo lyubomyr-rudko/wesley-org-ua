@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 17 лютого 1744
+> 17 лютого 1744
 - Outler's date: 1760
 
-- Source slug: 050-the-use-of-money
+
 
 Проповіді Джона Веслі – Проповідь 50
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 13 липня 1761
+> 13 липня 1761
 - Outler's date: 1784
 
-- Source slug: 083-on-patience
+
 
 Проповіді Джона Веслі – Проповідь 83
 

@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 3 вересня 1732
+> 3 вересня 1732
 
-- Source slug: 140-on-public-diversions
+
 
 Про громадські розваги
 

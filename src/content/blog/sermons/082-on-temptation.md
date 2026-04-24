@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 7 жовтня 1786
+> 7 жовтня 1786
 
-- Source slug: 082-on-temptation
+
 
 Про спокусу
 

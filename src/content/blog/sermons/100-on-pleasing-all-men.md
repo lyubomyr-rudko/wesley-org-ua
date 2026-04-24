@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 22 травня 1787
+> 22 травня 1787
 
-- Source slug: 100-on-pleasing-all-men
+
 
 Про догоджання всім людям
 

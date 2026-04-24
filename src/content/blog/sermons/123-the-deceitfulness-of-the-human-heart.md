@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 21 квітня 1790
+> 21 квітня 1790
 
-- Source slug: 123-the-deceitfulness-of-the-human-heart
+
 
 Підступність людського серця
 

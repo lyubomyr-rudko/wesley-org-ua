@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 14 травня 1758
+> 14 травня 1758
 - Outler's date: 14 травня 1768
 
-- Source slug: 051-the-good-steward
+
 
 Проповіді Джона Веслі – Проповідь 51
 

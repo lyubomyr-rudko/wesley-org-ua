@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 22-26 жовтня 1740
+> 22-26 жовтня 1740
 - Outler's date: 1748
 
-- Source slug: 025-upon-our-lords-sermon-on-the-mount-discourse-five
+
 
 Проповіді Джона Веслі – Проповідь 25
 

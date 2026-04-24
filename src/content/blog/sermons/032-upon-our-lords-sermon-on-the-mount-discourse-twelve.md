@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 30 січня 1743
+> 30 січня 1743
 - Outler's date: 1750
 
-- Source slug: 032-upon-our-lords-sermon-on-the-mount-discourse-twelve
+
 
 Проповіді Джона Веслі – Проповідь 32
 

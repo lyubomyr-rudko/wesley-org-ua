@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 17 червня 1790
+> 17 червня 1790
 
-- Source slug: 124-the-heavenly-treasure-in-earthen-vessels
+
 
 Небесний скарб у посудинах глиняних
 

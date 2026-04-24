@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 26 березня 1790
+> 26 березня 1790
 
-- Source slug: 120-on-the-wedding-garment
+
 
 Про весільну одежу
 

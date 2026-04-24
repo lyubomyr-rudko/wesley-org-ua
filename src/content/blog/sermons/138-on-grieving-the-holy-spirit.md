@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 1733
+> 1733
 
-- Source slug: 138-on-grieving-the-holy-spirit
+
 
 Про скорботу Святого Духа
 

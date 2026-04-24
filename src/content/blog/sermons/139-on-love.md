@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 20 лютого 1737
+> 20 лютого 1737
 
-- Source slug: 139-on-love
+
 
 Про любов
 

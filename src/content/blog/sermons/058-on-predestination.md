@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 7 травня 1775
+> 7 травня 1775
 
-- Source slug: 058-on-predestination
+
 
 Проповіді Джона Веслі – Проповідь 58
 

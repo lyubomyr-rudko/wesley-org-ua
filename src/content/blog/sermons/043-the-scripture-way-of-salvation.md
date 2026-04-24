@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 22 травня 1758
+> 22 травня 1758
 - Outler's date: 1765
 
-- Source slug: 043-the-scripture-way-of-salvation
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-43-the-scripture-way-of-salvation/
 

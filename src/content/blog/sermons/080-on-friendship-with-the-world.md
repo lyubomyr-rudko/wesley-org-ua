@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 1 травня 1786
+> 1 травня 1786
 
-- Source slug: 080-on-friendship-with-the-world
+
 
 Проповіді Джона Веслі – Проповідь 80
 

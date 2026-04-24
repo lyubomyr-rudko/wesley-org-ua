@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 21 листопада 1777
+> 21 листопада 1777
 - Outler's date: 23 листопада 1777
 
-- Source slug: 099-the-reward-of-the-righteous
+
 
 Винагорода праведних
 

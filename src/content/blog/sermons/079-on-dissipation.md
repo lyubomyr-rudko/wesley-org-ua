@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 1783
+> 1783
 
-- Source slug: 079-on-dissipation
+
 
 Проповіді Джона Веслі – Проповідь 79
 

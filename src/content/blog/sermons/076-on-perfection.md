@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 29 березня 1761
+> 29 березня 1761
 - Outler's date: 6 грудня 1784
 
-- Source slug: 076-on-perfection
+
 
 Проповіді Джона Веслі – Проповідь 76
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 29 листопада 1761
+> 29 листопада 1761
 - Outler's date: 1789
 
-- Source slug: 118-on-a-single-eye
+
 
 Про Здорове Око
 

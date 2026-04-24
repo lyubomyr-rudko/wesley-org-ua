@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1-7 листопада 1749
+> 1-7 листопада 1749
 - Outler's date: 1750
 
-- Source slug: 042-satans-devices
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-42-satans-devices/
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1 жовтня 1758
+> 1 жовтня 1758
 - Outler's date: 6 травня 1781
 
-- Source slug: 092-on-zeal
+
 
 Про ревність
 

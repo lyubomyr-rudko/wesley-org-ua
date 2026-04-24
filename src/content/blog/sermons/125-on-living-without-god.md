@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 6 липня 1790
+> 6 липня 1790
 
-- Source slug: 125-on-living-without-god
+
 
 Про життя без Бога
 

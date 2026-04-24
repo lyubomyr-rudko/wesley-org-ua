@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 20 січня 1782
+> 20 січня 1782
 
-- Source slug: 093-on-redeeming-the-time
+
 
 Про відкуплення часу
 

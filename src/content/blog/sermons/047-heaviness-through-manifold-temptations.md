@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 5 травня 1754
+> 5 травня 1754
 - Outler's date: 1760
 
-- Source slug: 047-heaviness-through-manifold-temptations
+
 
 Проповіді Джона Веслі – Проповідь 47
 

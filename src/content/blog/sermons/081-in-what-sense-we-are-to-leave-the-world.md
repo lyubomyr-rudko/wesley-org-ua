@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 17 липня 1784
+> 17 липня 1784
 
-- Source slug: 081-in-what-sense-we-are-to-leave-the-world
+
 
 Проповіді Джона Веслі – Проповідь 81
 

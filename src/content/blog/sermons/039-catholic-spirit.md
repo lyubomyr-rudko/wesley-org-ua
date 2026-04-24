@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 8 вересня 1749
+> 8 вересня 1749
 - Outler's date: 1750
 
-- Source slug: 039-catholic-spirit
+
 
 Проповіді Джона Веслі – Проповідь 39
 

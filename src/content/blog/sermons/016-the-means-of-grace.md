@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 15 листопада 1739
+> 15 листопада 1739
 - Outler's date: 1746
 
-- Source slug: 016-the-means-of-grace
+
 
 Проповіді Джона Веслі – Проповідь 16
 

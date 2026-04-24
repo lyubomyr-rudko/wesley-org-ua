@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 23 вересня 1739
+> 23 вересня 1739
 - Outler's date: 1748
 
-- Source slug: 019-the-great-privilege-of-those-that-are-born-of-god
+
 
 Проповіді Джона Веслі – Проповідь 19
 

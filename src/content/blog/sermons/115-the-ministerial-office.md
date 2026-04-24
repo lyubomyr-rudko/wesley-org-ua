@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 4 травня 1789
+> 4 травня 1789
 
-- Source slug: 115-the-ministerial-office
+
 
 Покликання до служіння
 

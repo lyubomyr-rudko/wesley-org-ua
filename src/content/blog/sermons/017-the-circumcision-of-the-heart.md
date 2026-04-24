@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1 січня 1733
+> 1 січня 1733
 - Outler's date: 1733
 
-- Source slug: 017-the-circumcision-of-the-heart
+
 
 Проповіді Джона Веслі – Проповідь 17
 

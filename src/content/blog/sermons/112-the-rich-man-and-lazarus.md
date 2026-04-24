@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 25 березня 1788
+> 25 березня 1788
 
-- Source slug: 112-the-rich-man-and-lazarus
+
 
 Багач і Лазар
 

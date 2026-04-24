@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 27 жовтня 1761
+> 27 жовтня 1761
 - Outler's date: 11 червня 1788
 
-- Source slug: 110-on-discoveries-of-faith
+
 
 Про відкриття віри.
 

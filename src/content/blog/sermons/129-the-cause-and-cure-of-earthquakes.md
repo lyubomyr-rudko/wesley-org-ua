@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 9 березня 1750
+> 9 березня 1750
 
-- Source slug: 129-the-cause-and-cure-of-earthquakes
+
 
 Чарльз Веслі
 

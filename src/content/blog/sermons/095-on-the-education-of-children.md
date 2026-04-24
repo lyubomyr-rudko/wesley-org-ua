@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 12 липня 1783
+> 12 липня 1783
 - Outler's date: 1783
 
-- Source slug: 095-on-the-education-of-children
+
 
 Проповіді Джона Веслі – Проповідь 95
 

@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 22 квітня 1783
+> 22 квітня 1783
 
-- Source slug: 063-the-general-spread-of-the-gospel
+
 
 Проповіді Джона Веслі – Проповідь 63
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: травень-червень 1746
+> травень-червень 1746
 - Outler's date: 1746
 
-- Source slug: 012-the-witness-of-our-own-spirit
+
 
 Проповіді Джона Веслі – Проповідь 12
 

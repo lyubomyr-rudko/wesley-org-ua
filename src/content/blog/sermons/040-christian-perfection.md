@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 11 листопада 1739
+> 11 листопада 1739
 - Outler's date: 1741
 
-- Source slug: 040-christian-perfection
+
 
 Проповідь 40
 

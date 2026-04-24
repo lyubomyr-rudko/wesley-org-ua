@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 7 листопада 1775
+> 7 листопада 1775
 
-- Source slug: 130-national-sins-and-miseries
+
 
 Національні гріхи та нещастя
 

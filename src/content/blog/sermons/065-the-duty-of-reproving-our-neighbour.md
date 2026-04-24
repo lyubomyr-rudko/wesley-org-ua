@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 28 липня 1787
+> 28 липня 1787
 
-- Source slug: 065-the-duty-of-reproving-our-neighbour
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-65-the-duty-of-reproving-our-neighbour/
 

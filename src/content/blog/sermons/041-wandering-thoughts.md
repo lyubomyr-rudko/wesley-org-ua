@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 30 листопада 1760
+> 30 листопада 1760
 - Outler's date: 1762
 
-- Source slug: 041-wandering-thoughts
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-41-wandering-thoughts/
 

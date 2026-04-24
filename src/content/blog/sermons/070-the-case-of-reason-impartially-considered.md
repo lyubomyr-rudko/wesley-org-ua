@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 6 липня 1781
+> 6 липня 1781
 
-- Source slug: 070-the-case-of-reason-impartially-considered
+
 
 Проповіді Джона Веслі – Проповідь 70
 

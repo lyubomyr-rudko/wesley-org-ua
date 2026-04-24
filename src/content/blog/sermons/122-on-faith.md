@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 17 січня 1791
+> 17 січня 1791
 
-- Source slug: 122-on-faith
+
 
 Про віру
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 21 липня 1739
+> 21 липня 1739
 - Outler's date: 1748
 
-- Source slug: 022-upon-our-lords-sermon-on-the-mount-discourse-two
+
 
 Проповіді Джона Веслі – Проповідь 22
 

@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 8 квітня 1788
+> 8 квітня 1788
 
-- Source slug: 105-on-conscience
+
 
 Про совість
 

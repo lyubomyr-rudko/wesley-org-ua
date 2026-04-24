@@ -17,10 +17,10 @@ tags:
   class="post-lead-portrait"
 />
 
-- Smith's date: 6 червня 1742
+> 6 червня 1742
 - Outler's date: 1746
 
-- Source slug: 007-the-way-to-the-kingdom
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-7-the-way-to-the-kingdom/
 

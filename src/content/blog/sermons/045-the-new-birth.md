@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 29 травня 1743
+> 29 травня 1743
 - Outler's date: 1760
 
-- Source slug: 045-the-new-birth
+
 
 Проповіді Джона Веслі – Проповідь 45
 

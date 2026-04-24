@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 21 вересня 1790
+> 21 вересня 1790
 
-- Source slug: 126-on-the-danger-of-increasing-riches
+
 
 Про небезпеку зростання багатства
 

@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 1778
+> 1778
 
-- Source slug: 131-the-late-work-of-god-in-north-america
+
 
 Пізня Божа праця у Північній Америці
 

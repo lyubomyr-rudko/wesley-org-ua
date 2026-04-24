@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1-7 листопада 1749
+> 1-7 листопада 1749
 - Outler's date: 1750
 
-- Source slug: 033-upon-our-lords-sermon-on-the-mount-discourse-thirteen
+
 
 Проповіді Джона Веслі – Проповідь 33
 

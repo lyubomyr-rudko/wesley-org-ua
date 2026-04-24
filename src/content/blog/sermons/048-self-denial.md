@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 17 лютого 1755
+> 17 лютого 1755
 - Outler's date: 1760
 
-- Source slug: 048-self-denial
+
 
 Проповіді Джона Веслі – Проповідь 48
 

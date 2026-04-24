@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 12 серпня 1788
+> 12 серпня 1788
 
-- Source slug: 111-on-the-omnipresence-of-god
+
 
 Про всюдисущість Бога.
 

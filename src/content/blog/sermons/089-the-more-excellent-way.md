@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 1787
+> 1787
 
-- Source slug: 089-the-more-excellent-way
+
 
 Проповіді Джона Веслі – Проповідь 89
 

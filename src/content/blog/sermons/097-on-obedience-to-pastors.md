@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 18 березня 1785
+> 18 березня 1785
 - Outler's date: 1785
 
-- Source slug: 097-on-obedience-to-pastors
+
 
 Про послух пастирям
 

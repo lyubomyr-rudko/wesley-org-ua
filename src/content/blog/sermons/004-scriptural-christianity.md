@@ -17,9 +17,9 @@ loading="eager"
 class="post-lead-portrait"
 />
 
-- Smith's date: 24 серпня 1744
+> 24 серпня 1744
 
-- Source slug: 004-scriptural-christianity
+
 
 …
 

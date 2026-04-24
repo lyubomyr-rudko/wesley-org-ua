@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 15 жовтня 1784
+> 15 жовтня 1784
 
-- Source slug: 091-on-charity
+
 
 Про любов
 

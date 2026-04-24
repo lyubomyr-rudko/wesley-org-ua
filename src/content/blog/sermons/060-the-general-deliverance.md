@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 30 листопада 1781
+> 30 листопада 1781
 
-- Source slug: 060-the-general-deliverance
+
 
 Проповіді Джона Веслі – Проповідь 60
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 26 травня 1758
+> 26 травня 1758
 - Outler's date: 24 квітня 1767
 
-- Source slug: 014-the-repentance-of-believers
+
 
 Проповіді Джона Веслі – Проповідь 14
 

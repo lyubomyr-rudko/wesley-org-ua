@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 27 серпня 1777
+> 27 серпня 1777
 
-- Source slug: 066-the-signs-of-the-times
+
 
 Проповіді Джона Веслі – Проповідь 66
 

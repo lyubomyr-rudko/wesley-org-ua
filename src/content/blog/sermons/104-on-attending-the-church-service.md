@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 7 жовтня 1787
+> 7 жовтня 1787
 
-- Source slug: 104-on-attending-the-church-service
+
 
 Про Відвідування Богослужіння
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 5 грудня 1779
+> 5 грудня 1779
 - Outler's date: 17 жовтня 1787
 
-- Source slug: 107-on-gods-vineyard
+
 
 Про Божий виноградник
 

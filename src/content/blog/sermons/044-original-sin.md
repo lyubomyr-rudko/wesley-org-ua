@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 15 травня 1754
+> 15 травня 1754
 - Outler's date: 1759
 
-- Source slug: 044-original-sin
+
 
 Проповіді Джона Веслі – Проповідь 44
 

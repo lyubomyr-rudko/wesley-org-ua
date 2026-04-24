@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 22 квітня 1788
+> 22 квітня 1788
 
-- Source slug: 108-on-riches
+
 
 Про багатство
 

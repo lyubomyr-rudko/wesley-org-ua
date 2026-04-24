@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1785
+> 1785
 - Outler's date: листопад-грудень 1785
 
-- Source slug: 064-the-new-creation
+
 
 Проповіді Джона Веслі – Проповідь 64
 

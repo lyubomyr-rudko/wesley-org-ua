@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 30 грудня 1788
+> 30 грудня 1788
 
-- Source slug: 113-the-difference-between-walking-by-sight-and-walking-by-faith
+
 
 Різниця між життям вірою і життя тим, що бачимо
 

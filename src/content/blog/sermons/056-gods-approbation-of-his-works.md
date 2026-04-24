@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 1782
+> 1782
 
-- Source slug: 056-gods-approbation-of-his-works
+
 
 Проповіді Джона Веслі – Проповідь 56
 

@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 11 вересня 1775
+> 11 вересня 1775
 
-- Source slug: 084-the-important-question
+
 
 Проповіді Джона Веслі – Проповідь 84
 

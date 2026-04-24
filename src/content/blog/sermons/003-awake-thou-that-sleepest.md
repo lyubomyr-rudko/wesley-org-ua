@@ -17,9 +17,9 @@ loading="eager"
 class="post-lead-portrait"
 />
 
-- Smith's date: 4 квітня 1742
+> 4 квітня 1742
 
-- Source slug: 003-awake-thou-that-sleepest
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-3-awake-thou-that-sleepest/
 

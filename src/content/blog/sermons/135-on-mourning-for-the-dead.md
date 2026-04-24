@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 11 січня 1727
+> 11 січня 1727
 - Outler's date: 6 жовтня 1727
 
-- Source slug: 135-on-mourning-for-the-dead
+
 
 Проповіді Джона Веслі – Проповідь 135
 

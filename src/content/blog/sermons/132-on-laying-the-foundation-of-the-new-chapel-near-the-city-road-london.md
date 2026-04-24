@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 21 квітня 1777
+> 21 квітня 1777
 
-- Source slug: 132-on-laying-the-foundation-of-the-new-chapel-near-the-city-road-london
+
 
 Про закладання підвалин нової каплиці поблизу Сіті-Роуд, Лондон
 

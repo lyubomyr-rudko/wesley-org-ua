@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 28 березня 1763
+> 28 березня 1763
 
-- Source slug: 013-on-sin-in-believers
+
 
 Проповіді Джона Веслі – Проповідь 13
 

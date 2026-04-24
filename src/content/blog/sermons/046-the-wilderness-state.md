@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1 березня 1751
+> 1 березня 1751
 - Outler's date: 1760
 
-- Source slug: 046-the-wilderness-state
+
 
 Проповіді Джона Веслі – Проповідь 46
 

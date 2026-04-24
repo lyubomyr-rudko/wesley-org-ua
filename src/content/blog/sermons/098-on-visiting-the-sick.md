@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 23 травня 1786
+> 23 травня 1786
 
-- Source slug: 098-on-visiting-the-sick
+
 
 Про відвідування хворих
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 20 травня 1778
+> 20 травня 1778
 - Outler's date: 1778
 
-- Source slug: 086-a-call-to-backsliders
+
 
 Проповіді Джона Веслі – Проповідь 86
 

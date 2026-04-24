@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 9 липня 1782
+> 9 липня 1782
 
-- Source slug: 059-gods-love-to-fallen-man
+
 
 Проповіді Джона Веслі – Проповідь 59
 

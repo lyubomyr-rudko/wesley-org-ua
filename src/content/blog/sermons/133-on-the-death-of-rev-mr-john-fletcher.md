@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 24 жовтня 1785
+> 24 жовтня 1785
 
-- Source slug: 133-on-the-death-of-rev-mr-john-fletcher
+
 
 Про смерть преподобного пана Джона Флетчера
 

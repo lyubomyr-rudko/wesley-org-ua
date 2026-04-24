@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 30 січня 1763
+> 30 січня 1763
 
-- Source slug: 052-the-reformation-of-manners
+
 
 Проповіді Джона Веслі – Проповідь 52
 

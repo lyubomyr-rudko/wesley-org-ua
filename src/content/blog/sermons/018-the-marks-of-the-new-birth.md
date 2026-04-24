@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 3 квітня 1741
+> 3 квітня 1741
 - Outler's date: 1748
 
-- Source slug: 018-the-marks-of-the-new-birth
+
 
 Проповіді Джона Веслі – Проповідь 18
 

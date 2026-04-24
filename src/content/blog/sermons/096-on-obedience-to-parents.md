@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1784
+> 1784
 - Outler's date: жовтень-листопад 1784
 
-- Source slug: 096-on-obedience-to-parents
+
 
 Про Послух Батькам
 

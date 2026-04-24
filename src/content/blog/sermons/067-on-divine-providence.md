@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 3 березня 1786
+> 3 березня 1786
 
-- Source slug: 067-on-divine-providence
+
 
 Проповіді Джона Веслі – Проповідь 67
 

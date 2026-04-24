@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 28 квітня 1784
+> 28 квітня 1784
 - Outler's date: 1784
 
-- Source slug: 068-the-wisdom-of-gods-counsels
+
 
 Проповіді Джона Веслі – Проповідь 68
 

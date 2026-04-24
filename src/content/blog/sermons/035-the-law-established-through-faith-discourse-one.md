@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 27 червня 1741
+> 27 червня 1741
 - Outler's date: 1750
 
-- Source slug: 035-the-law-established-through-faith-discourse-one
+
 
 Проповіді Джона Веслі – Проповідь 35
 

@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 1785
+> 1785
 - Outler's date: липень-серпень 1785
 
-- Source slug: 090-an-israelite-indeed
+
 
 Справжній ізраїльтянин
 

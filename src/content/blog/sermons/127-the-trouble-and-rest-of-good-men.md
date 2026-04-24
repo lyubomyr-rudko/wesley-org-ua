@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 21 вересня 1735
+> 21 вересня 1735
 
-- Source slug: 127-the-trouble-and-rest-of-good-men
+
 
 Скорбота і спочинок добрих людей
 

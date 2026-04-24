@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 9 квітня 1788
+> 9 квітня 1788
 
-- Source slug: 106-on-faith
+
 
 https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-106-on-faith/
 

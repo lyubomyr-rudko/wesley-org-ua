@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 9 квітня 1789
+> 9 квітня 1789
 
-- Source slug: 114-the-unity-of-the-divine-being
+
 
 Проповіді Джона Веслі – Проповідь 114
 

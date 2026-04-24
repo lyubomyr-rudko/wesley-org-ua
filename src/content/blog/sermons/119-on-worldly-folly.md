@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 19 лютого 1790
+> 19 лютого 1790
 
-- Source slug: 119-on-worldly-folly
+
 
 Про світську глупоту
 

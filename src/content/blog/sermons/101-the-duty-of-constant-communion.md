@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 19 лютого 1732
+> 19 лютого 1732
 - Outler's date: 1787
 
-- Source slug: 101-the-duty-of-constant-communion
+
 
 Обов’язок постійного причастя
 

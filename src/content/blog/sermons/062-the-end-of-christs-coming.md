@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 9 грудня 1758
+> 9 грудня 1758
 
-- Source slug: 062-the-end-of-christs-coming
+
 
 Проповіді Джона Веслі – Проповідь 62
 

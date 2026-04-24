@@ -18,9 +18,9 @@ tags:
 />
 
 
-- Smith's date: 6 жовтня 1727
+> 6 жовтня 1727
 
-- Source slug: 136-on-corrupting-the-word-of-god
+
 
 Про спотворення Слова Божого
 

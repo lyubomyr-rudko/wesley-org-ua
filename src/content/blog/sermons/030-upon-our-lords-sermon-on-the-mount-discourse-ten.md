@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 2 червня 1742
+> 2 червня 1742
 - Outler's date: 1750
 
-- Source slug: 030-upon-our-lords-sermon-on-the-mount-discourse-ten
+
 
 Проповіді Джона Веслі – Проповідь 30
 

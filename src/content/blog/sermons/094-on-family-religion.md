@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 26 травня 1783
+> 26 травня 1783
 - Outler's date: 1783
 
-- Source slug: 094-on-family-religion
+
 
 Про сімейну релігію
 

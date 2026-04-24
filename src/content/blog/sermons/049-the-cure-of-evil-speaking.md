@@ -18,10 +18,10 @@ tags:
 />
 
 
-- Smith's date: 5 лютого 1752
+> 5 лютого 1752
 - Outler's date: 1760
 
-- Source slug: 049-the-cure-of-evil-speaking
+
 
 Проповіді Джона Веслі – Проповідь 49
 
