@@ -22,8 +22,6 @@ class="post-lead-portrait"
 
 
 
-https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-10-the-witness-of-the-spirit-discourse-one/
-
 \*\*
 
 \*\*"Сам Дух свідчить разом з нашим духом, що ми є діти Божі." Рим. 8:16

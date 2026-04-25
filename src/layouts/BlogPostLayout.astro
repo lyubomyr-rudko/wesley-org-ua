@@ -1,17 +1,32 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { allSermonsByNumber } from "../data/sermons.js";
 const { frontmatter } = Astro.props;
+const currentSlug = Astro.props.slug ?? "";
 const title = frontmatter?.title ?? "Untitled Post";
 const description = frontmatter?.description ?? "";
 const pubDate = frontmatter?.pubDate ?? "";
 const tags = frontmatter?.tags ?? [];
 const author = frontmatter?.author ?? "Unknown author";
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+const currentSermonIndex = allSermonsByNumber.findIndex(
+  (sermon) => sermon.contentPath === currentSlug,
+);
+const previousSermon =
+  currentSermonIndex > 0 ? allSermonsByNumber[currentSermonIndex - 1] : null;
+const nextSermon =
+  currentSermonIndex >= 0 && currentSermonIndex < allSermonsByNumber.length - 1
+    ? allSermonsByNumber[currentSermonIndex + 1]
+    : null;
 ---
 
 <BaseLayout title={title} description={description}>
   <article class="blog-post-card">
     <header class="post-header">
-      <p class="post-eyebrow">Матеріал центру</p>
+      <a class="post-eyebrow" href={withBase("/propovidi/")}>Усі проповіді</a>
       <h1>{title}</h1>
       {description && <p class="post-description">{description}</p>}
 
@@ -30,5 +45,33 @@ const author = frontmatter?.author ?? "Unknown author";
     <div class="markdown-body post-content">
       <slot />
     </div>
+
+    {(previousSermon || nextSermon) && (
+      <nav class="sermon-pagination" aria-label="Навігація між проповідями">
+        {previousSermon && (
+          <a
+            class="sermon-pagination-link is-previous"
+            href={withBase(`/${previousSermon.contentPath}/`)}
+          >
+            <span class="sermon-pagination-label">Попередня проповідь</span>
+            <span class="sermon-pagination-title">
+              №{previousSermon.number} - {previousSermon.title}
+            </span>
+          </a>
+        )}
+
+        {nextSermon && (
+          <a
+            class="sermon-pagination-link is-next"
+            href={withBase(`/${nextSermon.contentPath}/`)}
+          >
+            <span class="sermon-pagination-label">Наступна проповідь</span>
+            <span class="sermon-pagination-title">
+              №{nextSermon.number} - {nextSermon.title}
+            </span>
+          </a>
+        )}
+      </nav>
+    )}
   </article>
 </BaseLayout>
