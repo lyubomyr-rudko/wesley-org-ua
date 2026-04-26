@@ -1,0 +1,237 @@
+---
+interface Props {
+  sourceSelector?: string;
+  title?: string;
+}
+
+const {
+  sourceSelector = ".post-content",
+  title = "План проповіді",
+} = Astro.props;
+---
+
+<section
+  class="sermon-mindmap"
+  data-sermon-mindmap
+  data-source-selector={sourceSelector}
+  hidden
+>
+  <div class="sermon-mindmap-header">
+    <h2>{title}</h2>
+  </div>
+  <div class="sermon-mindmap-canvas" aria-label={title}>
+    <svg></svg>
+  </div>
+</section>
+
+<script>
+  const normalizeText = (text) => text.replace(/\s+/g, " ").trim();
+  const escapeHtml = (text) =>
+    text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+
+  const getPageTitle = (mindmap) => {
+    const pageTitle = document.querySelector(".post-header h1");
+    return normalizeText(pageTitle?.textContent || mindmap.dataset.title || "Зміст");
+  };
+
+  const findPlanHeading = (source) =>
+    [...source.querySelectorAll("h2")].find(
+      (heading) => normalizeText(heading.textContent || "").toLowerCase() === "план проповіді",
+    );
+
+  const placeMindmap = (planHeading, mindmap) => {
+    planHeading.insertAdjacentElement("beforebegin", mindmap);
+  };
+
+  const getListItemsBeforeNextHeading = (heading) => {
+    const items = [];
+    let current = heading.nextElementSibling;
+
+    while (current && !/^H[2-4]$/.test(current.tagName)) {
+      if (current.matches("ul, ol")) {
+        for (const item of current.querySelectorAll(":scope > li")) {
+          const text = normalizeText(item.textContent || "");
+          if (text) items.push(text);
+          if (items.length >= 8) return items;
+        }
+      }
+      current = current.nextElementSibling;
+    }
+
+    return items;
+  };
+
+  const getPlanSectionElements = (heading) => {
+    const elements = [];
+    let current = heading?.nextElementSibling;
+
+    while (current) {
+      const text = normalizeText(current.textContent || "").toLowerCase();
+      if (current.tagName === "H2" && text === "ключові слова") break;
+      if (!current.closest("[data-sermon-mindmap]")) {
+        elements.push(current);
+      }
+      current = current.nextElementSibling;
+    }
+
+    return elements;
+  };
+
+  const removePlanSection = (planHeading) => {
+    for (const element of getPlanSectionElements(planHeading)) {
+      element.remove();
+    }
+    planHeading.remove();
+  };
+
+  const getParagraphPreview = (text) => {
+    const normalized = normalizeText(text);
+    const firstSentence = normalized.match(/^(.+?[.!?])\s/)?.[1] || normalized;
+    return firstSentence.length > 130 ? `${firstSentence.slice(0, 127).trim()}...` : firstSentence;
+  };
+
+  const buildMindmapTree = (planHeading, rootTitle) => {
+    const planElements = getPlanSectionElements(planHeading);
+    const headings = planElements.filter((element) => {
+      const text = normalizeText(element.textContent || "");
+      return /^H[2-4]$/.test(element.tagName) && text && !element.closest("[data-sermon-mindmap]");
+    });
+
+    const root = {
+      content: escapeHtml(rootTitle),
+      children: [],
+    };
+
+    if (!headings.length) {
+      root.children = planElements
+        .filter((element) => element.tagName === "P")
+        .map((paragraph) => getParagraphPreview(paragraph.textContent || ""))
+        .filter(Boolean)
+        .slice(0, 10)
+        .map((text) => ({
+          content: escapeHtml(text),
+          children: [],
+        }));
+
+      return root.children.length ? root : null;
+    }
+
+    const stack = [{ level: 1, node: root }];
+
+    for (const heading of headings) {
+      const level = Number(heading.tagName.slice(1));
+      const node = {
+        content: escapeHtml(normalizeText(heading.textContent || "")),
+        children: getListItemsBeforeNextHeading(heading).map((item) => ({
+          content: escapeHtml(item),
+          children: [],
+        })),
+      };
+
+      while (stack.length > 1 && stack[stack.length - 1].level >= level) {
+        stack.pop();
+      }
+
+      stack[stack.length - 1].node.children.push(node);
+      stack.push({ level, node });
+    }
+
+    return root.children.length ? root : null;
+  };
+
+  const renderMindmap = async (mindmap) => {
+    const sourceSelector = mindmap.dataset.sourceSelector || ".post-content";
+    const source = document.querySelector(sourceSelector);
+    const svg = mindmap.querySelector("svg");
+
+    if (!source || !svg) return;
+
+    const planHeading = findPlanHeading(source);
+    if (!planHeading) return;
+
+    const root = buildMindmapTree(planHeading, getPageTitle(mindmap));
+    if (!root) return;
+
+    placeMindmap(planHeading, mindmap);
+    removePlanSection(planHeading);
+
+    const { Markmap } = await import("markmap-view");
+
+    mindmap.hidden = false;
+
+    Markmap.create(svg, {
+      autoFit: true,
+      colorFreezeLevel: 2,
+      duration: 250,
+      fitRatio: 0.94,
+      initialExpandLevel: 3,
+      maxWidth: 280,
+      paddingX: 12,
+    }, root);
+  };
+
+  for (const mindmap of document.querySelectorAll("[data-sermon-mindmap]")) {
+    renderMindmap(mindmap);
+  }
+</script>
+
+<style>
+  .sermon-mindmap {
+    margin: 0 0 2rem;
+    padding: clamp(1rem, 2vw, 1.25rem);
+    border: 1px solid rgba(188, 169, 146, 0.62);
+    border-radius: 16px;
+    background: rgba(255, 251, 245, 0.86);
+    box-shadow: 0 14px 28px rgba(71, 44, 24, 0.08);
+  }
+
+  .sermon-mindmap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .sermon-mindmap h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+    line-height: 1.2;
+  }
+
+  .sermon-mindmap-canvas {
+    width: 100%;
+    min-height: 360px;
+    overflow: hidden;
+    border: 1px solid rgba(188, 169, 146, 0.38);
+    border-radius: 12px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(247, 241, 232, 0.62));
+  }
+
+  .sermon-mindmap svg {
+    display: block;
+    width: 100%;
+    height: clamp(360px, 56vw, 620px);
+  }
+
+  @media (max-width: 640px) {
+    .sermon-mindmap {
+      padding: 0.85rem;
+      border-radius: 12px;
+    }
+
+    .sermon-mindmap-canvas {
+      min-height: 320px;
+    }
+
+    .sermon-mindmap svg {
+      height: 340px;
+    }
+  }
+</style>

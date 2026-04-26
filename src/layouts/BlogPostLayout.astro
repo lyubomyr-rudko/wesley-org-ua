@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import SermonMindmap from "../components/SermonMindmap.astro";
 import { allSermonsByNumber } from "../data/sermons.js";
 const { frontmatter } = Astro.props;
 const currentSlug = Astro.props.slug ?? "";
@@ -54,6 +55,8 @@ const collectionLink = currentSlug.startsWith("church-in-lviv/")
     <div class="markdown-body post-content">
       <slot />
     </div>
+
+    <SermonMindmap sourceSelector=".post-content" title="План проповіді" />
 
     {
       (previousSermon || nextSermon) && (
