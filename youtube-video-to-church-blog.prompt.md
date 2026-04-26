@@ -40,6 +40,42 @@ The summary section should describe:
 
 The «more complete text» section should not be a raw subtitle dump. Clean it up into readable Ukrainian prose, while preserving the meaning of the subtitles. Remove subtitle timestamps, numbering, repeated filler words, and obvious transcription noise.
 
+Generate a plan for a sermon based on the subtitle content. The plan should include the main points and subpoints that could be used for a sermon on the topic of the video. Include Bible passages references where appropriate to support the sermon points. The plan should be structured in a clear and logical way, suitable for preaching. Insert it as mindmap data in the Markdown file, under a section titled "План проповіді". The mindmap data should be in a format below
+
+# Про совість
+
+## Головна думка
+
+Совість є внутрішнім свідком, який вказує людині на добро і зло.
+
+## Частина 1
+
+Що таке совість
+
+### Внутрішнє свідчення
+
+### Божий дар людині
+
+## Частина 2
+
+Як совість може бути спотворена
+
+### Невігластво
+
+### Звичка до гріха
+
+### Самовиправдання
+
+## Частина 3
+
+Як очищати совість
+
+### Через Слово Боже
+
+### Через молитву
+
+### Через послух Богові
+
 3. Generate a list of keywords.
 
 The keywords should be relevant for the website and the meeting content. Include topics, biblical themes, names, sermon themes, and church life themes where appropriate.
@@ -95,9 +131,11 @@ Use headings like this:
 
 ## Основні думки
 
-## Питання, які обговорювалися
+## Питання для обговорення
 
-## Розширений зміст зустрічі
+## Розширений зміст
+
+## План проповіді
 
 ## Ключові слова
 
