@@ -9,7 +9,11 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
 const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
 const posts = (await getCollection("blog"))
-  .filter((post) => !post.id.startsWith("sermons/"))
+  .filter(
+    (post) =>
+      !post.id.startsWith("sermons/") &&
+      !post.id.startsWith("church-in-lviv/"),
+  )
   .sort((a, b) => (b.data.pubDate ?? "").localeCompare(a.data.pubDate ?? ""));
 type BlogPostEntry = CollectionEntry<"blog">;
 ---

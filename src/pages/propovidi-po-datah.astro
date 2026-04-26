@@ -20,6 +20,11 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         Зібрання проповідей Джона Веслі, впорядковане за роками. Для кожної
         позиції показано номер проповіді, назву та дату.
       </p>
+      <div class="home-actions">
+        <a class="button-secondary" href={withBase("/propovidi/")}>
+          Проповіді у Нумераційному порядку
+        </a>
+      </div>
     </section>
 
     <section class="resource-panel">
@@ -58,7 +63,10 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
                     <span class="sermon-number">
                       Проповідь № {sermon.number}
                     </span>
-                    <a class="sermon-link" href={withBase(`/${sermon.contentPath}/`)}>
+                    <a
+                      class="sermon-link"
+                      href={withBase(`/${sermon.contentPath}/`)}
+                    >
                       {sermon.title}
                     </a>
                   </h4>

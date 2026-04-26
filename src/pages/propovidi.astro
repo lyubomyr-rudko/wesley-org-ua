@@ -17,8 +17,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       <p class="resource-kicker">Каталог за номерами</p>
       <h1 class="resource-title">Проповіді</h1>
       <p class="resource-summary">
-        Той самий список проповідей Джона Веслі, але відсортований за номерами у
-        порядку зростання. Для кожної позиції показано номер, назву та дату.
+        Зібрання проповідей Джона Веслі, впорядковане за номерами у порядку
+        зростання. Для кожної позиції показано номер, назву та дату.
       </p>
       <div class="home-actions">
         <a class="button-secondary" href={withBase("/propovidi-po-datah/")}>
@@ -37,25 +37,30 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       </div>
 
       <ol class="sermon-list">
-        {allSermonsByNumber.map((sermon) => (
-          <li class="sermon-item">
-            <div class="sermon-meta">
-              <span class="sermon-year">Дата: {sermon.smithDate}</span>
-              {sermon.outlerDate &&
-                sermon.outlerDate !== sermon.smithDate && (
-                  <span class="sermon-original">
-                    Альтернативна дата: {sermon.outlerDate}
-                  </span>
-                )}
-            </div>
-            <h4 class="sermon-title">
-              <span class="sermon-number">Проповідь № {sermon.number}</span>
-              <a class="sermon-link" href={withBase(`/${sermon.contentPath}/`)}>
-                {sermon.title}
-              </a>
-            </h4>
-          </li>
-        ))}
+        {
+          allSermonsByNumber.map((sermon) => (
+            <li class="sermon-item">
+              <div class="sermon-meta">
+                <span class="sermon-year">Дата: {sermon.smithDate}</span>
+                {sermon.outlerDate &&
+                  sermon.outlerDate !== sermon.smithDate && (
+                    <span class="sermon-original">
+                      Альтернативна дата: {sermon.outlerDate}
+                    </span>
+                  )}
+              </div>
+              <h4 class="sermon-title">
+                <span class="sermon-number">Проповідь № {sermon.number}</span>
+                <a
+                  class="sermon-link"
+                  href={withBase(`/${sermon.contentPath}/`)}
+                >
+                  {sermon.title}
+                </a>
+              </h4>
+            </li>
+          ))
+        }
       </ol>
     </section>
   </div>

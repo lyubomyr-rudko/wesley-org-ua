@@ -562,12 +562,27 @@ img {
 }
 
 .post-eyebrow {
+  padding: 1rem;
   margin: 0 0 0.75rem;
   color: var(--accent);
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+.post-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.75rem;
+  border-radius: 999px;
+  background: var(--accent);
+  position: relative;
+  top: 0.2rem;
 }
 
 .post-header h1 {
@@ -740,6 +755,55 @@ img {
   background: rgba(255, 251, 245, 0.9);
 }
 
+.sermon-pagination {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(188, 169, 146, 0.55);
+}
+
+.sermon-pagination-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(188, 169, 146, 0.62);
+  border-radius: 18px;
+  background: rgba(255, 251, 245, 0.92);
+  color: var(--text);
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.sermon-pagination-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(178, 31, 45, 0.38);
+  box-shadow: 0 14px 28px rgba(71, 44, 24, 0.1);
+}
+
+.sermon-pagination-link.is-next {
+  text-align: right;
+}
+
+.sermon-pagination-label {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sermon-pagination-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .hero-image {
   margin-top: 1.5rem;
   border: 1px solid rgba(188, 169, 146, 0.72);
@@ -877,5 +941,13 @@ img {
 
   .post-title {
     font-size: 1.12rem;
+  }
+
+  .sermon-pagination {
+    grid-template-columns: 1fr;
+  }
+
+  .sermon-pagination-link.is-next {
+    text-align: left;
   }
 }
