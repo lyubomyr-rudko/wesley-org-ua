@@ -21,12 +21,17 @@ const nextSermon =
   currentSermonIndex >= 0 && currentSermonIndex < allSermonsByNumber.length - 1
     ? allSermonsByNumber[currentSermonIndex + 1]
     : null;
+const collectionLink = currentSlug.startsWith("church-in-lviv/")
+  ? { href: "/church/", label: "Усі події Церкви Св. Івана" }
+  : { href: "/propovidi/", label: "Усі проповіді Джона Веслі" };
 ---
 
 <BaseLayout title={title} description={description}>
   <article class="blog-post-card">
     <header class="post-header">
-      <a class="post-eyebrow" href={withBase("/propovidi/")}>Усі проповіді</a>
+      <a class="post-eyebrow" href={withBase(collectionLink.href)}>
+        {collectionLink.label}
+      </a>
       <h1>{title}</h1>
       {description && <p class="post-description">{description}</p>}
 
@@ -35,43 +40,49 @@ const nextSermon =
         {pubDate && <span>• {pubDate}</span>}
       </div>
 
-      {tags.length > 0 && (
-        <div class="tag-list">
-          {tags.map((tag) => <span class="tag">{tag}</span>)}
-        </div>
-      )}
+      {
+        tags.length > 0 && (
+          <div class="tag-list">
+            {tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )
+      }
     </header>
 
     <div class="markdown-body post-content">
       <slot />
     </div>
 
-    {(previousSermon || nextSermon) && (
-      <nav class="sermon-pagination" aria-label="Навігація між проповідями">
-        {previousSermon && (
-          <a
-            class="sermon-pagination-link is-previous"
-            href={withBase(`/${previousSermon.contentPath}/`)}
-          >
-            <span class="sermon-pagination-label">Попередня проповідь</span>
-            <span class="sermon-pagination-title">
-              №{previousSermon.number} - {previousSermon.title}
-            </span>
-          </a>
-        )}
+    {
+      (previousSermon || nextSermon) && (
+        <nav class="sermon-pagination" aria-label="Навігація між проповідями">
+          {previousSermon && (
+            <a
+              class="sermon-pagination-link is-previous"
+              href={withBase(`/${previousSermon.contentPath}/`)}
+            >
+              <span class="sermon-pagination-label">Попередня проповідь</span>
+              <span class="sermon-pagination-title">
+                №{previousSermon.number} - {previousSermon.title}
+              </span>
+            </a>
+          )}
 
-        {nextSermon && (
-          <a
-            class="sermon-pagination-link is-next"
-            href={withBase(`/${nextSermon.contentPath}/`)}
-          >
-            <span class="sermon-pagination-label">Наступна проповідь</span>
-            <span class="sermon-pagination-title">
-              №{nextSermon.number} - {nextSermon.title}
-            </span>
-          </a>
-        )}
-      </nav>
-    )}
+          {nextSermon && (
+            <a
+              class="sermon-pagination-link is-next"
+              href={withBase(`/${nextSermon.contentPath}/`)}
+            >
+              <span class="sermon-pagination-label">Наступна проповідь</span>
+              <span class="sermon-pagination-title">
+                №{nextSermon.number} - {nextSermon.title}
+              </span>
+            </a>
+          )}
+        </nav>
+      )
+    }
   </article>
 </BaseLayout>

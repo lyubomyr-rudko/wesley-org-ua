@@ -1,0 +1,69 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+
+const churchServices = (await getCollection("blog"))
+  .filter((post) => post.id.startsWith("church-in-lviv/"))
+  .sort((a, b) => (b.data.pubDate ?? "").localeCompare(a.data.pubDate ?? ""));
+type ChurchServiceEntry = CollectionEntry<"blog">;
+---
+
+<BaseLayout
+  title="Церква Святого Івана, Львів"
+  description="Записи богослужінь церкви у Львові."
+>
+  <div class="resource-shell">
+    <section class="resource-hero">
+      <p class="resource-kicker">Записи богослужінь</p>
+      <h1 class="resource-title">Сторінка Церкви</h1>
+      <p class="resource-summary">
+        Архів записів богослужінь церкви у Львові, впорядкований від найновіших
+        до давніших.
+      </p>
+    </section>
+
+    <section class="resource-panel">
+      <div class="resource-panel-header">
+        <p class="archive-eyebrow">Повний перелік</p>
+        <h2>Служіння церкви у Львові</h2>
+        <p class="archive-summary">
+          У списку зараз: <span class="count">{churchServices.length}</span>{
+            " "
+          }
+          записів
+        </p>
+      </div>
+
+      <ol class="sermon-list">
+        {
+          churchServices.map((service: ChurchServiceEntry) => (
+            <li class="sermon-item">
+              <div class="sermon-meta">
+                {service.data.pubDate && (
+                  <span class="sermon-year">Дата: {service.data.pubDate}</span>
+                )}
+                {service.data.author && (
+                  <span class="sermon-original">{service.data.author}</span>
+                )}
+              </div>
+              <h4 class="sermon-title">
+                <a class="sermon-link" href={withBase(`/${service.id}/`)}>
+                  {service.data.title}
+                </a>
+              </h4>
+              {service.data.description && (
+                <p class="archive-summary">{service.data.description}</p>
+              )}
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+  </div>
+</BaseLayout>
