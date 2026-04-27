@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import songsManifest from "../../../songs/manifest.json";
+
+type SongManifestEntry = {
+  id: string;
+  filename: string;
+  title: string;
+  displayTitle: string;
+};
+
+const songFiles = import.meta.glob("../../../songs/*.md", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+
+const songs = (songsManifest as SongManifestEntry[]).map((song) => {
+  const raw = songFiles[`../../../songs/${song.filename}`] as string;
+  const lines = raw.trim().split(/\r?\n/);
+  const body = lines.slice(1).join("\n").trim();
+
+  return {
+    ...song,
+    anchorId: song.filename.replace(/\.md$/, ""),
+    slides: body
+      .split(/\n\s*---\s*\n/g)
+      .map((slide) => slide.trim())
+      .filter(Boolean),
+  };
+});
+---
+
+<BaseLayout
+  title="Церковний Пісенник"
+  description="Церковний Пісенник з текстами пісень."
+>
+  <div class="resource-shell slides-shell">
+    <section class="resource-hero">
+      <p class="resource-kicker">Церковний Пісенник</p>
+      <h1 class="resource-title">Церковний Пісенник</h1>
+    </section>
+
+    <section class="resource-panel">
+      <div class="resource-panel-header">
+        <p class="archive-eyebrow">Пісні</p>
+        <h2>Перелік слайдів</h2>
+        <p class="archive-summary">
+          У списку зараз: <span class="count">{songs.length}</span> пісень
+        </p>
+      </div>
+
+      <ol class="slides-index">
+        {
+          songs.map((song) => (
+            <li>
+              <a href={`#${song.anchorId}`}>{song.displayTitle}</a>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section class="slides-list" aria-label="Церковний Пісенник">
+      {
+        songs.map((song) => (
+          <article class="song-slides" id={song.anchorId}>
+            <header class="song-slides-header">
+              <p class="sermon-year">{song.filename}</p>
+              <h2>{song.displayTitle}</h2>
+            </header>
+
+            <div class="slide-grid">
+              {song.slides.map((slide, index) => (
+                <section class="slide-card">
+                  <p class="slide-number">Слайд {index + 1}</p>
+                  <pre>{slide}</pre>
+                </section>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </section>
+  </div>
+</BaseLayout>
