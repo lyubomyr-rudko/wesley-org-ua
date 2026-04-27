@@ -568,6 +568,10 @@ img {
   line-height: 1.12;
 }
 
+.song-copy-source {
+  display: none;
+}
+
 .slide-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
@@ -594,6 +598,37 @@ img {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.slide-copy-button {
+  margin-top: 1rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(91, 74, 54, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.slide-copy-button:hover,
+.slide-copy-button:focus-visible {
+  border-color: rgba(178, 31, 45, 0.38);
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--accent-dark);
+}
+
+.slide-copy-button.is-copied {
+  border-color: rgba(43, 135, 78, 0.38);
+  background: rgba(43, 135, 78, 0.12);
+  color: #1f6f3e;
 }
 
 .slide-card pre {

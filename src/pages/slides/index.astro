@@ -22,6 +22,7 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
 
   return {
     ...song,
+    rawContent: raw.trim(),
     anchorId: song.filename.replace(/\.md$/, ""),
     slides: body
       .split(/\n\s*---\s*\n/g)
@@ -68,6 +69,10 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
             <header class="song-slides-header">
               <p class="sermon-year">{song.filename}</p>
               <h2>{song.displayTitle}</h2>
+              <button class="slide-copy-button song-copy-button" type="button">
+                Копіювати файл
+              </button>
+              <textarea class="song-copy-source" readonly>{song.rawContent}</textarea>
             </header>
 
             <div class="slide-grid">
@@ -83,4 +88,49 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       }
     </section>
   </div>
+
+  <script>
+    const copiedLabel = "Скопійовано";
+    const defaultLabel = "Копіювати файл";
+
+    const writeToClipboard = async (text: string) => {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-1000px";
+      document.body.append(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    };
+
+    document.querySelectorAll<HTMLButtonElement>(".song-copy-button").forEach((button) => {
+      let resetTimer: number | undefined;
+
+      button.addEventListener("click", async () => {
+        const songBlock = button.closest(".song-slides");
+        const source = songBlock?.querySelector<HTMLTextAreaElement>(".song-copy-source");
+        const slideText = source?.value.trim();
+
+        if (!slideText) return;
+
+        await writeToClipboard(slideText);
+
+        window.clearTimeout(resetTimer);
+        button.textContent = copiedLabel;
+        button.classList.add("is-copied");
+
+        resetTimer = window.setTimeout(() => {
+          button.textContent = defaultLabel;
+          button.classList.remove("is-copied");
+        }, 1400);
+      });
+    });
+  </script>
 </BaseLayout>
