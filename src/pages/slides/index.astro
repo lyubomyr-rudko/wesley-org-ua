@@ -69,10 +69,41 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
             <header class="song-slides-header">
               <p class="sermon-year">{song.filename}</p>
               <h2>{song.displayTitle}</h2>
-              <button class="slide-copy-button song-copy-button" type="button">
-                Копіювати файл
-              </button>
-              <textarea class="song-copy-source" readonly>{song.rawContent}</textarea>
+              <div class="song-slide-actions">
+                <button
+                  class="slide-action-button song-copy-button"
+                  type="button"
+                >
+                  <svg
+                    class="slide-action-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="8" y="8" width="11" height="11" rx="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Копіювати текст</span>
+                </button>
+                <button
+                  class="slide-action-button song-preview-button"
+                  type="button"
+                >
+                  <svg
+                    class="slide-action-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3"></path>
+                    <path d="M16 3h3a2 2 0 0 1 2 2v3"></path>
+                    <path d="M8 21H5a2 2 0 0 1-2-2v-3"></path>
+                    <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path>
+                  </svg>
+                  <span>Переглянути слайди</span>
+                </button>
+              </div>
+              <textarea class="song-copy-source" readonly>
+                {song.rawContent}
+              </textarea>
             </header>
 
             <div class="slide-grid">
@@ -89,9 +120,100 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
     </section>
   </div>
 
+  <dialog class="slide-preview-dialog" aria-label="Перегляд слайдів">
+    <div class="slide-preview-shell">
+      <header class="slide-preview-header">
+        <div>
+          <p class="slide-preview-count">
+            Слайд <span data-slide-current>1</span> / <span data-slide-total
+              >1</span
+            >
+          </p>
+          <h2 data-slide-title></h2>
+        </div>
+        <button
+          class="slide-preview-icon-button"
+          type="button"
+          data-preview-close
+          aria-label="Закрити перегляд"
+        >
+          <svg
+            class="slide-preview-button-icon"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </header>
+
+      <div class="slide-preview-stage">
+        <pre data-slide-preview-text></pre>
+      </div>
+
+      <footer class="slide-preview-footer">
+        <button
+          class="slide-preview-nav-button"
+          type="button"
+          data-preview-prev
+          aria-label="Попередній слайд"
+        >
+          <svg
+            class="slide-preview-button-icon"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+          >
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+        <button
+          class="slide-preview-nav-button"
+          type="button"
+          data-preview-next
+          aria-label="Наступний слайд"
+        >
+          <svg
+            class="slide-preview-button-icon"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+          >
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+      </footer>
+    </div>
+  </dialog>
+
   <script>
     const copiedLabel = "Скопійовано";
-    const defaultLabel = "Копіювати файл";
+    const defaultLabel = "Копіювати текст";
+    const previewDialog = document.querySelector<HTMLDialogElement>(
+      ".slide-preview-dialog",
+    );
+    const previewTitle =
+      previewDialog?.querySelector<HTMLElement>("[data-slide-title]");
+    const previewText = previewDialog?.querySelector<HTMLElement>(
+      "[data-slide-preview-text]",
+    );
+    const previewCurrent = previewDialog?.querySelector<HTMLElement>(
+      "[data-slide-current]",
+    );
+    const previewTotal =
+      previewDialog?.querySelector<HTMLElement>("[data-slide-total]");
+    const previewPrevious = previewDialog?.querySelector<HTMLButtonElement>(
+      "[data-preview-prev]",
+    );
+    const previewNext = previewDialog?.querySelector<HTMLButtonElement>(
+      "[data-preview-next]",
+    );
+    const previewClose = previewDialog?.querySelector<HTMLButtonElement>(
+      "[data-preview-close]",
+    );
+
+    let activeSlides: string[] = [];
+    let activeSlideIndex = 0;
+    let previewRequestedFullscreen = false;
 
     const writeToClipboard = async (text: string) => {
       if (navigator.clipboard?.writeText) {
@@ -110,27 +232,137 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       textarea.remove();
     };
 
-    document.querySelectorAll<HTMLButtonElement>(".song-copy-button").forEach((button) => {
-      let resetTimer: number | undefined;
+    const renderPreviewSlide = () => {
+      if (
+        !previewText ||
+        !previewCurrent ||
+        !previewTotal ||
+        !previewPrevious ||
+        !previewNext
+      )
+        return;
 
-      button.addEventListener("click", async () => {
-        const songBlock = button.closest(".song-slides");
-        const source = songBlock?.querySelector<HTMLTextAreaElement>(".song-copy-source");
-        const slideText = source?.value.trim();
+      previewText.textContent = activeSlides[activeSlideIndex] ?? "";
+      previewCurrent.textContent = String(activeSlideIndex + 1);
+      previewTotal.textContent = String(activeSlides.length);
+      previewPrevious.disabled = activeSlideIndex === 0;
+      previewNext.disabled = activeSlideIndex === activeSlides.length - 1;
+    };
 
-        if (!slideText) return;
+    const showPreviewSlide = (direction: number) => {
+      const nextIndex = activeSlideIndex + direction;
 
-        await writeToClipboard(slideText);
+      if (nextIndex < 0 || nextIndex >= activeSlides.length) return;
 
-        window.clearTimeout(resetTimer);
-        button.textContent = copiedLabel;
-        button.classList.add("is-copied");
+      activeSlideIndex = nextIndex;
+      renderPreviewSlide();
+    };
 
-        resetTimer = window.setTimeout(() => {
-          button.textContent = defaultLabel;
-          button.classList.remove("is-copied");
-        }, 1400);
+    const openPreview = async () => {
+      if (!previewDialog) return;
+
+      previewDialog.showModal();
+      previewNext?.focus();
+
+      try {
+        await previewDialog.requestFullscreen();
+        previewRequestedFullscreen = true;
+      } catch {
+        previewRequestedFullscreen = false;
+      }
+    };
+
+    const closePreview = async () => {
+      previewDialog?.close();
+
+      if (previewRequestedFullscreen && document.fullscreenElement) {
+        await document.exitFullscreen();
+      }
+
+      previewRequestedFullscreen = false;
+    };
+
+    document
+      .querySelectorAll<HTMLButtonElement>(".song-copy-button")
+      .forEach((button) => {
+        let resetTimer: number | undefined;
+
+        button.addEventListener("click", async () => {
+          const buttonLabel = button.querySelector("span");
+          const songBlock = button.closest(".song-slides");
+          const source =
+            songBlock?.querySelector<HTMLTextAreaElement>(".song-copy-source");
+          const slideText = source?.value.trim();
+
+          if (!slideText) return;
+
+          await writeToClipboard(slideText);
+
+          window.clearTimeout(resetTimer);
+          if (buttonLabel) buttonLabel.textContent = copiedLabel;
+          button.classList.add("is-copied");
+
+          resetTimer = window.setTimeout(() => {
+            if (buttonLabel) buttonLabel.textContent = defaultLabel;
+            button.classList.remove("is-copied");
+          }, 1400);
+        });
       });
+
+    document
+      .querySelectorAll<HTMLButtonElement>(".song-preview-button")
+      .forEach((button) => {
+        button.addEventListener("click", () => {
+          const songBlock = button.closest(".song-slides");
+          const title =
+            songBlock?.querySelector("h2")?.textContent?.trim() ?? "";
+          const slides = Array.from(
+            songBlock?.querySelectorAll(".slide-card pre") ?? [],
+          )
+            .map((slide) => slide.textContent?.trim() ?? "")
+            .filter(Boolean);
+
+          if (!previewDialog || !slides.length) return;
+
+          activeSlides = slides;
+          activeSlideIndex = 0;
+
+          if (previewTitle) previewTitle.textContent = title;
+          renderPreviewSlide();
+          openPreview();
+        });
+      });
+
+    previewPrevious?.addEventListener("click", () => showPreviewSlide(-1));
+    previewNext?.addEventListener("click", () => showPreviewSlide(1));
+    previewClose?.addEventListener("click", () => {
+      closePreview();
+    });
+
+    previewDialog?.addEventListener("click", (event) => {
+      if (event.target === previewDialog) closePreview();
+    });
+
+    previewDialog?.addEventListener("close", () => {
+      if (previewRequestedFullscreen && document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+
+      previewRequestedFullscreen = false;
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (!previewDialog?.open) return;
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showPreviewSlide(-1);
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showPreviewSlide(1);
+      }
     });
   </script>
 </BaseLayout>
