@@ -196,6 +196,8 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
     const previewText = previewDialog?.querySelector<HTMLElement>(
       "[data-slide-preview-text]",
     );
+    const previewStage =
+      previewDialog?.querySelector<HTMLElement>(".slide-preview-stage");
     const previewCurrent = previewDialog?.querySelector<HTMLElement>(
       "[data-slide-current]",
     );
@@ -214,6 +216,9 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
     let activeSlides: string[] = [];
     let activeSlideIndex = 0;
     let previewRequestedFullscreen = false;
+    let swipeStartX = 0;
+    let swipeStartY = 0;
+    let swipeStartTime = 0;
 
     const writeToClipboard = async (text: string) => {
       if (navigator.clipboard?.writeText) {
@@ -349,6 +354,34 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       }
 
       previewRequestedFullscreen = false;
+    });
+
+    previewStage?.addEventListener("pointerdown", (event) => {
+      if (!previewDialog?.open) return;
+
+      swipeStartX = event.clientX;
+      swipeStartY = event.clientY;
+      swipeStartTime = Date.now();
+    });
+
+    previewStage?.addEventListener("pointerup", (event) => {
+      if (!previewDialog?.open || !swipeStartTime) return;
+
+      const deltaX = event.clientX - swipeStartX;
+      const deltaY = event.clientY - swipeStartY;
+      const elapsed = Date.now() - swipeStartTime;
+      const isHorizontalSwipe =
+        Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY) * 1.35;
+
+      swipeStartTime = 0;
+
+      if (!isHorizontalSwipe || elapsed > 900) return;
+
+      showPreviewSlide(deltaX < 0 ? 1 : -1);
+    });
+
+    previewStage?.addEventListener("pointercancel", () => {
+      swipeStartTime = 0;
     });
 
     document.addEventListener("keydown", (event) => {

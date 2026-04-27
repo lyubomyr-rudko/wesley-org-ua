@@ -675,9 +675,9 @@ img {
 }
 
 .slide-preview-shell {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .slide-preview-header,
@@ -691,10 +691,20 @@ img {
 }
 
 .slide-preview-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
   border-bottom: 0;
 }
 
 .slide-preview-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
   border-top: 0;
 }
 
@@ -716,9 +726,14 @@ img {
 }
 
 .slide-preview-stage {
+  height: 100vh;
+  min-height: 0;
   display: grid;
   place-items: center;
-  padding: clamp(1rem, 4vw, 3rem);
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 5.5rem clamp(1rem, 4vw, 3rem);
+  touch-action: pan-y;
 }
 
 .slide-preview-stage pre {
