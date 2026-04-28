@@ -607,6 +607,14 @@ img {
   text-transform: uppercase;
 }
 
+.slide-card-title {
+  margin: 0;
+  color: #fffdf9;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .slide-action-button {
   display: inline-flex;
   align-items: center;
@@ -656,6 +664,7 @@ img {
   white-space: pre-wrap;
   font: inherit;
   line-height: 1.55;
+  text-align: center;
 }
 
 .slide-preview-dialog {
