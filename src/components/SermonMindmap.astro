@@ -4,10 +4,8 @@ interface Props {
   title?: string;
 }
 
-const {
-  sourceSelector = ".post-content",
-  title = "План проповіді",
-} = Astro.props;
+const { sourceSelector = ".post-content", title = "План проповіді" } =
+  Astro.props;
 ---
 
 <section
@@ -35,12 +33,16 @@ const {
 
   const getPageTitle = (mindmap) => {
     const pageTitle = document.querySelector(".post-header h1");
-    return normalizeText(pageTitle?.textContent || mindmap.dataset.title || "Зміст");
+    return normalizeText(
+      pageTitle?.textContent || mindmap.dataset.title || "Зміст",
+    );
   };
 
   const findPlanHeading = (source) =>
     [...source.querySelectorAll("h2")].find(
-      (heading) => normalizeText(heading.textContent || "").toLowerCase() === "план проповіді",
+      (heading) =>
+        normalizeText(heading.textContent || "").toLowerCase() ===
+        "план проповіді",
     );
 
   const placeMindmap = (planHeading, mindmap) => {
@@ -91,14 +93,20 @@ const {
   const getParagraphPreview = (text) => {
     const normalized = normalizeText(text);
     const firstSentence = normalized.match(/^(.+?[.!?])\s/)?.[1] || normalized;
-    return firstSentence.length > 130 ? `${firstSentence.slice(0, 127).trim()}...` : firstSentence;
+    return firstSentence.length > 130
+      ? `${firstSentence.slice(0, 127).trim()}...`
+      : firstSentence;
   };
 
   const buildMindmapTree = (planHeading, rootTitle) => {
     const planElements = getPlanSectionElements(planHeading);
     const headings = planElements.filter((element) => {
       const text = normalizeText(element.textContent || "");
-      return /^H[2-4]$/.test(element.tagName) && text && !element.closest("[data-sermon-mindmap]");
+      return (
+        /^H[2-4]$/.test(element.tagName) &&
+        text &&
+        !element.closest("[data-sermon-mindmap]")
+      );
     });
 
     const root = {
@@ -163,15 +171,19 @@ const {
 
     mindmap.hidden = false;
 
-    Markmap.create(svg, {
-      autoFit: true,
-      colorFreezeLevel: 2,
-      duration: 250,
-      fitRatio: 0.94,
-      initialExpandLevel: 3,
-      maxWidth: 280,
-      paddingX: 12,
-    }, root);
+    Markmap.create(
+      svg,
+      {
+        autoFit: true,
+        colorFreezeLevel: 2,
+        duration: 250,
+        fitRatio: 0.94,
+        initialExpandLevel: 3,
+        maxWidth: 280,
+        paddingX: 12,
+      },
+      root,
+    );
   };
 
   for (const mindmap of document.querySelectorAll("[data-sermon-mindmap]")) {
@@ -210,8 +222,11 @@ const {
     overflow: hidden;
     border: 1px solid rgba(188, 169, 146, 0.38);
     border-radius: 12px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(247, 241, 232, 0.62));
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.78),
+      rgba(247, 241, 232, 0.62)
+    );
   }
 
   .sermon-mindmap svg {
