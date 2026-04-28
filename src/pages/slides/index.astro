@@ -105,6 +105,22 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
                   </svg>
                   <span>Переглянути слайди</span>
                 </button>
+                <button
+                  class="slide-action-button song-pptx-button"
+                  type="button"
+                >
+                  <svg
+                    class="slide-action-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <path d="M14 2v6h6"></path>
+                    <path d="M12 18v-6"></path>
+                    <path d="m9 15 3 3 3-3"></path>
+                  </svg>
+                  <span>PowerPoint</span>
+                </button>
               </div>
               <textarea class="song-copy-source" readonly>
                 {song.rawContent}
@@ -375,6 +391,249 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       previewRequestedFullscreen = false;
     };
 
+    const escapeXml = (value: string) =>
+      value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+
+    const crcTable = Array.from({ length: 256 }, (_, index) => {
+      let value = index;
+
+      for (let bit = 0; bit < 8; bit += 1) {
+        value = value & 1 ? 0xedb88320 ^ (value >>> 1) : value >>> 1;
+      }
+
+      return value >>> 0;
+    });
+
+    const getCrc32 = (bytes: Uint8Array) => {
+      let crc = 0xffffffff;
+
+      for (const byte of bytes) {
+        crc = crcTable[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+      }
+
+      return (crc ^ 0xffffffff) >>> 0;
+    };
+
+    const writeUint16 = (target: Uint8Array, offset: number, value: number) => {
+      target[offset] = value & 0xff;
+      target[offset + 1] = (value >>> 8) & 0xff;
+    };
+
+    const writeUint32 = (target: Uint8Array, offset: number, value: number) => {
+      target[offset] = value & 0xff;
+      target[offset + 1] = (value >>> 8) & 0xff;
+      target[offset + 2] = (value >>> 16) & 0xff;
+      target[offset + 3] = (value >>> 24) & 0xff;
+    };
+
+    const createZipBlob = (
+      files: Array<{ name: string; content: string | Uint8Array }>,
+    ) => {
+      const encoder = new TextEncoder();
+      const records = files.map((file) => {
+        const nameBytes = encoder.encode(file.name);
+        const contentBytes =
+          typeof file.content === "string"
+            ? encoder.encode(file.content)
+            : file.content;
+
+        return {
+          ...file,
+          nameBytes,
+          contentBytes,
+          crc: getCrc32(contentBytes),
+          offset: 0,
+        };
+      });
+
+      const localSize = records.reduce(
+        (sum, record) => sum + 30 + record.nameBytes.length + record.contentBytes.length,
+        0,
+      );
+      const centralSize = records.reduce(
+        (sum, record) => sum + 46 + record.nameBytes.length,
+        0,
+      );
+      const output = new Uint8Array(localSize + centralSize + 22);
+      let offset = 0;
+
+      records.forEach((record) => {
+        record.offset = offset;
+        writeUint32(output, offset, 0x04034b50);
+        writeUint16(output, offset + 4, 20);
+        writeUint16(output, offset + 6, 0);
+        writeUint16(output, offset + 8, 0);
+        writeUint16(output, offset + 10, 0);
+        writeUint16(output, offset + 12, 0);
+        writeUint32(output, offset + 14, record.crc);
+        writeUint32(output, offset + 18, record.contentBytes.length);
+        writeUint32(output, offset + 22, record.contentBytes.length);
+        writeUint16(output, offset + 26, record.nameBytes.length);
+        writeUint16(output, offset + 28, 0);
+        output.set(record.nameBytes, offset + 30);
+        output.set(record.contentBytes, offset + 30 + record.nameBytes.length);
+        offset += 30 + record.nameBytes.length + record.contentBytes.length;
+      });
+
+      const centralOffset = offset;
+
+      records.forEach((record) => {
+        writeUint32(output, offset, 0x02014b50);
+        writeUint16(output, offset + 4, 20);
+        writeUint16(output, offset + 6, 20);
+        writeUint16(output, offset + 8, 0);
+        writeUint16(output, offset + 10, 0);
+        writeUint16(output, offset + 12, 0);
+        writeUint16(output, offset + 14, 0);
+        writeUint32(output, offset + 16, record.crc);
+        writeUint32(output, offset + 20, record.contentBytes.length);
+        writeUint32(output, offset + 24, record.contentBytes.length);
+        writeUint16(output, offset + 28, record.nameBytes.length);
+        writeUint16(output, offset + 30, 0);
+        writeUint16(output, offset + 32, 0);
+        writeUint16(output, offset + 34, 0);
+        writeUint16(output, offset + 36, 0);
+        writeUint32(output, offset + 38, 0);
+        writeUint32(output, offset + 42, record.offset);
+        output.set(record.nameBytes, offset + 46);
+        offset += 46 + record.nameBytes.length;
+      });
+
+      writeUint32(output, offset, 0x06054b50);
+      writeUint16(output, offset + 4, 0);
+      writeUint16(output, offset + 6, 0);
+      writeUint16(output, offset + 8, records.length);
+      writeUint16(output, offset + 10, records.length);
+      writeUint32(output, offset + 12, centralSize);
+      writeUint32(output, offset + 16, centralOffset);
+      writeUint16(output, offset + 20, 0);
+
+      return new Blob([output], {
+        type: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      });
+    };
+
+    const createSlideXml = (slideText: string) => {
+      const paragraphs = slideText
+        .split(/\r?\n/)
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .map(
+          (line) =>
+            `<a:p><a:pPr algn="ctr"/><a:r><a:rPr lang="uk-UA" sz="4200" b="1"><a:solidFill><a:srgbClr val="FFFDF9"/></a:solidFill><a:latin typeface="Arial"/><a:cs typeface="Arial"/></a:rPr><a:t>${escapeXml(line)}</a:t></a:r></a:p>`,
+        )
+        .join("") || `<a:p><a:pPr algn="ctr"/></a:p>`;
+
+      return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <p:cSld>
+    <p:bg><p:bgPr><a:solidFill><a:srgbClr val="090A0D"/></a:solidFill><a:effectLst/></p:bgPr></p:bg>
+    <p:spTree>
+      <p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>
+      <p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr>
+      <p:sp>
+        <p:nvSpPr><p:cNvPr id="2" name="Slide Text"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr>
+        <p:spPr><a:xfrm><a:off x="914400" y="914400"/><a:ext cx="10363200" cy="5029200"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/></p:spPr>
+        <p:txBody><a:bodyPr wrap="square" anchor="mid"/><a:lstStyle/>${paragraphs}</p:txBody>
+      </p:sp>
+    </p:spTree>
+  </p:cSld>
+  <p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr>
+</p:sld>`;
+    };
+
+    const createPowerPointBlob = (slides: string[]) => {
+      const slideOverrides = slides
+        .map(
+          (_, index) =>
+            `<Override PartName="/ppt/slides/slide${index + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slide+xml"/>`,
+        )
+        .join("");
+      const slideIds = slides
+        .map((_, index) => `<p:sldId id="${256 + index}" r:id="rId${index + 1}"/>`)
+        .join("");
+      const slideRelationships = slides
+        .map(
+          (_, index) =>
+            `<Relationship Id="rId${index + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide" Target="slides/slide${index + 1}.xml"/>`,
+        )
+        .join("");
+      const files: Array<{ name: string; content: string }> = [
+        {
+          name: "[Content_Types].xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/ppt/presentation.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"/><Override PartName="/ppt/slideMasters/slideMaster1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"/><Override PartName="/ppt/slideLayouts/slideLayout1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"/><Override PartName="/ppt/theme/theme1.xml" ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/><Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/><Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>${slideOverrides}</Types>`,
+        },
+        {
+          name: "_rels/.rels",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="ppt/presentation.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/></Relationships>`,
+        },
+        {
+          name: "docProps/core.xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><dc:title>Church slides</dc:title><dc:creator>wesley.org.ua</dc:creator><cp:lastModifiedBy>wesley.org.ua</cp:lastModifiedBy><dcterms:created xsi:type="dcterms:W3CDTF">${new Date().toISOString()}</dcterms:created><dcterms:modified xsi:type="dcterms:W3CDTF">${new Date().toISOString()}</dcterms:modified></cp:coreProperties>`,
+        },
+        {
+          name: "docProps/app.xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"><Application>wesley.org.ua</Application><PresentationFormat>Widescreen</PresentationFormat><Slides>${slides.length}</Slides></Properties>`,
+        },
+        {
+          name: "ppt/presentation.xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><p:presentation xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><p:sldMasterIdLst><p:sldMasterId id="2147483648" r:id="rId${slides.length + 1}"/></p:sldMasterIdLst><p:sldIdLst>${slideIds}</p:sldIdLst><p:sldSz cx="12192000" cy="6858000" type="wide"/><p:notesSz cx="6858000" cy="9144000"/></p:presentation>`,
+        },
+        {
+          name: "ppt/_rels/presentation.xml.rels",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${slideRelationships}<Relationship Id="rId${slides.length + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster" Target="slideMasters/slideMaster1.xml"/></Relationships>`,
+        },
+        {
+          name: "ppt/slideMasters/slideMaster1.xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><p:sldMaster xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr></p:spTree></p:cSld><p:clrMap bg1="lt1" tx1="dk1" bg2="lt2" tx2="dk2" accent1="accent1" accent2="accent2" accent3="accent3" accent4="accent4" accent5="accent5" accent6="accent6" hlink="hlink" folHlink="folHlink"/><p:sldLayoutIdLst><p:sldLayoutId id="2147483649" r:id="rId1"/></p:sldLayoutIdLst><p:txStyles><p:titleStyle/><p:bodyStyle/><p:otherStyle/></p:txStyles></p:sldMaster>`,
+        },
+        {
+          name: "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout" Target="../slideLayouts/slideLayout1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="../theme/theme1.xml"/></Relationships>`,
+        },
+        {
+          name: "ppt/slideLayouts/slideLayout1.xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><p:sldLayout xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" type="blank"><p:cSld name="Blank"><p:spTree><p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr></p:spTree></p:cSld><p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr></p:sldLayout>`,
+        },
+        {
+          name: "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster" Target="../slideMasters/slideMaster1.xml"/></Relationships>`,
+        },
+        {
+          name: "ppt/theme/theme1.xml",
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="Church Slides"><a:themeElements><a:clrScheme name="Dark"><a:dk1><a:srgbClr val="090A0D"/></a:dk1><a:lt1><a:srgbClr val="FFFDF9"/></a:lt1><a:dk2><a:srgbClr val="1F1F1F"/></a:dk2><a:lt2><a:srgbClr val="EEE8DC"/></a:lt2><a:accent1><a:srgbClr val="B21F2D"/></a:accent1><a:accent2><a:srgbClr val="93D3A6"/></a:accent2><a:accent3><a:srgbClr val="D7C9B7"/></a:accent3><a:accent4><a:srgbClr val="FFFFFF"/></a:accent4><a:accent5><a:srgbClr val="666666"/></a:accent5><a:accent6><a:srgbClr val="111111"/></a:accent6><a:hlink><a:srgbClr val="B21F2D"/></a:hlink><a:folHlink><a:srgbClr val="B21F2D"/></a:folHlink></a:clrScheme><a:fontScheme name="Arial"><a:majorFont><a:latin typeface="Arial"/></a:majorFont><a:minorFont><a:latin typeface="Arial"/></a:minorFont></a:fontScheme><a:fmtScheme name="Simple"><a:fillStyleLst><a:solidFill><a:schemeClr val="phClr"/></a:solidFill></a:fillStyleLst><a:lnStyleLst><a:ln w="6350"><a:solidFill><a:schemeClr val="phClr"/></a:solidFill></a:ln></a:lnStyleLst><a:effectStyleLst><a:effectStyle><a:effectLst/></a:effectStyle></a:effectStyleLst><a:bgFillStyleLst><a:solidFill><a:schemeClr val="phClr"/></a:solidFill></a:bgFillStyleLst></a:fmtScheme></a:themeElements></a:theme>`,
+        },
+        ...slides.map((slide, index) => ({
+          name: `ppt/slides/slide${index + 1}.xml`,
+          content: createSlideXml(slide),
+        })),
+      ];
+
+      return createZipBlob(files);
+    };
+
+    const downloadBlob = (blob: Blob, filename: string) => {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    };
+
+    const slugifyFilename = (value: string) =>
+      value
+        .toLowerCase()
+        .replace(/[^\p{L}\p{N}]+/gu, "-")
+        .replace(/^-+|-+$/g, "")
+        .slice(0, 80) || "slides";
+
     document
       .querySelectorAll<HTMLButtonElement>(".song-copy-button")
       .forEach((button) => {
@@ -397,6 +656,35 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
 
           resetTimer = window.setTimeout(() => {
             if (buttonLabel) buttonLabel.textContent = defaultLabel;
+            button.classList.remove("is-copied");
+          }, 1400);
+        });
+      });
+
+    document
+      .querySelectorAll<HTMLButtonElement>(".song-pptx-button")
+      .forEach((button) => {
+        let resetTimer: number | undefined;
+
+        button.addEventListener("click", () => {
+          const buttonLabel = button.querySelector("span");
+          const songBlock = button.closest(".song-slides");
+          const title =
+            songBlock?.querySelector("h2")?.textContent?.trim() ?? "slides";
+          const slides = getSongSlides(songBlock);
+
+          if (!slides.length) return;
+
+          const blob = createPowerPointBlob(slides);
+
+          downloadBlob(blob, `${slugifyFilename(title)}.pptx`);
+
+          window.clearTimeout(resetTimer);
+          if (buttonLabel) buttonLabel.textContent = "Завантажено";
+          button.classList.add("is-copied");
+
+          resetTimer = window.setTimeout(() => {
+            if (buttonLabel) buttonLabel.textContent = "PowerPoint";
             button.classList.remove("is-copied");
           }, 1400);
         });
