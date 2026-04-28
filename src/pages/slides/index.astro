@@ -65,7 +65,12 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
     <section class="slides-list" aria-label="Церковний Пісенник">
       {
         songs.map((song) => (
-          <article class="song-slides" id={song.anchorId}>
+          <article
+            class="song-slides"
+            id={song.anchorId}
+            data-song-id={song.id}
+            data-song-number={Number(song.id)}
+          >
             <header class="song-slides-header">
               <p class="sermon-year">{song.filename}</p>
               <h2>{song.displayTitle}</h2>
@@ -213,7 +218,12 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       "[data-preview-close]",
     );
 
-    let activeSlides: string[] = [];
+    type PreviewSlide = {
+      text: string;
+      title: string;
+    };
+
+    let activeSlides: PreviewSlide[] = [];
     let activeSlideIndex = 0;
     let previewRequestedFullscreen = false;
     let swipeStartX = 0;
@@ -247,7 +257,10 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       )
         return;
 
-      previewText.textContent = activeSlides[activeSlideIndex] ?? "";
+      const activeSlide = activeSlides[activeSlideIndex];
+
+      previewText.textContent = activeSlide?.text ?? "";
+      if (previewTitle) previewTitle.textContent = activeSlide?.title ?? "";
       previewCurrent.textContent = String(activeSlideIndex + 1);
       previewTotal.textContent = String(activeSlides.length);
       previewPrevious.disabled = activeSlideIndex === 0;
@@ -261,6 +274,81 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
 
       activeSlideIndex = nextIndex;
       renderPreviewSlide();
+    };
+
+    const getSongSlides = (songBlock: Element | null) =>
+      Array.from(songBlock?.querySelectorAll(".slide-card pre") ?? [])
+        .map((slide) => slide.textContent?.trim() ?? "")
+        .filter(Boolean);
+
+    const createPreviewSlides = (slides: string[], title: string) =>
+      slides.map((slide) => ({ text: slide, title }));
+
+    const getSongPreviewTitle = (songBlock: Element | null) => {
+      const number =
+        songBlock instanceof HTMLElement ? songBlock.dataset.songNumber : "";
+      const title = songBlock?.querySelector("h2")?.textContent?.trim() ?? "";
+
+      return number ? `${number}. ${title.replace(/^\d+\.\s*/, "")}` : title;
+    };
+
+    const openSlides = (slides: PreviewSlide[]) => {
+      if (!previewDialog || !slides.length) return;
+
+      activeSlides = slides;
+      activeSlideIndex = 0;
+
+      renderPreviewSlide();
+      openPreview();
+    };
+
+    const normalizeSongId = (value: string) => {
+      const trimmed = value.trim();
+
+      if (!/^\d+$/.test(trimmed)) return "";
+
+      return trimmed.padStart(3, "0");
+    };
+
+    const getGroupIdsFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const queryGroup = params.get("group") ?? "";
+      const hashGroup = decodeURIComponent(
+        window.location.hash.replace(/^#/, ""),
+      );
+      const hashMatch = hashGroup.match(/^group=([\d,\s]+)$/);
+      const source = queryGroup || hashMatch?.[1] || "";
+
+      return source
+        .split(",")
+        .map(normalizeSongId)
+        .filter(Boolean);
+    };
+
+    const openGroupFromUrl = () => {
+      const ids = getGroupIdsFromUrl();
+
+      if (!ids.length) return;
+
+      const songBlocks = ids
+        .map((id) =>
+          document.querySelector<HTMLElement>(`.song-slides[data-song-id="${id}"]`),
+        )
+        .filter(Boolean);
+      const slides = songBlocks.flatMap((songBlock, index) => {
+        const songSlides = createPreviewSlides(
+          getSongSlides(songBlock),
+          getSongPreviewTitle(songBlock),
+        );
+
+        return index === songBlocks.length - 1
+          ? songSlides
+          : [...songSlides, { text: "", title: "" }];
+      });
+
+      if (!slides.length) return;
+
+      openSlides(slides);
     };
 
     const openPreview = async () => {
@@ -321,20 +409,9 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
           const songBlock = button.closest(".song-slides");
           const title =
             songBlock?.querySelector("h2")?.textContent?.trim() ?? "";
-          const slides = Array.from(
-            songBlock?.querySelectorAll(".slide-card pre") ?? [],
-          )
-            .map((slide) => slide.textContent?.trim() ?? "")
-            .filter(Boolean);
+          const slides = getSongSlides(songBlock);
 
-          if (!previewDialog || !slides.length) return;
-
-          activeSlides = slides;
-          activeSlideIndex = 0;
-
-          if (previewTitle) previewTitle.textContent = title;
-          renderPreviewSlide();
-          openPreview();
+          openSlides(createPreviewSlides(slides, title));
         });
       });
 
@@ -397,5 +474,8 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
         showPreviewSlide(1);
       }
     });
+
+    window.addEventListener("hashchange", openGroupFromUrl);
+    openGroupFromUrl();
   </script>
 </BaseLayout>
