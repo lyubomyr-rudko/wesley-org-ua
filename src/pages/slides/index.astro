@@ -155,21 +155,40 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
           </p>
           <h2 data-slide-title></h2>
         </div>
-        <button
-          class="slide-preview-icon-button"
-          type="button"
-          data-preview-close
-          aria-label="Закрити перегляд"
-        >
-          <svg
-            class="slide-preview-button-icon"
-            aria-hidden="true"
-            viewBox="0 0 24 24"
+        <div class="slide-preview-actions">
+          <button
+            class="slide-preview-icon-button"
+            type="button"
+            data-preview-download
+            aria-label="Завантажити PowerPoint"
+            hidden
           >
-            <path d="M18 6 6 18"></path>
-            <path d="m6 6 12 12"></path>
-          </svg>
-        </button>
+            <svg
+              class="slide-preview-button-icon"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <path d="M7 10l5 5 5-5"></path>
+              <path d="M12 15V3"></path>
+            </svg>
+          </button>
+          <button
+            class="slide-preview-icon-button"
+            type="button"
+            data-preview-close
+            aria-label="Закрити перегляд"
+          >
+            <svg
+              class="slide-preview-button-icon"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </div>
       </header>
 
       <div class="slide-preview-stage">
@@ -238,6 +257,9 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
     const previewClose = previewDialog?.querySelector<HTMLButtonElement>(
       "[data-preview-close]",
     );
+    const previewDownload = previewDialog?.querySelector<HTMLButtonElement>(
+      "[data-preview-download]",
+    );
 
     type PreviewSlide = {
       text: string;
@@ -249,7 +271,16 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       title?: string;
     };
 
+    type PreviewOptions = {
+      downloadFilename?: string;
+      downloadTitle?: string;
+      powerpointSlides?: PowerPointSlide[];
+    };
+
     let activeSlides: PreviewSlide[] = [];
+    let activePowerPointSlides: PowerPointSlide[] = [];
+    let activeDownloadFilename = "slides.pptx";
+    let activeDownloadTitle = "slides";
     let activeSlideIndex = 0;
     let previewRequestedFullscreen = false;
     let swipeStartX = 0;
@@ -291,6 +322,7 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       previewTotal.textContent = String(activeSlides.length);
       previewPrevious.disabled = activeSlideIndex === 0;
       previewNext.disabled = activeSlideIndex === activeSlides.length - 1;
+      if (previewDownload) previewDownload.hidden = !activePowerPointSlides.length;
     };
 
     const showPreviewSlide = (direction: number) => {
@@ -318,10 +350,13 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       return number ? `${number}. ${title.replace(/^\d+\.\s*/, "")}` : title;
     };
 
-    const openSlides = (slides: PreviewSlide[]) => {
+    const openSlides = (slides: PreviewSlide[], options: PreviewOptions = {}) => {
       if (!previewDialog || !slides.length) return;
 
       activeSlides = slides;
+      activePowerPointSlides = options.powerpointSlides ?? [];
+      activeDownloadFilename = options.downloadFilename ?? "slides.pptx";
+      activeDownloadTitle = options.downloadTitle ?? "slides";
       activeSlideIndex = 0;
 
       renderPreviewSlide();
@@ -361,20 +396,34 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
           document.querySelector<HTMLElement>(`.song-slides[data-song-id="${id}"]`),
         )
         .filter(Boolean);
-      const slides = songBlocks.flatMap((songBlock, index) => {
-        const songSlides = createPreviewSlides(
-          getSongSlides(songBlock),
-          getSongPreviewTitle(songBlock),
+      const slides: PreviewSlide[] = [];
+      const powerpointSlides: PowerPointSlide[] = [];
+
+      songBlocks.forEach((songBlock, index) => {
+        const songTitle = getSongPreviewTitle(songBlock);
+        const songSlides = getSongSlides(songBlock);
+
+        slides.push(...createPreviewSlides(songSlides, songTitle));
+        powerpointSlides.push(
+          ...songSlides.map((slide, slideIndex) => ({
+            text: slide,
+            title: slideIndex === 0 ? songTitle : "",
+          })),
         );
 
-        return index === songBlocks.length - 1
-          ? songSlides
-          : [...songSlides, { text: "", title: "" }];
+        if (index !== songBlocks.length - 1) {
+          slides.push({ text: "", title: "" });
+          powerpointSlides.push({ text: "", title: "" });
+        }
       });
 
       if (!slides.length) return;
 
-      openSlides(slides);
+      openSlides(slides, {
+        downloadFilename: `slides-${ids.join("-")}.pptx`,
+        downloadTitle: `Слайди ${ids.join(", ")}`,
+        powerpointSlides,
+      });
     };
 
     const openPreview = async () => {
@@ -667,13 +716,13 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
 
         if (slideContent.title) {
           slide.addText(slideContent.title, {
-            x: 0.75,
-            y: 0.45,
-            w: 12,
-            h: 0.55,
+            x: 0.35,
+            y: 0.25,
+            w: 12.63,
+            h: 1.05,
             margin: 0,
             fontFace: "Arial",
-            fontSize: 16,
+            fontSize: 32,
             bold: true,
             color: "FFFDF9",
             align: "center",
@@ -682,13 +731,13 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
         }
 
         slide.addText(slideContent.text, {
-          x: 0.9,
-          y: hasTitle ? 1.35 : 1.1,
-          w: 11.55,
-          h: hasTitle ? 4.55 : 5,
+          x: 0.45,
+          y: hasTitle ? 1.35 : 0.35,
+          w: 12.43,
+          h: hasTitle ? 5.75 : 6.8,
           margin: 0,
           fontFace: "Arial",
-          fontSize: 28,
+          fontSize: 54,
           bold: true,
           color: "FFFDF9",
           align: "center",
@@ -790,6 +839,15 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
 
     previewPrevious?.addEventListener("click", () => showPreviewSlide(-1));
     previewNext?.addEventListener("click", () => showPreviewSlide(1));
+    previewDownload?.addEventListener("click", async () => {
+      if (!activePowerPointSlides.length) return;
+
+      await downloadPowerPoint(
+        activePowerPointSlides,
+        activeDownloadTitle,
+        activeDownloadFilename,
+      );
+    });
     previewClose?.addEventListener("click", () => {
       closePreview();
     });

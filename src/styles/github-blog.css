@@ -734,6 +734,12 @@ img {
   line-height: 1.15;
 }
 
+.slide-preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .slide-preview-stage {
   height: 100vh;
   min-height: 0;
