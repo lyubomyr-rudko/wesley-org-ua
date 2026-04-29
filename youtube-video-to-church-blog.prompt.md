@@ -80,7 +80,9 @@ Generate a plan for a sermon based on the subtitle content. The plan should incl
 
 The keywords should be relevant for the website and the meeting content. Include topics, biblical themes, names, sermon themes, and church life themes where appropriate.
 
-4. Create a new Markdown file in this folder:
+4. If this is worship service with singing part - generate a list of songs NUMBERS based on the video subtitles and slides list. Create a section in the Markdown file with the title "Слайди пісень" and include an iframe that embeds the slides page with the corresponding song numbers. Also, include a link to open the slides separately.
+
+5. Create a new Markdown file in this folder:
 
 src/content/blog/church-in-lviv/
 
