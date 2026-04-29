@@ -56,6 +56,19 @@ const collectionLink = currentSlug.startsWith("church-in-lviv/")
       <slot />
     </div>
 
+    <script define:vars={{ baseUrl }}>
+      const withBase = (path) =>
+        path.startsWith(baseUrl) ? path : `${baseUrl}${path.replace(/^\/+/, "")}`;
+
+      document
+        .querySelectorAll("[data-base-src]")
+        .forEach((element) => {
+          const path = element.getAttribute("data-base-src");
+
+          if (path) element.setAttribute("src", withBase(path));
+        });
+    </script>
+
     <SermonMindmap sourceSelector=".post-content" title="План проповіді" />
 
     {
