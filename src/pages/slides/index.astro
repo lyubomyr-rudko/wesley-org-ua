@@ -210,6 +210,8 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
   </dialog>
 
   <script>
+    import pptxgen from "pptxgenjs";
+
     const copiedLabel = "Скопійовано";
     const defaultLabel = "Копіювати текст";
     const previewDialog = document.querySelector<HTMLDialogElement>(
@@ -629,9 +631,73 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
           name: `ppt/slides/slide${index + 1}.xml`,
           content: createSlideXml(slide),
         })),
+        ...slides.map((_, index) => ({
+          name: `ppt/slides/_rels/slide${index + 1}.xml.rels`,
+          content: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout" Target="../slideLayouts/slideLayout1.xml"/></Relationships>`,
+        })),
       ];
 
       return createZipBlob(files);
+    };
+
+    const downloadPowerPoint = async (
+      slides: PowerPointSlide[],
+      title: string,
+      filename: string,
+    ) => {
+      const pptx = new pptxgen();
+
+      pptx.layout = "LAYOUT_WIDE";
+      pptx.author = "wesley.org.ua";
+      pptx.company = "wesley.org.ua";
+      pptx.subject = "Church slides";
+      pptx.title = title;
+      pptx.lang = "uk-UA";
+      pptx.theme = {
+        headFontFace: "Arial",
+        bodyFontFace: "Arial",
+        lang: "uk-UA",
+      };
+
+      slides.forEach((slideContent) => {
+        const slide = pptx.addSlide();
+        const hasTitle = Boolean(slideContent.title);
+
+        slide.background = { color: "090A0D" };
+
+        if (slideContent.title) {
+          slide.addText(slideContent.title, {
+            x: 0.75,
+            y: 0.45,
+            w: 12,
+            h: 0.55,
+            margin: 0,
+            fontFace: "Arial",
+            fontSize: 16,
+            bold: true,
+            color: "FFFDF9",
+            align: "center",
+            valign: "mid",
+          });
+        }
+
+        slide.addText(slideContent.text, {
+          x: 0.9,
+          y: hasTitle ? 1.35 : 1.1,
+          w: 11.55,
+          h: hasTitle ? 4.55 : 5,
+          margin: 0,
+          fontFace: "Arial",
+          fontSize: 28,
+          bold: true,
+          color: "FFFDF9",
+          align: "center",
+          valign: "mid",
+          fit: "shrink",
+        });
+      });
+
+      await pptx.writeFile({ fileName: filename });
     };
 
     const downloadBlob = (blob: Blob, filename: string) => {
@@ -684,7 +750,7 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
       .forEach((button) => {
         let resetTimer: number | undefined;
 
-        button.addEventListener("click", () => {
+        button.addEventListener("click", async () => {
           const buttonLabel = button.querySelector("span");
           const songBlock = button.closest(".song-slides");
           const title =
@@ -696,9 +762,7 @@ const songs = (songsManifest as SongManifestEntry[]).map((song) => {
 
           if (!slides.length) return;
 
-          const blob = createPowerPointBlob(slides);
-
-          downloadBlob(blob, `${slugifyFilename(title)}.pptx`);
+          await downloadPowerPoint(slides, title, `${slugifyFilename(title)}.pptx`);
 
           window.clearTimeout(resetTimer);
           if (buttonLabel) buttonLabel.textContent = "Завантажено";
