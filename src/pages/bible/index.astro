@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { bibleBooks } from "../../data/bible.js";
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+const totalChapters = bibleBooks.reduce((sum, book) => sum + book.chapterCount, 0);
+---
+
+<BaseLayout
+  title="Біблія"
+  description="Українська Біблія Івана Огієнка: вибір книги та розділу для читання."
+>
+  <div class="resource-shell bible-shell">
+    <section class="resource-hero">
+      <p class="resource-kicker">Українська Біблія Івана Огієнка</p>
+      <h1 class="resource-title">Біблія</h1>
+      <p class="resource-summary">
+        Оберіть книгу і розділ, щоб читати окрему статичну HTML-сторінку.
+      </p>
+
+      <form class="bible-picker" data-bible-picker>
+        <label class="bible-picker-field">
+          <span>Книга</span>
+          <select name="book">
+            {
+              bibleBooks.map((book) => (
+                <option value={book.slug} data-chapters={book.chapters.join(",")}>
+                  {book.title}
+                </option>
+              ))
+            }
+          </select>
+        </label>
+
+        <label class="bible-picker-field">
+          <span>Розділ</span>
+          <select name="chapter"></select>
+        </label>
+
+        <button class="button-primary bible-picker-button" type="submit">
+          Читати
+        </button>
+      </form>
+    </section>
+
+    <section class="resource-panel">
+      <div class="resource-panel-header">
+        <p class="archive-eyebrow">Повний перелік</p>
+        <h2>Книги Біблії</h2>
+        <p class="archive-summary">
+          У каталозі зараз: <span class="count">{totalChapters}</span> розділів
+        </p>
+      </div>
+
+      <div class="bible-book-grid">
+        {
+          bibleBooks.map((book) => (
+            <article class="bible-book-card">
+              <h3>
+                <a href={withBase(`/bible/${book.slug}/1/`)}>{book.title}</a>
+              </h3>
+              <ol aria-label={`Розділи книги ${book.title}`}>
+                {book.chapters.map((chapter) => (
+                  <li>
+                    <a href={withBase(`/bible/${book.slug}/${chapter}/`)}>
+                      {chapter}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+
+  <script define:vars={{ baseUrl }}>
+    const form = document.querySelector("[data-bible-picker]");
+    const bookSelect = form?.elements.book;
+    const chapterSelect = form?.elements.chapter;
+
+    const renderChapters = () => {
+      const selectedBook = bookSelect.selectedOptions[0];
+      const chapters = selectedBook.dataset.chapters.split(",");
+
+      chapterSelect.replaceChildren(
+        ...chapters.map((chapter) => {
+          const option = document.createElement("option");
+          option.value = chapter;
+          option.textContent = chapter;
+          return option;
+        }),
+      );
+    };
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      window.location.href = `${baseUrl}bible/${bookSelect.value}/${chapterSelect.value}/`;
+    });
+
+    bookSelect?.addEventListener("change", renderChapters);
+    renderChapters();
+  </script>
+</BaseLayout>
