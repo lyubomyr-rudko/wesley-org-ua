@@ -39,6 +39,12 @@ const isActivePath = (path) =>
             Проповіді
           </a>
           <a
+            href={withBase("/bible/")}
+            class={currentRoute.startsWith("/bible/") ? "is-active" : undefined}
+          >
+            Біблія
+          </a>
+          <a
             href={withBase("/church/")}
             class={isActivePath("/church/") ? "is-active" : undefined}
           >
