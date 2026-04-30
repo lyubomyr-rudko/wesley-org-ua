@@ -671,6 +671,9 @@ img {
   grid-template-columns: 2.25rem minmax(0, 1fr);
   gap: 0.8rem;
   margin: 0;
+  scroll-margin-top: 7rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .bible-verse sup {
@@ -682,6 +685,11 @@ img {
   font-weight: 800;
   line-height: 2.1;
   text-align: right;
+}
+
+.bible-verse:target {
+  background: rgba(178, 31, 45, 0.08);
+  box-shadow: 0 0 0 0.45rem rgba(178, 31, 45, 0.08);
 }
 
 .bible-pagination {

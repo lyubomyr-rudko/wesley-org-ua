@@ -220,6 +220,36 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       return `${citationTitle} ${chapterNumber}:${verseRange}`;
     };
 
+    const scrollToHashVerse = () => {
+      const hash = window.location.hash.slice(1);
+
+      if (!hash) {
+        return;
+      }
+
+      const verse = document.getElementById(hash);
+
+      if (verse?.matches(".bible-verse")) {
+        verse.scrollIntoView({ block: "start" });
+      }
+    };
+
+    bibleText?.addEventListener("click", (event) => {
+      const target =
+        event.target instanceof Element ? event.target : event.target?.parentElement;
+      const verse = target?.closest(".bible-verse");
+
+      if (!verse?.id) {
+        return;
+      }
+
+      window.history.replaceState(null, "", `#${verse.id}`);
+    });
+
+    window.addEventListener("hashchange", scrollToHashVerse);
+    window.addEventListener("load", scrollToHashVerse);
+    scrollToHashVerse();
+
     document.addEventListener("copy", (event) => {
       const selection = window.getSelection();
 
