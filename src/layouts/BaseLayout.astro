@@ -1,6 +1,15 @@
 ---
 import "../styles/github-blog.css";
-const { title = "Джон Веслі українською", description = "" } = Astro.props;
+const {
+  title = "Джон Веслі українською",
+  description = "",
+  image = "/images/header-icon.png",
+  type = "website",
+} = Astro.props;
+const siteName = "Центр Джона Веслі";
+const defaultDescription =
+  "Переклади, дослідження, проповіді Джона Веслі, матеріали церкви у Львові та український текст Біблії Івана Огієнка.";
+const pageDescription = description || defaultDescription;
 const baseUrl = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
@@ -13,6 +22,24 @@ const withBase = (path = "/") =>
   path === "/" ? baseUrl : `${baseUrl}${path.replace(/^\/+/, "")}`;
 const isActivePath = (path) =>
   currentRoute === path || currentRoute === path.replace(/\/$/, "");
+const siteOrigin = Astro.site ?? new URL(Astro.url.origin);
+const canonicalUrl = new URL(currentPath, siteOrigin).toString();
+const imageUrl = new URL(withBase(image), siteOrigin).toString();
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  alternateName: "Джон Веслі українською",
+  url: new URL(baseUrl, siteOrigin).toString(),
+  inLanguage: "uk",
+  description: defaultDescription,
+  publisher: {
+    "@type": "Organization",
+    name: siteName,
+    url: new URL(baseUrl, siteOrigin).toString(),
+    logo: imageUrl,
+  },
+};
 ---
 
 <!doctype html>
@@ -20,12 +47,32 @@ const isActivePath = (path) =>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+    <meta name="description" content={pageDescription} />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="uk" href={canonicalUrl} />
     <link
       rel="icon"
       type="image/png"
       href={withBase("/images/header-icon.png")}
     />
+    <link rel="apple-touch-icon" href={withBase("/apple-touch-icon.png")} />
+    <link rel="manifest" href={withBase("/site.webmanifest")} />
+    <meta name="theme-color" content="#b21f2d" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:type" content={type} />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={siteName} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={imageUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <title>{title}</title>
   </head>
   <body>
