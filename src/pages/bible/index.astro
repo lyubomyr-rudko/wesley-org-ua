@@ -6,7 +6,10 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
 const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
-const totalChapters = bibleBooks.reduce((sum, book) => sum + book.chapterCount, 0);
+const totalChapters = bibleBooks.reduce(
+  (sum, book) => sum + book.chapterCount,
+  0,
+);
 ---
 
 <BaseLayout
@@ -17,34 +20,36 @@ const totalChapters = bibleBooks.reduce((sum, book) => sum + book.chapterCount, 
     <section class="resource-hero">
       <p class="resource-kicker">Українська Біблія Івана Огієнка</p>
       <h1 class="resource-title">Біблія</h1>
-      <p class="resource-summary">
-        Оберіть книгу і розділ, щоб читати окрему статичну HTML-сторінку.
-      </p>
-
-      <form class="bible-picker" data-bible-picker>
-        <label class="bible-picker-field">
-          <span>Книга</span>
-          <select name="book">
-            {
-              bibleBooks.map((book) => (
-                <option value={book.slug} data-chapters={book.chapters.join(",")}>
-                  {book.title}
-                </option>
-              ))
-            }
-          </select>
-        </label>
-
-        <label class="bible-picker-field">
-          <span>Розділ</span>
-          <select name="chapter"></select>
-        </label>
-
-        <button class="button-primary bible-picker-button" type="submit">
-          Читати
-        </button>
-      </form>
+      <p class="resource-summary">Оберіть книгу і розділ.</p>
     </section>
+
+    <div class="bible-picker-sentinel" data-bible-picker-sentinel></div>
+    <form class="bible-picker bible-index-picker bible-sticky-picker" data-bible-picker>
+      <label class="bible-picker-field">
+        <span>Книга</span>
+        <select name="book" aria-label="Книга">
+          {
+            bibleBooks.map((book) => (
+              <option
+                value={book.slug}
+                data-chapters={book.chapters.join(",")}
+              >
+                {book.title}
+              </option>
+            ))
+          }
+        </select>
+      </label>
+
+      <label class="bible-picker-field">
+        <span>Розділ</span>
+        <select name="chapter" aria-label="Розділ"></select>
+      </label>
+
+      <button class="button-primary bible-picker-button" type="submit">
+        Читати
+      </button>
+    </form>
 
     <section class="resource-panel">
       <div class="resource-panel-header">
@@ -58,7 +63,7 @@ const totalChapters = bibleBooks.reduce((sum, book) => sum + book.chapterCount, 
       <div class="bible-book-grid">
         {
           bibleBooks.map((book) => (
-            <article class="bible-book-card">
+            <article class="bible-book-card" data-book-slug={book.slug}>
               <h3>
                 <a href={withBase(`/bible/${book.slug}/1/`)}>{book.title}</a>
               </h3>
@@ -82,6 +87,53 @@ const totalChapters = bibleBooks.reduce((sum, book) => sum + book.chapterCount, 
     const form = document.querySelector("[data-bible-picker]");
     const bookSelect = form?.elements.book;
     const chapterSelect = form?.elements.chapter;
+    const pickerSentinel = document.querySelector("[data-bible-picker-sentinel]");
+    const siteHeader = document.querySelector(".site-header");
+
+    const updateStickyOffset = () => {
+      const headerHeight = siteHeader?.getBoundingClientRect().height ?? 0;
+      document.documentElement.style.setProperty(
+        "--bible-picker-sticky-top",
+        `${headerHeight + 12}px`,
+      );
+    };
+
+    const updatePickerStickyState = () => {
+      if (!form || !pickerSentinel) {
+        return;
+      }
+
+      const stickyTop =
+        parseFloat(
+          getComputedStyle(document.documentElement).getPropertyValue(
+            "--bible-picker-sticky-top",
+          ),
+        ) || 0;
+      const isStuck = pickerSentinel.getBoundingClientRect().top <= stickyTop;
+
+      form.classList.toggle("is-stuck", isStuck);
+    };
+
+    const setSelectedBookCard = () => {
+      document
+        .querySelectorAll(".bible-book-card.is-selected")
+        .forEach((bookCard) => bookCard.classList.remove("is-selected"));
+
+      document
+        .querySelector(`[data-book-slug="${bookSelect.value}"]`)
+        ?.classList.add("is-selected");
+    };
+
+    const scrollSelectedBookIntoView = () => {
+      const selectedBookCard = document.querySelector(
+        `[data-book-slug="${bookSelect.value}"]`,
+      );
+
+      selectedBookCard?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    };
 
     const renderChapters = () => {
       const selectedBook = bookSelect.selectedOptions[0];
@@ -97,12 +149,36 @@ const totalChapters = bibleBooks.reduce((sum, book) => sum + book.chapterCount, 
       );
     };
 
+    const handleBookChange = () => {
+      renderChapters();
+      setSelectedBookCard();
+      scrollSelectedBookIntoView();
+    };
+
+    const navigateToSelectedChapter = () => {
+      window.location.href = `${baseUrl}bible/${bookSelect.value}/${chapterSelect.value}/`;
+    };
+
     form?.addEventListener("submit", (event) => {
       event.preventDefault();
-      window.location.href = `${baseUrl}bible/${bookSelect.value}/${chapterSelect.value}/`;
+      navigateToSelectedChapter();
     });
 
-    bookSelect?.addEventListener("change", renderChapters);
+    bookSelect?.addEventListener("change", handleBookChange);
+    chapterSelect?.addEventListener("change", navigateToSelectedChapter);
+    window.addEventListener("scroll", updatePickerStickyState, { passive: true });
+    window.addEventListener("resize", () => {
+      updateStickyOffset();
+      updatePickerStickyState();
+    });
+    window.addEventListener("load", () => {
+      updateStickyOffset();
+      updatePickerStickyState();
+    });
+
     renderChapters();
+    setSelectedBookCard();
+    updateStickyOffset();
+    updatePickerStickyState();
   </script>
 </BaseLayout>

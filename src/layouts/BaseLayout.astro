@@ -21,17 +21,29 @@ const isActivePath = (path) =>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link
+      rel="icon"
+      type="image/png"
+      href={withBase("/images/header-icon.png")}
+    />
     <title>{title}</title>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href={withBase("/")} class="brand">Центр Джона Веслі українською</a>
+        <a href={withBase("/")} class="brand">
+          <img
+            src={withBase("/images/header-icon.png")}
+            alt=""
+            class="brand-icon"
+            width="32"
+            height="32"
+            loading="eager"
+            decoding="async"
+          />
+          <span>Центр Джона Веслі</span>
+        </a>
         <nav class="nav">
-          <a
-            href={withBase("/")}
-            class={currentRoute === "/" ? "is-active" : undefined}>Головна</a
-          >
           <a
             href={withBase("/propovidi/")}
             class={isActivePath("/propovidi/") ? "is-active" : undefined}
