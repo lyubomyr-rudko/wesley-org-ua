@@ -11,22 +11,21 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 const posts = (await getCollection("blog"))
   .filter(
     (post) =>
-      !post.id.startsWith("sermons/") &&
-      !post.id.startsWith("church-in-lviv/"),
+      !post.id.startsWith("sermons/") && !post.id.startsWith("church-in-lviv/"),
   )
   .sort((a, b) => (b.data.pubDate ?? "").localeCompare(a.data.pubDate ?? ""));
 type BlogPostEntry = CollectionEntry<"blog">;
 ---
 
 <BaseLayout
-  title="Центр Джона Веслі українською"
+  title="Центр Джона Веслі"
   description="Переклади, дослідження та матеріали про життя, проповідь і духовну спадщину Джона Веслі."
 >
   <div class="home-shell">
     <section class="home-hero">
       <div class="home-hero-copy">
         <p class="home-kicker">We love as Christ loved</p>
-        <h1 class="home-title">Центр Джона Веслі українською</h1>
+        <h1 class="home-title">Центр Джона Веслі</h1>
         <p class="home-summary">
           Переклади, дослідження та добірка матеріалів про життя, проповідь,
           богослов'я і духовну спадщину Джона Веслі для українського читача.
@@ -34,11 +33,13 @@ type BlogPostEntry = CollectionEntry<"blog">;
 
         <div class="home-actions">
           <a class="button-primary" href="#materials">Читати матеріали</a>
-          {posts[0] && (
-            <a class="button-secondary" href={withBase(`/${posts[0].id}/`)}>
-              Відкрити останню публікацію
-            </a>
-          )}
+          {
+            posts[0] && (
+              <a class="button-secondary" href={withBase(`/${posts[0].id}/`)}>
+                Відкрити останню публікацію
+              </a>
+            )
+          }
         </div>
       </div>
 

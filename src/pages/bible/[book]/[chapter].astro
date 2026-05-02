@@ -40,35 +40,40 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     <header class="post-header bible-reader-header">
       <p class="post-eyebrow">Українська Біблія Івана Огієнка</p>
       <h1>{chapter.title} {chapter.chapter}</h1>
-
-      <form class="bible-picker bible-reader-picker" data-bible-picker>
-        <label class="bible-picker-field">
-          <span>Книга</span>
-          <select name="book">
-            {
-              bibleBooks.map((book) => (
-                <option
-                  value={book.slug}
-                  data-chapters={book.chapters.join(",")}
-                  selected={book.slug === chapter.slug}
-                >
-                  {book.title}
-                </option>
-              ))
-            }
-          </select>
-        </label>
-
-        <label class="bible-picker-field">
-          <span>Розділ</span>
-          <select name="chapter" data-current-chapter={chapter.chapter}></select>
-        </label>
-
-        <button class="button-secondary bible-picker-button" type="submit">
-          Перейти
-        </button>
-      </form>
     </header>
+
+    <div class="bible-picker-sentinel" data-bible-picker-sentinel></div>
+    <form class="bible-picker bible-reader-picker bible-sticky-picker" data-bible-picker>
+      <label class="bible-picker-field">
+        <span>Книга</span>
+        <select name="book" aria-label="Книга">
+          {
+            bibleBooks.map((book) => (
+              <option
+                value={book.slug}
+                data-chapters={book.chapters.join(",")}
+                selected={book.slug === chapter.slug}
+              >
+                {book.title}
+              </option>
+            ))
+          }
+        </select>
+      </label>
+
+      <label class="bible-picker-field">
+        <span>Розділ</span>
+        <select
+          name="chapter"
+          data-current-chapter={chapter.chapter}
+          aria-label="Розділ"
+        ></select>
+      </label>
+
+      <button class="button-secondary bible-picker-button" type="submit">
+        Перейти
+      </button>
+    </form>
 
     <div class="bible-chapter-text" data-bible-chapter-text>
       {
@@ -138,6 +143,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const form = document.querySelector("[data-bible-picker]");
     const bookSelect = form?.elements.book;
     const chapterSelect = form?.elements.chapter;
+    const pickerSentinel = document.querySelector("[data-bible-picker-sentinel]");
+    const siteHeader = document.querySelector(".site-header");
     const bibleReader = document.querySelector("[data-bible-reader]");
     const bibleHeading = document.querySelector(".bible-reader-header h1");
     const bibleText = document.querySelector("[data-bible-chapter-text]");
@@ -152,6 +159,30 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       7: "⁷",
       8: "⁸",
       9: "⁹",
+    };
+
+    const updateStickyOffset = () => {
+      const headerHeight = siteHeader?.getBoundingClientRect().height ?? 0;
+      document.documentElement.style.setProperty(
+        "--bible-picker-sticky-top",
+        `${headerHeight + 12}px`,
+      );
+    };
+
+    const updatePickerStickyState = () => {
+      if (!form || !pickerSentinel) {
+        return;
+      }
+
+      const stickyTop =
+        parseFloat(
+          getComputedStyle(document.documentElement).getPropertyValue(
+            "--bible-picker-sticky-top",
+          ),
+        ) || 0;
+      const isStuck = pickerSentinel.getBoundingClientRect().top <= stickyTop;
+
+      form.classList.toggle("is-stuck", isStuck);
     };
 
     const renderChapters = () => {
@@ -170,16 +201,34 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       );
     };
 
+    const navigateToSelectedChapter = () => {
+      window.location.href = `${baseUrl}bible/${bookSelect.value}/${chapterSelect.value}/`;
+    };
+
     form?.addEventListener("submit", (event) => {
       event.preventDefault();
-      window.location.href = `${baseUrl}bible/${bookSelect.value}/${chapterSelect.value}/`;
+      navigateToSelectedChapter();
     });
 
     bookSelect?.addEventListener("change", () => {
       chapterSelect.dataset.currentChapter = "1";
       renderChapters();
+      navigateToSelectedChapter();
     });
+    chapterSelect?.addEventListener("change", navigateToSelectedChapter);
+    window.addEventListener("scroll", updatePickerStickyState, { passive: true });
+    window.addEventListener("resize", () => {
+      updateStickyOffset();
+      updatePickerStickyState();
+    });
+    window.addEventListener("load", () => {
+      updateStickyOffset();
+      updatePickerStickyState();
+    });
+
     renderChapters();
+    updateStickyOffset();
+    updatePickerStickyState();
 
     const toSuperscript = (value) =>
       String(value).replace(/\d/g, (digit) => superscriptDigits[digit]);
@@ -219,6 +268,57 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
       return `${citationTitle} ${chapterNumber}:${verseRange}`;
     };
+
+    const setActiveVerse = (verseId) => {
+      bibleText
+        ?.querySelectorAll(".bible-verse.is-active")
+        .forEach((verse) => verse.classList.remove("is-active"));
+
+      if (!verseId) {
+        return null;
+      }
+
+      const verse = document.getElementById(verseId);
+
+      if (verse?.matches(".bible-verse")) {
+        verse.classList.add("is-active");
+        return verse;
+      }
+
+      return null;
+    };
+
+    const scrollToHashVerse = () => {
+      const hash = decodeURIComponent(window.location.hash.slice(1));
+
+      if (!hash) {
+        setActiveVerse(null);
+        return;
+      }
+
+      const verse = setActiveVerse(hash);
+
+      if (verse) {
+        verse.scrollIntoView({ block: "start" });
+      }
+    };
+
+    bibleText?.addEventListener("click", (event) => {
+      const target =
+        event.target instanceof Element ? event.target : event.target?.parentElement;
+      const verse = target?.closest(".bible-verse");
+
+      if (!verse?.id) {
+        return;
+      }
+
+      window.history.replaceState(null, "", `#${verse.id}`);
+      setActiveVerse(verse.id);
+    });
+
+    window.addEventListener("hashchange", scrollToHashVerse);
+    window.addEventListener("load", scrollToHashVerse);
+    scrollToHashVerse();
 
     document.addEventListener("copy", (event) => {
       const selection = window.getSelection();
