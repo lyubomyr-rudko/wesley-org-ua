@@ -79,7 +79,9 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
             class="song-slides"
             id={song.anchorId}
             data-song-id={song.id}
+            data-song-key={song.anchorId}
             data-song-number={Number(song.id)}
+            data-song-title={song.title}
           >
             <header class="song-slides-header">
               <p class="sermon-year">{song.filename}</p>
@@ -142,7 +144,7 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
                 <section class="slide-card">
                   <p class="slide-number">Слайд {index + 1}</p>
                   {index === 0 && (
-                    <h3 class="slide-card-title">{song.displayTitle}</h3>
+                    <h3 class="slide-card-title">{song.title}</h3>
                   )}
                   <pre>{slide}</pre>
                 </section>
@@ -350,14 +352,17 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
         .filter(Boolean);
 
     const createPreviewSlides = (slides: string[], title: string) =>
-      slides.map((slide) => ({ text: slide, title }));
+      slides.map((slide, index) => ({
+        text: slide,
+        title: index === 0 ? title : "",
+      }));
 
     const getSongPreviewTitle = (songBlock: Element | null) => {
-      const number =
-        songBlock instanceof HTMLElement ? songBlock.dataset.songNumber : "";
-      const title = songBlock?.querySelector("h2")?.textContent?.trim() ?? "";
+      if (songBlock instanceof HTMLElement) {
+        return songBlock.dataset.songTitle ?? "";
+      }
 
-      return number ? `${number}. ${title.replace(/^\d+\.\s*/, "")}` : title;
+      return "";
     };
 
     const openSlides = (slides: PreviewSlide[], options: PreviewOptions = {}) => {
@@ -373,12 +378,16 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
       openPreview();
     };
 
-    const normalizeSongId = (value: string) => {
+    const normalizeGroupId = (value: string) => {
       const trimmed = value.trim();
 
-      if (!/^\d+$/.test(trimmed)) return "";
+      if (!trimmed) return "";
+      if (/^\d+$/.test(trimmed)) return trimmed.padStart(3, "0");
+      if (/^[a-z0-9_-]+$/i.test(trimmed)) {
+        return trimmed.toLocaleLowerCase("uk-UA");
+      }
 
-      return trimmed.padStart(3, "0");
+      return "";
     };
 
     const getGroupIdsFromUrl = () => {
@@ -387,12 +396,14 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
       const hashGroup = decodeURIComponent(
         window.location.hash.replace(/^#/, ""),
       );
-      const hashMatch = hashGroup.match(/^group=([\d,\s]+)$/);
-      const source = queryGroup || hashMatch?.[1] || "";
+      const hashSource = hashGroup.startsWith("group=")
+        ? hashGroup.slice("group=".length)
+        : "";
+      const source = queryGroup || hashSource;
 
       return source
         .split(",")
-        .map(normalizeSongId)
+        .map(normalizeGroupId)
         .filter(Boolean);
     };
 
@@ -401,9 +412,15 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
 
       if (!ids.length) return;
 
+      const allSongBlocks = Array.from(
+        document.querySelectorAll<HTMLElement>(".song-slides"),
+      );
       const songBlocks = ids
         .map((id) =>
-          document.querySelector<HTMLElement>(`.song-slides[data-song-id="${id}"]`),
+          allSongBlocks.find(
+            (songBlock) =>
+              songBlock.dataset.songId === id || songBlock.dataset.songKey === id,
+          ),
         )
         .filter(Boolean);
       const slides: PreviewSlide[] = [];
@@ -812,8 +829,7 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
         button.addEventListener("click", async () => {
           const buttonLabel = button.querySelector("span");
           const songBlock = button.closest(".song-slides");
-          const title =
-            songBlock?.querySelector("h2")?.textContent?.trim() ?? "slides";
+          const title = getSongPreviewTitle(songBlock) || "slides";
           const slides = getSongSlides(songBlock).map((slide, index) => ({
             text: slide,
             title: index === 0 ? title : "",
@@ -839,8 +855,7 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
       .forEach((button) => {
         button.addEventListener("click", () => {
           const songBlock = button.closest(".song-slides");
-          const title =
-            songBlock?.querySelector("h2")?.textContent?.trim() ?? "";
+          const title = getSongPreviewTitle(songBlock);
           const slides = getSongSlides(songBlock);
 
           openSlides(createPreviewSlides(slides, title));

@@ -110,6 +110,48 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       if (numberCompare !== 0) return numberCompare;
       return left.key.localeCompare(right.key, "uk-UA", { numeric: true });
     });
+    const songsById = new Map();
+    songs.forEach((song) => {
+      songsById.set(song.key, song);
+      if (!songsById.has(song.id)) songsById.set(song.id, song);
+    });
+
+    const normalizeGroupId = (value) => {
+      const trimmed = value.trim();
+      if (!trimmed) return "";
+      if (/^\d+$/.test(trimmed)) return trimmed.padStart(3, "0");
+      if (/^[a-z0-9_-]+$/i.test(trimmed)) return trimmed.toLocaleLowerCase("uk-UA");
+      return "";
+    };
+
+    const getGroupIdsFromUrl = () => {
+      const hashGroup = decodeURIComponent(
+        window.location.hash.replace(/^#/, ""),
+      );
+      const hashSource = hashGroup.startsWith("group=")
+        ? hashGroup.slice("group=".length)
+        : "";
+
+      return hashSource
+        .split(",")
+        .map(normalizeGroupId)
+        .filter(Boolean);
+    };
+
+    const updateBuilderUrl = () => {
+      const group = chosenSongs.map((song) => song.key).join(",");
+      const nextUrl = group
+        ? `${window.location.pathname}${window.location.search}#group=${group}`
+        : `${window.location.pathname}${window.location.search}`;
+
+      window.history.replaceState(null, "", nextUrl);
+    };
+
+    const renderChosenSongs = () => {
+      renderSelectedSongs();
+      renderPreview();
+      renderShareLink();
+    };
 
     const createSongListItem = (song, source) => {
       const item = document.createElement("li");
@@ -127,9 +169,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         actionButton.textContent = "Add";
         actionButton.addEventListener("click", () => {
           chosenSongs.push(song);
-          renderSelectedSongs();
-          renderPreview();
-          renderShareLink();
+          updateBuilderUrl();
+          renderChosenSongs();
         });
       } else {
         actionButton.className = "slides-builder-remove-button";
@@ -137,9 +178,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         actionButton.setAttribute("aria-label", `Видалити ${song.displayTitle}`);
         actionButton.addEventListener("click", () => {
           chosenSongs.splice(song.chosenIndex, 1);
-          renderSelectedSongs();
-          renderPreview();
-          renderShareLink();
+          updateBuilderUrl();
+          renderChosenSongs();
         });
       }
 
@@ -254,17 +294,23 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const createPreviewSlide = (song, slide, slideIndex) => {
       const slideCard = document.createElement("section");
       const slideNumber = document.createElement("p");
-      const slideTitle = document.createElement("h3");
       const slideText = document.createElement("pre");
 
       slideCard.className = "slide-card";
       slideNumber.className = "slide-number";
       slideNumber.textContent = `Слайд ${slideIndex + 1}`;
-      slideTitle.className = "slide-card-title";
-      slideTitle.textContent = song.displayTitle;
       slideText.textContent = slide.text;
 
-      slideCard.append(slideNumber, slideTitle, slideText);
+      slideCard.append(slideNumber);
+
+      if (slideIndex === 0) {
+        const slideTitle = document.createElement("h3");
+        slideTitle.className = "slide-card-title";
+        slideTitle.textContent = song.title;
+        slideCard.append(slideTitle);
+      }
+
+      slideCard.append(slideText);
       return slideCard;
     };
 
@@ -298,11 +344,20 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         return;
       }
 
-      const group = chosenSongs.map((song) => song.id).join(",");
+      const group = chosenSongs.map((song) => song.key).join(",");
       const href = `${slidesPath}#group=${group}`;
       shareLink.hidden = false;
       shareLink.href = href;
       shareLink.textContent = href;
+    };
+
+    const hydrateChosenSongsFromUrl = () => {
+      const urlSongs = getGroupIdsFromUrl()
+        .map((id) => songsById.get(id))
+        .filter(Boolean);
+
+      chosenSongs.splice(0, chosenSongs.length, ...urlSongs);
+      renderChosenSongs();
     };
 
     builderForm?.addEventListener("submit", (event) => {
@@ -311,9 +366,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     });
 
     searchInput?.addEventListener("input", renderSearchResults);
+    window.addEventListener("hashchange", hydrateChosenSongsFromUrl);
     renderSearchResults();
-    renderSelectedSongs();
-    renderPreview();
-    renderShareLink();
+    hydrateChosenSongsFromUrl();
   </script>
 </BaseLayout>
