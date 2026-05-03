@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+---
+
+<BaseLayout
+  title="Збудувати слайди"
+  description="Конструктор слайдів для богослужіння."
+>
+  <div class="resource-shell slides-shell">
+    <section class="resource-hero">
+      <p class="resource-kicker">Конструктор слайдів</p>
+      <h1 class="resource-title">Збудувати слайди</h1>
+      <div class="home-actions">
+        <a class="button-secondary" href={withBase("/slides/")}>
+          Перелік слайдів
+        </a>
+      </div>
+    </section>
+
+    <section class="resource-panel">
+      <div class="resource-panel-header">
+        <p class="archive-eyebrow">Пошук</p>
+        <h2>Знайти слайди</h2>
+      </div>
+
+      <form class="slides-builder-form" action={withBase("/slides/builder/")} method="get">
+        <label class="bible-picker-field">
+          <span>Пошук</span>
+          <input
+            type="search"
+            name="q"
+            placeholder="Назва або номер слайда"
+            autocomplete="off"
+          />
+        </label>
+        <button class="button-primary bible-picker-button" type="submit">
+          Find
+        </button>
+      </form>
+    </section>
+  </div>
+</BaseLayout>
