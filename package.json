@@ -7,10 +7,11 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run build:slides-search && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "import:sermons": "node scripts/import-google-sermons.mjs"
+    "import:sermons": "node scripts/import-google-sermons.mjs",
+    "build:slides-search": "node scripts/build-slides-search.mjs"
   },
   "dependencies": {
     "@astrojs/partytown": "^2.1.7",

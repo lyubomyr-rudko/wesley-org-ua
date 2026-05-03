@@ -1,0 +1,373 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import slidesSearch from "../../../slides/search.json";
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+---
+
+<BaseLayout
+  title="Збудувати слайди"
+  description="Конструктор слайдів для богослужіння."
+>
+  <div class="resource-shell slides-shell">
+    <section class="resource-hero">
+      <p class="resource-kicker">Конструктор слайдів</p>
+      <h1 class="resource-title">Збудувати слайди</h1>
+      <div class="home-actions">
+        <a class="button-secondary" href={withBase("/slides/")}>
+          Перелік слайдів
+        </a>
+      </div>
+    </section>
+
+    <section class="resource-panel">
+      <div class="resource-panel-header">
+        <p class="archive-eyebrow">Пошук</p>
+        <h2>Знайти слайди</h2>
+      </div>
+
+      <form class="slides-builder-form" action={withBase("/slides/builder/")} method="get">
+        <label class="bible-picker-field">
+          <span>Пошук</span>
+          <input
+            data-slide-search-input
+            type="search"
+            name="q"
+            placeholder="Назва або номер слайда"
+            autocomplete="off"
+          />
+        </label>
+        <button class="button-primary bible-picker-button" type="submit">
+          Find
+        </button>
+      </form>
+
+      <div class="slides-builder-lists">
+        <section class="slides-builder-list-panel" aria-labelledby="slides-search-results-title">
+          <div class="slides-builder-list-header">
+            <p class="archive-eyebrow">Результати</p>
+            <h3 id="slides-search-results-title">Знайдені пісні</h3>
+          </div>
+          <ol class="slides-index slides-builder-song-list" data-slide-search-results>
+            <li class="slides-builder-empty">Введіть текст для пошуку.</li>
+          </ol>
+        </section>
+
+        <section class="slides-builder-list-panel" aria-labelledby="slides-selected-title">
+          <div class="slides-builder-list-header">
+            <p class="archive-eyebrow">Додано</p>
+            <h3 id="slides-selected-title">Вибрані пісні</h3>
+          </div>
+          <ol class="slides-index slides-builder-song-list" data-slide-selected-list>
+            <li class="slides-builder-empty">Ще немає вибраних пісень.</li>
+          </ol>
+        </section>
+      </div>
+
+      <section class="slides-builder-preview-panel" aria-labelledby="slides-preview-title">
+        <div class="slides-builder-list-header">
+          <p class="archive-eyebrow">Попередній перегляд</p>
+          <h3 id="slides-preview-title">Усі вибрані слайди</h3>
+        </div>
+        <div class="slide-grid slides-builder-preview-grid" data-slide-builder-preview>
+          <p class="slides-builder-empty">Додайте пісні, щоб побачити слайди.</p>
+        </div>
+        <div class="slides-builder-share">
+          <a
+            data-slide-builder-share-link
+            href={withBase("/slides/")}
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+          ></a>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script define:vars={{ slidesSearch, slidesPath: withBase("/slides/") }}>
+    const searchInput = document.querySelector("[data-slide-search-input]");
+    const searchResults = document.querySelector("[data-slide-search-results]");
+    const selectedList = document.querySelector("[data-slide-selected-list]");
+    const previewGrid = document.querySelector("[data-slide-builder-preview]");
+    const shareLink = document.querySelector("[data-slide-builder-share-link]");
+    const builderForm = document.querySelector(".slides-builder-form");
+    const chosenSongs = [];
+
+    const normalizeText = (value) =>
+      value
+        .normalize("NFKC")
+        .toLocaleLowerCase("uk-UA")
+        .replace(/[#*_`>()[\]{}.,!?;:"'’‘“”«»—–-]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+    const songs = Object.values(slidesSearch.songs).sort((left, right) => {
+      const numberCompare = Number(left.id) - Number(right.id);
+      if (numberCompare !== 0) return numberCompare;
+      return left.key.localeCompare(right.key, "uk-UA", { numeric: true });
+    });
+    const songsById = new Map();
+    songs.forEach((song) => {
+      songsById.set(song.key, song);
+      if (!songsById.has(song.id)) songsById.set(song.id, song);
+    });
+
+    const normalizeGroupId = (value) => {
+      const trimmed = value.trim();
+      if (!trimmed) return "";
+      if (/^\d+$/.test(trimmed)) return trimmed.padStart(3, "0");
+      if (/^[a-z0-9_-]+$/i.test(trimmed)) return trimmed.toLocaleLowerCase("uk-UA");
+      return "";
+    };
+
+    const getGroupIdsFromUrl = () => {
+      const hashGroup = decodeURIComponent(
+        window.location.hash.replace(/^#/, ""),
+      );
+      const hashSource = hashGroup.startsWith("group=")
+        ? hashGroup.slice("group=".length)
+        : "";
+
+      return hashSource
+        .split(",")
+        .map(normalizeGroupId)
+        .filter(Boolean);
+    };
+
+    const updateBuilderUrl = () => {
+      const group = chosenSongs.map((song) => song.key).join(",");
+      const nextUrl = group
+        ? `${window.location.pathname}${window.location.search}#group=${group}`
+        : `${window.location.pathname}${window.location.search}`;
+
+      window.history.replaceState(null, "", nextUrl);
+    };
+
+    const renderChosenSongs = () => {
+      renderSelectedSongs();
+      renderPreview();
+      renderShareLink();
+    };
+
+    const createSongListItem = (song, source) => {
+      const item = document.createElement("li");
+      const row = document.createElement("div");
+      const text = document.createElement("span");
+      const actionButton = document.createElement("button");
+
+      row.className = "slides-builder-song-option";
+      text.className = "slides-builder-song-title";
+      text.textContent = song.displayTitle;
+      actionButton.type = "button";
+
+      if (source === "search") {
+        actionButton.className = "slides-builder-add-button";
+        actionButton.textContent = "Add";
+        actionButton.addEventListener("click", () => {
+          chosenSongs.push(song);
+          updateBuilderUrl();
+          renderChosenSongs();
+        });
+      } else {
+        actionButton.className = "slides-builder-remove-button";
+        actionButton.textContent = "X";
+        actionButton.setAttribute("aria-label", `Видалити ${song.displayTitle}`);
+        actionButton.addEventListener("click", () => {
+          chosenSongs.splice(song.chosenIndex, 1);
+          updateBuilderUrl();
+          renderChosenSongs();
+        });
+      }
+
+      row.append(text, actionButton);
+      item.append(row);
+
+      if (source === "search") {
+        const query = normalizeText(searchInput?.value ?? "");
+        const matchingSlide = song.slides?.find((slide) =>
+          slide.searchText.includes(query),
+        );
+
+        if (matchingSlide) {
+          const slideCard = document.createElement("section");
+          const slideText = document.createElement("pre");
+
+          slideCard.className = "slide-card slides-builder-result-slide";
+          slideText.append(...highlightSlideText(matchingSlide.text, query));
+          slideCard.append(slideText);
+          item.append(slideCard);
+        }
+      }
+
+      return item;
+    };
+
+    const highlightSlideText = (text, query) => {
+      if (!query) return [document.createTextNode(text)];
+
+      const normalizedText = normalizeText(text);
+      const matchStart = normalizedText.indexOf(query);
+      if (matchStart === -1) return [document.createTextNode(text)];
+
+      const matchWords = query.split(" ").filter(Boolean);
+      if (!matchWords.length) return [document.createTextNode(text)];
+
+      const pattern = new RegExp(
+        `(${matchWords
+          .map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+          .join("|")})`,
+        "giu",
+      );
+
+      const nodes = [];
+      let lastIndex = 0;
+      for (const match of text.matchAll(pattern)) {
+        const value = match[0];
+        const index = match.index ?? 0;
+
+        if (index > lastIndex) {
+          nodes.push(document.createTextNode(text.slice(lastIndex, index)));
+        }
+
+        const marker = document.createElement("mark");
+        marker.textContent = value;
+        nodes.push(marker);
+        lastIndex = index + value.length;
+      }
+
+      if (lastIndex < text.length) {
+        nodes.push(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return nodes.length ? nodes : [document.createTextNode(text)];
+    };
+
+    const renderEmpty = (list, message) => {
+      const item = document.createElement("li");
+      item.className = "slides-builder-empty";
+      item.textContent = message;
+      list.replaceChildren(item);
+    };
+
+    const getSearchMatches = () => {
+      const query = normalizeText(searchInput?.value ?? "");
+      if (!query) return [];
+
+      return songs.filter((song) => song.text.includes(query)).slice(0, 10);
+    };
+
+    const renderSearchResults = () => {
+      const matches = getSearchMatches();
+
+      if (!matches.length) {
+        renderEmpty(
+          searchResults,
+          searchInput?.value.trim()
+            ? "Нічого не знайдено."
+            : "Введіть текст для пошуку.",
+        );
+        return;
+      }
+
+      searchResults.replaceChildren(
+        ...matches.map((song) => createSongListItem(song, "search")),
+      );
+    };
+
+    const renderSelectedSongs = () => {
+      if (!chosenSongs.length) {
+        renderEmpty(selectedList, "Ще немає вибраних пісень.");
+        return;
+      }
+
+      selectedList.replaceChildren(
+        ...chosenSongs.map((song, index) =>
+          createSongListItem({ ...song, chosenIndex: index }, "selected"),
+        ),
+      );
+    };
+
+    const createPreviewSlide = (song, slide, slideIndex) => {
+      const slideCard = document.createElement("section");
+      const slideNumber = document.createElement("p");
+      const slideText = document.createElement("pre");
+
+      slideCard.className = "slide-card";
+      slideNumber.className = "slide-number";
+      slideNumber.textContent = `Слайд ${slideIndex + 1}`;
+      slideText.textContent = slide.text;
+
+      slideCard.append(slideNumber);
+
+      if (slideIndex === 0) {
+        const slideTitle = document.createElement("h3");
+        slideTitle.className = "slide-card-title";
+        slideTitle.textContent = song.title;
+        slideCard.append(slideTitle);
+      }
+
+      slideCard.append(slideText);
+      return slideCard;
+    };
+
+    const renderPreview = () => {
+      if (!previewGrid) return;
+
+      const previewSlides = chosenSongs.flatMap((song) =>
+        (song.slides ?? []).map((slide, index) =>
+          createPreviewSlide(song, slide, index),
+        ),
+      );
+
+      if (!previewSlides.length) {
+        const empty = document.createElement("p");
+        empty.className = "slides-builder-empty";
+        empty.textContent = "Додайте пісні, щоб побачити слайди.";
+        previewGrid.replaceChildren(empty);
+        return;
+      }
+
+      previewGrid.replaceChildren(...previewSlides);
+    };
+
+    const renderShareLink = () => {
+      if (!shareLink) return;
+
+      if (!chosenSongs.length) {
+        shareLink.hidden = true;
+        shareLink.removeAttribute("href");
+        shareLink.textContent = "";
+        return;
+      }
+
+      const group = chosenSongs.map((song) => song.key).join(",");
+      const href = `${slidesPath}#group=${group}`;
+      shareLink.hidden = false;
+      shareLink.href = href;
+      shareLink.textContent = href;
+    };
+
+    const hydrateChosenSongsFromUrl = () => {
+      const urlSongs = getGroupIdsFromUrl()
+        .map((id) => songsById.get(id))
+        .filter(Boolean);
+
+      chosenSongs.splice(0, chosenSongs.length, ...urlSongs);
+      renderChosenSongs();
+    };
+
+    builderForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      renderSearchResults();
+    });
+
+    searchInput?.addEventListener("input", renderSearchResults);
+    window.addEventListener("hashchange", hydrateChosenSongsFromUrl);
+    renderSearchResults();
+    hydrateChosenSongsFromUrl();
+  </script>
+</BaseLayout>

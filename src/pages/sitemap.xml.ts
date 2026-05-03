@@ -8,6 +8,7 @@ const staticPages = [
   { path: "/bible/", priority: "0.9", changefreq: "monthly" },
   { path: "/church/", priority: "0.8", changefreq: "weekly" },
   { path: "/slides/", priority: "0.5", changefreq: "monthly" },
+  { path: "/slides/builder/", priority: "0.4", changefreq: "monthly" },
   { path: "/group-youtube-meetings/", priority: "0.6", changefreq: "monthly" },
   { path: "/john-wesley-his-life-and-work/", priority: "0.7", changefreq: "monthly" },
 ];
