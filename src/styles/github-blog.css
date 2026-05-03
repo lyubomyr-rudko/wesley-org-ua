@@ -151,6 +151,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   min-height: 46px;
   padding: 0.7rem 1.25rem;
   border-radius: 999px;
@@ -258,8 +259,40 @@ img {
 .home-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.85rem;
   margin-top: 1.75rem;
+}
+
+.social-icon-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  color: var(--accent-dark);
+  transition:
+    transform 160ms ease,
+    color 160ms ease;
+}
+
+.social-icon-link:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.social-icon-link svg {
+  width: 1.45rem;
+  height: 1.45rem;
+  flex: 0 0 auto;
 }
 
 .home-hero-visual {
@@ -331,6 +364,8 @@ img {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .resource-title {
