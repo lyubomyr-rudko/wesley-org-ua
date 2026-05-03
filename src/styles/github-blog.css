@@ -699,6 +699,97 @@ img {
   padding: 0 2rem 2rem;
 }
 
+.slides-builder-lists {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0 2rem 2rem;
+}
+
+.slides-builder-list-panel {
+  min-width: 0;
+  border: 1px solid rgba(188, 169, 146, 0.55);
+  border-radius: 8px;
+  background: rgba(255, 253, 249, 0.72);
+}
+
+.slides-builder-list-header {
+  padding: 1rem 1rem 0;
+}
+
+.slides-builder-list-header h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+
+.slides-builder-song-list {
+  min-height: 4.25rem;
+  column-count: 1;
+  padding: 1rem 1rem 1rem 2.35rem;
+}
+
+.slides-builder-song-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.slides-builder-song-title {
+  min-width: 0;
+}
+
+.slides-builder-add-button,
+.slides-builder-remove-button {
+  flex: 0 0 auto;
+  min-height: 2rem;
+  border: 1px solid rgba(188, 169, 146, 0.82);
+  border-radius: 8px;
+  background: #fffdf9;
+  color: var(--accent-dark);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.slides-builder-add-button {
+  padding: 0.4rem 0.65rem;
+}
+
+.slides-builder-remove-button {
+  width: 2rem;
+  padding: 0;
+}
+
+.slides-builder-add-button:hover,
+.slides-builder-remove-button:hover {
+  border-color: rgba(178, 31, 45, 0.38);
+  background: rgba(178, 31, 45, 0.08);
+}
+
+.slides-builder-result-slide {
+  min-height: 0;
+  margin: 0.65rem 0 0;
+  padding: 0.9rem;
+}
+
+.slides-builder-result-slide mark {
+  padding: 0 0.08em;
+  border-radius: 3px;
+  background: #ffe86b;
+  color: inherit;
+}
+
+.slides-builder-empty {
+  color: var(--text-muted);
+  font-weight: 650;
+}
+
 .bible-book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
@@ -1550,6 +1641,12 @@ img {
   .bible-reader-picker,
   .slides-builder-form {
     grid-template-columns: 1fr;
+  }
+
+  .slides-builder-lists {
+    grid-template-columns: 1fr;
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
   }
 
   .bible-sticky-picker.is-stuck {
