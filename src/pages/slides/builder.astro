@@ -66,13 +66,34 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
           </ol>
         </section>
       </div>
+
+      <section class="slides-builder-preview-panel" aria-labelledby="slides-preview-title">
+        <div class="slides-builder-list-header">
+          <p class="archive-eyebrow">Попередній перегляд</p>
+          <h3 id="slides-preview-title">Усі вибрані слайди</h3>
+        </div>
+        <div class="slide-grid slides-builder-preview-grid" data-slide-builder-preview>
+          <p class="slides-builder-empty">Додайте пісні, щоб побачити слайди.</p>
+        </div>
+        <div class="slides-builder-share">
+          <a
+            data-slide-builder-share-link
+            href={withBase("/slides/")}
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+          ></a>
+        </div>
+      </section>
     </section>
   </div>
 
-  <script define:vars={{ slidesSearch }}>
+  <script define:vars={{ slidesSearch, slidesPath: withBase("/slides/") }}>
     const searchInput = document.querySelector("[data-slide-search-input]");
     const searchResults = document.querySelector("[data-slide-search-results]");
     const selectedList = document.querySelector("[data-slide-selected-list]");
+    const previewGrid = document.querySelector("[data-slide-builder-preview]");
+    const shareLink = document.querySelector("[data-slide-builder-share-link]");
     const builderForm = document.querySelector(".slides-builder-form");
     const chosenSongs = [];
 
@@ -107,6 +128,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         actionButton.addEventListener("click", () => {
           chosenSongs.push(song);
           renderSelectedSongs();
+          renderPreview();
+          renderShareLink();
         });
       } else {
         actionButton.className = "slides-builder-remove-button";
@@ -115,6 +138,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         actionButton.addEventListener("click", () => {
           chosenSongs.splice(song.chosenIndex, 1);
           renderSelectedSongs();
+          renderPreview();
+          renderShareLink();
         });
       }
 
@@ -226,6 +251,60 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       );
     };
 
+    const createPreviewSlide = (song, slide, slideIndex) => {
+      const slideCard = document.createElement("section");
+      const slideNumber = document.createElement("p");
+      const slideTitle = document.createElement("h3");
+      const slideText = document.createElement("pre");
+
+      slideCard.className = "slide-card";
+      slideNumber.className = "slide-number";
+      slideNumber.textContent = `Слайд ${slideIndex + 1}`;
+      slideTitle.className = "slide-card-title";
+      slideTitle.textContent = song.displayTitle;
+      slideText.textContent = slide.text;
+
+      slideCard.append(slideNumber, slideTitle, slideText);
+      return slideCard;
+    };
+
+    const renderPreview = () => {
+      if (!previewGrid) return;
+
+      const previewSlides = chosenSongs.flatMap((song) =>
+        (song.slides ?? []).map((slide, index) =>
+          createPreviewSlide(song, slide, index),
+        ),
+      );
+
+      if (!previewSlides.length) {
+        const empty = document.createElement("p");
+        empty.className = "slides-builder-empty";
+        empty.textContent = "Додайте пісні, щоб побачити слайди.";
+        previewGrid.replaceChildren(empty);
+        return;
+      }
+
+      previewGrid.replaceChildren(...previewSlides);
+    };
+
+    const renderShareLink = () => {
+      if (!shareLink) return;
+
+      if (!chosenSongs.length) {
+        shareLink.hidden = true;
+        shareLink.removeAttribute("href");
+        shareLink.textContent = "";
+        return;
+      }
+
+      const group = chosenSongs.map((song) => song.id).join(",");
+      const href = `${slidesPath}#group=${group}`;
+      shareLink.hidden = false;
+      shareLink.href = href;
+      shareLink.textContent = href;
+    };
+
     builderForm?.addEventListener("submit", (event) => {
       event.preventDefault();
       renderSearchResults();
@@ -234,5 +313,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     searchInput?.addEventListener("input", renderSearchResults);
     renderSearchResults();
     renderSelectedSongs();
+    renderPreview();
+    renderShareLink();
   </script>
 </BaseLayout>
