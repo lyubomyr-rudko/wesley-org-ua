@@ -224,6 +224,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       const row = document.createElement("div");
       const text = document.createElement("span");
       const actionButton = document.createElement("button");
+      const gripIcon = document.createElement("span");
 
       row.className = "slides-builder-song-option";
       text.className = "slides-builder-song-title";
@@ -242,6 +243,18 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
           renderChosenSongs();
         });
       } else {
+        gripIcon.className = "slides-builder-grip-icon";
+        gripIcon.setAttribute("aria-hidden", "true");
+        gripIcon.innerHTML = `
+          <svg viewBox="0 0 20 20" focusable="false">
+            <circle cx="7" cy="5" r="1.4"></circle>
+            <circle cx="13" cy="5" r="1.4"></circle>
+            <circle cx="7" cy="10" r="1.4"></circle>
+            <circle cx="13" cy="10" r="1.4"></circle>
+            <circle cx="7" cy="15" r="1.4"></circle>
+            <circle cx="13" cy="15" r="1.4"></circle>
+          </svg>
+        `;
         item.draggable = true;
         item.className = "slides-builder-draggable-song";
         item.dataset.chosenIndex = String(song.chosenIndex);
@@ -288,7 +301,11 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         });
       }
 
-      row.append(text, actionButton);
+      if (source === "selected") {
+        row.append(gripIcon, text, actionButton);
+      } else {
+        row.append(text, actionButton);
+      }
       item.append(row);
 
       if (source === "search") {
@@ -471,7 +488,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       const href = `${slidesPath}#group=${group}`;
       shareLink.hidden = false;
       shareLink.href = href;
-      shareLink.textContent = href;
+      shareLink.textContent = "Відкрити слайди пісень окремо";
     };
 
     const hydrateChosenSongsFromUrl = () => {
