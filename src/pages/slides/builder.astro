@@ -110,6 +110,13 @@ const slidesSearchJson = JSON.stringify(slidesSearch).replace(/</g, "\\u003c");
             >
               Відкрити слайди пісень окремо
             </a>
+            <button
+              class="slides-builder-action-button"
+              data-slide-builder-copy-link
+              type="button"
+            >
+              Копіювати посилання
+            </button>
             <a
               class="slides-builder-action-link"
               data-slide-builder-pptx-link
@@ -168,6 +175,9 @@ const slidesSearchJson = JSON.stringify(slidesSearch).replace(/</g, "\\u003c");
       "[data-slide-selected-actions]",
     );
     const shareLink = document.querySelector("[data-slide-builder-share-link]");
+    const copyLinkButton = document.querySelector(
+      "[data-slide-builder-copy-link]",
+    );
     const pptxLink = document.querySelector("[data-slide-builder-pptx-link]");
     const builderForm = document.querySelector(".slides-builder-form");
     const chosenSongs = [];
@@ -206,6 +216,23 @@ const slidesSearchJson = JSON.stringify(slidesSearch).replace(/</g, "\\u003c");
         .replace(/__([^_]+)__/g, "<strong>$1</strong>")
         .replace(/_([^_]+)_/g, "<em>$1</em>")
         .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+
+    const writeToClipboard = async (text) => {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-1000px";
+      document.body.append(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    };
 
     const renderSlideMarkdown = (value) => {
       const lines = value.trim().split(/\r?\n/);
@@ -733,12 +760,14 @@ const slidesSearchJson = JSON.stringify(slidesSearch).replace(/</g, "\\u003c");
     };
 
     const renderShareLink = () => {
-      if (!selectedActions || !shareLink || !pptxLink) return;
+      if (!selectedActions || !shareLink || !copyLinkButton || !pptxLink)
+        return;
 
       if (!chosenSongs.length) {
         selectedActions.hidden = true;
         shareLink.hidden = true;
         shareLink.removeAttribute("href");
+        copyLinkButton.hidden = true;
         pptxLink.hidden = true;
         pptxLink.removeAttribute("href");
         return;
@@ -749,6 +778,7 @@ const slidesSearchJson = JSON.stringify(slidesSearch).replace(/</g, "\\u003c");
       selectedActions.hidden = false;
       shareLink.hidden = false;
       shareLink.href = href;
+      copyLinkButton.hidden = false;
       pptxLink.hidden = false;
       pptxLink.href = href;
     };
@@ -784,6 +814,20 @@ const slidesSearchJson = JSON.stringify(slidesSearch).replace(/</g, "\\u003c");
     builderForm?.addEventListener("submit", (event) => {
       event.preventDefault();
       renderSearchResults();
+    });
+
+    copyLinkButton?.addEventListener("click", async () => {
+      if (!shareLink?.href) return;
+
+      const buttonText = copyLinkButton.textContent;
+      await writeToClipboard(shareLink.href);
+      copyLinkButton.textContent = "Скопійовано";
+      copyLinkButton.classList.add("is-copied");
+
+      window.setTimeout(() => {
+        copyLinkButton.textContent = buttonText;
+        copyLinkButton.classList.remove("is-copied");
+      }, 1400);
     });
 
     pptxLink?.addEventListener("click", async (event) => {
