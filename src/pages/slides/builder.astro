@@ -29,7 +29,27 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         <h2>Знайти слайди</h2>
       </div>
 
-      <form class="slides-builder-form" action={withBase("/slides/builder/")} method="get">
+      <section
+        class="slides-builder-service-panel"
+        aria-labelledby="slides-service-title"
+      >
+        <div class="slides-builder-list-header">
+          <p class="archive-eyebrow">Служіння</p>
+          <h3 id="slides-service-title">Слайди служіння</h3>
+        </div>
+        <ol
+          class="slides-index slides-builder-song-list"
+          data-slide-service-list
+        >
+          <li class="slides-builder-empty">Немає типових слайдів.</li>
+        </ol>
+      </section>
+
+      <form
+        class="slides-builder-form"
+        action={withBase("/slides/builder/")}
+        method="get"
+      >
         <label class="bible-picker-field">
           <span>Пошук</span>
           <input
@@ -46,34 +66,53 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       </form>
 
       <div class="slides-builder-lists">
-        <section class="slides-builder-list-panel" aria-labelledby="slides-search-results-title">
+        <section
+          class="slides-builder-list-panel"
+          aria-labelledby="slides-search-results-title"
+        >
           <div class="slides-builder-list-header">
             <p class="archive-eyebrow">Результати</p>
-            <h3 id="slides-search-results-title">Знайдені пісні</h3>
+            <h3 id="slides-search-results-title">Знайдені слайди</h3>
           </div>
-          <ol class="slides-index slides-builder-song-list" data-slide-search-results>
+          <ol
+            class="slides-index slides-builder-song-list"
+            data-slide-search-results
+          >
             <li class="slides-builder-empty">Введіть текст для пошуку.</li>
           </ol>
         </section>
 
-        <section class="slides-builder-list-panel" aria-labelledby="slides-selected-title">
+        <section
+          class="slides-builder-list-panel"
+          aria-labelledby="slides-selected-title"
+        >
           <div class="slides-builder-list-header">
             <p class="archive-eyebrow">Додано</p>
-            <h3 id="slides-selected-title">Вибрані пісні</h3>
           </div>
-          <ol class="slides-index slides-builder-song-list" data-slide-selected-list>
+          <ol
+            class="slides-index slides-builder-song-list"
+            data-slide-selected-list
+          >
             <li class="slides-builder-empty">Ще немає вибраних пісень.</li>
           </ol>
         </section>
       </div>
 
-      <section class="slides-builder-preview-panel" aria-labelledby="slides-preview-title">
+      <section
+        class="slides-builder-preview-panel"
+        aria-labelledby="slides-preview-title"
+      >
         <div class="slides-builder-list-header">
           <p class="archive-eyebrow">Попередній перегляд</p>
           <h3 id="slides-preview-title">Усі вибрані слайди</h3>
         </div>
-        <div class="slide-grid slides-builder-preview-grid" data-slide-builder-preview>
-          <p class="slides-builder-empty">Додайте пісні, щоб побачити слайди.</p>
+        <div
+          class="slide-grid slides-builder-preview-grid"
+          data-slide-builder-preview
+        >
+          <p class="slides-builder-empty">
+            Додайте пісні, щоб побачити слайди.
+          </p>
         </div>
         <div class="slides-builder-share">
           <a
@@ -81,8 +120,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
             href={withBase("/slides/")}
             target="_blank"
             rel="noopener noreferrer"
-            hidden
-          ></a>
+            hidden></a>
         </div>
       </section>
     </section>
@@ -90,12 +128,22 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
   <script define:vars={{ slidesSearch, slidesPath: withBase("/slides/") }}>
     const searchInput = document.querySelector("[data-slide-search-input]");
+    const serviceList = document.querySelector("[data-slide-service-list]");
     const searchResults = document.querySelector("[data-slide-search-results]");
     const selectedList = document.querySelector("[data-slide-selected-list]");
     const previewGrid = document.querySelector("[data-slide-builder-preview]");
     const shareLink = document.querySelector("[data-slide-builder-share-link]");
     const builderForm = document.querySelector(".slides-builder-form");
     const chosenSongs = [];
+    let draggedSelectedIndex = null;
+    const serviceSlideIds = [
+      "slide_intro_01",
+      "slide_sermon_01",
+      "slide_offering_01",
+      "slide_prayer_01",
+      "slide_communion_01",
+      "slide_blessing_01",
+    ];
 
     const normalizeText = (value) =>
       value
@@ -104,6 +152,69 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         .replace(/[#*_`>()[\]{}.,!?;:"'’‘“”«»—–-]/g, " ")
         .replace(/\s+/g, " ")
         .trim();
+
+    const escapeHtml = (value) =>
+      value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+
+    const renderMarkdownInline = (value) =>
+      escapeHtml(value)
+        .replace(/`([^`]+)`/g, "<code>$1</code>")
+        .replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>")
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+        .replace(/___([^_]+)___/g, "<strong><em>$1</em></strong>")
+        .replace(/__([^_]+)__/g, "<strong>$1</strong>")
+        .replace(/_([^_]+)_/g, "<em>$1</em>")
+        .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+
+    const renderSlideMarkdown = (value) => {
+      const lines = value.trim().split(/\r?\n/);
+      const html = [];
+      let listItems = [];
+
+      const flushList = () => {
+        if (!listItems.length) return;
+        html.push(`<ul>${listItems.join("")}</ul>`);
+        listItems = [];
+      };
+
+      for (const line of lines) {
+        const trimmed = line.trim();
+
+        if (!trimmed) {
+          flushList();
+          continue;
+        }
+
+        const heading = /^(#{1,6})\s+(.+)$/.exec(trimmed);
+        if (heading) {
+          flushList();
+          const level = Math.min(heading[1].length, 3);
+          html.push(`<h${level}>${renderMarkdownInline(heading[2])}</h${level}>`);
+          continue;
+        }
+
+        const listItem = /^[-*+]\s+(.+)$/.exec(trimmed);
+        if (listItem) {
+          listItems.push(`<li>${renderMarkdownInline(listItem[1])}</li>`);
+          continue;
+        }
+
+        flushList();
+        if (trimmed.startsWith("> ")) {
+          html.push(`<blockquote>${renderMarkdownInline(trimmed.slice(2))}</blockquote>`);
+        } else {
+          html.push(`<p>${renderMarkdownInline(trimmed)}</p>`);
+        }
+      }
+
+      flushList();
+      return html.join("");
+    };
 
     const songs = Object.values(slidesSearch.songs).sort((left, right) => {
       const numberCompare = Number(left.id) - Number(right.id);
@@ -120,7 +231,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       const trimmed = value.trim();
       if (!trimmed) return "";
       if (/^\d+$/.test(trimmed)) return trimmed.padStart(3, "0");
-      if (/^[a-z0-9_-]+$/i.test(trimmed)) return trimmed.toLocaleLowerCase("uk-UA");
+      if (/^[a-z0-9_-]+$/i.test(trimmed))
+        return trimmed.toLocaleLowerCase("uk-UA");
       return "";
     };
 
@@ -132,10 +244,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         ? hashGroup.slice("group=".length)
         : "";
 
-      return hashSource
-        .split(",")
-        .map(normalizeGroupId)
-        .filter(Boolean);
+      return hashSource.split(",").map(normalizeGroupId).filter(Boolean);
     };
 
     const updateBuilderUrl = () => {
@@ -153,18 +262,42 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       renderShareLink();
     };
 
+    const isServiceSlide = (song) => serviceSlideIds.includes(song.key);
+
+    const reorderChosenSongs = (fromIndex, toIndex) => {
+      if (
+        fromIndex === toIndex ||
+        fromIndex < 0 ||
+        toIndex < 0 ||
+        fromIndex >= chosenSongs.length ||
+        toIndex >= chosenSongs.length
+      ) {
+        return;
+      }
+
+      const [movedSong] = chosenSongs.splice(fromIndex, 1);
+      chosenSongs.splice(toIndex, 0, movedSong);
+      draggedSelectedIndex = null;
+      updateBuilderUrl();
+      renderChosenSongs();
+    };
+
     const createSongListItem = (song, source) => {
       const item = document.createElement("li");
       const row = document.createElement("div");
       const text = document.createElement("span");
       const actionButton = document.createElement("button");
+      const gripIcon = document.createElement("span");
 
       row.className = "slides-builder-song-option";
       text.className = "slides-builder-song-title";
-      text.textContent = song.displayTitle;
+      text.textContent =
+        source === "service" || (source === "selected" && isServiceSlide(song))
+          ? song.title
+          : song.displayTitle;
       actionButton.type = "button";
 
-      if (source === "search") {
+      if (source === "search" || source === "service") {
         actionButton.className = "slides-builder-add-button";
         actionButton.textContent = "Add";
         actionButton.addEventListener("click", () => {
@@ -173,9 +306,57 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
           renderChosenSongs();
         });
       } else {
+        gripIcon.className = "slides-builder-grip-icon";
+        gripIcon.setAttribute("aria-hidden", "true");
+        gripIcon.innerHTML = `
+          <svg viewBox="0 0 20 20" focusable="false">
+            <circle cx="7" cy="5" r="1.4"></circle>
+            <circle cx="13" cy="5" r="1.4"></circle>
+            <circle cx="7" cy="10" r="1.4"></circle>
+            <circle cx="13" cy="10" r="1.4"></circle>
+            <circle cx="7" cy="15" r="1.4"></circle>
+            <circle cx="13" cy="15" r="1.4"></circle>
+          </svg>
+        `;
+        item.draggable = true;
+        item.className = "slides-builder-draggable-song";
+        item.dataset.chosenIndex = String(song.chosenIndex);
+        item.addEventListener("dragstart", (event) => {
+          draggedSelectedIndex = song.chosenIndex;
+          item.classList.add("is-dragging");
+          event.dataTransfer?.setData("text/plain", String(song.chosenIndex));
+          event.dataTransfer?.setDragImage(item, 12, 12);
+        });
+        item.addEventListener("dragover", (event) => {
+          event.preventDefault();
+          if (draggedSelectedIndex === null) return;
+          item.classList.add("is-drag-over");
+        });
+        item.addEventListener("dragleave", () => {
+          item.classList.remove("is-drag-over");
+        });
+        item.addEventListener("drop", (event) => {
+          event.preventDefault();
+          item.classList.remove("is-drag-over");
+
+          const fromIndex = Number(
+            event.dataTransfer?.getData("text/plain") ?? draggedSelectedIndex,
+          );
+          const toIndex = Number(item.dataset.chosenIndex);
+
+          reorderChosenSongs(fromIndex, toIndex);
+        });
+        item.addEventListener("dragend", () => {
+          draggedSelectedIndex = null;
+          item.classList.remove("is-dragging", "is-drag-over");
+        });
+
         actionButton.className = "slides-builder-remove-button";
         actionButton.textContent = "X";
-        actionButton.setAttribute("aria-label", `Видалити ${song.displayTitle}`);
+        actionButton.setAttribute(
+          "aria-label",
+          `Видалити ${song.displayTitle}`,
+        );
         actionButton.addEventListener("click", () => {
           chosenSongs.splice(song.chosenIndex, 1);
           updateBuilderUrl();
@@ -183,7 +364,11 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         });
       }
 
-      row.append(text, actionButton);
+      if (source === "selected") {
+        row.append(gripIcon, text, actionButton);
+      } else {
+        row.append(text, actionButton);
+      }
       item.append(row);
 
       if (source === "search") {
@@ -194,10 +379,12 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
         if (matchingSlide) {
           const slideCard = document.createElement("section");
-          const slideText = document.createElement("pre");
+          const slideText = document.createElement("div");
 
           slideCard.className = "slide-card slides-builder-result-slide";
-          slideText.append(...highlightSlideText(matchingSlide.text, query));
+          slideText.className = "slide-markdown";
+          slideText.dataset.slideRaw = matchingSlide.text;
+          slideText.innerHTML = renderSlideMarkdown(matchingSlide.text);
           slideCard.append(slideText);
           item.append(slideCard);
         }
@@ -260,16 +447,34 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       return songs.filter((song) => song.text.includes(query)).slice(0, 10);
     };
 
+    const getServiceSlides = () =>
+      serviceSlideIds.map((id) => songsById.get(id)).filter(Boolean);
+
+    const renderServiceSlides = () => {
+      const serviceSlides = getServiceSlides();
+
+      if (!serviceList) return;
+
+      if (!serviceSlides.length) {
+        renderEmpty(serviceList, "Немає типових слайдів.");
+        return;
+      }
+
+      serviceList.replaceChildren(
+        ...serviceSlides.map((song) => createSongListItem(song, "service")),
+      );
+    };
+
     const renderSearchResults = () => {
+      if (!normalizeText(searchInput?.value ?? "")) {
+        renderEmpty(searchResults, "Введіть текст для пошуку.");
+        return;
+      }
+
       const matches = getSearchMatches();
 
       if (!matches.length) {
-        renderEmpty(
-          searchResults,
-          searchInput?.value.trim()
-            ? "Нічого не знайдено."
-            : "Введіть текст для пошуку.",
-        );
+        renderEmpty(searchResults, "Нічого не знайдено.");
         return;
       }
 
@@ -294,12 +499,14 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const createPreviewSlide = (song, slide, slideIndex) => {
       const slideCard = document.createElement("section");
       const slideNumber = document.createElement("p");
-      const slideText = document.createElement("pre");
+      const slideText = document.createElement("div");
 
       slideCard.className = "slide-card";
       slideNumber.className = "slide-number";
       slideNumber.textContent = `Слайд ${slideIndex + 1}`;
-      slideText.textContent = slide.text;
+      slideText.className = "slide-markdown";
+      slideText.dataset.slideRaw = slide.text;
+      slideText.innerHTML = renderSlideMarkdown(slide.text);
 
       slideCard.append(slideNumber);
 
@@ -348,7 +555,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       const href = `${slidesPath}#group=${group}`;
       shareLink.hidden = false;
       shareLink.href = href;
-      shareLink.textContent = href;
+      shareLink.textContent = "Відкрити слайди пісень окремо";
     };
 
     const hydrateChosenSongsFromUrl = () => {
@@ -367,6 +574,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
     searchInput?.addEventListener("input", renderSearchResults);
     window.addEventListener("hashchange", hydrateChosenSongsFromUrl);
+    renderServiceSlides();
     renderSearchResults();
     hydrateChosenSongsFromUrl();
   </script>

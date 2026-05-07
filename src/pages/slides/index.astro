@@ -14,6 +14,69 @@ type SlideManifestEntry = {
   displayTitle: string;
 };
 
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+const renderMarkdownInline = (value: string) =>
+  escapeHtml(value)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>")
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+    .replace(/___([^_]+)___/g, "<strong><em>$1</em></strong>")
+    .replace(/__([^_]+)__/g, "<strong>$1</strong>")
+    .replace(/_([^_]+)_/g, "<em>$1</em>")
+    .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+
+const renderSlideMarkdown = (value: string) => {
+  const lines = value.trim().split(/\r?\n/);
+  const html: string[] = [];
+  let listItems: string[] = [];
+
+  const flushList = () => {
+    if (!listItems.length) return;
+    html.push(`<ul>${listItems.join("")}</ul>`);
+    listItems = [];
+  };
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    if (!trimmed) {
+      flushList();
+      continue;
+    }
+
+    const heading = /^(#{1,6})\s+(.+)$/.exec(trimmed);
+    if (heading) {
+      flushList();
+      const level = Math.min(heading[1].length, 3);
+      html.push(`<h${level}>${renderMarkdownInline(heading[2])}</h${level}>`);
+      continue;
+    }
+
+    const listItem = /^[-*+]\s+(.+)$/.exec(trimmed);
+    if (listItem) {
+      listItems.push(`<li>${renderMarkdownInline(listItem[1])}</li>`);
+      continue;
+    }
+
+    flushList();
+    if (trimmed.startsWith("> ")) {
+      html.push(`<blockquote>${renderMarkdownInline(trimmed.slice(2))}</blockquote>`);
+    } else {
+      html.push(`<p>${renderMarkdownInline(trimmed)}</p>`);
+    }
+  }
+
+  flushList();
+  return html.join("");
+};
+
 const slideFiles = import.meta.glob("../../../slides/*.md", {
   eager: true,
   query: "?raw",
@@ -146,7 +209,11 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
                   {index === 0 && (
                     <h3 class="slide-card-title">{song.title}</h3>
                   )}
-                  <pre>{slide}</pre>
+                  <div
+                    class="slide-markdown"
+                    data-slide-raw={slide}
+                    set:html={renderSlideMarkdown(slide)}
+                  />
                 </section>
               ))}
             </div>
@@ -204,7 +271,7 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
       </header>
 
       <div class="slide-preview-stage">
-        <pre data-slide-preview-text></pre>
+        <div class="slide-markdown" data-slide-preview-text></div>
       </div>
 
       <footer class="slide-preview-footer">
@@ -283,6 +350,20 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
       title?: string;
     };
 
+    type MarkdownRun = {
+      text: string;
+      bold?: boolean;
+      italic?: boolean;
+      strike?: boolean;
+      code?: boolean;
+    };
+
+    type MarkdownBlock = {
+      type: "heading" | "paragraph" | "quote" | "listItem";
+      level?: number;
+      runs: MarkdownRun[];
+    };
+
     type PreviewOptions = {
       downloadFilename?: string;
       downloadTitle?: string;
@@ -316,6 +397,132 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
       textarea.remove();
     };
 
+    const escapeHtml = (value: string) =>
+      value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+
+    const renderMarkdownInline = (value: string) =>
+      escapeHtml(value)
+        .replace(/`([^`]+)`/g, "<code>$1</code>")
+        .replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>")
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+        .replace(/___([^_]+)___/g, "<strong><em>$1</em></strong>")
+        .replace(/__([^_]+)__/g, "<strong>$1</strong>")
+        .replace(/_([^_]+)_/g, "<em>$1</em>")
+        .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+
+    const renderSlideMarkdown = (value: string) => {
+      const lines = value.trim().split(/\r?\n/);
+      const html: string[] = [];
+      let listItems: string[] = [];
+
+      const flushList = () => {
+        if (!listItems.length) return;
+        html.push(`<ul>${listItems.join("")}</ul>`);
+        listItems = [];
+      };
+
+      for (const line of lines) {
+        const trimmed = line.trim();
+
+        if (!trimmed) {
+          flushList();
+          continue;
+        }
+
+        const heading = /^(#{1,6})\s+(.+)$/.exec(trimmed);
+        if (heading) {
+          flushList();
+          const level = Math.min(heading[1].length, 3);
+          html.push(`<h${level}>${renderMarkdownInline(heading[2])}</h${level}>`);
+          continue;
+        }
+
+        const listItem = /^[-*+]\s+(.+)$/.exec(trimmed);
+        if (listItem) {
+          listItems.push(`<li>${renderMarkdownInline(listItem[1])}</li>`);
+          continue;
+        }
+
+        flushList();
+        if (trimmed.startsWith("> ")) {
+          html.push(`<blockquote>${renderMarkdownInline(trimmed.slice(2))}</blockquote>`);
+        } else {
+          html.push(`<p>${renderMarkdownInline(trimmed)}</p>`);
+        }
+      }
+
+      flushList();
+      return html.join("");
+    };
+
+    const parseInlineMarkdown = (value: string) => {
+      const runs: MarkdownRun[] = [];
+      const pattern = /(\*\*\*[^*]+\*\*\*|___[^_]+___|\*\*[^*]+\*\*|__[^_]+__|\*[^*]+\*|_[^_]+_|~~[^~]+~~|`[^`]+`)/g;
+      let lastIndex = 0;
+
+      const pushText = (text: string, styles: Omit<MarkdownRun, "text"> = {}) => {
+        if (!text) return;
+        runs.push({ text, ...styles });
+      };
+
+      for (const match of value.matchAll(pattern)) {
+        const token = match[0];
+        const index = match.index ?? 0;
+
+        pushText(value.slice(lastIndex, index));
+
+        if (token.startsWith("***") || token.startsWith("___")) {
+          pushText(token.slice(3, -3), { bold: true, italic: true });
+        } else if (token.startsWith("**") || token.startsWith("__")) {
+          pushText(token.slice(2, -2), { bold: true });
+        } else if (token.startsWith("*") || token.startsWith("_")) {
+          pushText(token.slice(1, -1), { italic: true });
+        } else if (token.startsWith("~~")) {
+          pushText(token.slice(2, -2), { strike: true });
+        } else if (token.startsWith("`")) {
+          pushText(token.slice(1, -1), { code: true });
+        }
+
+        lastIndex = index + token.length;
+      }
+
+      pushText(value.slice(lastIndex));
+      return runs.length ? runs : [{ text: value }];
+    };
+
+    const parseSlideMarkdown = (value: string): MarkdownBlock[] =>
+      value
+        .trim()
+        .split(/\r?\n/)
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .map((line) => {
+          const heading = /^(#{1,6})\s+(.+)$/.exec(line);
+          if (heading) {
+            return {
+              type: "heading",
+              level: Math.min(heading[1].length, 3),
+              runs: parseInlineMarkdown(heading[2]),
+            };
+          }
+
+          const listItem = /^[-*+]\s+(.+)$/.exec(line);
+          if (listItem) {
+            return { type: "listItem", runs: parseInlineMarkdown(listItem[1]) };
+          }
+
+          if (line.startsWith("> ")) {
+            return { type: "quote", runs: parseInlineMarkdown(line.slice(2)) };
+          }
+
+          return { type: "paragraph", runs: parseInlineMarkdown(line) };
+        });
+
     const renderPreviewSlide = () => {
       if (
         !previewText ||
@@ -328,7 +535,7 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
 
       const activeSlide = activeSlides[activeSlideIndex];
 
-      previewText.textContent = activeSlide?.text ?? "";
+      previewText.innerHTML = renderSlideMarkdown(activeSlide?.text ?? "");
       if (previewTitle) previewTitle.textContent = activeSlide?.title ?? "";
       previewCurrent.textContent = String(activeSlideIndex + 1);
       previewTotal.textContent = String(activeSlides.length);
@@ -347,8 +554,8 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
     };
 
     const getSongSlides = (songBlock: Element | null) =>
-      Array.from(songBlock?.querySelectorAll(".slide-card pre") ?? [])
-        .map((slide) => slide.textContent?.trim() ?? "")
+      Array.from(songBlock?.querySelectorAll<HTMLElement>(".slide-card [data-slide-raw]") ?? [])
+        .map((slide) => slide.dataset.slideRaw?.trim() ?? "")
         .filter(Boolean);
 
     const createPreviewSlides = (slides: string[], title: string) =>
@@ -757,7 +964,36 @@ const slides = (slidesManifest as SlideManifestEntry[]).map((song) => {
           });
         }
 
-        slide.addText(slideContent.text, {
+        const textBlocks = parseSlideMarkdown(slideContent.text);
+        const richText = textBlocks.flatMap((block, blockIndex) => {
+          const prefix = block.type === "listItem" ? "• " : "";
+          const suffix = blockIndex === textBlocks.length - 1 ? "" : "\n";
+          const blockBold = block.type === "heading";
+          const blockItalic = block.type === "quote";
+          const blockSize =
+            block.type === "heading" && block.level === 1
+              ? 62
+              : block.type === "heading"
+                ? 56
+                : 54;
+
+          return block.runs.map((run, runIndex) => ({
+            text: `${runIndex === 0 ? prefix : ""}${run.text}${
+              runIndex === block.runs.length - 1 ? suffix : ""
+            }`,
+            options: {
+              bold: blockBold || run.bold || !run.italic,
+              italic: blockItalic || run.italic,
+              strike: run.strike,
+              fontFace: run.code ? "Courier New" : "Arial",
+              fontSize: run.code ? Math.max(30, blockSize - 8) : blockSize,
+              color: "FFFDF9",
+              breakLine: false,
+            },
+          }));
+        });
+
+        slide.addText(richText.length ? richText : slideContent.text, {
           x: 0.45,
           y: hasTitle ? 1.35 : 0.35,
           w: 12.43,
