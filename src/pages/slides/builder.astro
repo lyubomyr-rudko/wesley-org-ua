@@ -153,6 +153,69 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         .replace(/\s+/g, " ")
         .trim();
 
+    const escapeHtml = (value) =>
+      value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+
+    const renderMarkdownInline = (value) =>
+      escapeHtml(value)
+        .replace(/`([^`]+)`/g, "<code>$1</code>")
+        .replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>")
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+        .replace(/___([^_]+)___/g, "<strong><em>$1</em></strong>")
+        .replace(/__([^_]+)__/g, "<strong>$1</strong>")
+        .replace(/_([^_]+)_/g, "<em>$1</em>")
+        .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+
+    const renderSlideMarkdown = (value) => {
+      const lines = value.trim().split(/\r?\n/);
+      const html = [];
+      let listItems = [];
+
+      const flushList = () => {
+        if (!listItems.length) return;
+        html.push(`<ul>${listItems.join("")}</ul>`);
+        listItems = [];
+      };
+
+      for (const line of lines) {
+        const trimmed = line.trim();
+
+        if (!trimmed) {
+          flushList();
+          continue;
+        }
+
+        const heading = /^(#{1,6})\s+(.+)$/.exec(trimmed);
+        if (heading) {
+          flushList();
+          const level = Math.min(heading[1].length, 3);
+          html.push(`<h${level}>${renderMarkdownInline(heading[2])}</h${level}>`);
+          continue;
+        }
+
+        const listItem = /^[-*+]\s+(.+)$/.exec(trimmed);
+        if (listItem) {
+          listItems.push(`<li>${renderMarkdownInline(listItem[1])}</li>`);
+          continue;
+        }
+
+        flushList();
+        if (trimmed.startsWith("> ")) {
+          html.push(`<blockquote>${renderMarkdownInline(trimmed.slice(2))}</blockquote>`);
+        } else {
+          html.push(`<p>${renderMarkdownInline(trimmed)}</p>`);
+        }
+      }
+
+      flushList();
+      return html.join("");
+    };
+
     const songs = Object.values(slidesSearch.songs).sort((left, right) => {
       const numberCompare = Number(left.id) - Number(right.id);
       if (numberCompare !== 0) return numberCompare;
@@ -316,10 +379,12 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
         if (matchingSlide) {
           const slideCard = document.createElement("section");
-          const slideText = document.createElement("pre");
+          const slideText = document.createElement("div");
 
           slideCard.className = "slide-card slides-builder-result-slide";
-          slideText.append(...highlightSlideText(matchingSlide.text, query));
+          slideText.className = "slide-markdown";
+          slideText.dataset.slideRaw = matchingSlide.text;
+          slideText.innerHTML = renderSlideMarkdown(matchingSlide.text);
           slideCard.append(slideText);
           item.append(slideCard);
         }
@@ -434,12 +499,14 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const createPreviewSlide = (song, slide, slideIndex) => {
       const slideCard = document.createElement("section");
       const slideNumber = document.createElement("p");
-      const slideText = document.createElement("pre");
+      const slideText = document.createElement("div");
 
       slideCard.className = "slide-card";
       slideNumber.className = "slide-number";
       slideNumber.textContent = `Слайд ${slideIndex + 1}`;
-      slideText.textContent = slide.text;
+      slideText.className = "slide-markdown";
+      slideText.dataset.slideRaw = slide.text;
+      slideText.innerHTML = renderSlideMarkdown(slide.text);
 
       slideCard.append(slideNumber);
 

@@ -962,6 +962,10 @@ img {
   max-width: none;
 }
 
+.bible-chapter-copy-button {
+  margin-top: 1rem;
+}
+
 .bible-reader-picker {
   grid-template-columns: minmax(200px, 1fr) minmax(100px, 0.28fr) auto;
 }
@@ -1133,12 +1137,59 @@ img {
   color: #1f6f3e;
 }
 
-.slide-card pre {
+.slide-markdown {
   margin: 0;
-  white-space: pre-wrap;
   font: inherit;
   line-height: 1.55;
   text-align: center;
+}
+
+.slide-markdown > * {
+  margin: 0;
+}
+
+.slide-markdown > * + * {
+  margin-top: 0.35em;
+}
+
+.slide-markdown h1,
+.slide-markdown h2,
+.slide-markdown h3 {
+  color: inherit;
+  font: inherit;
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.slide-markdown h1 {
+  font-size: 1.5em;
+}
+
+.slide-markdown h2 {
+  font-size: 1.28em;
+}
+
+.slide-markdown h3 {
+  font-size: 1.12em;
+}
+
+.slide-markdown ul {
+  display: inline-grid;
+  gap: 0.2em;
+  padding-left: 1.25em;
+  text-align: left;
+}
+
+.slide-markdown blockquote {
+  padding-left: 0.75em;
+  border-left: 0.12em solid currentColor;
+  font-style: italic;
+  text-align: left;
+}
+
+.slide-markdown code {
+  font-family: "Courier New", monospace;
+  font-size: 0.88em;
 }
 
 .slide-preview-dialog {
@@ -1225,10 +1276,9 @@ img {
   touch-action: pan-y;
 }
 
-.slide-preview-stage pre {
+.slide-preview-stage .slide-markdown {
   width: min(100%, 1100px);
   margin: 0;
-  white-space: pre-wrap;
   color: #fffdf9;
   font: inherit;
   font-size: clamp(1.65rem, 5vw, 4.6rem);

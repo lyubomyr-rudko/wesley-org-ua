@@ -40,6 +40,21 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     <header class="post-header bible-reader-header">
       <p class="post-eyebrow">Українська Біблія Івана Огієнка</p>
       <h1>{chapter.title} {chapter.chapter}</h1>
+      <button
+        class="slide-action-button bible-chapter-copy-button"
+        type="button"
+        data-bible-chapter-copy
+      >
+        <svg
+          class="slide-action-icon"
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+        >
+          <rect x="8" y="8" width="11" height="11" rx="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span>Копіювати розділ</span>
+      </button>
     </header>
 
     <div class="bible-picker-sentinel" data-bible-picker-sentinel></div>
@@ -148,6 +163,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const bibleReader = document.querySelector("[data-bible-reader]");
     const bibleHeading = document.querySelector(".bible-reader-header h1");
     const bibleText = document.querySelector("[data-bible-chapter-text]");
+    const chapterCopyButton = document.querySelector("[data-bible-chapter-copy]");
     const superscriptDigits = {
       0: "⁰",
       1: "¹",
@@ -233,6 +249,45 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const toSuperscript = (value) =>
       String(value).replace(/\d/g, (digit) => superscriptDigits[digit]);
 
+    const writeToClipboard = async (text) => {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-1000px";
+      document.body.append(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    };
+
+    const getChapterReference = () => {
+      const headingBookTitle =
+        bibleHeading?.textContent?.replace(/\s+\d+\s*$/, "").trim() ?? "";
+      const selectedBookTitle =
+        bookSelect?.selectedOptions[0]?.textContent?.trim() ?? "";
+      const citationTitle =
+        bibleReader?.dataset.citationTitle ||
+        bibleReader?.dataset.bookTitle ||
+        headingBookTitle ||
+        selectedBookTitle;
+      const chapterNumber = bibleReader?.dataset.chapterNumber ?? "";
+
+      return `${citationTitle} ${chapterNumber}`.trim();
+    };
+
+    const getVerseClipboardText = (verse) => {
+      const verseNumber = verse.dataset.verseNumber;
+      const verseText = verse.querySelector("span")?.textContent?.trim() ?? "";
+
+      return `${toSuperscript(verseNumber)} ${verseText}`;
+    };
+
     const getSelectedVerses = (selection) => {
       const verses = Array.from(bibleText.querySelectorAll("[data-verse-number]"));
 
@@ -255,18 +310,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       const lastVerse = verseNumbers.at(-1);
       const verseRange = firstVerse === lastVerse ? firstVerse : `${firstVerse}-${lastVerse}`;
 
-      const headingBookTitle =
-        bibleHeading?.textContent?.replace(/\s+\d+\s*$/, "").trim() ?? "";
-      const selectedBookTitle =
-        bookSelect?.selectedOptions[0]?.textContent?.trim() ?? "";
-      const citationTitle =
-        bibleReader?.dataset.citationTitle ||
-        bibleReader?.dataset.bookTitle ||
-        headingBookTitle ||
-        selectedBookTitle;
-      const chapterNumber = bibleReader?.dataset.chapterNumber ?? "";
-
-      return `${citationTitle} ${chapterNumber}:${verseRange}`;
+      return `${getChapterReference()}:${verseRange}`;
     };
 
     const setActiveVerse = (verseId) => {
@@ -334,12 +378,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       }
 
       const copiedText = selectedVerses
-        .map((verse) => {
-          const verseNumber = verse.dataset.verseNumber;
-          const verseText = verse.querySelector("span")?.textContent?.trim() ?? "";
-
-          return `${toSuperscript(verseNumber)} ${verseText}`;
-        })
+        .map(getVerseClipboardText)
         .join("\n");
 
       event.preventDefault();
@@ -351,6 +390,30 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
         "text/plain",
         `${copiedText}\n${getReference(selectedVerses)}`,
       );
+    });
+
+    chapterCopyButton?.addEventListener("click", async () => {
+      if (!bibleText) return;
+
+      const chapterText = Array.from(
+        bibleText.querySelectorAll("[data-verse-number]"),
+      )
+        .map(getVerseClipboardText)
+        .join("\n");
+
+      if (!chapterText) return;
+
+      const buttonLabel = chapterCopyButton.querySelector("span");
+
+      await writeToClipboard(`${chapterText}\n${getChapterReference()}`);
+
+      if (buttonLabel) buttonLabel.textContent = "Скопійовано";
+      chapterCopyButton.classList.add("is-copied");
+
+      window.setTimeout(() => {
+        if (buttonLabel) buttonLabel.textContent = "Копіювати розділ";
+        chapterCopyButton.classList.remove("is-copied");
+      }, 1400);
     });
   </script>
 </BaseLayout>
