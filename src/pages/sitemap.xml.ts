@@ -57,6 +57,9 @@ export async function GET({ site }: { site: URL }) {
   const today = new Date().toISOString().slice(0, 10);
   const posts = await getCollection("blog");
   const upcomingService = getUpcomingWorshipService();
+  const hasUpcomingServicePost = posts.some(
+    (post) => post.id === upcomingService.id,
+  );
   const siteUrl = site ?? new URL("https://wesley.org.ua");
 
   const urls = [
@@ -70,12 +73,16 @@ export async function GET({ site }: { site: URL }) {
       changefreq: post.id.startsWith("church-in-lviv/") ? "weekly" : "monthly",
       priority: post.id.startsWith("sermons/") ? "0.7" : "0.6",
     })),
-    {
-      path: upcomingService.path,
-      lastmod: upcomingService.data.pubDate,
-      changefreq: "weekly",
-      priority: "0.7",
-    },
+    ...(!hasUpcomingServicePost
+      ? [
+          {
+            path: upcomingService.path,
+            lastmod: upcomingService.data.pubDate,
+            changefreq: "weekly",
+            priority: "0.7",
+          },
+        ]
+      : []),
     ...bibleChapters.map((chapter) => ({
       path: chapter.path,
       lastmod: today,

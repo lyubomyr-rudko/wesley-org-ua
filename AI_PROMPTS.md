@@ -6,3 +6,12 @@ Use this YouTube URL:
 https://www.youtube.com/watch?v=3bgxgFwQnnc
 
 Create the Markdown blog post exactly as described in the prompt file, then report the created file path and confirm that the subtitle file was deleted.
+
+# Codex YouTube to podcast
+
+Read and follow the instructions in youtube-video-to-podcast-text.prompt.md
+
+Use this YouTube URL:
+https://www.youtube.com/watch?v=3bgxgFwQnnc
+
+Create the Markdown podcast text exactly as described in the prompt file, then report the created file path and confirm that the subtitle file was deleted.
