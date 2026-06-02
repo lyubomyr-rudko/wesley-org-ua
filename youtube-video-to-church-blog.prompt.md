@@ -12,7 +12,7 @@ Use the existing make target:
 
 make subtitles VIDEO_URL="<YOUTUBE_VIDEO_URL>"
 
-This should download Ukrainian auto-generated subtitles and create a predictable subtitle file named with today’s date, for example:
+This should download Ukrainian auto-generated subtitles and create a predictable subtitle file named with date from the video, for example:
 
 subtitles-2026-04-26.srt
 
@@ -86,11 +86,11 @@ The keywords should be relevant for the website and the meeting content. Include
 
 src/content/blog/church-in-lviv/
 
-5. Name the file using the current date in this format:
+5. Name the file using the youtube video date in this format:
 
 26-april-2026-worship-service.md
 
-Use the real current date when running the task.
+Use the real youtube video date when running the task.
 
 The filename format must be:
 
@@ -154,7 +154,7 @@ Do not delete the generated Markdown blog post.
 10. Before finishing, verify that:
 
 - the Markdown file exists in src/content/blog/church-in-lviv/
-- the filename uses the correct current date format
+- the filename uses the correct youtube video date format
 - the frontmatter is valid
 - the article is written in Ukrainian
 - the subtitles file was deleted

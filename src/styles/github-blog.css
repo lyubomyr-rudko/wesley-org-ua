@@ -1008,10 +1008,43 @@ img {
 .bible-reader {
   max-width: 860px;
   margin: 0 auto;
+  --bible-reader-font-adjust: 0rem;
+  --bible-hebrew-font-adjust: 0rem;
+  --bible-ukrainian-font-adjust: 0rem;
 }
 
 .hebrew-bible-reader {
   max-width: 1120px;
+}
+
+.bible-reader[data-bible-font-step="-2"] {
+  --bible-reader-font-adjust: -0.12rem;
+  --bible-hebrew-font-adjust: -0.16rem;
+  --bible-ukrainian-font-adjust: -0.1rem;
+}
+
+.bible-reader[data-bible-font-step="-1"] {
+  --bible-reader-font-adjust: -0.06rem;
+  --bible-hebrew-font-adjust: -0.08rem;
+  --bible-ukrainian-font-adjust: -0.05rem;
+}
+
+.bible-reader[data-bible-font-step="1"] {
+  --bible-reader-font-adjust: 0.16rem;
+  --bible-hebrew-font-adjust: 0.22rem;
+  --bible-ukrainian-font-adjust: 0.14rem;
+}
+
+.bible-reader[data-bible-font-step="2"] {
+  --bible-reader-font-adjust: 0.32rem;
+  --bible-hebrew-font-adjust: 0.42rem;
+  --bible-ukrainian-font-adjust: 0.28rem;
+}
+
+.bible-reader[data-bible-font-step="3"] {
+  --bible-reader-font-adjust: 0.52rem;
+  --bible-hebrew-font-adjust: 0.68rem;
+  --bible-ukrainian-font-adjust: 0.46rem;
 }
 
 .bible-reader-header h1 {
@@ -1046,6 +1079,51 @@ img {
   margin-top: 0;
 }
 
+.bible-font-size-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(91, 74, 54, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.bible-font-size-button {
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  padding: 0.45rem;
+  border-color: transparent;
+  background: transparent;
+}
+
+.bible-font-size-button .slide-action-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.bible-font-size-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.bible-font-size-button:disabled:hover,
+.bible-font-size-button:disabled:focus-visible {
+  border-color: transparent;
+  background: transparent;
+  color: var(--text);
+}
+
+.bible-font-size-value {
+  min-width: 3.1rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
 .hebrew-translation-toggle {
   display: inline-flex;
   align-items: center;
@@ -1076,7 +1154,7 @@ img {
   gap: 0.75rem;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.12rem, 2vw, 1.28rem);
+  font-size: calc(clamp(1.12rem, 2vw, 1.28rem) + var(--bible-reader-font-adjust));
   line-height: 1.85;
 }
 
@@ -1146,7 +1224,7 @@ img {
   grid-template-columns: minmax(0, 1fr) 2.25rem;
   gap: 0.8rem;
   font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif;
-  font-size: clamp(1.28rem, 2.5vw, 1.72rem);
+  font-size: calc(clamp(1.28rem, 2.5vw, 1.72rem) + var(--bible-hebrew-font-adjust));
   line-height: 1.9;
 }
 
@@ -1167,7 +1245,7 @@ img {
   gap: 0.8rem;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+  font-size: calc(clamp(1.02rem, 1.8vw, 1.18rem) + var(--bible-ukrainian-font-adjust));
   line-height: 1.8;
 }
 
@@ -1982,6 +2060,15 @@ img {
   .bible-verse {
     grid-template-columns: 1.7rem minmax(0, 1fr);
     gap: 0.55rem;
+  }
+
+  .hebrew-parallel-header,
+  .hebrew-parallel-reader .hebrew-parallel-verse {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hebrew-parallel-header {
+    display: none;
   }
 
   .church-actions {

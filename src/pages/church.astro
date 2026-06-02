@@ -10,10 +10,12 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
 const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
 
 const upcomingService = getUpcomingWorshipService();
-const churchServices = (await getCollection("blog"))
+const posts = await getCollection("blog");
+const hasUpcomingServicePost = posts.some((post) => post.id === upcomingService.id);
+const churchServices = posts
   .filter((post) => post.id.startsWith("church-in-lviv/"))
-  .filter((post) => post.id !== upcomingService.id)
   .sort((a, b) => (b.data.pubDate ?? "").localeCompare(a.data.pubDate ?? ""));
+const churchServiceCount = churchServices.length + (hasUpcomingServicePost ? 0 : 1);
 type ChurchServiceEntry = CollectionEntry<"blog">;
 ---
 
@@ -50,7 +52,7 @@ type ChurchServiceEntry = CollectionEntry<"blog">;
         <p class="archive-eyebrow">Повний перелік</p>
         <h2>Служіння церкви у Львові</h2>
         <p class="archive-summary">
-          У списку зараз: <span class="count">{churchServices.length + 1}</span>{
+          У списку зараз: <span class="count">{churchServiceCount}</span>{
             " "
           }
           сторінок, включно з найближчим богослужінням
@@ -58,18 +60,24 @@ type ChurchServiceEntry = CollectionEntry<"blog">;
       </div>
 
       <ol class="sermon-list">
-        <li class="sermon-item is-upcoming">
-          <div class="sermon-meta">
-            <span class="sermon-year">Найближче богослужіння</span>
-            <span class="sermon-original">Дата: {upcomingService.data.pubDate}</span>
-          </div>
-          <h4 class="sermon-title">
-            <a class="sermon-link" href={withBase(upcomingService.path)}>
-              {upcomingService.data.title}
-            </a>
-          </h4>
-          <p class="archive-summary">{upcomingService.data.description}</p>
-        </li>
+        {
+          !hasUpcomingServicePost && (
+            <li class="sermon-item is-upcoming">
+              <div class="sermon-meta">
+                <span class="sermon-year">Найближче богослужіння</span>
+                <span class="sermon-original">
+                  Дата: {upcomingService.data.pubDate}
+                </span>
+              </div>
+              <h4 class="sermon-title">
+                <a class="sermon-link" href={withBase(upcomingService.path)}>
+                  {upcomingService.data.title}
+                </a>
+              </h4>
+              <p class="archive-summary">{upcomingService.data.description}</p>
+            </li>
+          )
+        }
         {
           churchServices.map((service: ChurchServiceEntry) => (
             <li class="sermon-item">

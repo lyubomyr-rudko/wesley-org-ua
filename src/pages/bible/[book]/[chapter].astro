@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import BibleFontSizeControls from "../../../components/BibleFontSizeControls.astro";
 import {
   bibleBooks,
   bibleChapters,
@@ -59,6 +60,8 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
           </svg>
           <span>Копіювати розділ</span>
         </button>
+
+        <BibleFontSizeControls />
 
         {
           hebrewChapter && (
@@ -207,6 +210,26 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     const chapterCopyButton = document.querySelector(
       "[data-bible-chapter-copy]",
     );
+    const fontDecreaseButton = document.querySelector(
+      "[data-bible-font-decrease]",
+    );
+    const fontIncreaseButton = document.querySelector(
+      "[data-bible-font-increase]",
+    );
+    const fontSizeValue = document.querySelector(
+      "[data-bible-font-size-value]",
+    );
+    const fontSizeStorageKey = "bible-reader-font-step";
+    const fontSizeMinStep = -2;
+    const fontSizeMaxStep = 3;
+    const fontSizeLabels = {
+      "-2": "85%",
+      "-1": "92%",
+      0: "100%",
+      1: "115%",
+      2: "130%",
+      3: "150%",
+    };
     const superscriptDigits = {
       0: "⁰",
       1: "¹",
@@ -244,6 +267,47 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       form.classList.toggle("is-stuck", isStuck);
     };
 
+    const clampFontSizeStep = (step) =>
+      Math.min(fontSizeMaxStep, Math.max(fontSizeMinStep, step));
+
+    const readFontSizeStep = () => {
+      try {
+        const storedStep = Number(window.localStorage.getItem(fontSizeStorageKey));
+
+        return Number.isFinite(storedStep) ? clampFontSizeStep(storedStep) : 0;
+      } catch {
+        return 0;
+      }
+    };
+
+    const saveFontSizeStep = (step) => {
+      try {
+        window.localStorage.setItem(fontSizeStorageKey, String(step));
+      } catch {
+        // Reading controls should keep working even when storage is unavailable.
+      }
+    };
+
+    let currentFontSizeStep = readFontSizeStep();
+
+    const setFontSizeStep = (step) => {
+      currentFontSizeStep = clampFontSizeStep(step);
+      bibleReader?.setAttribute("data-bible-font-step", String(currentFontSizeStep));
+      saveFontSizeStep(currentFontSizeStep);
+
+      if (fontSizeValue) {
+        fontSizeValue.textContent = fontSizeLabels[currentFontSizeStep] ?? "100%";
+      }
+
+      if (fontDecreaseButton) {
+        fontDecreaseButton.disabled = currentFontSizeStep <= fontSizeMinStep;
+      }
+
+      if (fontIncreaseButton) {
+        fontIncreaseButton.disabled = currentFontSizeStep >= fontSizeMaxStep;
+      }
+    };
+
     const renderChapters = () => {
       const selectedBook = bookSelect.selectedOptions[0];
       const chapters = selectedBook.dataset.chapters.split(",");
@@ -275,6 +339,12 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
       navigateToSelectedChapter();
     });
     chapterSelect?.addEventListener("change", navigateToSelectedChapter);
+    fontDecreaseButton?.addEventListener("click", () => {
+      setFontSizeStep(currentFontSizeStep - 1);
+    });
+    fontIncreaseButton?.addEventListener("click", () => {
+      setFontSizeStep(currentFontSizeStep + 1);
+    });
     window.addEventListener("scroll", updatePickerStickyState, {
       passive: true,
     });
@@ -288,6 +358,7 @@ const withBase = (path) => `${baseUrl}${path.replace(/^\/+/, "")}`;
     });
 
     renderChapters();
+    setFontSizeStep(currentFontSizeStep);
     updateStickyOffset();
     updatePickerStickyState();
 

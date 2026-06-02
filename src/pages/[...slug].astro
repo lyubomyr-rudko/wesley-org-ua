@@ -13,14 +13,20 @@ type BlogPostEntry = CollectionEntry<"blog">;
 export const getStaticPaths = (async () => {
   const posts = await getCollection("blog");
   const upcomingService = getUpcomingWorshipService();
-  const archivedPosts = posts.filter((post) => post.id !== upcomingService.id);
+  const hasUpcomingServicePost = posts.some(
+    (post) => post.id === upcomingService.id,
+  );
 
   return [
-    {
-      params: { slug: upcomingService.id },
-      props: { upcomingService },
-    },
-    ...archivedPosts.map((post: BlogPostEntry) => ({
+    ...(!hasUpcomingServicePost
+      ? [
+          {
+            params: { slug: upcomingService.id },
+            props: { upcomingService },
+          },
+        ]
+      : []),
+    ...posts.map((post: BlogPostEntry) => ({
       params: { slug: post.id },
       props: { post },
     })),
